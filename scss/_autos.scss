@@ -1,1 +1,16 @@
-.
+.div__div-logoYimg{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    .div__logoYimg{
+        display: flex;
+        flex-direction: column;
+        .logo{
+            display: flex;
+            justify-content: center;
+            img{
+                width: 50%;
+            }
+        }
+    }
+}

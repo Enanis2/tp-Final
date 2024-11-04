@@ -170,6 +170,19 @@ footer {
   width: 80px;
   height: 80px; }
 
+.div__div-logoYimg {
+  width: 100%;
+  display: flex;
+  justify-content: center; }
+  .div__div-logoYimg .div__logoYimg {
+    display: flex;
+    flex-direction: column; }
+    .div__div-logoYimg .div__logoYimg .logo {
+      display: flex;
+      justify-content: center; }
+      .div__div-logoYimg .div__logoYimg .logo img {
+        width: 50%; }
+
 * {
   margin: 0%;
   padding: 0%; }

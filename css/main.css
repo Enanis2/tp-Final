@@ -185,6 +185,15 @@ footer {
     .div__div-logoYimg .div__logoYimg h1 {
       text-align: center; }
 
+#mainC {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas: 'h1 h1 h1' 'img1 img2 img3' 'm1 t1 r1' 'd1 d2 d3' 'h2 h2 h2' 'i1 i2 i3';
+  justify-items: center;
+  align-items: center;
+  gap: 10px; }
+
 #contenedorcliente1 {
   color: white;
   background-color: black;
@@ -192,16 +201,76 @@ footer {
   height: 300px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  grid-area: h1; }
+
+.h1C, .h6C {
+  display: flex;
+  justify-content: center; }
+
+#h1_1c {
+  font-size: 60px; }
+
+#img1c, #img2c, #img3c {
+  height: 300px;
+  width: 300px; }
+
+.imgc {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; }
+
+#img1c {
+  grid-area: img1; }
+
+#img2c {
+  grid-area: img2; }
+
+#img3c {
+  grid-area: img3; }
+
+#p1c, #p2c, #p3c {
+  width: 500px;
+  height: 200px; }
+
+#p1c {
+  grid-area: m1; }
+
+#p2c {
+  grid-area: t1; }
+
+#p3c {
+  grid-area: r1; }
+
+.pc {
+  font-size: 18px; }
+
+#h2c {
+  color: white;
+  grid-area: h2;
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
   flex-direction: column; }
 
-#h1_1 {
+#h2_1c {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  font-size: 40px; }
 
-#h6_1 {
-  display: flex;
-  justify-content: center; }
+#if1c {
+  grid-area: i1;
+  width: 500px;
+  height: 300px; }
 
-#h6_2 {
-  display: flex;
-  justify-content: center; }
+#if2c {
+  width: 500px;
+  height: 300px;
+  grid-area: i2; }
+
+#if3c {
+  width: 500px;
+  height: 300px;
+  grid-area: i3; }

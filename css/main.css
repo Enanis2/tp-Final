@@ -182,6 +182,8 @@ footer {
       justify-content: center; }
       .div__div-logoYimg .div__logoYimg .logo img {
         width: 50%; }
+    .div__div-logoYimg .div__logoYimg h1 {
+      text-align: center; }
 
 #contenedorcliente1 {
   color: white;

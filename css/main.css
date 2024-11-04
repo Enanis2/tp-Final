@@ -1,0 +1,171 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+footer {
+  background-color: #333333;
+  /* Gris oscuro */
+  margin-top: auto; }
+
+.footerContainer {
+  width: 100%;
+  padding: 70px 30px 20px; }
+
+.socialIcons {
+  display: flex;
+  justify-content: center; }
+
+.socialIcons a {
+  text-decoration: none;
+  padding: 10px;
+  background-color: #FFC107;
+  /* Amarillo brillante */
+  margin: 10px;
+  border-radius: 50%; }
+
+.socialIcons a i {
+  font-size: 2em;
+  color: #fff;
+  /* Blanco */
+  opacity: 0.9; }
+
+/* Hover effect on social media icon */
+.socialIcons a:hover {
+  background-color: #FFEB3B;
+  /* Amarillo suave */
+  transition: 0.5s; }
+
+.socialIcons a:hover i {
+  color: #333333;
+  /* Gris oscuro */
+  transition: 0.5s; }
+
+.footerNav {
+  margin: 30px 0; }
+
+.footerNav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none; }
+
+.footerNav ul li a {
+  color: #FFC107;
+  /* Amarillo brillante */
+  margin: 20px;
+  text-decoration: none;
+  font-size: 1.3em;
+  opacity: 0.7;
+  transition: 0.5s; }
+
+.footerNav ul li a:hover {
+  opacity: 1;
+  color: #FFEB3B;
+  /* Amarillo suave en hover */ }
+
+.footerBottom {
+  background-color: #000000;
+  /* Negro */
+  padding: 20px;
+  text-align: center; }
+
+.footerBottom p {
+  color: #ffffff;
+  /* Blanco */ }
+
+.designer {
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+  margin: 0px 5px;
+  color: #FFC107;
+  /* Amarillo brillante */ }
+
+@media (max-width: 700px) {
+  .footerNav ul {
+    flex-direction: column; }
+  .footerNav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 10px; }
+  .socialIcons a {
+    padding: 8px;
+    margin: 4px; } }
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column; }
+
+/* Hacer que el contenedor principal ocupe el espacio restante */
+.container-fluid {
+  flex: 1; }
+
+/* Si el footer tiene margen superior, elimínalo */
+footer {
+  margin-top: auto; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+.login-button {
+  background-color: #FFC107;
+  /* Amarillo brillante */
+  color: #fff;
+  font-size: 14px;
+  padding: 8px 20px;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: 0.3s background-color;
+  /* Corregido el formato de transición */ }
+
+.login-button:hover {
+  background-color: #FFEB3B;
+  /* Amarillo suave */ }
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
+  /* Corregido el formato de tamaño */ }
+
+.navbar-toggler:focus,
+.btn-close:focus {
+  box-shadow: none;
+  outline: none; }
+
+.nav-link {
+  color: #2f2e2e;
+  /* Puedes ajustar este color si lo deseas */
+  font-weight: 500;
+  position: relative; }
+
+.nav-link:hover,
+.nav-link:active {
+  color: #FFEB3B;
+  /* Azul marino */ }
+
+@media (min-width: 991px) {
+  .nav-link::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #FFC107;
+    /* Puedes ajustar esto si prefieres amarillo */
+    visibility: hidden;
+    transition: 0.3s ease-in-out;
+    /* Corregido el formato de transición */ }
+  .nav-link:hover::before,
+  .nav-link.active::before {
+    width: 100%;
+    visibility: visible; } }
+
+#logo {
+  width: 80px;
+  height: 80px; }

@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.login-button {
+    background-color: #FFC107; /* Amarillo brillante */
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color; /* Corregido el formato de transición */
+}
+
+.login-button:hover {
+    background-color: #FFEB3B; /* Amarillo suave */
+}
+
+.navbar-toggler {
+    border: none;
+    font-size: 1.25rem; /* Corregido el formato de tamaño */
+}
+
+.navbar-toggler:focus,
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.nav-link {
+    color: rgb(47, 46, 46); /* Puedes ajustar este color si lo deseas */
+    font-weight: 500;
+    position: relative;
+}
+
+.nav-link:hover,
+.nav-link:active {
+    color: #FFEB3B; /* Azul marino */
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: #FFC107; /* Puedes ajustar esto si prefieres amarillo */
+        visibility: hidden;
+        transition: 0.3s ease-in-out; /* Corregido el formato de transición */
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}

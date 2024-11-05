@@ -1,19 +1,130 @@
-.div__div-logoYimg{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    .div__logoYimg{
-        display: flex;
-        flex-direction: column;
-        .logo{
-            display: flex;
-            justify-content: center;
-            img{
-                width: 50%;
-            }
-        }
-        h1{
-            text-align: center;
-        }
-    }
+@mixin padding($top, $bottom, $left, $right){
+    padding: $top, $right, $bottom, $left;
+}
+
+$areasGrid:(
+    honda: honda
+    audi: audi
+    chevr: chevr
+    rena: rena
+    ford: ford
+    fiat: fiat
+    niss: niss
+);
+
+#tieAut__Main{
+    @include padding(0%, 5%, 0%, 5%);
+    display: grid;
+    height: 1000px;
+
+    grid-template-rows: repeat(7, 1fr);
+    grid-template-areas: 
+    'honda'
+    'audi'
+    'chevrolet'
+    'renault'
+    'ford'
+    'fiat'
+    'nissan';
+
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+}
+
+#honda, #audi, #chevrolet, #renault, #ford, #fiat, #nissan{
+    display: grid;
+
+    grid-template-rows: repeat(4, 1fr) 2fr;
+    grid-template-columns: 3fr 1fr;
+}
+
+/*------HONDA------*/
+
+#honda{
+    grid-area: honda;
+
+    grid-template-areas: 
+    'hondaImg hondaModelo'
+    'hondaImg hondaPrecio'
+    'hondaImg hondaToTerr'
+    'hondaImg hondaEnergia'
+    'hondaDesc hondaDesc';
+}
+
+/*------AUDI------*/
+
+#audi{
+    grid-area: audi;
+
+    grid-template-areas: 
+    'audiImg audiModelo'
+    'audiImg audiPrecio'
+    'audiImg audiToTerr'
+    'audiImg audiEnergia'
+    'audiDesc audiDesc';
+}
+
+/*------CHEVROLET------*/
+
+#chevrolet{
+    grid-area: chevrolet;
+
+    grid-template-areas: 
+    'chevrImg chevrModelo'
+    'chevrImg chevrPrecio'
+    'chevrImg chevrToTerr'
+    'chevrImg chevrEnergia'
+    'chevrDesc chevrDesc';
+}
+
+/*------RENAULT------*/
+
+#renault{
+    grid-area: renault;
+
+    grid-template-areas: 
+    'renaImg renaModelo'
+    'renaImg renaPrecio'
+    'renaImg renaToTerr'
+    'renaImg renaEnergia'
+    'renaDesc renaDesc';
+}
+
+/*------FORD------*/
+
+#ford{
+    grid-area: ford;
+
+    grid-template-areas: 
+    'fordImg fordModelo'
+    'fordImg fordPrecio'
+    'fordImg fordToTerr'
+    'fordImg fordEnergia'
+    'fordDesc fordDesc';
+}
+
+/*------FIAT------*/
+
+#fiat{
+    grid-area: fiat;
+
+    grid-template-areas: 
+    'fiatImg fiatModelo'
+    'fiatImg fiatPrecio'
+    'fiatImg fiatToTerr'
+    'fiatImg fiatEnergia'
+    'fiatDesc fiatDesc';
+}
+
+/*------NISSAN------*/
+
+#nissan{
+    grid-area: nissan;
+
+    grid-template-areas: 
+    'nissImg nissModelo'
+    'nissImg nissPrecio'
+    'nissImg nissToTerr'
+    'nissImg nissEnergia'
+    'nissDesc nissDesc';
 }

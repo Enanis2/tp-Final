@@ -189,7 +189,12 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto;
-  grid-template-areas: 'h1 h1 h1' 'img1 img2 img3' 'm1 t1 r1' 'd1 d2 d3' 'h2 h2 h2' 'i1 i2 i3';
+  grid-template-areas: 'h1 h1 h1'
+ 'img1 img2 img3'
+ 'm1 t1 r1'
+ 'd1 d2 d3'
+ 'h2 h2 h2'
+ 'i1 i2 i3';
   justify-items: center;
   align-items: center;
   gap: 10px; }
@@ -280,7 +285,7 @@ footer {
   margin: 0;
   box-sizing: border-box; }
 
-body {
+#body__Registro {
   display: flex;
   align-items: center;
   justify-content: center;

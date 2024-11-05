@@ -5,3 +5,96 @@
 @import "productos";
 @import "registro";
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: repeating-linear-gradient(
+        45deg,
+        rgb(100, 100, 100),
+        rgb(100, 100, 100) 25%,
+        rgb(115, 115, 115) 25%,
+        rgb(115, 115, 115) 50%
+    );
+}
+
+.cont-logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    height: 450px;
+}
+
+#titulo-empresa{
+    position: absolute;
+    width: 367px;
+    align-items: center;
+    font-size: 50px;
+    letter-spacing: 1px;
+    font-family:serif;
+    color: white;
+}
+
+.cont-login{
+    position: absolute;
+    justify-content: end;
+    display: flex;
+    width: 100%;
+    padding-top: 1%;
+    padding-bottom: 24%;
+}
+
+#login-button-principal{
+    height: 25px;
+    width: 80px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(97, 97, 97);
+    background-color: yellow;
+    border-radius: 20px;
+}
+
+#header-nav{
+    margin: 0;
+    padding: 0;
+}
+
+#que-somos{
+    margin: 0;
+    padding: 0;
+    height: 600px;
+    justify-content: center;
+    h2{
+        font-size: 70px;
+        font-family: monospace;
+        text-align: center;
+        padding-top: 5%;
+        color: white;
+        padding-top: 10%;
+    }
+    p{
+        color: white;
+        text-align: center;
+        font-family: monospace;
+        font-size: 20px;
+        width: 70%;
+        padding-top: 5%;
+    }
+    img{
+        filter: brightness(50%);
+        height: 800px;
+    }
+}
+
+#foto-fondo{
+    position: absolute;
+    z-index: -1;
+}

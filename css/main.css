@@ -468,3 +468,78 @@ footer {
   color: #d5dbdd;
   border: 2px solid #3498db;
   background: linear-gradient(#34495e, #2c3e50); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: repeating-linear-gradient(45deg, #646464, #646464 25%, #737373 25%, #737373 50%); }
+
+.cont-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#logo {
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  height: 450px; }
+
+#titulo-empresa {
+  position: absolute;
+  width: 367px;
+  align-items: center;
+  font-size: 50px;
+  letter-spacing: 1px;
+  font-family: serif;
+  color: white; }
+
+.cont-login {
+  position: absolute;
+  justify-content: end;
+  display: flex;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 24%; }
+
+#login-button-principal {
+  height: 25px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  color: #616161;
+  background-color: yellow;
+  border-radius: 20px; }
+
+#header-nav {
+  margin: 0;
+  padding: 0; }
+
+#que-somos {
+  margin: 0;
+  padding: 0;
+  height: 600px;
+  justify-content: center; }
+  #que-somos h2 {
+    font-size: 70px;
+    font-family: monospace;
+    text-align: center;
+    padding-top: 5%;
+    color: white;
+    padding-top: 10%; }
+  #que-somos p {
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    width: 70%;
+    padding-top: 5%; }
+  #que-somos img {
+    filter: brightness(50%);
+    height: 800px; }
+
+#foto-fondo {
+  position: absolute;
+  z-index: -1; }

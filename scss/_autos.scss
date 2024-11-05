@@ -1,16 +1,26 @@
-@mixin padding($top, $bottom, $left, $right){
-    padding: $top, $right, $bottom, $left;
+@mixin padding($top, $right, $bottom, $left){
+    padding: $top $right $bottom $left;
 }
 
 $areasGrid:(
-    honda: honda,
-    audi: audi,
-    chevr: chevr,
-    rena: rena,
-    ford: ford,
-    fiat: fiat,
-    niss: niss,
+    1: honda,
+    2: audi,
+    3: chevr,
+    4: rena,
+    5: ford,
+    6: fiat,
+    7: niss,
 );
+
+$areasHonda:(
+    1: honda1,
+    2: honda2,
+    3: honda3,
+);
+
+.noSeVe{
+    display: none;
+}
 
 #tieAut__Main{
     @include padding(0%, 5%, 0%, 5%);
@@ -27,28 +37,69 @@ $areasGrid:(
     'fiat'
     'nissan';
 
-    grid-column-gap: 20px;
     grid-row-gap: 20px;
 }
 
 #honda, #audi, #chevrolet, #renault, #ford, #fiat, #nissan{
     display: grid;
 
-    grid-template-rows: repeat(4, 1fr) 2fr;
-    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 8fr;
+    grid-template-columns: repeat(3, 1fr);
+
+    grid-column-gap: 20px;
 }
 
 /*------HONDA------*/
 
 #honda{
-    grid-area: honda;
+    grid-area: map-get($areasGrid, 1);
+    
+    grid-template-areas:
+    'titHonda titHonda titHonda'
+    'honda1 honda2 honda3';
+    
+    @each $num, $area in $areasHonda{
+        #honda#{$num}{
+            grid-area: $area;
+            &:hover{
+                #hondaDatos#{$num}{
+                    display: grid;    
+                    grid-template-rows: repeat(4, 1fr) 2fr;
+                    grid-template-areas: 
+                    'hondaModelo#{$num}'
+                    'hondaPrecio#{$num}'
+                    'hondaToTerr#{$num}'
+                    'hondaEnergia#{$num}'
+                    'hondaDesc#{$num}';
+                }
+            }
+        }
+    }
+    
+    h2{
+        margin: 0%;
+        padding: 0%;
+        grid-area: titHonda;
+        text-align: center;
+    }
 
-    grid-template-areas: 
-    'hondaImg hondaModelo'
-    'hondaImg hondaPrecio'
-    'hondaImg hondaToTerr'
-    'hondaImg hondaEnergia'
-    'hondaDesc hondaDesc';
+    
+
+    grid-column-gap: 20px;
+}
+
+#hondaModelo1{
+    grid-area: hondaModelo1;
+}
+
+#hondaImg1, #hondaImg2, #hondaImg3{
+    height: 100%;
+    position: absolute;
+}
+
+#hondaDatos1, #hondaDatos2, #hondaDatos3{
+    display: none;
+    position: absolute;
 }
 
 /*------AUDI------*/

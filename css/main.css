@@ -601,5 +601,8 @@ footer {
   display: flex;
   justify-content: center;
   text-decoration: none;
-  align-items: center;
-  color: white; }
+  color: white;
+  margin-top: 20px; }
+
+#link :hover {
+  color: #2980b9; }

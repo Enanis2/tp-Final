@@ -665,7 +665,7 @@ footer {
   margin: 0;
   padding: 0; }
 
-body {
+#bodymain {
   background: repeating-linear-gradient(45deg, #646464, #646464 25%, #737373 25%, #737373 50%); }
 
 .cont-logo {
@@ -673,7 +673,7 @@ body {
   justify-content: center;
   align-items: center; }
 
-#logo {
+#logomain {
   margin: 0;
   padding: 0;
   width: 30%;

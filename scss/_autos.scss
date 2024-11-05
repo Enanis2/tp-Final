@@ -63,6 +63,8 @@ $areasHonda:(
             &:hover{
                 #hondaDatos#{$num}{
                     display: grid;    
+                    height: 100%;
+
                     grid-template-rows: repeat(4, 1fr) 2fr;
                     grid-template-areas: 
                     'hondaModelo#{$num}'
@@ -101,7 +103,7 @@ $areasHonda:(
 
 #hondaDatos1, #hondaDatos2, #hondaDatos3{
     display: none;
-    position: absolute;
+    text-align: center;
 }
 
 /*------AUDI------*/

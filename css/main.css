@@ -195,18 +195,21 @@ footer {
     grid-area: honda1; }
     #honda #honda1:hover #hondaDatos1 {
       display: grid;
+      height: 100%;
       grid-template-rows: repeat(4, 1fr) 2fr;
       grid-template-areas: "hondaModelo1" "hondaPrecio1" "hondaToTerr1" "hondaEnergia1" "hondaDesc1"; }
   #honda #honda2 {
     grid-area: honda2; }
     #honda #honda2:hover #hondaDatos2 {
       display: grid;
+      height: 100%;
       grid-template-rows: repeat(4, 1fr) 2fr;
       grid-template-areas: "hondaModelo2" "hondaPrecio2" "hondaToTerr2" "hondaEnergia2" "hondaDesc2"; }
   #honda #honda3 {
     grid-area: honda3; }
     #honda #honda3:hover #hondaDatos3 {
       display: grid;
+      height: 100%;
       grid-template-rows: repeat(4, 1fr) 2fr;
       grid-template-areas: "hondaModelo3" "hondaPrecio3" "hondaToTerr3" "hondaEnergia3" "hondaDesc3"; }
   #honda h2 {
@@ -225,7 +228,7 @@ footer {
 
 #hondaDatos1, #hondaDatos2, #hondaDatos3 {
   display: none;
-  position: absolute; }
+  text-align: center; }
 
 /*------AUDI------*/
 #audi {

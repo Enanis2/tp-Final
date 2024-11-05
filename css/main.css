@@ -176,7 +176,6 @@ footer {
 #tieAut__Main {
   padding: 0% 5% 0% 5%;
   display: grid;
-  height: 1000px;
   grid-template-rows: repeat(7, 1fr);
   grid-template-areas: 'honda' 'audi' 'chevrolet' 'renault' 'ford' 'fiat' 'nissan';
   grid-row-gap: 20px; }
@@ -215,13 +214,14 @@ footer {
     padding: 0%;
     grid-area: titHonda;
     text-align: center; }
+  #honda img {
+    width: 100%; }
 
 #hondaModelo1 {
   grid-area: hondaModelo1; }
 
 #hondaImg1, #hondaImg2, #hondaImg3 {
-  height: 100%;
-  position: absolute; }
+  height: 0; }
 
 #hondaDatos1, #hondaDatos2, #hondaDatos3 {
   display: none;

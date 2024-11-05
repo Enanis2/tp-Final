@@ -182,7 +182,7 @@ footer {
 
 #honda, #audi, #chevrolet, #renault, #ford, #fiat, #nissan {
   display: grid;
-  grid-template-rows: 1fr 8fr;
+  grid-template-rows: 1fr 7.7fr;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px; }
 
@@ -195,23 +195,29 @@ footer {
     grid-area: honda1; }
     #honda #honda1:hover #hondaDatos1 {
       display: grid;
-      height: 100%;
       grid-template-rows: repeat(4, 1fr) 2fr;
       grid-template-areas: "hondaModelo1" "hondaPrecio1" "hondaToTerr1" "hondaEnergia1" "hondaDesc1"; }
+      #honda #honda1:hover #hondaDatos1 div {
+        display: flex;
+        justify-content: center; }
   #honda #honda2 {
     grid-area: honda2; }
     #honda #honda2:hover #hondaDatos2 {
       display: grid;
-      height: 100%;
       grid-template-rows: repeat(4, 1fr) 2fr;
       grid-template-areas: "hondaModelo2" "hondaPrecio2" "hondaToTerr2" "hondaEnergia2" "hondaDesc2"; }
+      #honda #honda2:hover #hondaDatos2 div {
+        display: flex;
+        justify-content: center; }
   #honda #honda3 {
     grid-area: honda3; }
     #honda #honda3:hover #hondaDatos3 {
       display: grid;
-      height: 100%;
       grid-template-rows: repeat(4, 1fr) 2fr;
       grid-template-areas: "hondaModelo3" "hondaPrecio3" "hondaToTerr3" "hondaEnergia3" "hondaDesc3"; }
+      #honda #honda3:hover #hondaDatos3 div {
+        display: flex;
+        justify-content: center; }
   #honda h2 {
     margin: 0%;
     padding: 0%;
@@ -223,12 +229,34 @@ footer {
 #hondaModelo1 {
   grid-area: hondaModelo1; }
 
+#hondaPrecio1 {
+  grid-area: hondaPrecio1; }
+
+#hondaToTerr1 {
+  grid-area: hondaToTerr1; }
+
+#hondaEnergia1 {
+  grid-area: hondaEnergia1; }
+
+#hondaDesc1 {
+  grid-area: hondaDesc1; }
+
 #hondaImg1, #hondaImg2, #hondaImg3 {
-  height: 0; }
+  height: 0px; }
 
 #hondaDatos1, #hondaDatos2, #hondaDatos3 {
   display: none;
-  text-align: center; }
+  text-align: center;
+  height: 100%;
+  color: white; }
+  #hondaDatos1 h4, #hondaDatos2 h4, #hondaDatos3 h4 {
+    font-size: 40px;
+    padding: 0%;
+    margin: 0%; }
+  #hondaDatos1 p, #hondaDatos2 p, #hondaDatos3 p {
+    margin: 0%;
+    padding: 0%;
+    font-size: 20px; }
 
 /*------AUDI------*/
 #audi {

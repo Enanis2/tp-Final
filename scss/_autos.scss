@@ -42,7 +42,7 @@ $areasHonda:(
 #honda, #audi, #chevrolet, #renault, #ford, #fiat, #nissan{
     display: grid;
 
-    grid-template-rows: 1fr 8fr;
+    grid-template-rows: 1fr 7.7fr;
     grid-template-columns: repeat(3, 1fr);
 
     grid-column-gap: 20px;
@@ -61,10 +61,10 @@ $areasHonda:(
         #honda#{$num}{
             grid-area: $area;
             &:hover{
-                #hondaDatos#{$num}{
-                    display: grid;    
-                    height: 100%;
 
+                #hondaDatos#{$num}{
+                    display: grid;
+                    
                     grid-template-rows: repeat(4, 1fr) 2fr;
                     grid-template-areas: 
                     'hondaModelo#{$num}'
@@ -72,6 +72,12 @@ $areasHonda:(
                     'hondaToTerr#{$num}'
                     'hondaEnergia#{$num}'
                     'hondaDesc#{$num}';
+                    
+                    div{
+                        display: flex;
+                        justify-content: center;
+                        
+                    }
                 }
             }
         }
@@ -96,14 +102,39 @@ $areasHonda:(
 #hondaModelo1{
     grid-area: hondaModelo1;
 }
+#hondaPrecio1{
+    grid-area: hondaPrecio1;
+}
+#hondaToTerr1{
+    grid-area: hondaToTerr1;
+}
+#hondaEnergia1{
+    grid-area: hondaEnergia1;
+}
+#hondaDesc1{
+    grid-area: hondaDesc1;
+}
+
 
 #hondaImg1, #hondaImg2, #hondaImg3{
-    height: 0;
+    height: 0px;
 }
 
 #hondaDatos1, #hondaDatos2, #hondaDatos3{
     display: none;
     text-align: center;
+    height: 100%;
+    color: white;
+    h4{
+        font-size: 40px;
+        padding: 0%;
+        margin: 0%;
+    }
+    p{
+        margin: 0%;
+        padding: 0%;
+        font-size: 20px;
+    }
 }
 
 /*------AUDI------*/

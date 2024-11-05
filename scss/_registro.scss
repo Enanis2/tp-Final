@@ -13,7 +13,7 @@ $color-blanco: #fff;
     justify-content: center;
     height: 100vh;
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(27deg, #34495e 50%, #2c3e50 50%);
+    background: linear-gradient(27deg, #d49090 50%, #b17272, #b61111a1 50%, #aa1b1b);
 
 }
 
@@ -23,7 +23,8 @@ $color-blanco: #fff;
     border-radius: 10px;
     border-top-left-radius: 50px;
     border-bottom-right-radius: 50px;
-    border: solid 1px #2980b9;
+    border: solid 2px #9b0000;
+    background-color: #00000023;
     margin: 10px;
     
 }
@@ -51,7 +52,6 @@ $color-blanco: #fff;
     color: $color-blanco;
     border: 1px solid $color-blanco;
     border-radius: 2px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: transparent;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -70,8 +70,8 @@ $color-blanco: #fff;
 
 .form-body input:hover{
     transition: .5s;
-    border: 1px solid #2988b9;
-    color: #2988b9;
+    border: 1px solid #9b0000;
+    color: #aa1b1b;
 }
 
 .form-body button{
@@ -86,7 +86,7 @@ $color-blanco: #fff;
     border-radius: 2px;
     cursor: pointer;
     outline: none;
-    border: 1px solid #2980b9;
+    border: 1px solid #9b0000;
     transition: all .5s ease;
 
 
@@ -97,7 +97,8 @@ $color-blanco: #fff;
 
 .form-body button:hover{
     color: #d5dbdd;
-    border: 2px solid #3498db;
-    background: linear-gradient(#34495e,#2c3e50);
+    transform: scale(1.1);
+    border: 3px solid #9b0000;
+    background: linear-gradient(#aa1b1b,#c72c2c);
 
 }

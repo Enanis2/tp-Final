@@ -176,7 +176,6 @@ footer {
 #tieAut__Main {
   padding: 0% 5% 0% 5%;
   display: grid;
-  height: 1000px;
   grid-template-rows: repeat(7, 1fr);
   grid-template-areas: 'honda' 'audi' 'chevrolet' 'renault' 'ford' 'fiat' 'nissan';
   grid-row-gap: 20px; }
@@ -215,13 +214,14 @@ footer {
     padding: 0%;
     grid-area: titHonda;
     text-align: center; }
+  #honda img {
+    width: 100%; }
 
 #hondaModelo1 {
   grid-area: hondaModelo1; }
 
 #hondaImg1, #hondaImg2, #hondaImg3 {
-  height: 100%;
-  position: absolute; }
+  height: 0; }
 
 #hondaDatos1, #hondaDatos2, #hondaDatos3 {
   display: none;
@@ -422,6 +422,7 @@ footer {
     width: 100%;
     transform: translate(40%); }
     .prods__info .prods__volver a {
+      overflow-x: hidden;
       box-shadow: 0px 0px 10px black;
       font-size: 25px;
       color: black;
@@ -621,6 +622,9 @@ footer {
 .form-body input[type="password"] {
   margin-top: 20px; }
 
+.form-body input[type="text"] {
+  margin-top: 20px; }
+
 ::placeholder {
   font-size: 1rem;
   color: azure; }
@@ -649,3 +653,85 @@ footer {
   color: #d5dbdd;
   border: 2px solid #3498db;
   background: linear-gradient(#34495e, #2c3e50); }
+
+#link {
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  color: white;
+  margin-top: 20px; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: repeating-linear-gradient(45deg, #646464, #646464 25%, #737373 25%, #737373 50%); }
+
+.cont-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#logo {
+  margin: 0;
+  padding: 0;
+  width: 30%;
+  height: 450px; }
+
+#titulo-empresa {
+  position: absolute;
+  width: 367px;
+  align-items: center;
+  font-size: 50px;
+  letter-spacing: 1px;
+  font-family: serif;
+  color: white; }
+
+.cont-login {
+  position: absolute;
+  justify-content: end;
+  display: flex;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 24%; }
+
+#login-button-principal {
+  height: 25px;
+  width: 80px;
+  text-align: center;
+  text-decoration: none;
+  color: #616161;
+  background-color: yellow;
+  border-radius: 20px; }
+
+#header-nav {
+  margin: 0;
+  padding: 0; }
+
+#que-somos {
+  margin: 0;
+  padding: 0;
+  height: 600px;
+  justify-content: center; }
+  #que-somos h2 {
+    font-size: 70px;
+    font-family: monospace;
+    text-align: center;
+    padding-top: 5%;
+    color: white;
+    padding-top: 10%; }
+  #que-somos p {
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    width: 70%;
+    padding-top: 5%; }
+  #que-somos img {
+    filter: brightness(50%);
+    height: 800px; }
+
+#foto-fondo {
+  position: absolute;
+  z-index: -1; }

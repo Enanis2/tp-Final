@@ -101,6 +101,27 @@
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13138.668824434426!2d-58.520191585423824!3d-34.58728635799533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb63103b2398b%3A0xebe9f7a55116c7aa!2sAudi%20Lenken!5e0!3m2!1ses-419!2sar!4v1730758166110!5m2!1ses-419!2sar" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
             </div>
         </div>
+        <div id="imagenc">
+            <img id="formuc" src="../assets/imagenes/servicio_al_cliente/laptop-escritorio-plantas-gafas-bloc-notas_653240-9050.avif" alt=""> 
+        </div>
+        <div id="consulta" class="container mt-5">
+            <h2 class="text-center mb-4">Enviar Consulta Online</h2>
+            <form action="ruta_del_servidor" method="POST">
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico</label>
+                    <input type="email" class="form-control" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary btn-block">Enviar Consulta</button>
+            </form>
+        </div>
     </main>
     
     </main>

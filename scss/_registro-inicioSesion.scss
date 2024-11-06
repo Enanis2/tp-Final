@@ -102,3 +102,15 @@ $color-blanco: #fff;
     background: linear-gradient(#aa1b1b,#c72c2c);
 
 }
+
+#link{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    margin-top: 20px;
+}
+
+.form-body input[type="text"]{
+    margin-top: 20px;
+}

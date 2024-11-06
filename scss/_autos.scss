@@ -11,12 +11,18 @@ $areasGrid:(
     6: fiat,
     7: niss,
 );
-
+/*<Mapas Areas>*/
 $areasHonda:(
     1: honda1,
     2: honda2,
     3: honda3,
 );
+$areasAudi:(
+    1: audi1,
+    2: audi2,
+    3: audi3,
+);
+/*</Mapas Areas>*/
 
 .noSeVe{
     display: none;
@@ -140,15 +146,90 @@ $areasHonda:(
 /*------AUDI------*/
 
 #audi{
-    grid-area: audi;
+    grid-area: map-get($areasGrid, 2);
+    
+    grid-template-areas:
+    'titAudi titAudi titAudi'
+    'audi1 audi2 audi3';
+    
+    @each $num, $area in $areasAudi{
+        #audi#{$num}{
+            grid-area: $area;
+            &:hover{
+                #audiDatos#{$num}{
+                    display: grid;
+                    
+                    grid-template-rows: repeat(4, 1fr) 2fr;
+                    grid-template-areas: 
+                    'audiModelo#{$num}'
+                    'audiPrecio#{$num}'
+                    'audiToTerr#{$num}'
+                    'audiEnergia#{$num}'
+                    'audiDesc#{$num}';  
 
-    grid-template-areas: 
-    'audiImg audiModelo'
-    'audiImg audiPrecio'
-    'audiImg audiToTerr'
-    'audiImg audiEnergia'
-    'audiDesc audiDesc';
+                    div{
+                        display: flex;
+                        justify-content: center;     
+                    }
+                }
+            }
+        }
+    }
+    
+    h2{
+        margin: 0%;
+        padding: 0%;
+        grid-area: titAudi;
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    
+
+    grid-column-gap: 20px;
 }
+
+#audiModelo1{
+    grid-area: audiModelo1;
+}
+#audiPrecio1{
+    grid-area: audiPrecio1;
+}
+#audiToTerr1{
+    grid-area: audiToTerr1;
+}
+#audiEnergia1{
+    grid-area: audiEnergia1;
+}
+#audiDesc1{
+    grid-area: audiDesc1;
+}
+
+
+#audiImg1, #audiImg2, #audiImg3{
+    height: 0px;
+}
+
+#audiDatos1, #audiDatos2, #audiDatos3{
+    display: none;
+    text-align: center;
+    height: 100%;
+    color: white;
+    h4{
+        font-size: 40px;
+        padding: 0%;
+        margin: 0%;
+    }
+    p{
+        margin: 0%;
+        padding: 0%;
+        font-size: 20px;
+    }
+}
+
 
 /*------CHEVROLET------*/
 

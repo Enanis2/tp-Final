@@ -170,6 +170,8 @@ footer {
   width: 80px;
   height: 80px; }
 
+/*<Mapas Areas>*/
+/*</Mapas Areas>*/
 .noSeVe {
   display: none; }
 
@@ -261,7 +263,74 @@ footer {
 /*------AUDI------*/
 #audi {
   grid-area: audi;
-  grid-template-areas: 'audiImg audiModelo' 'audiImg audiPrecio' 'audiImg audiToTerr' 'audiImg audiEnergia' 'audiDesc audiDesc'; }
+  grid-template-areas: 'titAudi titAudi titAudi' 'audi1 audi2 audi3';
+  grid-column-gap: 20px; }
+  #audi #audi1 {
+    grid-area: audi1; }
+    #audi #audi1:hover #audiDatos1 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "audiModelo1" "audiPrecio1" "audiToTerr1" "audiEnergia1" "audiDesc1"; }
+      #audi #audi1:hover #audiDatos1 div {
+        display: flex;
+        justify-content: center; }
+  #audi #audi2 {
+    grid-area: audi2; }
+    #audi #audi2:hover #audiDatos2 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "audiModelo2" "audiPrecio2" "audiToTerr2" "audiEnergia2" "audiDesc2"; }
+      #audi #audi2:hover #audiDatos2 div {
+        display: flex;
+        justify-content: center; }
+  #audi #audi3 {
+    grid-area: audi3; }
+    #audi #audi3:hover #audiDatos3 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "audiModelo3" "audiPrecio3" "audiToTerr3" "audiEnergia3" "audiDesc3"; }
+      #audi #audi3:hover #audiDatos3 div {
+        display: flex;
+        justify-content: center; }
+  #audi h2 {
+    margin: 0%;
+    padding: 0%;
+    grid-area: titAudi;
+    text-align: center; }
+  #audi img {
+    width: 100%; }
+
+#audiModelo1 {
+  grid-area: audiModelo1; }
+
+#audiPrecio1 {
+  grid-area: audiPrecio1; }
+
+#audiToTerr1 {
+  grid-area: audiToTerr1; }
+
+#audiEnergia1 {
+  grid-area: audiEnergia1; }
+
+#audiDesc1 {
+  grid-area: audiDesc1; }
+
+#audiImg1, #audiImg2, #audiImg3 {
+  height: 0px; }
+
+#audiDatos1, #audiDatos2, #audiDatos3 {
+  display: none;
+  text-align: center;
+  height: 100%;
+  color: white; }
+  #audiDatos1 h4, #audiDatos2 h4, #audiDatos3 h4 {
+    font-size: 40px;
+    padding: 0%;
+    margin: 0%; }
+  #audiDatos1 p, #audiDatos2 p, #audiDatos3 p {
+    margin: 0%;
+    padding: 0%;
+    font-size: 20px; }
 
 /*------CHEVROLET------*/
 #chevrolet {

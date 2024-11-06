@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicio al cliente</title>
-    <link rel="icon" href="../assets/imagenes/logo/logo.png">
+    <title>Venda su auto</title>
 </head>
-<body id="BodyCliente">
+<body>
     <header>
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
@@ -51,93 +50,56 @@
             </div>
         </nav>
     </header>
-    <main id="mainC">
-        <div id="contenedorcliente1">
-            <div class="h1C">
-                <h1 id="h1_1c">Servicio al cliente</h1>
-            </div>
-            <div class="h6C">
-                <h6>¿Necesitas Ayuda?</h6>
-            </div>
-            <div class="h6C">
-                <h6>¡Estamos para servirte!</h6>
-            </div>
+
+    <main id="mainVA">
+        <div id="contenedorh1VA">
+            <h1>Venda su auto</h1>
         </div>
-    
-        <div id="img1c">
-            <img class="imgc" src="../assets/imagenes/servicio_al_cliente/gmail-removebg-preview.png" alt="">
-        </div>
-        <div id="p1c">
-            <h2>CORREO ELECTRONICO</h2>
-            <p class="pc">Contacta a este Email para respuesta inmediata: Uzal.Alan@gmail.com</p>
-        </div>
-        <div id="img2c">
-            <img class="imgc" src="../assets/imagenes/servicio_al_cliente/pngtree-calling-telephone-glyph-icon-vector-png-image_1885956-removebg-preview.png" alt="">
-        </div>
-        <div id="p2c">
-            <h2>TELEFONO</h2>
-            <p class="pc">Puedes contactar a nuestro experimentado equipo con este <br> numero: 11 6103-3398</p>
-        </div>
-        <div id="img3c">
-            <img class="imgc" src="../assets/imagenes/servicio_al_cliente/black-and-white-social-media-icons-set-logo-illustrator-free-vector-removebg-preview.png" alt="">
-        </div>
-        <div id="p3c">
-            <h2>REDES SOCIALES</h2>
-            <p class="pc">Tambien puedes contactarnos mediante nuestras distintas sociales, <br> como: <a href="https://www.instagram.com">Instagram</a>, <a href="https://x.com/home">X</a> y <a href="https://www.facebook.com/?locale=es_LA">Facebook</a></p>
-        </div>
-        <div id="h2c">
-            <h2 id="h2_1c">Dudas Generales</h2>
-        </div>
-        <div id="if1c">
-            <h3>¿Con que marcas trabajamos?</h3>
-            <p class="pc">Trabajamos con: Chevrolet, Ford, Fiat, Honda, Audi, Reno y Nissan.</p>
-        </div>
-        <div id="if2c">
-            <h3>¿Los autos son nuevos o usados?</h3>
-            <p class="pc">La gran mayoria de los autos son nuevos, pero solemos vender algunos refaccionados, tengan tranqulidad que eso lo aclaramos en todos los autos.</p>
-        </div>
-        <div id="if3c">
-            <h3>¿Nuestra ubicacion?</h3>
-            <div id="iframe">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13138.668824434426!2d-58.520191585423824!3d-34.58728635799533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb63103b2398b%3A0xebe9f7a55116c7aa!2sAudi%20Lenken!5e0!3m2!1ses-419!2sar!4v1730758166110!5m2!1ses-419!2sar" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>    
-            </div>
-        </div>
-        <div id="imagenc">
-            <img id="formuc" src="../assets/imagenes/servicio_al_cliente/laptop-escritorio-plantas-gafas-bloc-notas_653240-9050.avif" alt=""> 
-        </div>
-        <div id="consulta" class="container mt-5">
-            <h2 class="text-center mb-4">Enviar Consulta Online</h2>
-            <form action="#" method="POST">
+
+        <div class="form-container">
+            <form action="/submit" method="POST" enctype="multipart/form-data">
                 <div class="form-group">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
                 </div>
+        
                 <div class="form-group">
-                    <label for="email">Correo Electrónico</label>
-                    <input type="email" class="form-control" id="email" name="email" required>
+                    <label for="make">Marca:</label>
+                    <input type="text" id="make" name="make" required>
                 </div>
+        
                 <div class="form-group">
-                    <label for="mensaje">Mensaje</label>
-                    <textarea class="form-control" id="mensaje" name="mensaje" rows="5" required></textarea>
+                    <label for="model">Modelo:</label>
+                    <input type="text" id="model" name="model" required>
                 </div>
-                <button type="submit" class="btn btn-primary btn-block">Enviar Consulta</button>
+        
+                <div class="form-group">
+                    <label for="year">Año:</label>
+                    <input type="number" id="year" name="year" min="1900" max="2100" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="price">Precio:</label>
+                    <input type="number" id="price" name="price" min="0" required>
+                </div>
+        
+                <div class="form-group">
+                    <label for="description">Descripción:</label>
+                    <textarea id="description" name="description" rows="4" required></textarea>
+                </div>
+        
+                <div class="form-group">
+                    <label for="image">Imagen del Auto:</label>
+                    <input type="file" id="image" name="image" accept="image/*" required>
+                </div>
+        
+                <div class="form-group">
+                    <button type="submit">Enviar</button>
+                </div>
             </form>
         </div>
+
     </main>
-    
-    </main>
-    </div>
-    
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -167,6 +129,5 @@
             <p>Copyright &copy;2024; Designed by <span class="designer">Drive and dream</span></p>
         </div>
     </footer>
-    
 </body>
 </html>

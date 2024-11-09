@@ -419,7 +419,59 @@ footer {
 /*------FORD------*/
 #ford {
   grid-area: ford;
-  grid-template-areas: 'fordImg fordModelo' 'fordImg fordPrecio' 'fordImg fordToTerr' 'fordImg fordEnergia' 'fordDesc fordDesc'; }
+  grid-template-areas: 'titFord titFord titFord' 'ford1 ford2 ford3';
+  grid-column-gap: 20px; }
+  #ford #ford1 {
+    grid-area: ford1; }
+    #ford #ford1:hover #fordDatos1 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "fordModelo1" "fordPrecio1" "fordToTerr1" "fordEnergia1" "fordDesc1"; }
+      #ford #ford1:hover #fordDatos1 div {
+        display: flex;
+        justify-content: center; }
+  #ford #ford2 {
+    grid-area: ford2; }
+    #ford #ford2:hover #fordDatos2 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "fordModelo2" "fordPrecio2" "fordToTerr2" "fordEnergia2" "fordDesc2"; }
+      #ford #ford2:hover #fordDatos2 div {
+        display: flex;
+        justify-content: center; }
+  #ford #ford3 {
+    grid-area: ford3; }
+    #ford #ford3:hover #fordDatos3 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "fordModelo3" "fordPrecio3" "fordToTerr3" "fordEnergia3" "fordDesc3"; }
+      #ford #ford3:hover #fordDatos3 div {
+        display: flex;
+        justify-content: center; }
+  #ford h2 {
+    margin: 0%;
+    padding: 0%;
+    grid-area: titFord;
+    text-align: center; }
+  #ford img {
+    width: 100%; }
+
+#fordImg1, #fordImg2, #fordImg3 {
+  height: 0px; }
+
+#fordDatos1, #fordDatos2, #fordDatos3 {
+  display: none;
+  text-align: center;
+  height: 100%;
+  color: black; }
+  #fordDatos1 h4, #fordDatos2 h4, #fordDatos3 h4 {
+    font-size: 40px;
+    padding: 0%;
+    margin: 0%; }
+  #fordDatos1 p, #fordDatos2 p, #fordDatos3 p {
+    margin: 0%;
+    padding: 0%;
+    font-size: 20px; }
 
 /*------FIAT------*/
 #fiat {

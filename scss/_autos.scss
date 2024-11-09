@@ -32,6 +32,11 @@ $areasRena:(
     2: rena2,
     3: rena3,
 );
+$areasFord:(
+    1: ford1,
+    2: ford2,
+    3: ford3,
+);
 /*</Mapas Areas>*/
 
 .noSeVe{
@@ -350,16 +355,73 @@ $areasRena:(
 /*------FORD------*/
 
 #ford{
-    grid-area: ford;
+    grid-area: map-get($areasGrid, 5);
+    
+    grid-template-areas:
+    'titFord titFord titFord'
+    'ford1 ford2 ford3';
+    
+    @each $num, $area in $areasFord{
+        #ford#{$num}{
+            grid-area: $area;
+            &:hover{
+                #fordDatos#{$num}{
+                    display: grid;
+                    
+                    grid-template-rows: repeat(4, 1fr) 2fr;
+                    grid-template-areas: 
+                    'fordModelo#{$num}'
+                    'fordPrecio#{$num}'
+                    'fordToTerr#{$num}'
+                    'fordEnergia#{$num}'
+                    'fordDesc#{$num}';  
 
-    grid-template-areas: 
-    'fordImg fordModelo'
-    'fordImg fordPrecio'
-    'fordImg fordToTerr'
-    'fordImg fordEnergia'
-    'fordDesc fordDesc';
+                    div{
+                        display: flex;
+                        justify-content: center;     
+                    }
+                }
+            }
+        }
+    }
+    
+    h2{
+        margin: 0%;
+        padding: 0%;
+        grid-area: titFord;
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    
+
+    grid-column-gap: 20px;
 }
 
+#fordImg1, #fordImg2, #fordImg3{
+    height: 0px;
+}
+
+#fordDatos1, #fordDatos2, #fordDatos3{
+    display: none;
+    text-align: center;
+    height: 100%;
+    color: black;
+    h4{
+        font-size: 40px;
+        padding: 0%;
+        margin: 0%;
+    }
+    p{
+        margin: 0%;
+        padding: 0%;
+        font-size: 20px;
+    }
+}
+    
 /*------FIAT------*/
 
 #fiat{

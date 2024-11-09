@@ -79,6 +79,27 @@ $areasNiss:(
     grid-column-gap: 20px;
 }
 
+#hondaImg1, #hondaImg2, #hondaImg3, #audiImg1, #audiImg2, #audiImg3, #chevrImg1, #chevrImg2, #chevrImg3, #renaImg1, #renaImg2, #renaImg3, #fordImg1, #fordImg2, #fordImg3, #fiatImg1, #fiatImg2, #fiatImg3, #nissImg1, #nissImg2, #nissImg3{
+    height: 0px;
+}
+
+#hondaDatos1, #hondaDatos2, #hondaDatos3, #audiDatos1, #audiDatos2, #audiDatos3, #chevrDatos1, #chevrDatos2, #chevrDatos3, #renaDatos1, #renaDatos2, #renaDatos3, #fordDatos1, #fordDatos2, #fordDatos3, #fiatDatos1, #fiatDatos2, #fiatDatos3, #nissDatos1, #nissDatos2, #nissDatos3{
+    display: none;
+    text-align: center;
+    height: 100%;
+    color: black;
+    h4{
+        font-size: 40px;
+        padding: 0%;
+        margin: 0%;
+    }
+    p{
+        margin: 0%;
+        padding: 0%;
+        font-size: 20px;
+    }
+}
+
 /*------HONDA------*/
 
 #honda{
@@ -130,26 +151,6 @@ $areasNiss:(
     grid-column-gap: 20px;
 }
 
-#hondaImg1, #hondaImg2, #hondaImg3{
-    height: 0px;
-}
-
-#hondaDatos1, #hondaDatos2, #hondaDatos3{
-    display: none;
-    text-align: center;
-    height: 100%;
-    color: white;
-    h4{
-        font-size: 40px;
-        padding: 0%;
-        margin: 0%;
-    }
-    p{
-        margin: 0%;
-        padding: 0%;
-        font-size: 20px;
-    }
-}
 
 /*------AUDI------*/
 
@@ -200,28 +201,6 @@ $areasNiss:(
     grid-column-gap: 20px;
 }
 
-#audiImg1, #audiImg2, #audiImg3{
-    height: 0px;
-}
-
-#audiDatos1, #audiDatos2, #audiDatos3{
-    display: none;
-    text-align: center;
-    height: 100%;
-    color: white;
-    h4{
-        font-size: 40px;
-        padding: 0%;
-        margin: 0%;
-    }
-    p{
-        margin: 0%;
-        padding: 0%;
-        font-size: 20px;
-    }
-}
-
-
 /*------CHEVROLET------*/
 
 #chevrolet{
@@ -269,27 +248,6 @@ $areasNiss:(
     
 
     grid-column-gap: 20px;
-}
-
-#chevrImg1, #chevrImg2, #chevrImg3{
-    height: 0px;
-}
-
-#chevrDatos1, #chevrDatos2, #chevrDatos3{
-    display: none;
-    text-align: center;
-    height: 100%;
-    color: black;
-    h4{
-        font-size: 40px;
-        padding: 0%;
-        margin: 0%;
-    }
-    p{
-        margin: 0%;
-        padding: 0%;
-        font-size: 20px;
-    }
 }
 
 /*------RENAULT------*/
@@ -341,27 +299,6 @@ $areasNiss:(
     grid-column-gap: 20px;
 }
 
-#renaImg1, #renaImg2, #renaImg3{
-    height: 0px;
-}
-
-#renaDatos1, #renaDatos2, #renaDatos3{
-    display: none;
-    text-align: center;
-    height: 100%;
-    color: black;
-    h4{
-        font-size: 40px;
-        padding: 0%;
-        margin: 0%;
-    }
-    p{
-        margin: 0%;
-        padding: 0%;
-        font-size: 20px;
-    }
-}
-
 /*------FORD------*/
 
 #ford{
@@ -409,27 +346,6 @@ $areasNiss:(
     
 
     grid-column-gap: 20px;
-}
-
-#fordImg1, #fordImg2, #fordImg3{
-    height: 0px;
-}
-
-#fordDatos1, #fordDatos2, #fordDatos3{
-    display: none;
-    text-align: center;
-    height: 100%;
-    color: black;
-    h4{
-        font-size: 40px;
-        padding: 0%;
-        margin: 0%;
-    }
-    p{
-        margin: 0%;
-        padding: 0%;
-        font-size: 20px;
-    }
 }
 
 /*------FIAT------*/
@@ -481,27 +397,6 @@ $areasNiss:(
     grid-column-gap: 20px;
 }
 
-#fiatImg1, #fiatImg2, #fiatImg3{
-    height: 0px;
-}
-
-#fiatDatos1, #fiatDatos2, #fiatDatos3{
-    display: none;
-    text-align: center;
-    height: 100%;
-    color: black;
-    h4{
-        font-size: 40px;
-        padding: 0%;
-        margin: 0%;
-    }
-    p{
-        margin: 0%;
-        padding: 0%;
-        font-size: 20px;
-    }
-}
-
 /*------NISSAN------*/
 
 #nissan{
@@ -549,25 +444,4 @@ $areasNiss:(
     
 
     grid-column-gap: 20px;
-}
-
-#nissImg1, #nissImg2, #nissImg3{
-    height: 0px;
-}
-
-#nissDatos1, #nissDatos2, #nissDatos3{
-    display: none;
-    text-align: center;
-    height: 100%;
-    color: black;
-    h4{
-        font-size: 40px;
-        padding: 0%;
-        margin: 0%;
-    }
-    p{
-        margin: 0%;
-        padding: 0%;
-        font-size: 20px;
-    }
 }

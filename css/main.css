@@ -476,12 +476,116 @@ footer {
 /*------FIAT------*/
 #fiat {
   grid-area: fiat;
-  grid-template-areas: 'fiatImg fiatModelo' 'fiatImg fiatPrecio' 'fiatImg fiatToTerr' 'fiatImg fiatEnergia' 'fiatDesc fiatDesc'; }
+  grid-template-areas: 'titFiat titFiat titFiat' 'fiat1 fiat2 fiat3';
+  grid-column-gap: 20px; }
+  #fiat #fiat1 {
+    grid-area: fiat1; }
+    #fiat #fiat1:hover #fiatDatos1 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "fiatModelo1" "fiatPrecio1" "fiatToTerr1" "fiatEnergia1" "fiatDesc1"; }
+      #fiat #fiat1:hover #fiatDatos1 div {
+        display: flex;
+        justify-content: center; }
+  #fiat #fiat2 {
+    grid-area: fiat2; }
+    #fiat #fiat2:hover #fiatDatos2 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "fiatModelo2" "fiatPrecio2" "fiatToTerr2" "fiatEnergia2" "fiatDesc2"; }
+      #fiat #fiat2:hover #fiatDatos2 div {
+        display: flex;
+        justify-content: center; }
+  #fiat #fiat3 {
+    grid-area: fiat3; }
+    #fiat #fiat3:hover #fiatDatos3 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "fiatModelo3" "fiatPrecio3" "fiatToTerr3" "fiatEnergia3" "fiatDesc3"; }
+      #fiat #fiat3:hover #fiatDatos3 div {
+        display: flex;
+        justify-content: center; }
+  #fiat h2 {
+    margin: 0%;
+    padding: 0%;
+    grid-area: titFiat;
+    text-align: center; }
+  #fiat img {
+    width: 100%; }
+
+#fiatImg1, #fiatImg2, #fiatImg3 {
+  height: 0px; }
+
+#fiatDatos1, #fiatDatos2, #fiatDatos3 {
+  display: none;
+  text-align: center;
+  height: 100%;
+  color: black; }
+  #fiatDatos1 h4, #fiatDatos2 h4, #fiatDatos3 h4 {
+    font-size: 40px;
+    padding: 0%;
+    margin: 0%; }
+  #fiatDatos1 p, #fiatDatos2 p, #fiatDatos3 p {
+    margin: 0%;
+    padding: 0%;
+    font-size: 20px; }
 
 /*------NISSAN------*/
-#nissan {
-  grid-area: nissan;
-  grid-template-areas: 'nissImg nissModelo' 'nissImg nissPrecio' 'nissImg nissToTerr' 'nissImg nissEnergia' 'nissDesc nissDesc'; }
+#fiat {
+  grid-area: fiat;
+  grid-template-areas: 'titFiat titFiat titFiat' 'fiat1 fiat2 fiat3';
+  grid-column-gap: 20px; }
+  #fiat #fiat1 {
+    grid-area: fiat1; }
+    #fiat #fiat1:hover #fiatDatos1 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "fiatModelo1" "fiatPrecio1" "fiatToTerr1" "fiatEnergia1" "fiatDesc1"; }
+      #fiat #fiat1:hover #fiatDatos1 div {
+        display: flex;
+        justify-content: center; }
+  #fiat #fiat2 {
+    grid-area: fiat2; }
+    #fiat #fiat2:hover #fiatDatos2 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "fiatModelo2" "fiatPrecio2" "fiatToTerr2" "fiatEnergia2" "fiatDesc2"; }
+      #fiat #fiat2:hover #fiatDatos2 div {
+        display: flex;
+        justify-content: center; }
+  #fiat #fiat3 {
+    grid-area: fiat3; }
+    #fiat #fiat3:hover #fiatDatos3 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "fiatModelo3" "fiatPrecio3" "fiatToTerr3" "fiatEnergia3" "fiatDesc3"; }
+      #fiat #fiat3:hover #fiatDatos3 div {
+        display: flex;
+        justify-content: center; }
+  #fiat h2 {
+    margin: 0%;
+    padding: 0%;
+    grid-area: titFiat;
+    text-align: center; }
+  #fiat img {
+    width: 100%; }
+
+#fiatImg1, #fiatImg2, #fiatImg3 {
+  height: 0px; }
+
+#fiatDatos1, #fiatDatos2, #fiatDatos3 {
+  display: none;
+  text-align: center;
+  height: 100%;
+  color: black; }
+  #fiatDatos1 h4, #fiatDatos2 h4, #fiatDatos3 h4 {
+    font-size: 40px;
+    padding: 0%;
+    margin: 0%; }
+  #fiatDatos1 p, #fiatDatos2 p, #fiatDatos3 p {
+    margin: 0%;
+    padding: 0%;
+    font-size: 20px; }
 
 #mainC {
   display: grid;

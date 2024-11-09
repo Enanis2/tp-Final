@@ -37,6 +37,11 @@ $areasFord:(
     2: ford2,
     3: ford3,
 );
+$areasFiat:(
+    1: fiat1,
+    2: fiat2,
+    3: fiat3,
+);
 /*</Mapas Areas>*/
 
 .noSeVe{
@@ -421,29 +426,143 @@ $areasFord:(
         font-size: 20px;
     }
 }
-    
+
 /*------FIAT------*/
 
 #fiat{
-    grid-area: fiat;
+    grid-area: map-get($areasGrid, 6);
+    
+    grid-template-areas:
+    'titFiat titFiat titFiat'
+    'fiat1 fiat2 fiat3';
+    
+    @each $num, $area in $areasFiat{
+        #fiat#{$num}{
+            grid-area: $area;
+            &:hover{
+                #fiatDatos#{$num}{
+                    display: grid;
+                    
+                    grid-template-rows: repeat(4, 1fr) 2fr;
+                    grid-template-areas: 
+                    'fiatModelo#{$num}'
+                    'fiatPrecio#{$num}'
+                    'fiatToTerr#{$num}'
+                    'fiatEnergia#{$num}'
+                    'fiatDesc#{$num}';  
 
-    grid-template-areas: 
-    'fiatImg fiatModelo'
-    'fiatImg fiatPrecio'
-    'fiatImg fiatToTerr'
-    'fiatImg fiatEnergia'
-    'fiatDesc fiatDesc';
+                    div{
+                        display: flex;
+                        justify-content: center;     
+                    }
+                }
+            }
+        }
+    }
+    
+    h2{
+        margin: 0%;
+        padding: 0%;
+        grid-area: titFiat;
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    
+
+    grid-column-gap: 20px;
+}
+
+#fiatImg1, #fiatImg2, #fiatImg3{
+    height: 0px;
+}
+
+#fiatDatos1, #fiatDatos2, #fiatDatos3{
+    display: none;
+    text-align: center;
+    height: 100%;
+    color: black;
+    h4{
+        font-size: 40px;
+        padding: 0%;
+        margin: 0%;
+    }
+    p{
+        margin: 0%;
+        padding: 0%;
+        font-size: 20px;
+    }
 }
 
 /*------NISSAN------*/
 
-#nissan{
-    grid-area: nissan;
+#fiat{
+    grid-area: map-get($areasGrid, 6);
+    
+    grid-template-areas:
+    'titFiat titFiat titFiat'
+    'fiat1 fiat2 fiat3';
+    
+    @each $num, $area in $areasFiat{
+        #fiat#{$num}{
+            grid-area: $area;
+            &:hover{
+                #fiatDatos#{$num}{
+                    display: grid;
+                    
+                    grid-template-rows: repeat(4, 1fr) 2fr;
+                    grid-template-areas: 
+                    'fiatModelo#{$num}'
+                    'fiatPrecio#{$num}'
+                    'fiatToTerr#{$num}'
+                    'fiatEnergia#{$num}'
+                    'fiatDesc#{$num}';  
 
-    grid-template-areas: 
-    'nissImg nissModelo'
-    'nissImg nissPrecio'
-    'nissImg nissToTerr'
-    'nissImg nissEnergia'
-    'nissDesc nissDesc';
+                    div{
+                        display: flex;
+                        justify-content: center;     
+                    }
+                }
+            }
+        }
+    }
+    
+    h2{
+        margin: 0%;
+        padding: 0%;
+        grid-area: titFiat;
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    
+
+    grid-column-gap: 20px;
+}
+
+#fiatImg1, #fiatImg2, #fiatImg3{
+    height: 0px;
+}
+
+#fiatDatos1, #fiatDatos2, #fiatDatos3{
+    display: none;
+    text-align: center;
+    height: 100%;
+    color: black;
+    h4{
+        font-size: 40px;
+        padding: 0%;
+        margin: 0%;
+    }
+    p{
+        margin: 0%;
+        padding: 0%;
+        font-size: 20px;
+    }
 }

@@ -228,21 +228,6 @@ footer {
   #honda img {
     width: 100%; }
 
-#hondaModelo1 {
-  grid-area: hondaModelo1; }
-
-#hondaPrecio1 {
-  grid-area: hondaPrecio1; }
-
-#hondaToTerr1 {
-  grid-area: hondaToTerr1; }
-
-#hondaEnergia1 {
-  grid-area: hondaEnergia1; }
-
-#hondaDesc1 {
-  grid-area: hondaDesc1; }
-
 #hondaImg1, #hondaImg2, #hondaImg3 {
   height: 0px; }
 
@@ -300,21 +285,6 @@ footer {
   #audi img {
     width: 100%; }
 
-#audiModelo1 {
-  grid-area: audiModelo1; }
-
-#audiPrecio1 {
-  grid-area: audiPrecio1; }
-
-#audiToTerr1 {
-  grid-area: audiToTerr1; }
-
-#audiEnergia1 {
-  grid-area: audiEnergia1; }
-
-#audiDesc1 {
-  grid-area: audiDesc1; }
-
 #audiImg1, #audiImg2, #audiImg3 {
   height: 0px; }
 
@@ -335,12 +305,116 @@ footer {
 /*------CHEVROLET------*/
 #chevrolet {
   grid-area: chevrolet;
-  grid-template-areas: 'chevrImg chevrModelo' 'chevrImg chevrPrecio' 'chevrImg chevrToTerr' 'chevrImg chevrEnergia' 'chevrDesc chevrDesc'; }
+  grid-template-areas: 'titChevr titChevr titChevr' 'chevr1 chevr2 chevr3';
+  grid-column-gap: 20px; }
+  #chevrolet #chevr1 {
+    grid-area: chevr1; }
+    #chevrolet #chevr1:hover #chevrDatos1 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "chevrModelo1" "chevrPrecio1" "chevrToTerr1" "chevrEnergia1" "chevrDesc1"; }
+      #chevrolet #chevr1:hover #chevrDatos1 div {
+        display: flex;
+        justify-content: center; }
+  #chevrolet #chevr2 {
+    grid-area: chevr2; }
+    #chevrolet #chevr2:hover #chevrDatos2 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "chevrModelo2" "chevrPrecio2" "chevrToTerr2" "chevrEnergia2" "chevrDesc2"; }
+      #chevrolet #chevr2:hover #chevrDatos2 div {
+        display: flex;
+        justify-content: center; }
+  #chevrolet #chevr3 {
+    grid-area: chevr3; }
+    #chevrolet #chevr3:hover #chevrDatos3 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "chevrModelo3" "chevrPrecio3" "chevrToTerr3" "chevrEnergia3" "chevrDesc3"; }
+      #chevrolet #chevr3:hover #chevrDatos3 div {
+        display: flex;
+        justify-content: center; }
+  #chevrolet h2 {
+    margin: 0%;
+    padding: 0%;
+    grid-area: titChevr;
+    text-align: center; }
+  #chevrolet img {
+    width: 100%; }
+
+#chevrImg1, #chevrImg2, #chevrImg3 {
+  height: 0px; }
+
+#chevrDatos1, #chevrDatos2, #chevrDatos3 {
+  display: none;
+  text-align: center;
+  height: 100%;
+  color: black; }
+  #chevrDatos1 h4, #chevrDatos2 h4, #chevrDatos3 h4 {
+    font-size: 40px;
+    padding: 0%;
+    margin: 0%; }
+  #chevrDatos1 p, #chevrDatos2 p, #chevrDatos3 p {
+    margin: 0%;
+    padding: 0%;
+    font-size: 20px; }
 
 /*------RENAULT------*/
 #renault {
   grid-area: renault;
-  grid-template-areas: 'renaImg renaModelo' 'renaImg renaPrecio' 'renaImg renaToTerr' 'renaImg renaEnergia' 'renaDesc renaDesc'; }
+  grid-template-areas: 'titRena titRena titRena' 'rena1 rena2 rena3';
+  grid-column-gap: 20px; }
+  #renault #rena1 {
+    grid-area: rena1; }
+    #renault #rena1:hover #renaDatos1 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "renaModelo1" "renaPrecio1" "renaToTerr1" "renaEnergia1" "renaDesc1"; }
+      #renault #rena1:hover #renaDatos1 div {
+        display: flex;
+        justify-content: center; }
+  #renault #rena2 {
+    grid-area: rena2; }
+    #renault #rena2:hover #renaDatos2 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "renaModelo2" "renaPrecio2" "renaToTerr2" "renaEnergia2" "renaDesc2"; }
+      #renault #rena2:hover #renaDatos2 div {
+        display: flex;
+        justify-content: center; }
+  #renault #rena3 {
+    grid-area: rena3; }
+    #renault #rena3:hover #renaDatos3 {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr) 2fr;
+      grid-template-areas: "renaModelo3" "renaPrecio3" "renaToTerr3" "renaEnergia3" "renaDesc3"; }
+      #renault #rena3:hover #renaDatos3 div {
+        display: flex;
+        justify-content: center; }
+  #renault h2 {
+    margin: 0%;
+    padding: 0%;
+    grid-area: titRena;
+    text-align: center; }
+  #renault img {
+    width: 100%; }
+
+#renaImg1, #renaImg2, #renaImg3 {
+  height: 0px; }
+
+#renaDatos1, #renaDatos2, #renaDatos3 {
+  display: none;
+  text-align: center;
+  height: 100%;
+  color: black; }
+  #renaDatos1 h4, #renaDatos2 h4, #renaDatos3 h4 {
+    font-size: 40px;
+    padding: 0%;
+    margin: 0%; }
+  #renaDatos1 p, #renaDatos2 p, #renaDatos3 p {
+    margin: 0%;
+    padding: 0%;
+    font-size: 20px; }
 
 /*------FORD------*/
 #ford {

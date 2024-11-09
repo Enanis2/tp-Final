@@ -5,11 +5,11 @@
 $areasGrid:(
     1: honda,
     2: audi,
-    3: chevr,
-    4: rena,
+    3: chevrolet,
+    4: renault,
     5: ford,
     6: fiat,
-    7: niss,
+    7: nissan,
 );
 /*<Mapas Areas>*/
 $areasHonda:(
@@ -21,6 +21,16 @@ $areasAudi:(
     1: audi1,
     2: audi2,
     3: audi3,
+);
+$areasChevr:(
+    1: chevr1,
+    2: chevr2,
+    3: chevr3,
+);
+$areasRena:(
+    1: rena1,
+    2: rena2,
+    3: rena3,
 );
 /*</Mapas Areas>*/
 
@@ -105,23 +115,6 @@ $areasAudi:(
     grid-column-gap: 20px;
 }
 
-#hondaModelo1{
-    grid-area: hondaModelo1;
-}
-#hondaPrecio1{
-    grid-area: hondaPrecio1;
-}
-#hondaToTerr1{
-    grid-area: hondaToTerr1;
-}
-#hondaEnergia1{
-    grid-area: hondaEnergia1;
-}
-#hondaDesc1{
-    grid-area: hondaDesc1;
-}
-
-
 #hondaImg1, #hondaImg2, #hondaImg3{
     height: 0px;
 }
@@ -192,23 +185,6 @@ $areasAudi:(
     grid-column-gap: 20px;
 }
 
-#audiModelo1{
-    grid-area: audiModelo1;
-}
-#audiPrecio1{
-    grid-area: audiPrecio1;
-}
-#audiToTerr1{
-    grid-area: audiToTerr1;
-}
-#audiEnergia1{
-    grid-area: audiEnergia1;
-}
-#audiDesc1{
-    grid-area: audiDesc1;
-}
-
-
 #audiImg1, #audiImg2, #audiImg3{
     height: 0px;
 }
@@ -234,27 +210,141 @@ $areasAudi:(
 /*------CHEVROLET------*/
 
 #chevrolet{
-    grid-area: chevrolet;
+    grid-area: map-get($areasGrid, 3);
+    
+    grid-template-areas:
+    'titChevr titChevr titChevr'
+    'chevr1 chevr2 chevr3';
+    
+    @each $num, $area in $areasChevr{
+        #chevr#{$num}{
+            grid-area: $area;
+            &:hover{
+                #chevrDatos#{$num}{
+                    display: grid;
+                    
+                    grid-template-rows: repeat(4, 1fr) 2fr;
+                    grid-template-areas: 
+                    'chevrModelo#{$num}'
+                    'chevrPrecio#{$num}'
+                    'chevrToTerr#{$num}'
+                    'chevrEnergia#{$num}'
+                    'chevrDesc#{$num}';  
 
-    grid-template-areas: 
-    'chevrImg chevrModelo'
-    'chevrImg chevrPrecio'
-    'chevrImg chevrToTerr'
-    'chevrImg chevrEnergia'
-    'chevrDesc chevrDesc';
+                    div{
+                        display: flex;
+                        justify-content: center;     
+                    }
+                }
+            }
+        }
+    }
+    
+    h2{
+        margin: 0%;
+        padding: 0%;
+        grid-area: titChevr;
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    
+
+    grid-column-gap: 20px;
+}
+
+#chevrImg1, #chevrImg2, #chevrImg3{
+    height: 0px;
+}
+
+#chevrDatos1, #chevrDatos2, #chevrDatos3{
+    display: none;
+    text-align: center;
+    height: 100%;
+    color: black;
+    h4{
+        font-size: 40px;
+        padding: 0%;
+        margin: 0%;
+    }
+    p{
+        margin: 0%;
+        padding: 0%;
+        font-size: 20px;
+    }
 }
 
 /*------RENAULT------*/
 
 #renault{
-    grid-area: renault;
+    grid-area: map-get($areasGrid, 4);
+    
+    grid-template-areas:
+    'titRena titRena titRena'
+    'rena1 rena2 rena3';
+    
+    @each $num, $area in $areasRena{
+        #rena#{$num}{
+            grid-area: $area;
+            &:hover{
+                #renaDatos#{$num}{
+                    display: grid;
+                    
+                    grid-template-rows: repeat(4, 1fr) 2fr;
+                    grid-template-areas: 
+                    'renaModelo#{$num}'
+                    'renaPrecio#{$num}'
+                    'renaToTerr#{$num}'
+                    'renaEnergia#{$num}'
+                    'renaDesc#{$num}';  
 
-    grid-template-areas: 
-    'renaImg renaModelo'
-    'renaImg renaPrecio'
-    'renaImg renaToTerr'
-    'renaImg renaEnergia'
-    'renaDesc renaDesc';
+                    div{
+                        display: flex;
+                        justify-content: center;     
+                    }
+                }
+            }
+        }
+    }
+    
+    h2{
+        margin: 0%;
+        padding: 0%;
+        grid-area: titRena;
+        text-align: center;
+    }
+
+    img{
+        width: 100%;
+    }
+
+    
+
+    grid-column-gap: 20px;
+}
+
+#renaImg1, #renaImg2, #renaImg3{
+    height: 0px;
+}
+
+#renaDatos1, #renaDatos2, #renaDatos3{
+    display: none;
+    text-align: center;
+    height: 100%;
+    color: black;
+    h4{
+        font-size: 40px;
+        padding: 0%;
+        margin: 0%;
+    }
+    p{
+        margin: 0%;
+        padding: 0%;
+        font-size: 20px;
+    }
 }
 
 /*------FORD------*/

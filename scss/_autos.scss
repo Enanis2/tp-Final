@@ -42,6 +42,11 @@ $areasFiat:(
     2: fiat2,
     3: fiat3,
 );
+$areasNiss:(
+    1: niss1,
+    2: niss2,
+    3: niss3,
+);
 /*</Mapas Areas>*/
 
 .noSeVe{
@@ -499,27 +504,27 @@ $areasFiat:(
 
 /*------NISSAN------*/
 
-#fiat{
-    grid-area: map-get($areasGrid, 6);
+#nissan{
+    grid-area: map-get($areasGrid, 7);
     
     grid-template-areas:
-    'titFiat titFiat titFiat'
-    'fiat1 fiat2 fiat3';
+    'titNiss titNiss titNiss'
+    'niss1 niss2 niss3';
     
-    @each $num, $area in $areasFiat{
-        #fiat#{$num}{
+    @each $num, $area in $areasNiss{
+        #niss#{$num}{
             grid-area: $area;
             &:hover{
-                #fiatDatos#{$num}{
+                #nissDatos#{$num}{
                     display: grid;
                     
                     grid-template-rows: repeat(4, 1fr) 2fr;
                     grid-template-areas: 
-                    'fiatModelo#{$num}'
-                    'fiatPrecio#{$num}'
-                    'fiatToTerr#{$num}'
-                    'fiatEnergia#{$num}'
-                    'fiatDesc#{$num}';  
+                    'nissModelo#{$num}'
+                    'nissPrecio#{$num}'
+                    'nissToTerr#{$num}'
+                    'nissEnergia#{$num}'
+                    'nissDesc#{$num}';  
 
                     div{
                         display: flex;
@@ -533,7 +538,7 @@ $areasFiat:(
     h2{
         margin: 0%;
         padding: 0%;
-        grid-area: titFiat;
+        grid-area: titNiss;
         text-align: center;
     }
 
@@ -546,11 +551,11 @@ $areasFiat:(
     grid-column-gap: 20px;
 }
 
-#fiatImg1, #fiatImg2, #fiatImg3{
+#nissImg1, #nissImg2, #nissImg3{
     height: 0px;
 }
 
-#fiatDatos1, #fiatDatos2, #fiatDatos3{
+#nissDatos1, #nissDatos2, #nissDatos3{
     display: none;
     text-align: center;
     height: 100%;

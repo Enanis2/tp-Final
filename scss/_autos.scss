@@ -49,11 +49,14 @@ $areasNiss:(
 );
 /*</Mapas Areas>*/
 
-.noSeVe{
+.noSeVe, input[type="radio"]{
     display: none;
 }
 
 #tieAut__Main{
+}
+
+#tieAut__Grid{
     @include padding(0%, 5%, 0%, 5%);
     display: grid;
 
@@ -444,4 +447,25 @@ $areasNiss:(
     
 
     grid-column-gap: 20px;
+}
+
+#marcas{
+    position: sticky;
+    top: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    background-color: rgba(255, 255, 255, 0.582);
+    @include padding(10px, 0, 10px, 0);
+    input{
+        width: 200px;
+        font-size: 20px;
+        background: #e2e2e2;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover{
+            opacity: 0.8;
+        }
+    }
 }

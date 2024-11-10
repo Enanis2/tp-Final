@@ -172,10 +172,10 @@ footer {
 
 /*<Mapas Areas>*/
 /*</Mapas Areas>*/
-.noSeVe {
+.noSeVe, input[type="radio"] {
   display: none; }
 
-#tieAut__Main {
+#tieAut__Grid {
   padding: 0% 5% 0% 5%;
   display: grid;
   grid-template-rows: repeat(7, 1fr);
@@ -484,6 +484,24 @@ footer {
     text-align: center; }
   #nissan img {
     width: 100%; }
+
+#marcas {
+  position: sticky;
+  top: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  background-color: rgba(255, 255, 255, 0.582);
+  padding: 10px 0 10px 0; }
+  #marcas input {
+    width: 200px;
+    font-size: 20px;
+    background: #e2e2e2;
+    border-radius: 5px;
+    cursor: pointer; }
+    #marcas input:hover {
+      opacity: 0.8; }
 
 #mainC {
   display: grid;

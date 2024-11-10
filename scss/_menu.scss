@@ -1,25 +1,25 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 .login-button {
-    background-color: #FFC107; /* Amarillo brillante */
+    background-color: #D32F2F; /* Rojo intenso */
     color: #fff;
     font-size: 14px;
     padding: 8px 20px;
     border-radius: 50px;
     text-decoration: none;
-    transition: 0.3s background-color; /* Corregido el formato de transición */
+    transition: 0.3s background-color;
 }
 
 .login-button:hover {
-    background-color: #FFEB3B; /* Amarillo suave */
+    background-color: #FF6659; /* Rojo suave */
 }
 
 .navbar-toggler {
     border: none;
-    font-size: 1.25rem; /* Corregido el formato de tamaño */
+    font-size: 1.25rem;
 }
 
 .navbar-toggler:focus,
@@ -29,14 +29,14 @@
 }
 
 .nav-link {
-    color: rgb(47, 46, 46); /* Puedes ajustar este color si lo deseas */
+    color: rgb(47, 46, 46);
     font-weight: 500;
     position: relative;
 }
 
 .nav-link:hover,
 .nav-link:active {
-    color: #FFEB3B; /* Azul marino */
+    color: #9b0000; /* Rojo claro */
 }
 
 @media (min-width: 991px) {
@@ -48,9 +48,9 @@
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: #FFC107; /* Puedes ajustar esto si prefieres amarillo */
+        background-color: #9b0000; /* Rojo intenso */
         visibility: hidden;
-        transition: 0.3s ease-in-out; /* Corregido el formato de transición */
+        transition: 0.3s ease-in-out;
     }
 
     .nav-link:hover::before,

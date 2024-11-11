@@ -62,7 +62,7 @@ $areasNiss:(
 #tieAut__Main{
     @include padding(0%, 5%, 10px, 5%);
     img{
-        border: 5px solid map-get($colores, bordeImg);
+        outline: 5px solid map-get($colores, bordeImg);
         border-radius: 20px
     }
 }
@@ -100,7 +100,7 @@ $areasNiss:(
     display: none;
     text-align: center;
     height: 100%;
-    color: black;
+    color: white;
     h4{
         font-size: 40px;
         padding: 0%;
@@ -125,11 +125,12 @@ $areasNiss:(
     @each $num, $area in $areasHonda{
         #honda#{$num}{
             grid-area: $area;
+            transition: all 0.5s;
             &:hover{
-
+                scale: 1.2;
                 #hondaDatos#{$num}{
                     display: grid;
-                    
+
                     grid-template-rows: repeat(4, 1fr) 2fr;
                     grid-template-areas: 
                     'hondaModelo#{$num}'
@@ -138,11 +139,19 @@ $areasNiss:(
                     'hondaEnergia#{$num}'
                     'hondaDesc#{$num}';
                     
+                    outline: 5px solid map-get($colores, bordeImg);
+                    border-radius: 20px;
+
+                    filter: blur(0px);
                     div{
                         display: flex;
                         justify-content: center;
                         
                     }
+                }
+                img{
+                    filter: blur(5px) brightness(.6);
+                    transition: all 0.5s;
                 }
             }
         }
@@ -177,7 +186,10 @@ $areasNiss:(
     @each $num, $area in $areasAudi{
         #audi#{$num}{
             grid-area: $area;
+            transition: all 0.5s;
+
             &:hover{
+                scale: 1.2;
                 #audiDatos#{$num}{
                     display: grid;
                     
@@ -187,12 +199,20 @@ $areasNiss:(
                     'audiPrecio#{$num}'
                     'audiToTerr#{$num}'
                     'audiEnergia#{$num}'
-                    'audiDesc#{$num}';  
+                    'audiDesc#{$num}';
 
+                    outline: 5px solid map-get($colores, bordeImg);
+                    border-radius: 20px;
+
+                    filter: blur(0px);
                     div{
                         display: flex;
                         justify-content: center;     
                     }
+                }
+                img{
+                    filter: blur(5px);
+                    transition: all 0.5s;
                 }
             }
         }
@@ -226,7 +246,10 @@ $areasNiss:(
     @each $num, $area in $areasChevr{
         #chevr#{$num}{
             grid-area: $area;
+            transition: all 0.5s;
+
             &:hover{
+                scale: 1.2;
                 #chevrDatos#{$num}{
                     display: grid;
                     
@@ -236,12 +259,19 @@ $areasNiss:(
                     'chevrPrecio#{$num}'
                     'chevrToTerr#{$num}'
                     'chevrEnergia#{$num}'
-                    'chevrDesc#{$num}';  
+                    'chevrDesc#{$num}';
 
+                    outline: 5px solid map-get($colores, bordeImg);
+                    border-radius: 20px;
+
+                    filter: blur(0px);
                     div{
                         display: flex;
                         justify-content: center;     
                     }
+                }
+                img{
+                    filter: blur(5px);
                 }
             }
         }
@@ -275,7 +305,10 @@ $areasNiss:(
     @each $num, $area in $areasRena{
         #rena#{$num}{
             grid-area: $area;
+            transition: all 0.5s;
+
             &:hover{
+                scale: 1.2;
                 #renaDatos#{$num}{
                     display: grid;
                     
@@ -285,12 +318,19 @@ $areasNiss:(
                     'renaPrecio#{$num}'
                     'renaToTerr#{$num}'
                     'renaEnergia#{$num}'
-                    'renaDesc#{$num}';  
+                    'renaDesc#{$num}';
 
+                    outline: 5px solid map-get($colores, bordeImg);
+                    border-radius: 20px;
+
+                    filter: blur(0px);
                     div{
                         display: flex;
                         justify-content: center;     
                     }
+                }
+                img{
+                    filter: blur(5px);
                 }
             }
         }
@@ -324,7 +364,10 @@ $areasNiss:(
     @each $num, $area in $areasFord{
         #ford#{$num}{
             grid-area: $area;
+            transition: all 0.5s;
+
             &:hover{
+                scale: 1.2;
                 #fordDatos#{$num}{
                     display: grid;
                     
@@ -334,12 +377,20 @@ $areasNiss:(
                     'fordPrecio#{$num}'
                     'fordToTerr#{$num}'
                     'fordEnergia#{$num}'
-                    'fordDesc#{$num}';  
+                    'fordDesc#{$num}';
 
+                    outline: 5px solid map-get($colores, bordeImg);
+                    border-radius: 20px;
+
+                    filter: blur(0px);
                     div{
                         display: flex;
                         justify-content: center;     
                     }
+                }
+                img{
+                    filter: blur(5px);
+                    transition: all 0.5s;
                 }
             }
         }
@@ -373,7 +424,10 @@ $areasNiss:(
     @each $num, $area in $areasFiat{
         #fiat#{$num}{
             grid-area: $area;
+            transition: all 0.5s;
+
             &:hover{
+                scale: 1.2;
                 #fiatDatos#{$num}{
                     display: grid;
                     
@@ -383,12 +437,20 @@ $areasNiss:(
                     'fiatPrecio#{$num}'
                     'fiatToTerr#{$num}'
                     'fiatEnergia#{$num}'
-                    'fiatDesc#{$num}';  
+                    'fiatDesc#{$num}';
 
+                    outline: 5px solid map-get($colores, bordeImg);
+                    border-radius: 20px;
+                    
+                    filter: blur(0px);
                     div{
                         display: flex;
                         justify-content: center;     
                     }
+                }
+                img{
+                    filter: blur(5px);
+                    transition: all 0.5s;
                 }
             }
         }
@@ -422,9 +484,13 @@ $areasNiss:(
     @each $num, $area in $areasNiss{
         #niss#{$num}{
             grid-area: $area;
+            transition: all 0.5s;
+
             &:hover{
+                scale: 1.2;
                 #nissDatos#{$num}{
                     display: grid;
+                    height: 100%;
                     
                     grid-template-rows: repeat(4, 1fr) 2fr;
                     grid-template-areas: 
@@ -432,12 +498,20 @@ $areasNiss:(
                     'nissPrecio#{$num}'
                     'nissToTerr#{$num}'
                     'nissEnergia#{$num}'
-                    'nissDesc#{$num}';  
+                    'nissDesc#{$num}';
 
+                    outline: 5px solid map-get($colores, bordeImg);
+                    border-radius: 20px;
+
+                    filter: blur(0px);
                     div{
                         display: flex;
                         justify-content: center;     
                     }
+                }
+                img{
+                    filter: blur(5px);
+                    transition: all 0.5s;
                 }
             }
         }
@@ -460,6 +534,7 @@ $areasNiss:(
 }
 
 #marcas{
+    filter: blur(0px);
     position: sticky;
     top: 20px;
     width: 100%;
@@ -492,3 +567,10 @@ $areasNiss:(
         rgb(115, 115, 115) 50%
     );
 }
+
+#prueba{
+    width: 200px;
+    filter: brightness(1);
+}
+
+/*TRANSICIONES Y TRANSFORMACIONES*/

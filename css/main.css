@@ -170,13 +170,19 @@ footer {
   width: 80px;
   height: 80px; }
 
+/*---------AUTOS---------*/
 /*<Mapas Areas>*/
 /*</Mapas Areas>*/
 .noSeVe, input[type="radio"] {
   display: none; }
 
+#tieAut__Main {
+  padding: 0% 5% 10px 5%; }
+  #tieAut__Main img {
+    border: 5px solid black;
+    border-radius: 20px; }
+
 #tieAut__Grid {
-  padding: 0% 5% 0% 5%;
   display: grid;
   grid-template-rows: repeat(7, 1fr);
   grid-template-areas: 'honda' 'audi' 'chevrolet' 'renault' 'ford' 'fiat' 'nissan';
@@ -493,7 +499,8 @@ footer {
   justify-content: space-evenly;
   margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.582);
-  padding: 10px 0 10px 0; }
+  padding: 10px 0 10px 0;
+  border-radius: 10px; }
   #marcas input {
     width: 200px;
     font-size: 20px;
@@ -502,6 +509,10 @@ footer {
     cursor: pointer; }
     #marcas input:hover {
       opacity: 0.8; }
+
+/*COLORES*/
+#tieAut__Main {
+  background: repeating-linear-gradient(45deg, #646464, #646464 25%, #737373 25%, #737373 50%); }
 
 #mainC {
   display: grid;

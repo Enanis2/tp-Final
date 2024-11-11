@@ -173,7 +173,7 @@ footer {
   display: none; }
 
 #tieAut__Main {
-  padding: 0% 5% 10px 5%; }
+  padding: 0% 5% 40px 5%; }
   #tieAut__Main img {
     outline: 5px solid black;
     border-radius: 20px; }
@@ -295,7 +295,7 @@ footer {
           display: flex;
           justify-content: center; }
       #audi #audi1:hover img {
-        filter: blur(5px);
+        filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #audi #audi2 {
     grid-area: audi2;
@@ -313,7 +313,7 @@ footer {
           display: flex;
           justify-content: center; }
       #audi #audi2:hover img {
-        filter: blur(5px);
+        filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #audi #audi3 {
     grid-area: audi3;
@@ -331,7 +331,7 @@ footer {
           display: flex;
           justify-content: center; }
       #audi #audi3:hover img {
-        filter: blur(5px);
+        filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #audi h2 {
     margin: 0%;
@@ -362,7 +362,8 @@ footer {
           display: flex;
           justify-content: center; }
       #chevrolet #chevr1:hover img {
-        filter: blur(5px); }
+        filter: blur(5px) brightness(0.6);
+        transition: all 0.5s; }
   #chevrolet #chevr2 {
     grid-area: chevr2;
     transition: all 0.5s; }
@@ -379,7 +380,8 @@ footer {
           display: flex;
           justify-content: center; }
       #chevrolet #chevr2:hover img {
-        filter: blur(5px); }
+        filter: blur(5px) brightness(0.6);
+        transition: all 0.5s; }
   #chevrolet #chevr3 {
     grid-area: chevr3;
     transition: all 0.5s; }
@@ -396,7 +398,8 @@ footer {
           display: flex;
           justify-content: center; }
       #chevrolet #chevr3:hover img {
-        filter: blur(5px); }
+        filter: blur(5px) brightness(0.6);
+        transition: all 0.5s; }
   #chevrolet h2 {
     margin: 0%;
     padding: 0%;
@@ -426,7 +429,8 @@ footer {
           display: flex;
           justify-content: center; }
       #renault #rena1:hover img {
-        filter: blur(5px); }
+        filter: blur(5px) brightness(0.6);
+        transition: all 0.5s; }
   #renault #rena2 {
     grid-area: rena2;
     transition: all 0.5s; }
@@ -443,7 +447,8 @@ footer {
           display: flex;
           justify-content: center; }
       #renault #rena2:hover img {
-        filter: blur(5px); }
+        filter: blur(5px) brightness(0.6);
+        transition: all 0.5s; }
   #renault #rena3 {
     grid-area: rena3;
     transition: all 0.5s; }
@@ -460,7 +465,8 @@ footer {
           display: flex;
           justify-content: center; }
       #renault #rena3:hover img {
-        filter: blur(5px); }
+        filter: blur(5px) brightness(0.6);
+        transition: all 0.5s; }
   #renault h2 {
     margin: 0%;
     padding: 0%;
@@ -490,7 +496,7 @@ footer {
           display: flex;
           justify-content: center; }
       #ford #ford1:hover img {
-        filter: blur(5px);
+        filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #ford #ford2 {
     grid-area: ford2;
@@ -508,7 +514,7 @@ footer {
           display: flex;
           justify-content: center; }
       #ford #ford2:hover img {
-        filter: blur(5px);
+        filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #ford #ford3 {
     grid-area: ford3;
@@ -526,7 +532,7 @@ footer {
           display: flex;
           justify-content: center; }
       #ford #ford3:hover img {
-        filter: blur(5px);
+        filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #ford h2 {
     margin: 0%;
@@ -557,7 +563,7 @@ footer {
           display: flex;
           justify-content: center; }
       #fiat #fiat1:hover img {
-        filter: blur(5px);
+        filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #fiat #fiat2 {
     grid-area: fiat2;
@@ -575,7 +581,7 @@ footer {
           display: flex;
           justify-content: center; }
       #fiat #fiat2:hover img {
-        filter: blur(5px);
+        filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #fiat #fiat3 {
     grid-area: fiat3;
@@ -593,7 +599,7 @@ footer {
           display: flex;
           justify-content: center; }
       #fiat #fiat3:hover img {
-        filter: blur(5px);
+        filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #fiat h2 {
     margin: 0%;
@@ -625,7 +631,7 @@ footer {
           display: flex;
           justify-content: center; }
       #nissan #niss1:hover img {
-        filter: blur(5px);
+        filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #nissan #niss2 {
     grid-area: niss2;
@@ -644,7 +650,7 @@ footer {
           display: flex;
           justify-content: center; }
       #nissan #niss2:hover img {
-        filter: blur(5px);
+        filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #nissan #niss3 {
     grid-area: niss3;
@@ -663,7 +669,7 @@ footer {
           display: flex;
           justify-content: center; }
       #nissan #niss3:hover img {
-        filter: blur(5px);
+        filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #nissan h2 {
     margin: 0%;
@@ -696,10 +702,6 @@ footer {
 /*COLORES*/
 #tieAut__Main {
   background: repeating-linear-gradient(45deg, #646464, #646464 25%, #737373 25%, #737373 50%); }
-
-#prueba {
-  width: 200px;
-  filter: brightness(1); }
 
 /*TRANSICIONES Y TRANSFORMACIONES*/
 #mainC {

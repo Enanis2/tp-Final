@@ -60,7 +60,7 @@ $areasNiss:(
 }
 
 #tieAut__Main{
-    @include padding(0%, 5%, 10px, 5%);
+    @include padding(0%, 5%, 40px, 5%);
     img{
         outline: 5px solid map-get($colores, bordeImg);
         border-radius: 20px
@@ -211,7 +211,7 @@ $areasNiss:(
                     }
                 }
                 img{
-                    filter: blur(5px);
+                    filter: blur(5px) brightness(.6);
                     transition: all 0.5s;
                 }
             }
@@ -271,7 +271,8 @@ $areasNiss:(
                     }
                 }
                 img{
-                    filter: blur(5px);
+                    filter: blur(5px) brightness(.6);
+                    transition: all 0.5s;
                 }
             }
         }
@@ -330,7 +331,8 @@ $areasNiss:(
                     }
                 }
                 img{
-                    filter: blur(5px);
+                    filter: blur(5px) brightness(.6);
+                    transition: all 0.5s;
                 }
             }
         }
@@ -389,7 +391,7 @@ $areasNiss:(
                     }
                 }
                 img{
-                    filter: blur(5px);
+                    filter: blur(5px) brightness(.6);
                     transition: all 0.5s;
                 }
             }
@@ -449,7 +451,7 @@ $areasNiss:(
                     }
                 }
                 img{
-                    filter: blur(5px);
+                    filter: blur(5px) brightness(.6);
                     transition: all 0.5s;
                 }
             }
@@ -510,7 +512,7 @@ $areasNiss:(
                     }
                 }
                 img{
-                    filter: blur(5px);
+                    filter: blur(5px) brightness(.6);
                     transition: all 0.5s;
                 }
             }
@@ -567,10 +569,4 @@ $areasNiss:(
         rgb(115, 115, 115) 50%
     );
 }
-
-#prueba{
-    width: 200px;
-    filter: brightness(1);
-}
-
 /*TRANSICIONES Y TRANSFORMACIONES*/

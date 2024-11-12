@@ -173,7 +173,7 @@ nav {
 /*---------AUTOS---------*/
 /*<Mapas Areas>*/
 /*</Mapas Areas>*/
-.noSeVe, input[type="radio"] {
+.noSeVe {
   display: none; }
 
 #tieAut__Main {
@@ -181,6 +181,8 @@ nav {
   #tieAut__Main img {
     outline: 5px solid black;
     border-radius: 20px; }
+  #tieAut__Main a {
+    text-decoration: none !important; }
 
 #tieAut__Grid {
   display: grid;
@@ -712,10 +714,13 @@ nav {
 #tieAut__Main {
   background: repeating-linear-gradient(45deg, #646464, #646464 25%, #737373 25%, #737373 50%); }
 
-#test {
-  text-decoration: none !important; }
-
 /*TRANSICIONES Y TRANSFORMACIONES*/
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  #tieAut__Main h4 {
+    font-size: 20px; }
+  #tieAut__Main p {
+    font-size: 10px; } }
+
 * {
   margin: 0;
   padding: 0; }

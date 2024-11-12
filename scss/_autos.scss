@@ -57,7 +57,7 @@ $areasNiss:(
 );
 /*</Mapas Areas>*/
 
-.noSeVe, input[type="radio"]{
+.noSeVe{
     display: none;
 }
 
@@ -66,6 +66,9 @@ $areasNiss:(
     img{
         outline: 5px solid map-get($colores, bordeImg);
         border-radius: 20px
+    }
+    a{
+        text-decoration: none !important;
     }
 }
 
@@ -575,8 +578,16 @@ $areasNiss:(
         rgb(115, 115, 115) 50%
     );
 }
-
-#test{
-    text-decoration: none !important;
-}
 /*TRANSICIONES Y TRANSFORMACIONES*/
+
+
+@media screen and (min-width: 1300px) and (max-width: 1400px){
+    #tieAut__Main{
+        h4{
+            font-size: 20px;
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+}

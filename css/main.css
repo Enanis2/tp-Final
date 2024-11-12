@@ -943,6 +943,33 @@ nav {
     font-size: 22px;
     width: 80%; }
 
+.prods__verMas .prods__btnVerMas {
+  height: 40px;
+  background-color: #bb0c0c;
+  box-shadow: 0px 0px 10px black;
+  transition: all .2s; }
+  .prods__verMas .prods__btnVerMas:hover {
+    box-shadow: 0px 0px 10px darkred;
+    filter: brightness(130%); }
+  .prods__verMas .prods__btnVerMas:focus ~ .prods__masInfo {
+    background-color: cyan;
+    display: flex; }
+
+.prods__masInfo {
+  display: none;
+  flex-direction: column; }
+  .prods__masInfo table {
+    width: 500%;
+    height: 100px; }
+    .prods__masInfo table tr {
+      height: 33%; }
+      .prods__masInfo table tr td {
+        width: 33%;
+        font-size: 45px; }
+  .prods__masInfo video {
+    height: 360px;
+    width: 640px; }
+
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .prods__main {
     margin-top: 60px; }

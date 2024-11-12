@@ -111,6 +111,44 @@
     }
 }
 
+.prods__verMas{
+    .prods__btnVerMas{
+        height: 40px;
+        background-color: rgb(187, 12, 12);
+        box-shadow: 0px 0px 10px black;
+        transition: all .2s;
+        &:hover{
+            box-shadow: 0px 0px 10px darkred;
+            filter: brightness(130%);
+        }
+        &:focus ~ .prods__masInfo{
+            background-color: cyan;
+            display: flex;
+        }
+    }
+}
+
+.prods__masInfo{
+    display: none;
+    flex-direction: column;
+    table{
+        width: 500%;
+        height: 100px;
+        tr{
+            height: 33%;
+            td{
+                width: 33%;
+                font-size: 45px;
+            }
+        }
+    }
+    video{
+        height: 360px;
+        width: 640px;
+    }
+
+}
+
 @media screen and (min-width: 320px) and (max-width: 767px){
     .prods__main{
         margin-top: 60px;

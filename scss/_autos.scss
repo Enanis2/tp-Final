@@ -4,6 +4,8 @@
     padding: $top $right $bottom $left;
 }
 
+
+
 $colores:(
     bordeImg: black,
 );
@@ -97,7 +99,7 @@ $areasNiss:(
 }
 
 #hondaDatos1, #hondaDatos2, #hondaDatos3, #audiDatos1, #audiDatos2, #audiDatos3, #chevrDatos1, #chevrDatos2, #chevrDatos3, #renaDatos1, #renaDatos2, #renaDatos3, #fordDatos1, #fordDatos2, #fordDatos3, #fiatDatos1, #fiatDatos2, #fiatDatos3, #nissDatos1, #nissDatos2, #nissDatos3{
-    display: none;
+    display: grid;
     text-align: center;
     height: 100%;
     color: white;
@@ -371,6 +373,7 @@ $areasNiss:(
             &:hover{
                 scale: 1.2;
                 #fordDatos#{$num}{
+                    text-decoration: none;
                     display: grid;
                     
                     grid-template-rows: repeat(4, 1fr) 2fr;
@@ -547,7 +550,7 @@ $areasNiss:(
     @include padding(10px, 0, 10px, 0);
     border-radius: 10px;
     a{
-        width: 14%;
+        width: 13%;
         input{
             width: 100%;
             font-size: 20px;
@@ -571,5 +574,9 @@ $areasNiss:(
         rgb(115, 115, 115) 25%,
         rgb(115, 115, 115) 50%
     );
+}
+
+#test{
+    text-decoration: none !important;
 }
 /*TRANSICIONES Y TRANSFORMACIONES*/

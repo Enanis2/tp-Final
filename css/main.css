@@ -694,14 +694,16 @@ nav {
   background-color: rgba(255, 255, 255, 0.582);
   padding: 10px 0 10px 0;
   border-radius: 10px; }
-  #marcas input {
-    width: 200px;
-    font-size: 20px;
-    background: #e2e2e2;
-    border-radius: 5px;
-    cursor: pointer; }
-    #marcas input:hover {
-      opacity: 0.8; }
+  #marcas a {
+    width: 14%; }
+    #marcas a input {
+      width: 100%;
+      font-size: 20px;
+      background: #e2e2e2;
+      border-radius: 5px;
+      cursor: pointer; }
+      #marcas a input:hover {
+        opacity: 0.8; }
 
 /*COLORES*/
 #tieAut__Main {

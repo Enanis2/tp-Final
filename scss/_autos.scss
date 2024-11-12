@@ -546,14 +546,17 @@ $areasNiss:(
     background-color: rgba(255, 255, 255, 0.582);
     @include padding(10px, 0, 10px, 0);
     border-radius: 10px;
-    input{
-        width: 200px;
-        font-size: 20px;
-        background: #e2e2e2;
-        border-radius: 5px;
-        cursor: pointer;
-        &:hover{
-            opacity: 0.8;
+    a{
+        width: 14%;
+        input{
+            width: 100%;
+            font-size: 20px;
+            background: #e2e2e2;
+            border-radius: 5px;
+            cursor: pointer;
+            &:hover{
+                opacity: 0.8;
+            }
         }
     }
 }

@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+nav{
+    position: sticky;
+    top: 5px;
+}
+
 .login-button {
     background-color: #D32F2F; /* Rojo intenso */
     color: #fff;

@@ -14,10 +14,10 @@
 #bodymain{
     background: repeating-linear-gradient(
         45deg,
-        rgb(100, 100, 100),
-        rgb(100, 100, 100) 25%,
-        rgb(115, 115, 115) 25%,
-        rgb(115, 115, 115) 50%
+        rgb(70, 70, 70),
+        rgb(70, 70, 70) 20%,
+        rgb(80, 80, 80) 20%,
+        rgb(80, 80, 80) 40%
     );
 }
 
@@ -25,13 +25,23 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#logomain{
     margin: 0;
     padding: 0;
-    width: 30%;
-    height: 450px;
+
+    #logomain{
+        margin: 0;
+        padding: 0;
+        width: 30%;
+        height: 450px;
+        transition: all 1s;
+        &:hover{
+            rotate: 30deg;
+        }
+    }
+}
+
+header{
+    box-shadow: 3px 2px 40px;   
 }
 
 #titulo-empresa{
@@ -44,22 +54,37 @@
     color: white;
 }
 
+.offcanvas-body ul li a{
+    color: white;
+    font-size: 20px;
+    &:hover{
+        color: rgb(172, 172, 172);
+        transition: color 0.5s;
+    }
+}
+
+#menu-current-page{
+    color: white;
+
+}
+
+
 .cont-login{
     position: absolute;
     justify-content: end;
     display: flex;
     width: 100%;
-    padding-top: 1%;
-    padding-bottom: 24%;
+    margin-top: 1%;
+    margin-bottom: 24%;
 }
 
 #login-button-principal{
-    height: 25px;
-    width: 80px;
+    width: 60px;
     text-align: center;
     text-decoration: none;
     color: rgb(97, 97, 97);
-    background-color: yellow;
+    background-color: rgb(255, 0, 0);
+    color: white;
     border-radius: 20px;
 }
 
@@ -71,15 +96,14 @@
 #que-somos{
     margin: 0;
     padding: 0;
-    height: 600px;
+    height: 880px;
     justify-content: center;
     h2{
         font-size: 70px;
         font-family: monospace;
         text-align: center;
-        padding-top: 5%;
         color: white;
-        padding-top: 10%;
+        padding-top: 15%;
     }
     p{
         color: white;
@@ -87,15 +111,49 @@
         font-family: monospace;
         font-size: 20px;
         width: 70%;
-        padding-top: 5%;
+        padding-bottom: 20%;
     }
     img{
         filter: brightness(50%);
-        height: 800px;
+        margin: 0;
+        padding: 0;
     }
 }
 
 #foto-fondo{
     position: absolute;
     z-index: -1;
+}
+
+.carousel-inner div img{
+    width: 100%;
+}
+
+#productos-carousel{
+    padding: 2%;
+    background: repeating-linear-gradient(
+        -45deg,
+        rgb(100, 100, 100),
+        rgb(100, 100, 100) 20%,
+        rgb(115, 115, 115) 20%,
+        rgb(115, 115, 115) 40%
+    );
+    img{
+        filter: brightness(80%);
+        transition: filter 0.5s;
+        &:hover{
+            filter: brightness(90%);
+            transition: filter 0.5s;
+        }
+    }
+    button{
+        margin: 2%;
+        display: flex;
+        background-color: none;
+        transition: all 0.5s;
+        &:hover{
+            background-color: rgba(128, 128, 128, 0.452);
+            transition: all 0.5s;
+        }
+    }
 }

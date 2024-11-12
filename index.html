@@ -30,7 +30,7 @@
                     <div class="offcanvas-body">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2 active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link mx-lg-2 active" aria-current="page" id="menu-current-page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link mx-lg-2" href="#">Nosotros</a>
@@ -55,5 +55,23 @@
         <h2>¿Qué somos?</h2>
         <p>Somos una empresa dedicada a la venta y distribución de materiales relacionado a la carrocería, incluyendo automóviles,motores, repuestos, y demás </p>
     </section>
+    <div id="productos-carousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" id="carousel-item-1" data-bs-interval="3000">
+            <img src="assets/imagenes/main_carousel/main-carousel-img1.png" data-interval="1000" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="3000">
+            <img src="assets/imagenes/main_carousel/main-carousel-img2.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#productos-carousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#productos-carousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
 </body>
 </html>

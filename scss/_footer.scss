@@ -101,13 +101,6 @@ footer {
     }
 }
 
-html, body {
-    height: 100%;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-}
-
 /* Hacer que el contenedor principal ocupe el espacio restante */
 .container-fluid {
     flex: 1;

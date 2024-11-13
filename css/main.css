@@ -1,8 +1,4 @@
 @charset "UTF-8";
-* {
-  margin: 0;
-  padding: 0; }
-
 footer {
   background-color: #2B2B2B;
   /* Gris oscuro tirando a negro */
@@ -101,10 +97,6 @@ footer {
 footer {
   margin-top: auto; }
 
-* {
-  margin: 0;
-  padding: 0; }
-
 nav {
   position: sticky;
   top: 5px; }
@@ -194,7 +186,7 @@ nav {
   height: 0px; }
 
 #hondaDatos1, #hondaDatos2, #hondaDatos3, #audiDatos1, #audiDatos2, #audiDatos3, #chevrDatos1, #chevrDatos2, #chevrDatos3, #renaDatos1, #renaDatos2, #renaDatos3, #fordDatos1, #fordDatos2, #fordDatos3, #fiatDatos1, #fiatDatos2, #fiatDatos3, #nissDatos1, #nissDatos2, #nissDatos3 {
-  display: grid;
+  display: none;
   text-align: center;
   height: 100%;
   color: white; }
@@ -715,10 +707,6 @@ nav {
   #tieAut__Main p {
     font-size: 10px; } }
 
-* {
-  margin: 0;
-  padding: 0; }
-
 #mainC {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1025,11 +1013,6 @@ nav {
         color: black;
         text-decoration: none !important; } }
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box; }
-
 #body__Registro {
   display: flex;
   align-items: center;
@@ -1240,9 +1223,6 @@ nav {
     transition: all 1s; }
     .cont-logo #logomain:hover {
       rotate: 30deg; }
-
-header {
-  box-shadow: 3px 2px 40px; }
 
 #titulo-empresa {
   position: absolute;

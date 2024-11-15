@@ -27,18 +27,24 @@
     align-items: center;
     margin: 0;
     padding: 0;
+}
+
+@keyframes logo {
+    0% {rotate: 0deg;}
+    20% {rotate: 15deg;}
+    40% {rotate: -15deg;}
+    100% {rotate: 0deg;}
+}
 
     #logomain{
         margin: 0;
         padding: 0;
         width: 30%;
         height: 450px;
-        transition: all 1s;
         &:hover{
-            rotate: 30deg;
+            animation: logo 1s ease-in-out;
         }
     }
-}
 
 #titulo-empresa{
     position: absolute;
@@ -48,14 +54,26 @@
     letter-spacing: 1px;
     font-family:serif;
     color: white;
+    transition: all 0.5s;
+    &:hover{
+        transform: scale(1.2);
+        transition: all 0.5s;
+    }
 }
 
-.offcanvas-body ul li a{
-    color: white;
-    font-size: 20px;
-    &:hover{
-        color: rgb(172, 172, 172);
-        transition: color 0.5s;
+.offcanvas-body{
+    position: sticky;
+    .scrolled{
+        background-color: gray;
+    }
+
+    ul li a{
+        color: white;
+        font-size: 20px;
+        &:hover{
+            color: rgb(172, 172, 172);
+            transition: color 0.5s;
+        }
     }
 }
 
@@ -89,36 +107,34 @@
     padding: 0;
 }
 
+
 #que-somos{
     margin: 0;
     padding: 0;
-    height: 880px;
+    height: 825px;
     justify-content: center;
-    h2{
-        font-size: 70px;
-        font-family: monospace;
-        text-align: center;
-        color: white;
-        padding-top: 15%;
-    }
-    p{
-        color: white;
-        text-align: center;
-        font-family: monospace;
-        font-size: 20px;
-        width: 70%;
-        padding-bottom: 20%;
-    }
-    img{
-        filter: brightness(50%);
-        margin: 0;
-        padding: 0;
-    }
 }
-
-#foto-fondo{
+#que-somos__h2{
+    font-size: 70px;
+    font-family: monospace;
+    text-align: center;
+    color: white;
+    padding-top: 15%;
+}
+#que-somos__p{
+    color: white;
+    text-align: center;
+    font-family: monospace;
+    font-size: 20px;
+    width: 70%;
+    padding-bottom: 20%;
+}
+#que-somos__foto-fondo{
     position: absolute;
     z-index: -1;
+    filter: brightness(50%);
+    margin: 0;
+    padding: 0;
 }
 
 .carousel-inner div img{
@@ -126,7 +142,7 @@
 }
 
 #productos-carousel{
-    padding: 2%;
+    padding: 5% 2%;
     background: repeating-linear-gradient(
         -45deg,
         rgb(100, 100, 100),
@@ -143,7 +159,7 @@
         }
     }
     button{
-        margin: 2%;
+        margin: 5% 2%;
         display: flex;
         background-color: none;
         transition: all 0.5s;
@@ -152,4 +168,84 @@
             transition: all 0.5s;
         }
     }
+}
+
+#comp-related{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#comp-related__companies{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#comp-related__companies--logo{
+    display: flex;
+    justify-content: center;
+}
+
+#comp-related__h2{
+    text-align: center;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    padding: 15px 0;
+    margin-bottom: 50px;
+    background-color: rgb(179, 179, 179);
+}
+
+#comp-related__companies--logo1{
+    display: flex;
+    justify-content: center;
+    img{
+        width: 50%;
+    }
+}
+
+#comp-related__companies--t1{
+    text-align: center;
+    color: white;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+    font-size: 60px;
+    font-family: serif;
+    font-weight: bold;
+}
+
+#comp-related__companies--p1{
+    text-align: center;
+    color: rgb(237, 237, 237);
+    font-size: 20px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: rgba(128, 128, 128, 0.498);
+    
+    border-radius: 20px;
+    padding: 10px 5px;
+    margin-bottom: 100px
+}
+
+#comp-related__companies--logo2{
+    @extend #comp-related__companies--logo1 ;
+    img{
+        width: 35%;
+    }
+}
+#comp-related__companies--t2{
+    @extend #comp-related__companies--t1 ;
+}
+#comp-related__companies--p2{
+    @extend #comp-related__companies--p1 ;
+}
+
+#comp-related__companies--logo3{
+    @extend #comp-related__companies--logo1 ;
+}
+#comp-related__companies--t3{
+    @extend #comp-related__companies--t1 ;
+}
+#comp-related__companies--p3{
+    @extend #comp-related__companies--p1 ;
 }

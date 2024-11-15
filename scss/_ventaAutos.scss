@@ -7,14 +7,17 @@
 #mainVA {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas: 
         'h1va h1va h1va'
         'formulariova formulariova formulariova'
-        'infova infova infova';
+        'h2va h2va h2va'
+        'infova1 infova2 infova3';
+    padding: 20px;
     justify-items: center;
-    align-items: center;
+    align-items: start; /* Alineación de inicio en cada celda */
     gap: 20px;
+    box-sizing: border-box; /* Incluye padding en el tamaño total */
 }
 
 #contenedorvaformulario {
@@ -37,6 +40,7 @@
     margin: 0 auto;
     opacity: 0; /* Comienza oculto */
     transform: translateY(-50px); /* Comienza desplazado hacia arriba */
+    grid-area: formulariova;
 }
 
 .form-container.show {
@@ -106,5 +110,24 @@
 }
 
 #h1va{
+    color: white;
+}
+
+#contenedorh2va{
+    grid-area: h2va;
+    color: white;
+}
+
+
+#infova1{
+    grid-area: infova1;
+    color: white;
+}
+#infova2{
+    grid-area: infova2;
+    color: white;
+}
+#infova3{
+    grid-area: infova3;
     color: white;
 }

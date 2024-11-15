@@ -4,7 +4,7 @@ $areasgridConsulta:(
     3:img3,
 );
 
-#mainC {
+#mainConsulta {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto auto auto auto auto auto;
@@ -113,15 +113,17 @@ $areasgridConsulta:(
     grid-area: i3;
 }
 
-#imagenc{
+#contenedor_imagen_consulta_laptop{
     height: 100%;
     width: 100%;
     grid-area: img;
 }
 
-#formuc{
+#img_laptop{
     width: 100%;
-    height: 100%;
+    height: 700px;
+    margin: 10px;
+    padding: 10px;
 }
 
 
@@ -199,5 +201,78 @@ $areasgridConsulta:(
 
     .pc {
         font-size: 16px;
+    }
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.95);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Aplicar animaciones */
+#mainConsulta {
+    animation: fadeIn 1s ease-in-out;
+}
+
+#contenedorcliente1, #h2c {
+    animation: fadeIn 1s ease-in-out;
+}
+
+#consulta {
+    animation: scaleUp 0.5s ease-in-out;
+}
+
+#img1c, #img2c, #img3c, #if1c, #if2c, #if3c, #contenedor_imagen_consulta_laptop {
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Efecto hover adicional */
+#consulta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsivo: Entre 1300px y 1400px */
+@media (min-width: 1300px) and (max-width: 1400px) {
+    #mainConsulta {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px; /* Ajusta la separación */
+    }
+
+    #img1c, #img2c, #img3c, #if1c, #if2c, #if3c {
+        width: 280px;
+        height: auto;
+    }
+
+    #p1c, #p2c, #p3c {
+        width: 90%;
+    }
+
+    #h1_1c {
+        font-size: 50px;
+    }
+
+    #h2_1c {
+        font-size: 35px;
+    }
+
+    .pc {
+        font-size: 17px;
     }
 }

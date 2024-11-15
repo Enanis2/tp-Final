@@ -172,7 +172,6 @@ nav {
 
 #tieAut__Grid {
   display: grid;
-  height: 2550px;
   grid-template-rows: repeat(7, 1fr);
   grid-template-areas: 'honda' 'audi' 'chevrolet' 'renault' 'ford' 'fiat' 'nissan';
   grid-row-gap: 20px; }
@@ -184,13 +183,17 @@ nav {
   grid-column-gap: 20px; }
 
 #hondaImg1, #hondaImg2, #hondaImg3, #audiImg1, #audiImg2, #audiImg3, #chevrImg1, #chevrImg2, #chevrImg3, #renaImg1, #renaImg2, #renaImg3, #fordImg1, #fordImg2, #fordImg3, #fiatImg1, #fiatImg2, #fiatImg3, #nissImg1, #nissImg2, #nissImg3 {
-  height: 0; }
+  height: 292px; }
+  #hondaImg1 img, #hondaImg2 img, #hondaImg3 img, #audiImg1 img, #audiImg2 img, #audiImg3 img, #chevrImg1 img, #chevrImg2 img, #chevrImg3 img, #renaImg1 img, #renaImg2 img, #renaImg3 img, #fordImg1 img, #fordImg2 img, #fordImg3 img, #fiatImg1 img, #fiatImg2 img, #fiatImg3 img, #nissImg1 img, #nissImg2 img, #nissImg3 img {
+    height: 100%; }
 
 #hondaDatos1, #hondaDatos2, #hondaDatos3, #audiDatos1, #audiDatos2, #audiDatos3, #chevrDatos1, #chevrDatos2, #chevrDatos3, #renaDatos1, #renaDatos2, #renaDatos3, #fordDatos1, #fordDatos2, #fordDatos3, #fiatDatos1, #fiatDatos2, #fiatDatos3, #nissDatos1, #nissDatos2, #nissDatos3 {
   display: none;
+  position: absolute;
   text-align: center;
   height: 100%;
-  color: white; }
+  color: white;
+  transform: translate(0px, -292px); }
   #hondaDatos1 h4, #hondaDatos2 h4, #hondaDatos3 h4, #audiDatos1 h4, #audiDatos2 h4, #audiDatos3 h4, #chevrDatos1 h4, #chevrDatos2 h4, #chevrDatos3 h4, #renaDatos1 h4, #renaDatos2 h4, #renaDatos3 h4, #fordDatos1 h4, #fordDatos2 h4, #fordDatos3 h4, #fiatDatos1 h4, #fiatDatos2 h4, #fiatDatos3 h4, #nissDatos1 h4, #nissDatos2 h4, #nissDatos3 h4 {
     font-size: 40px;
     padding: 0%;
@@ -703,12 +706,18 @@ nav {
 
 /*TRANSICIONES Y TRANSFORMACIONES*/
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
-  #tieAut__Main h4 {
-    font-size: 20px; }
-  #tieAut__Main p {
-    font-size: 10px; }
-  #tieAut__Main img {
-    height: 307px; } }
+  #tieAut__Main {
+    height: auto; }
+    #tieAut__Main h4 {
+      font-size: 20px; }
+    #tieAut__Main p {
+      font-size: 10px; }
+    #tieAut__Main img {
+      height: 307px; }
+  #hondaImg1, #hondaImg2, #hondaImg3, #audiImg1, #audiImg2, #audiImg3, #chevrImg1, #chevrImg2, #chevrImg3, #renaImg1, #renaImg2, #renaImg3, #fordImg1, #fordImg2, #fordImg3, #fiatImg1, #fiatImg2, #fiatImg3, #nissImg1, #nissImg2, #nissImg3 {
+    height: 200px; }
+    #hondaImg1 img, #hondaImg2 img, #hondaImg3 img, #audiImg1 img, #audiImg2 img, #audiImg3 img, #chevrImg1 img, #chevrImg2 img, #chevrImg3 img, #renaImg1 img, #renaImg2 img, #renaImg3 img, #fordImg1 img, #fordImg2 img, #fordImg3 img, #fiatImg1 img, #fiatImg2 img, #fiatImg3 img, #nissImg1 img, #nissImg2 img, #nissImg3 img {
+      height: 100%; } }
 
 #mainC {
   display: grid;

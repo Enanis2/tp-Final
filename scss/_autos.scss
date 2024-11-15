@@ -74,7 +74,6 @@ $areasNiss:(
 
 #tieAut__Grid{
     display: grid;
-    height: 2550px;
 
     grid-template-rows: repeat(7, 1fr);
     grid-template-areas: 
@@ -99,14 +98,19 @@ $areasNiss:(
 }
 
 #hondaImg1, #hondaImg2, #hondaImg3, #audiImg1, #audiImg2, #audiImg3, #chevrImg1, #chevrImg2, #chevrImg3, #renaImg1, #renaImg2, #renaImg3, #fordImg1, #fordImg2, #fordImg3, #fiatImg1, #fiatImg2, #fiatImg3, #nissImg1, #nissImg2, #nissImg3{
-    height: 0;
+    height: 292px;
+    img{
+        height: 100%;
+    }
 }
 
 #hondaDatos1, #hondaDatos2, #hondaDatos3, #audiDatos1, #audiDatos2, #audiDatos3, #chevrDatos1, #chevrDatos2, #chevrDatos3, #renaDatos1, #renaDatos2, #renaDatos3, #fordDatos1, #fordDatos2, #fordDatos3, #fiatDatos1, #fiatDatos2, #fiatDatos3, #nissDatos1, #nissDatos2, #nissDatos3{
     display: none;
+    position: absolute;
     text-align: center;
     height: 100%;
     color: white;
+    transform: translate(0px, -292px);
     h4{
         font-size: 40px;
         padding: 0%;
@@ -118,7 +122,6 @@ $areasNiss:(
         font-size: 20px;
     }
 }
-
 /*------HONDA------*/
 
 #honda{
@@ -584,6 +587,7 @@ $areasNiss:(
 
 @media screen and (min-width: 1300px) and (max-width: 1400px){
     #tieAut__Main{
+        height: auto;
         h4{
             font-size: 20px;
         }
@@ -592,6 +596,12 @@ $areasNiss:(
         }
         img{
             height: 307px;   
+        }
+    }
+    #hondaImg1, #hondaImg2, #hondaImg3, #audiImg1, #audiImg2, #audiImg3, #chevrImg1, #chevrImg2, #chevrImg3, #renaImg1, #renaImg2, #renaImg3, #fordImg1, #fordImg2, #fordImg3, #fiatImg1, #fiatImg2, #fiatImg3, #nissImg1, #nissImg2, #nissImg3{
+        height: 200px;
+        img{
+            height: 100%;
         }
     }
 }

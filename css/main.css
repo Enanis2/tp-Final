@@ -848,9 +848,7 @@ nav {
     grid-template-areas: 'h1' 'img1' 'm1' 'img2' 't1' 'img3' 'r1' 'h2' 'i1' 'i2' 'i3' 'img' 'ct'; }
   #img1c, #img2c, #img3c, #if1c, #if2c, #if3c {
     width: 80%;
-    /* Ajusta el ancho al 80% del contenedor */
     max-width: 250px;
-    /* Tamaño máximo para imágenes en pantallas móviles */
     height: auto; }
   #p1c, #p2c, #p3c {
     width: 100%; }
@@ -1342,23 +1340,15 @@ body {
   visibility: hidden;
   position: absolute; }
 
-@keyframes logo {
-  0% {
-    rotate: 0deg; }
-  20% {
-    rotate: 15deg; }
-  40% {
-    rotate: -15deg; }
-  100% {
-    rotate: 0deg; } }
-
 #logomain {
   margin: 0;
   padding: 0;
   width: 450px;
-  height: 450px; }
+  height: 450px;
+  transition: rotate 0.5s; }
   #logomain:hover {
-    animation: logo 1s ease-in-out; }
+    rotate: 20deg;
+    transition: rotate 0.5s; }
 
 #titulo-empresa {
   position: absolute;
@@ -1373,19 +1363,19 @@ body {
     transform: scale(1.2);
     transition: all 0.5s; }
 
-#main-nav--menu .scrolled {
-  background-color: gray; }
+#main-nav div {
+  height: 50px; }
 
-#main-nav--menu ul li a {
-  color: white;
-  font-size: 20px; }
-  #main-nav--menu ul li a:hover {
-    color: #acacac;
-    transition: color 0.5s; }
-
-#main-nav {
-  position: sticky;
-  top: 20px; }
+#main-nav__menu ul {
+  height: 0px;
+  position: sticky !important;
+  top: 20px !important; }
+  #main-nav__menu ul li a {
+    color: white;
+    font-size: 20px; }
+    #main-nav__menu ul li a:hover {
+      color: #acacac;
+      transition: color 0.5s; }
 
 #menu-current-page {
   color: white; }
@@ -1496,13 +1486,13 @@ body {
   margin-bottom: 50px;
   background-color: #b3b3b3; }
 
-#comp-related__companies--logo1, #comp-related__companies--logo2, #comp-related__companies--logo3 {
+#comp-related__companies--logo1, #comp-related__companies--logo2, #comp-related__companies--logo3, #comp-related__companies--logo4 {
   display: flex;
   justify-content: center; }
-  #comp-related__companies--logo1 img, #comp-related__companies--logo2 img, #comp-related__companies--logo3 img {
+  #comp-related__companies--logo1 img, #comp-related__companies--logo2 img, #comp-related__companies--logo3 img, #comp-related__companies--logo4 img {
     width: 50%; }
 
-#comp-related__companies--t1, #comp-related__companies--t2, #comp-related__companies--t3 {
+#comp-related__companies--t1, #comp-related__companies--t2, #comp-related__companies--t3, #comp-related__companies--t4 {
   text-align: center;
   color: white;
   letter-spacing: 3px;
@@ -1511,7 +1501,7 @@ body {
   font-family: serif;
   font-weight: bold; }
 
-#comp-related__companies--p1, #comp-related__companies--p2, #comp-related__companies--p3 {
+#comp-related__companies--p1, #comp-related__companies--p2, #comp-related__companies--p3, #comp-related__companies--p4 {
   text-align: center;
   color: #ededed;
   font-size: 20px;
@@ -1538,12 +1528,12 @@ body {
     height: 60%;
     margin: 0;
     padding: 0; }
-  #comp-related__companies--logo1 img, #comp-related__companies--logo2 img, #comp-related__companies--logo3 img {
+  #comp-related__companies--logo1 img, #comp-related__companies--logo2 img, #comp-related__companies--logo3 img, #comp-related__companies--logo4 img {
     width: 60%; }
-  #comp-related__companies--t1, #comp-related__companies--t2, #comp-related__companies--t3 {
+  #comp-related__companies--t1, #comp-related__companies--t2, #comp-related__companies--t3, #comp-related__companies--t4 {
     margin: 25px 0;
     font-size: 50px; }
-  #comp-related__companies--p1, #comp-related__companies--p2, #comp-related__companies--p3 {
+  #comp-related__companies--p1, #comp-related__companies--p2, #comp-related__companies--p3, #comp-related__companies--p4 {
     font-size: 17px;
     margin-bottom: 70px; }
   #logomain {

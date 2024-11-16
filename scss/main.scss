@@ -53,20 +53,15 @@ body{
     position: absolute;
 }
 
-@keyframes logo {
-    0% {rotate: 0deg;}
-    20% {rotate: 15deg;}
-    40% {rotate: -15deg;}
-    100% {rotate: 0deg;}
-}
-
 #logomain{
     margin: 0;
     padding: 0;
     width: 450px;
     height: 450px;
+    transition: rotate 0.5s;
     &:hover{
-        animation: logo 1s ease-in-out;
+        rotate: 20deg;
+        transition: rotate 0.5s;
     }
 }
 
@@ -86,24 +81,24 @@ body{
     }
 }
 
-#main-nav--menu{
-    .scrolled{
-        background-color: gray;
-    }
-
-    ul li a{
-        color: white;
-        font-size: 20px;
-        &:hover{
-            color: rgb(172, 172, 172);
-            transition: color 0.5s;
-        }
-    }
+#main-nav div{
+    height: 50px;
 }
 
-#main-nav{
-    position: sticky;
-    top: 20px;
+#main-nav__menu{
+    ul {
+        height: 0px;
+        position: sticky !important;
+        top: 20px !important;
+        li a{
+            color: white;
+            font-size: 20px;
+            &:hover{
+                color: rgb(172, 172, 172);
+                transition: color 0.5s;
+            }
+        }
+    }
 }
 
 #menu-current-page{
@@ -274,28 +269,29 @@ body{
     margin-bottom: 100px
 }
 
+$numeros-companias: 1, 2, 3, 4;
+
+@each $numero in $numeros-companias{
+
+    #comp-related__companies--logo#{$numero}{
+        @extend #comp-related__companies--logo1 ;
+    }
+    #comp-related__companies--t#{$numero}{
+        @extend #comp-related__companies--t1 ;
+    }
+    #comp-related__companies--p#{$numero}{
+        @extend #comp-related__companies--p1 ;
+    }
+}
+
 #comp-related__companies--logo2{
     @extend #comp-related__companies--logo1 ;
     img{
         width: 35%;
     }
 }
-#comp-related__companies--t2{
-    @extend #comp-related__companies--t1 ;
-}
-#comp-related__companies--p2{
-    @extend #comp-related__companies--p1 ;
-}
 
-#comp-related__companies--logo3{
-    @extend #comp-related__companies--logo1 ;
-}
-#comp-related__companies--t3{
-    @extend #comp-related__companies--t1 ;
-}
-#comp-related__companies--p3{
-    @extend #comp-related__companies--p1 ;
-}
+
 
 @media screen and (min-width: 1300px) and (max-width: 1400px){
     

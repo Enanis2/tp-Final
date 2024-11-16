@@ -11,16 +11,19 @@
     <title></title>
 </head>
 <body id="bodymain">
-    <header id="in__header">
+    <header id="in_header">
 
+        <div class="container-fluid navbar cont-login">
+            <a href="./paginas/registro.html" id="login-button-principal">Login</a>
+            <button class="navbar-toggler" id="button-menu" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
         <div class="row container-fluid cont-logo">
             <img id="logomain" src="assets/imagenes/logo/logo.png" alt="">
             <h1 id="titulo-empresa">Drive & Dream</h1>
-            <div class="cont-login">
-                <a href="./paginas/registro.html" id="login-button-principal">Login</a>
-            </div>
         </div>
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg" id="main-nav">
             <div class="container-fluid">
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
                     <div class="offcanvas-header">
@@ -29,7 +32,7 @@
                         </h5>
                         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body">
+                    <div class="offcanvas-body" id="main-nav--menu">
                         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
                             <li class="nav-item">
                                 <a class="nav-link mx-lg-2 active" aria-current="page" id="menu-current-page" href="#">Home</a>
@@ -38,7 +41,7 @@
                                 <a class="nav-link mx-lg-2" href="#">Nosotros</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link mx-lg-2" href="#">Contacto</a>
+                                <a class="nav-link mx-lg-2" href="paginas/cliente.html" target="_blank">Contacto</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link mx-lg-2" href="paginas/VentaAuto.html" target="_blank">Productos</a>

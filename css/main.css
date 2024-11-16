@@ -1320,6 +1320,20 @@ nav {
   margin: 0;
   padding: 0; }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+body {
+  animation: fadeIn 1s ease-in-out; }
+
+#in_header {
+  animation: fadeIn 0.5s ease-in-out; }
+
 #bodymain {
   background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%); }
 
@@ -1327,8 +1341,12 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
-  padding: 0; }
+  margin: 0 !important;
+  padding: 0 !important; }
+
+#button-menu {
+  visibility: hidden;
+  position: absolute; }
 
 @keyframes logo {
   0% {
@@ -1343,7 +1361,7 @@ nav {
 #logomain {
   margin: 0;
   padding: 0;
-  width: 30%;
+  width: 450px;
   height: 450px; }
   #logomain:hover {
     animation: logo 1s ease-in-out; }
@@ -1361,36 +1379,51 @@ nav {
     transform: scale(1.2);
     transition: all 0.5s; }
 
-.offcanvas-body {
-  position: sticky; }
-  .offcanvas-body .scrolled {
-    background-color: gray; }
-  .offcanvas-body ul li a {
-    color: white;
-    font-size: 20px; }
-    .offcanvas-body ul li a:hover {
-      color: #acacac;
-      transition: color 0.5s; }
+#main-nav--menu .scrolled {
+  background-color: gray; }
+
+#main-nav--menu ul li a {
+  color: white;
+  font-size: 20px; }
+  #main-nav--menu ul li a:hover {
+    color: #acacac;
+    transition: color 0.5s; }
+
+#main-nav {
+  position: sticky;
+  top: 20px; }
 
 #menu-current-page {
   color: white; }
 
 .cont-login {
-  position: absolute;
-  justify-content: end;
-  display: flex;
-  width: 100%;
-  margin-top: 1%;
-  margin-bottom: 24%; }
+  position: absolute !important;
+  justify-content: end !important;
+  display: flex; }
+  .cont-login a {
+    margin: 2%; }
 
 #login-button-principal {
-  width: 60px;
   text-align: center;
+  padding: 8px 20px;
   text-decoration: none;
   color: #616161;
-  background-color: red;
+  background-color: #D32F2F;
   color: white;
   border-radius: 20px; }
+
+@media (max-width: 991px) {
+  #button-menu {
+    visibility: visible !important;
+    position: relative !important;
+    margin-right: 1%;
+    background-color: gray; }
+  #main-nav--menu ul li a {
+    color: #4b4b4b;
+    font-size: 20px; }
+    #main-nav--menu ul li a:hover {
+      color: #cccccc;
+      transition: color 0.5s; } }
 
 #header-nav {
   margin: 0;
@@ -1421,6 +1454,7 @@ nav {
   position: absolute;
   z-index: -1;
   filter: brightness(50%);
+  height: 825px;
   margin: 0;
   padding: 0; }
 
@@ -1478,7 +1512,7 @@ nav {
   text-align: center;
   color: white;
   letter-spacing: 3px;
-  margin-bottom: 50px;
+  margin: 25px 0;
   font-size: 60px;
   font-family: serif;
   font-weight: bold; }
@@ -1495,3 +1529,29 @@ nav {
 
 #comp-related__companies--logo2 img {
   width: 35%; }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #que-somos {
+    height: 450px; }
+  #que-somos__h2 {
+    font-size: 40px;
+    padding-top: 20%; }
+  #que-somos__p {
+    font-size: 15px;
+    width: 100%;
+    padding-bottom: 20%; }
+  #que-somos__foto-fondo {
+    height: 60%;
+    margin: 0;
+    padding: 0; }
+  #comp-related__companies--logo1 img, #comp-related__companies--logo2 img, #comp-related__companies--logo3 img {
+    width: 60%; }
+  #comp-related__companies--t1, #comp-related__companies--t2, #comp-related__companies--t3 {
+    margin: 25px 0;
+    font-size: 50px; }
+  #comp-related__companies--p1, #comp-related__companies--p2, #comp-related__companies--p3 {
+    font-size: 17px;
+    margin-bottom: 70px; }
+  #logomain {
+    width: 300px;
+    height: 300px; } }

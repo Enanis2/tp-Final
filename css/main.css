@@ -163,7 +163,7 @@ nav {
   display: none; }
 
 #tieAut__Main {
-  padding: 0% 5% 40px 5%; }
+  padding: 10px 5% 40px 5%; }
   #tieAut__Main img {
     outline: 5px solid black;
     border-radius: 20px; }
@@ -175,39 +175,45 @@ nav {
   grid-template-rows: repeat(7, 1fr);
   grid-template-areas: 'honda' 'audi' 'chevrolet' 'renault' 'ford' 'fiat' 'nissan';
   grid-row-gap: 20px; }
+  #tieAut__Grid div[id*="Img"] {
+    height: 292px; }
+    #tieAut__Grid div[id*="Img"] img {
+      height: 100%; }
+  #tieAut__Grid div[id*="Datos"] {
+    display: none;
+    position: absolute;
+    text-align: center;
+    height: 292px;
+    color: white;
+    transform: translate(0px, -292px);
+    outline: 5px solid black;
+    border-radius: 20px;
+    filter: blur(0px); }
+    #tieAut__Grid div[id*="Datos"] h4 {
+      font-size: 40px;
+      padding: 0%;
+      margin: 0%; }
+    #tieAut__Grid div[id*="Datos"] p {
+      margin: 0%;
+      padding: 0%;
+      font-size: 20px; }
 
-#honda, #audi, #chevrolet, #renault, #ford, #fiat, #nissan {
+.tieAut__grid--marcas {
   display: grid;
   grid-template-rows: 1fr 7.7fr;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px; }
-
-#hondaImg1, #hondaImg2, #hondaImg3, #audiImg1, #audiImg2, #audiImg3, #chevrImg1, #chevrImg2, #chevrImg3, #renaImg1, #renaImg2, #renaImg3, #fordImg1, #fordImg2, #fordImg3, #fiatImg1, #fiatImg2, #fiatImg3, #nissImg1, #nissImg2, #nissImg3 {
-  height: 292px; }
-  #hondaImg1 img, #hondaImg2 img, #hondaImg3 img, #audiImg1 img, #audiImg2 img, #audiImg3 img, #chevrImg1 img, #chevrImg2 img, #chevrImg3 img, #renaImg1 img, #renaImg2 img, #renaImg3 img, #fordImg1 img, #fordImg2 img, #fordImg3 img, #fiatImg1 img, #fiatImg2 img, #fiatImg3 img, #nissImg1 img, #nissImg2 img, #nissImg3 img {
-    height: 100%; }
-
-#hondaDatos1, #hondaDatos2, #hondaDatos3, #audiDatos1, #audiDatos2, #audiDatos3, #chevrDatos1, #chevrDatos2, #chevrDatos3, #renaDatos1, #renaDatos2, #renaDatos3, #fordDatos1, #fordDatos2, #fordDatos3, #fiatDatos1, #fiatDatos2, #fiatDatos3, #nissDatos1, #nissDatos2, #nissDatos3 {
-  display: none;
-  position: absolute;
-  text-align: center;
-  height: 292px;
-  color: white;
-  transform: translate(0px, -292px); }
-  #hondaDatos1 h4, #hondaDatos2 h4, #hondaDatos3 h4, #audiDatos1 h4, #audiDatos2 h4, #audiDatos3 h4, #chevrDatos1 h4, #chevrDatos2 h4, #chevrDatos3 h4, #renaDatos1 h4, #renaDatos2 h4, #renaDatos3 h4, #fordDatos1 h4, #fordDatos2 h4, #fordDatos3 h4, #fiatDatos1 h4, #fiatDatos2 h4, #fiatDatos3 h4, #nissDatos1 h4, #nissDatos2 h4, #nissDatos3 h4 {
-    font-size: 40px;
-    padding: 0%;
-    margin: 0%; }
-  #hondaDatos1 p, #hondaDatos2 p, #hondaDatos3 p, #audiDatos1 p, #audiDatos2 p, #audiDatos3 p, #chevrDatos1 p, #chevrDatos2 p, #chevrDatos3 p, #renaDatos1 p, #renaDatos2 p, #renaDatos3 p, #fordDatos1 p, #fordDatos2 p, #fordDatos3 p, #fiatDatos1 p, #fiatDatos2 p, #fiatDatos3 p, #nissDatos1 p, #nissDatos2 p, #nissDatos3 p {
+  .tieAut__grid--marcas h2 {
     margin: 0%;
     padding: 0%;
-    font-size: 20px; }
+    text-align: center; }
+  .tieAut__grid--marcas img {
+    width: 100%; }
 
 /*------HONDA------*/
 #honda {
   grid-area: honda;
-  grid-template-areas: 'titHonda titHonda titHonda' 'honda1 honda2 honda3';
-  grid-column-gap: 20px; }
+  grid-template-areas: 'titHonda titHonda titHonda' 'honda1 honda2 honda3'; }
   #honda #honda1 {
     grid-area: honda1;
     transition: all 0.5s; }
@@ -216,13 +222,7 @@ nav {
       #honda #honda1:hover #hondaDatos1 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "hondaModelo1" "hondaPrecio1" "hondaToTerr1" "hondaEnergia1" "hondaDesc1";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #honda #honda1:hover #hondaDatos1 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "hondaModelo1" "hondaPrecio1" "hondaToTerr1" "hondaEnergia1" "hondaDesc1"; }
       #honda #honda1:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -234,13 +234,7 @@ nav {
       #honda #honda2:hover #hondaDatos2 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "hondaModelo2" "hondaPrecio2" "hondaToTerr2" "hondaEnergia2" "hondaDesc2";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #honda #honda2:hover #hondaDatos2 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "hondaModelo2" "hondaPrecio2" "hondaToTerr2" "hondaEnergia2" "hondaDesc2"; }
       #honda #honda2:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -252,29 +246,17 @@ nav {
       #honda #honda3:hover #hondaDatos3 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "hondaModelo3" "hondaPrecio3" "hondaToTerr3" "hondaEnergia3" "hondaDesc3";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #honda #honda3:hover #hondaDatos3 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "hondaModelo3" "hondaPrecio3" "hondaToTerr3" "hondaEnergia3" "hondaDesc3"; }
       #honda #honda3:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #honda h2 {
-    margin: 0%;
-    padding: 0%;
-    grid-area: titHonda;
-    text-align: center; }
-  #honda img {
-    width: 100%; }
+    grid-area: titHonda; }
 
 /*------AUDI------*/
 #audi {
   grid-area: audi;
-  grid-template-areas: 'titAudi titAudi titAudi' 'audi1 audi2 audi3';
-  grid-column-gap: 20px; }
+  grid-template-areas: 'titAudi titAudi titAudi' 'audi1 audi2 audi3'; }
   #audi #audi1 {
     grid-area: audi1;
     transition: all 0.5s; }
@@ -283,13 +265,7 @@ nav {
       #audi #audi1:hover #audiDatos1 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "audiModelo1" "audiPrecio1" "audiToTerr1" "audiEnergia1" "audiDesc1";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #audi #audi1:hover #audiDatos1 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "audiModelo1" "audiPrecio1" "audiToTerr1" "audiEnergia1" "audiDesc1"; }
       #audi #audi1:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -301,13 +277,7 @@ nav {
       #audi #audi2:hover #audiDatos2 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "audiModelo2" "audiPrecio2" "audiToTerr2" "audiEnergia2" "audiDesc2";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #audi #audi2:hover #audiDatos2 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "audiModelo2" "audiPrecio2" "audiToTerr2" "audiEnergia2" "audiDesc2"; }
       #audi #audi2:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -319,29 +289,17 @@ nav {
       #audi #audi3:hover #audiDatos3 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "audiModelo3" "audiPrecio3" "audiToTerr3" "audiEnergia3" "audiDesc3";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #audi #audi3:hover #audiDatos3 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "audiModelo3" "audiPrecio3" "audiToTerr3" "audiEnergia3" "audiDesc3"; }
       #audi #audi3:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #audi h2 {
-    margin: 0%;
-    padding: 0%;
-    grid-area: titAudi;
-    text-align: center; }
-  #audi img {
-    width: 100%; }
+    grid-area: titAudi; }
 
 /*------CHEVROLET------*/
 #chevrolet {
   grid-area: chevrolet;
-  grid-template-areas: 'titChevr titChevr titChevr' 'chevr1 chevr2 chevr3';
-  grid-column-gap: 20px; }
+  grid-template-areas: 'titChevr titChevr titChevr' 'chevr1 chevr2 chevr3'; }
   #chevrolet #chevr1 {
     grid-area: chevr1;
     transition: all 0.5s; }
@@ -350,13 +308,7 @@ nav {
       #chevrolet #chevr1:hover #chevrDatos1 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "chevrModelo1" "chevrPrecio1" "chevrToTerr1" "chevrEnergia1" "chevrDesc1";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #chevrolet #chevr1:hover #chevrDatos1 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "chevrModelo1" "chevrPrecio1" "chevrToTerr1" "chevrEnergia1" "chevrDesc1"; }
       #chevrolet #chevr1:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -368,13 +320,7 @@ nav {
       #chevrolet #chevr2:hover #chevrDatos2 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "chevrModelo2" "chevrPrecio2" "chevrToTerr2" "chevrEnergia2" "chevrDesc2";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #chevrolet #chevr2:hover #chevrDatos2 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "chevrModelo2" "chevrPrecio2" "chevrToTerr2" "chevrEnergia2" "chevrDesc2"; }
       #chevrolet #chevr2:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -386,29 +332,17 @@ nav {
       #chevrolet #chevr3:hover #chevrDatos3 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "chevrModelo3" "chevrPrecio3" "chevrToTerr3" "chevrEnergia3" "chevrDesc3";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #chevrolet #chevr3:hover #chevrDatos3 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "chevrModelo3" "chevrPrecio3" "chevrToTerr3" "chevrEnergia3" "chevrDesc3"; }
       #chevrolet #chevr3:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #chevrolet h2 {
-    margin: 0%;
-    padding: 0%;
-    grid-area: titChevr;
-    text-align: center; }
-  #chevrolet img {
-    width: 100%; }
+    grid-area: titChevr; }
 
 /*------RENAULT------*/
 #renault {
   grid-area: renault;
-  grid-template-areas: 'titRena titRena titRena' 'rena1 rena2 rena3';
-  grid-column-gap: 20px; }
+  grid-template-areas: 'titRena titRena titRena' 'rena1 rena2 rena3'; }
   #renault #rena1 {
     grid-area: rena1;
     transition: all 0.5s; }
@@ -417,13 +351,7 @@ nav {
       #renault #rena1:hover #renaDatos1 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "renaModelo1" "renaPrecio1" "renaToTerr1" "renaEnergia1" "renaDesc1";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #renault #rena1:hover #renaDatos1 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "renaModelo1" "renaPrecio1" "renaToTerr1" "renaEnergia1" "renaDesc1"; }
       #renault #rena1:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -435,13 +363,7 @@ nav {
       #renault #rena2:hover #renaDatos2 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "renaModelo2" "renaPrecio2" "renaToTerr2" "renaEnergia2" "renaDesc2";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #renault #rena2:hover #renaDatos2 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "renaModelo2" "renaPrecio2" "renaToTerr2" "renaEnergia2" "renaDesc2"; }
       #renault #rena2:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -453,29 +375,17 @@ nav {
       #renault #rena3:hover #renaDatos3 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "renaModelo3" "renaPrecio3" "renaToTerr3" "renaEnergia3" "renaDesc3";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #renault #rena3:hover #renaDatos3 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "renaModelo3" "renaPrecio3" "renaToTerr3" "renaEnergia3" "renaDesc3"; }
       #renault #rena3:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #renault h2 {
-    margin: 0%;
-    padding: 0%;
-    grid-area: titRena;
-    text-align: center; }
-  #renault img {
-    width: 100%; }
+    grid-area: titRena; }
 
 /*------FORD------*/
 #ford {
   grid-area: ford;
-  grid-template-areas: 'titFord titFord titFord' 'ford1 ford2 ford3';
-  grid-column-gap: 20px; }
+  grid-template-areas: 'titFord titFord titFord' 'ford1 ford2 ford3'; }
   #ford #ford1 {
     grid-area: ford1;
     transition: all 0.5s; }
@@ -485,13 +395,7 @@ nav {
         text-decoration: none;
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "fordModelo1" "fordPrecio1" "fordToTerr1" "fordEnergia1" "fordDesc1";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #ford #ford1:hover #fordDatos1 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "fordModelo1" "fordPrecio1" "fordToTerr1" "fordEnergia1" "fordDesc1"; }
       #ford #ford1:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -504,13 +408,7 @@ nav {
         text-decoration: none;
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "fordModelo2" "fordPrecio2" "fordToTerr2" "fordEnergia2" "fordDesc2";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #ford #ford2:hover #fordDatos2 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "fordModelo2" "fordPrecio2" "fordToTerr2" "fordEnergia2" "fordDesc2"; }
       #ford #ford2:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -523,29 +421,17 @@ nav {
         text-decoration: none;
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "fordModelo3" "fordPrecio3" "fordToTerr3" "fordEnergia3" "fordDesc3";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #ford #ford3:hover #fordDatos3 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "fordModelo3" "fordPrecio3" "fordToTerr3" "fordEnergia3" "fordDesc3"; }
       #ford #ford3:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #ford h2 {
-    margin: 0%;
-    padding: 0%;
-    grid-area: titFord;
-    text-align: center; }
-  #ford img {
-    width: 100%; }
+    grid-area: titFord; }
 
 /*------FIAT------*/
 #fiat {
   grid-area: fiat;
-  grid-template-areas: 'titFiat titFiat titFiat' 'fiat1 fiat2 fiat3';
-  grid-column-gap: 20px; }
+  grid-template-areas: 'titFiat titFiat titFiat' 'fiat1 fiat2 fiat3'; }
   #fiat #fiat1 {
     grid-area: fiat1;
     transition: all 0.5s; }
@@ -554,13 +440,7 @@ nav {
       #fiat #fiat1:hover #fiatDatos1 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "fiatModelo1" "fiatPrecio1" "fiatToTerr1" "fiatEnergia1" "fiatDesc1";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #fiat #fiat1:hover #fiatDatos1 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "fiatModelo1" "fiatPrecio1" "fiatToTerr1" "fiatEnergia1" "fiatDesc1"; }
       #fiat #fiat1:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -572,13 +452,7 @@ nav {
       #fiat #fiat2:hover #fiatDatos2 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "fiatModelo2" "fiatPrecio2" "fiatToTerr2" "fiatEnergia2" "fiatDesc2";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #fiat #fiat2:hover #fiatDatos2 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "fiatModelo2" "fiatPrecio2" "fiatToTerr2" "fiatEnergia2" "fiatDesc2"; }
       #fiat #fiat2:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -590,29 +464,17 @@ nav {
       #fiat #fiat3:hover #fiatDatos3 {
         display: grid;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "fiatModelo3" "fiatPrecio3" "fiatToTerr3" "fiatEnergia3" "fiatDesc3";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #fiat #fiat3:hover #fiatDatos3 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "fiatModelo3" "fiatPrecio3" "fiatToTerr3" "fiatEnergia3" "fiatDesc3"; }
       #fiat #fiat3:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #fiat h2 {
-    margin: 0%;
-    padding: 0%;
-    grid-area: titFiat;
-    text-align: center; }
-  #fiat img {
-    width: 100%; }
+    grid-area: titFiat; }
 
 /*------NISSAN------*/
 #nissan {
   grid-area: nissan;
-  grid-template-areas: 'titNiss titNiss titNiss' 'niss1 niss2 niss3';
-  grid-column-gap: 20px; }
+  grid-template-areas: 'titNiss titNiss titNiss' 'niss1 niss2 niss3'; }
   #nissan #niss1 {
     grid-area: niss1;
     transition: all 0.5s; }
@@ -622,13 +484,7 @@ nav {
         display: grid;
         height: 100%;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "nissModelo1" "nissPrecio1" "nissToTerr1" "nissEnergia1" "nissDesc1";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #nissan #niss1:hover #nissDatos1 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "nissModelo1" "nissPrecio1" "nissToTerr1" "nissEnergia1" "nissDesc1"; }
       #nissan #niss1:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -641,13 +497,7 @@ nav {
         display: grid;
         height: 100%;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "nissModelo2" "nissPrecio2" "nissToTerr2" "nissEnergia2" "nissDesc2";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #nissan #niss2:hover #nissDatos2 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "nissModelo2" "nissPrecio2" "nissToTerr2" "nissEnergia2" "nissDesc2"; }
       #nissan #niss2:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -660,23 +510,12 @@ nav {
         display: grid;
         height: 100%;
         grid-template-rows: repeat(4, 1fr) 2fr;
-        grid-template-areas: "nissModelo3" "nissPrecio3" "nissToTerr3" "nissEnergia3" "nissDesc3";
-        outline: 5px solid black;
-        border-radius: 20px;
-        filter: blur(0px); }
-        #nissan #niss3:hover #nissDatos3 div {
-          display: flex;
-          justify-content: center; }
+        grid-template-areas: "nissModelo3" "nissPrecio3" "nissToTerr3" "nissEnergia3" "nissDesc3"; }
       #nissan #niss3:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
   #nissan h2 {
-    margin: 0%;
-    padding: 0%;
-    grid-area: titNiss;
-    text-align: center; }
-  #nissan img {
-    width: 100%; }
+    grid-area: titNiss; }
 
 #marcas {
   filter: blur(0px);
@@ -685,19 +524,20 @@ nav {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  margin-top: 20px;
   background-color: rgba(255, 255, 255, 0.582);
   padding: 10px 0 10px 0;
   border-radius: 10px; }
   #marcas a {
+    display: flex;
+    align-items: center;
     width: 13%; }
-    #marcas a input {
+    #marcas a button {
       width: 100%;
       font-size: 20px;
       background: #e2e2e2;
       border-radius: 5px;
       cursor: pointer; }
-      #marcas a input:hover {
+      #marcas a button:hover {
         opacity: 0.8; }
 
 /*COLORES*/
@@ -705,13 +545,73 @@ nav {
   background: repeating-linear-gradient(45deg, #646464, #646464 25%, #737373 25%, #737373 50%); }
 
 /*TRANSICIONES Y TRANSFORMACIONES*/
+/*-----RESPONSIVE-----*/
+/*PC De La Escuela*/
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
   #tieAut__Main h4 {
     font-size: 30px; }
   #tieAut__Main p {
-    font-size: 15px; }
-  #hondaImg1, #hondaImg2, #hondaImg3, #audiImg1, #audiImg2, #audiImg3, #chevrImg1, #chevrImg2, #chevrImg3, #renaImg1, #renaImg2, #renaImg3, #fordImg1, #fordImg2, #fordImg3, #fiatImg1, #fiatImg2, #fiatImg3, #nissImg1, #nissImg2, #nissImg3 {
-    height: 292px; } }
+    font-size: 15px; } }
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  #tieAut__Main img {
+    outline: 3px solid black; }
+  #tieAut__Main #marcas {
+    top: 5px; }
+    #tieAut__Main #marcas a button {
+      font-size: 18px; }
+  #tieAut__Main #tieAut__Grid {
+    grid-row-gap: 5px; }
+    #tieAut__Main #tieAut__Grid div[id*="Datos"] {
+      display: grid;
+      grid-row-gap: 5px;
+      position: relative;
+      height: auto;
+      transform: translate(0px, 5px);
+      outline: none; }
+      #tieAut__Main #tieAut__Grid div[id*="Datos"] h4 {
+        font-size: 15px; }
+      #tieAut__Main #tieAut__Grid div[id*="Datos"] p {
+        font-size: 10px; }
+      #tieAut__Main #tieAut__Grid div[id*="Datos"]:hover {
+        scale: 1; }
+        #tieAut__Main #tieAut__Grid div[id*="Datos"]:hover img {
+          filter: none; }
+    #tieAut__Main #tieAut__Grid div[id*="Img"] {
+      height: 140px; } }
+
+/*CELULAR*/
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  #tieAut__Main img {
+    outline: 3px solid black; }
+  #tieAut__Main #marcas {
+    padding: 5px 0 5px 0;
+    top: 5px; }
+    #tieAut__Main #marcas a button {
+      font-size: 8px; }
+  #tieAut__Main #tieAut__Grid {
+    grid-row-gap: 5px; }
+    #tieAut__Main #tieAut__Grid div[id*="Datos"] {
+      display: grid;
+      grid-row-gap: 5px;
+      position: relative;
+      height: auto;
+      transform: translate(0px, 5px);
+      outline: none; }
+      #tieAut__Main #tieAut__Grid div[id*="Datos"] h4 {
+        font-size: 10px; }
+      #tieAut__Main #tieAut__Grid div[id*="Datos"] p {
+        font-size: 7px; }
+      #tieAut__Main #tieAut__Grid div[id*="Datos"]:hover {
+        scale: 1; }
+        #tieAut__Main #tieAut__Grid div[id*="Datos"]:hover img {
+          filter: none; }
+    #tieAut__Main #tieAut__Grid div[id*="Img"] {
+      height: 100px; }
+    #tieAut__Main #tieAut__Grid .tieAut__grid--marcas {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr repeat(3, 7.7fr); } }
 
 #mainConsulta {
   display: grid;

@@ -62,7 +62,7 @@ $areasNiss:(
 }
 
 #tieAut__Main{
-    @include padding(0%, 5%, 40px, 5%);
+    @include padding(10px, 5%, 40px, 5%);
     img{
         outline: 5px solid map-get($colores, bordeImg);
         border-radius: 20px
@@ -86,42 +86,56 @@ $areasNiss:(
     'nissan';
 
     grid-row-gap: 20px;
+    div[id*="Img"]{
+        height: 292px;
+        img{
+            height: 100%;
+        }
+    }
+    div[id*="Datos"]{
+        display: none;
+        position: absolute;
+        text-align: center;
+        height: 292px;
+        color: white;
+        transform: translate(0px, -292px);
+        outline: 5px solid map-get($colores, bordeImg);
+        border-radius: 20px;
+
+        filter: blur(0px);
+        h4{
+            font-size: 40px;
+            padding: 0%;
+            margin: 0%;
+        }
+        p{
+            margin: 0%;
+            padding: 0%;
+            font-size: 20px;
+        }
+    }
 }
 
-#honda, #audi, #chevrolet, #renault, #ford, #fiat, #nissan{
+.tieAut__grid--marcas{
     display: grid;
 
     grid-template-rows: 1fr 7.7fr;
     grid-template-columns: repeat(3, 1fr);
 
     grid-column-gap: 20px;
-}
+    
+    h2{
+        margin: 0%;
+        padding: 0%;
+        text-align: center;
+    }
 
-#hondaImg1, #hondaImg2, #hondaImg3, #audiImg1, #audiImg2, #audiImg3, #chevrImg1, #chevrImg2, #chevrImg3, #renaImg1, #renaImg2, #renaImg3, #fordImg1, #fordImg2, #fordImg3, #fiatImg1, #fiatImg2, #fiatImg3, #nissImg1, #nissImg2, #nissImg3{
-    height: 292px;
     img{
-        height: 100%;
+        width: 100%;
     }
 }
 
-#hondaDatos1, #hondaDatos2, #hondaDatos3, #audiDatos1, #audiDatos2, #audiDatos3, #chevrDatos1, #chevrDatos2, #chevrDatos3, #renaDatos1, #renaDatos2, #renaDatos3, #fordDatos1, #fordDatos2, #fordDatos3, #fiatDatos1, #fiatDatos2, #fiatDatos3, #nissDatos1, #nissDatos2, #nissDatos3{
-    display: none;
-    position: absolute;
-    text-align: center;
-    height: 292px;
-    color: white;
-    transform: translate(0px, -292px);
-    h4{
-        font-size: 40px;
-        padding: 0%;
-        margin: 0%;
-    }
-    p{
-        margin: 0%;
-        padding: 0%;
-        font-size: 20px;
-    }
-}
+
 /*------HONDA------*/
 
 #honda{
@@ -130,7 +144,7 @@ $areasNiss:(
     grid-template-areas:
     'titHonda titHonda titHonda'
     'honda1 honda2 honda3';
-    
+
     @each $num, $area in $areasHonda{
         #honda#{$num}{
             grid-area: $area;
@@ -147,16 +161,6 @@ $areasNiss:(
                     'hondaToTerr#{$num}'
                     'hondaEnergia#{$num}'
                     'hondaDesc#{$num}';
-                    
-                    outline: 5px solid map-get($colores, bordeImg);
-                    border-radius: 20px;
-
-                    filter: blur(0px);
-                    div{
-                        display: flex;
-                        justify-content: center;
-                        
-                    }
                 }
                 img{
                     filter: blur(5px) brightness(.6);
@@ -167,19 +171,8 @@ $areasNiss:(
     }
     
     h2{
-        margin: 0%;
-        padding: 0%;
         grid-area: titHonda;
-        text-align: center;
     }
-
-    img{
-        width: 100%;
-    }
-
-    
-
-    grid-column-gap: 20px;
 }
 
 
@@ -209,15 +202,6 @@ $areasNiss:(
                     'audiToTerr#{$num}'
                     'audiEnergia#{$num}'
                     'audiDesc#{$num}';
-
-                    outline: 5px solid map-get($colores, bordeImg);
-                    border-radius: 20px;
-
-                    filter: blur(0px);
-                    div{
-                        display: flex;
-                        justify-content: center;     
-                    }
                 }
                 img{
                     filter: blur(5px) brightness(.6);
@@ -228,19 +212,8 @@ $areasNiss:(
     }
     
     h2{
-        margin: 0%;
-        padding: 0%;
         grid-area: titAudi;
-        text-align: center;
     }
-
-    img{
-        width: 100%;
-    }
-
-    
-
-    grid-column-gap: 20px;
 }
 
 /*------CHEVROLET------*/
@@ -269,15 +242,6 @@ $areasNiss:(
                     'chevrToTerr#{$num}'
                     'chevrEnergia#{$num}'
                     'chevrDesc#{$num}';
-
-                    outline: 5px solid map-get($colores, bordeImg);
-                    border-radius: 20px;
-
-                    filter: blur(0px);
-                    div{
-                        display: flex;
-                        justify-content: center;     
-                    }
                 }
                 img{
                     filter: blur(5px) brightness(.6);
@@ -288,19 +252,8 @@ $areasNiss:(
     }
     
     h2{
-        margin: 0%;
-        padding: 0%;
         grid-area: titChevr;
-        text-align: center;
     }
-
-    img{
-        width: 100%;
-    }
-
-    
-
-    grid-column-gap: 20px;
 }
 
 /*------RENAULT------*/
@@ -329,15 +282,6 @@ $areasNiss:(
                     'renaToTerr#{$num}'
                     'renaEnergia#{$num}'
                     'renaDesc#{$num}';
-
-                    outline: 5px solid map-get($colores, bordeImg);
-                    border-radius: 20px;
-
-                    filter: blur(0px);
-                    div{
-                        display: flex;
-                        justify-content: center;     
-                    }
                 }
                 img{
                     filter: blur(5px) brightness(.6);
@@ -348,19 +292,8 @@ $areasNiss:(
     }
     
     h2{
-        margin: 0%;
-        padding: 0%;
         grid-area: titRena;
-        text-align: center;
     }
-
-    img{
-        width: 100%;
-    }
-
-    
-
-    grid-column-gap: 20px;
 }
 
 /*------FORD------*/
@@ -390,15 +323,6 @@ $areasNiss:(
                     'fordToTerr#{$num}'
                     'fordEnergia#{$num}'
                     'fordDesc#{$num}';
-
-                    outline: 5px solid map-get($colores, bordeImg);
-                    border-radius: 20px;
-
-                    filter: blur(0px);
-                    div{
-                        display: flex;
-                        justify-content: center;     
-                    }
                 }
                 img{
                     filter: blur(5px) brightness(.6);
@@ -409,19 +333,8 @@ $areasNiss:(
     }
     
     h2{
-        margin: 0%;
-        padding: 0%;
         grid-area: titFord;
-        text-align: center;
     }
-
-    img{
-        width: 100%;
-    }
-
-    
-
-    grid-column-gap: 20px;
 }
 
 /*------FIAT------*/
@@ -450,15 +363,6 @@ $areasNiss:(
                     'fiatToTerr#{$num}'
                     'fiatEnergia#{$num}'
                     'fiatDesc#{$num}';
-
-                    outline: 5px solid map-get($colores, bordeImg);
-                    border-radius: 20px;
-                    
-                    filter: blur(0px);
-                    div{
-                        display: flex;
-                        justify-content: center;     
-                    }
                 }
                 img{
                     filter: blur(5px) brightness(.6);
@@ -469,19 +373,8 @@ $areasNiss:(
     }
     
     h2{
-        margin: 0%;
-        padding: 0%;
         grid-area: titFiat;
-        text-align: center;
     }
-
-    img{
-        width: 100%;
-    }
-
-    
-
-    grid-column-gap: 20px;
 }
 
 /*------NISSAN------*/
@@ -511,15 +404,6 @@ $areasNiss:(
                     'nissToTerr#{$num}'
                     'nissEnergia#{$num}'
                     'nissDesc#{$num}';
-
-                    outline: 5px solid map-get($colores, bordeImg);
-                    border-radius: 20px;
-
-                    filter: blur(0px);
-                    div{
-                        display: flex;
-                        justify-content: center;     
-                    }
                 }
                 img{
                     filter: blur(5px) brightness(.6);
@@ -530,19 +414,8 @@ $areasNiss:(
     }
     
     h2{
-        margin: 0%;
-        padding: 0%;
         grid-area: titNiss;
-        text-align: center;
     }
-
-    img{
-        width: 100%;
-    }
-
-    
-
-    grid-column-gap: 20px;
 }
 
 #marcas{
@@ -552,13 +425,14 @@ $areasNiss:(
     width: 100%;
     display: flex;
     justify-content: space-evenly;
-    margin-top: 20px;
     background-color: rgba(255, 255, 255, 0.582);
     @include padding(10px, 0, 10px, 0);
     border-radius: 10px;
     a{
+        display: flex;
+        align-items: center;
         width: 13%;
-        input{
+        button{
             width: 100%;
             font-size: 20px;
             background: #e2e2e2;
@@ -584,7 +458,9 @@ $areasNiss:(
 }
 /*TRANSICIONES Y TRANSFORMACIONES*/
 
+/*-----RESPONSIVE-----*/
 
+/*PC De La Escuela*/
 @media screen and (min-width: 1300px) and (max-width: 1400px){
     #tieAut__Main{
         h4{
@@ -594,7 +470,96 @@ $areasNiss:(
             font-size: 15px;
         }
     }
-    #hondaImg1, #hondaImg2, #hondaImg3, #audiImg1, #audiImg2, #audiImg3, #chevrImg1, #chevrImg2, #chevrImg3, #renaImg1, #renaImg2, #renaImg3, #fordImg1, #fordImg2, #fordImg3, #fiatImg1, #fiatImg2, #fiatImg3, #nissImg1, #nissImg2, #nissImg3{
-        height: 292px;
+}
+
+/*TABLET*/
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    #tieAut__Main{
+        img{
+            outline: 3px solid map-get($colores, bordeImg);
+        }
+        #marcas{
+            top: 5px;
+            a{
+                button{
+                    font-size: 18px;
+                }
+            }
+        }
+        #tieAut__Grid{
+            grid-row-gap: 5px;
+            div[id*="Datos"]{
+                display: grid;
+                grid-row-gap: 5px;
+                position: relative;
+                height: auto;
+                transform: translate(0px, 5px);
+                outline: none;
+                h4{
+                    font-size: 15px;
+                }
+                p{
+                    font-size: 10px;
+                }
+                &:hover{
+                    scale: 1;
+                    img{
+                        filter:none;
+                    }
+                }
+            }
+            div[id*="Img"]{
+                height: 140px;
+            }
+        }
+    }
+}
+
+/*CELULAR*/
+@media screen and (min-width: 320px) and (max-width: 767px){
+    #tieAut__Main{
+        img{
+            outline: 3px solid map-get($colores, bordeImg);
+        }
+        #marcas{
+            @include padding(5px, 0, 5px, 0);
+            top: 5px;
+            a{
+                button{
+                    font-size: 8px;
+                }
+            }
+        }
+        #tieAut__Grid{
+            grid-row-gap: 5px;
+            div[id*="Datos"]{
+                display: grid;
+                grid-row-gap: 5px;
+                position: relative;
+                height: auto;
+                transform: translate(0px, 5px);
+                outline: none;
+                h4{
+                    font-size: 10px;
+                }
+                p{
+                    font-size: 7px;
+                }
+                &:hover{
+                    scale: 1;
+                    img{
+                        filter:none;
+                    }
+                }
+            }
+            div[id*="Img"]{
+                height: 100px;
+            }
+            .tieAut__grid--marcas{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr repeat(3, 7.7fr);
+            }
+            
+        }
     }
 }

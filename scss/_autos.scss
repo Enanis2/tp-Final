@@ -465,17 +465,19 @@ $areasNiss:(
 /*PC De La Escuela*/
 @media screen and (min-width: 1300px) and (max-width: 1400px){
     #tieAut__Main{
-        h4{
-            font-size: 30px;
-        }
-        p{
-            font-size: 15px;
+        div[id*="Datos"]{
+            h4{
+                font-size: 30px;
+            }
+            p{
+                font-size: 15px;
+            }
         }
     }
 }
 
 /*TABLET*/
-@media screen and (min-width: 768px) and (max-width: 1023px){
+@media screen and (min-width: 421px) and (max-width: 1023px){
     #tieAut__Main{
         img{
             outline: 3px solid map-get($colores, bordeImg);
@@ -518,7 +520,7 @@ $areasNiss:(
 }
 
 /*CELULAR*/
-@media screen and (min-width: 320px) and (max-width: 767px){
+@media screen and (min-width: 320px) and (max-width: 480px){
     #tieAut__Main{
         img{
             outline: 3px solid map-get($colores, bordeImg);

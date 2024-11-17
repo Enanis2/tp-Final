@@ -174,7 +174,7 @@ nav {
   display: grid;
   grid-template-rows: repeat(7, 1fr);
   grid-template-areas: 'honda' 'audi' 'chevrolet' 'renault' 'ford' 'fiat' 'nissan';
-  grid-row-gap: 20px; }
+  grid-row-gap: 0px; }
   #tieAut__Grid div[id*="Img"] {
     height: 292px; }
     #tieAut__Grid div[id*="Img"] img {
@@ -200,13 +200,15 @@ nav {
 
 .tieAut__grid--marcas {
   display: grid;
-  grid-template-rows: 1fr 7.7fr;
+  grid-template-rows: 1fr 6.5fr;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px; }
   .tieAut__grid--marcas h2 {
     margin: 0%;
     padding: 0%;
-    text-align: center; }
+    text-align: center;
+    text-decoration: underline;
+    padding: 0 0 10px 0; }
   .tieAut__grid--marcas img {
     width: 100%; }
 
@@ -591,10 +593,11 @@ nav {
     #tieAut__Main #marcas a button {
       font-size: 8px; }
   #tieAut__Main #tieAut__Grid {
-    grid-row-gap: 5px; }
+    grid-row-gap: 5px;
+    /*-------------*/ }
     #tieAut__Main #tieAut__Grid div[id*="Datos"] {
       display: grid;
-      grid-row-gap: 5px;
+      grid-row-gap: 2px;
       position: relative;
       height: auto;
       transform: translate(0px, 5px);
@@ -608,10 +611,40 @@ nav {
         #tieAut__Main #tieAut__Grid div[id*="Datos"]:hover img {
           filter: none; }
     #tieAut__Main #tieAut__Grid div[id*="Img"] {
-      height: 100px; }
+      height: 170px; }
     #tieAut__Main #tieAut__Grid .tieAut__grid--marcas {
       grid-template-columns: 1fr;
-      grid-template-rows: 1fr repeat(3, 7.7fr); } }
+      grid-template-rows: 1fr repeat(3, 7.7fr); }
+    #tieAut__Main #tieAut__Grid .tieAut__grid--marcas > div {
+      padding: 0 0 30px 0; }
+    #tieAut__Main #tieAut__Grid #honda {
+      grid-template-areas: 'titHonda' 'honda1' 'honda2' 'honda3'; }
+      #tieAut__Main #tieAut__Grid #honda h2 {
+        grid-area: titHonda; }
+    #tieAut__Main #tieAut__Grid #audi {
+      grid-template-areas: 'titAudi' 'audi1' 'audi2' 'audi3'; }
+      #tieAut__Main #tieAut__Grid #audi h2 {
+        grid-area: titAudi; }
+    #tieAut__Main #tieAut__Grid #chevrolet {
+      grid-template-areas: 'titChevr' 'chevr1' 'chevr2' 'chevr3'; }
+      #tieAut__Main #tieAut__Grid #chevrolet h2 {
+        grid-area: titChevr; }
+    #tieAut__Main #tieAut__Grid #renault {
+      grid-template-areas: 'titRena' 'rena1' 'rena2' 'rena3'; }
+      #tieAut__Main #tieAut__Grid #renault h2 {
+        grid-area: titRena; }
+    #tieAut__Main #tieAut__Grid #ford {
+      grid-template-areas: 'titFord' 'ford1' 'ford2' 'ford3'; }
+      #tieAut__Main #tieAut__Grid #ford h2 {
+        grid-area: titFord; }
+    #tieAut__Main #tieAut__Grid #fiat {
+      grid-template-areas: 'titFiat' 'fiat1' 'fiat2' 'fiat3'; }
+      #tieAut__Main #tieAut__Grid #fiat h2 {
+        grid-area: titFiat; }
+    #tieAut__Main #tieAut__Grid #nissan {
+      grid-template-areas: 'titNiss' 'niss1' 'niss2' 'niss3'; }
+      #tieAut__Main #tieAut__Grid #nissan h2 {
+        grid-area: titNiss; } }
 
 #mainConsulta {
   display: grid;

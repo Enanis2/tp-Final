@@ -85,7 +85,7 @@ $areasNiss:(
     'fiat'
     'nissan';
 
-    grid-row-gap: 20px;
+    grid-row-gap: 0px;
     div[id*="Img"]{
         height: 292px;
         img{
@@ -119,7 +119,7 @@ $areasNiss:(
 .tieAut__grid--marcas{
     display: grid;
 
-    grid-template-rows: 1fr 7.7fr;
+    grid-template-rows: 1fr 6.5fr;
     grid-template-columns: repeat(3, 1fr);
 
     grid-column-gap: 20px;
@@ -128,6 +128,8 @@ $areasNiss:(
         margin: 0%;
         padding: 0%;
         text-align: center;
+        text-decoration: underline;
+        @include padding(0, 0, 10px, 0)
     }
 
     img{
@@ -534,7 +536,7 @@ $areasNiss:(
             grid-row-gap: 5px;
             div[id*="Datos"]{
                 display: grid;
-                grid-row-gap: 5px;
+                grid-row-gap: 2px;
                 position: relative;
                 height: auto;
                 transform: translate(0px, 5px);
@@ -553,13 +555,86 @@ $areasNiss:(
                 }
             }
             div[id*="Img"]{
-                height: 100px;
+                height: 170px;
             }
             .tieAut__grid--marcas{
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr repeat(3, 7.7fr);
             }
-            
+            .tieAut__grid--marcas > div{
+                @include padding(0, 0, 30px, 0)
+            }
+            /*-------------*/
+            #honda{
+                grid-template-areas:
+                'titHonda'
+                'honda1'
+                'honda2'
+                'honda3';
+                h2{
+                    grid-area: titHonda;
+                }
+            }
+            #audi{
+                grid-template-areas:
+                'titAudi'
+                'audi1'
+                'audi2'
+                'audi3';
+                h2{
+                    grid-area: titAudi;
+                }
+            }
+            #chevrolet{
+                grid-template-areas:
+                'titChevr'
+                'chevr1'
+                'chevr2'
+                'chevr3';
+                h2{
+                    grid-area: titChevr;
+                }
+            }
+            #renault{
+                grid-template-areas:
+                'titRena'
+                'rena1'
+                'rena2'
+                'rena3';
+                h2{
+                    grid-area: titRena;
+                }
+            }
+            #ford{
+                grid-template-areas:
+                'titFord'
+                'ford1'
+                'ford2'
+                'ford3';
+                h2{
+                    grid-area: titFord;
+                }
+            }
+            #fiat{
+                grid-template-areas:
+                'titFiat'
+                'fiat1'
+                'fiat2'
+                'fiat3';
+                h2{
+                    grid-area: titFiat;
+                }
+            }
+            #nissan{
+                grid-template-areas:
+                'titNiss'
+                'niss1'
+                'niss2'
+                'niss3';
+                h2{
+                    grid-area: titNiss;
+                }
+            }
         }
     }
 }

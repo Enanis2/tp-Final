@@ -1,3 +1,21 @@
+
+$paleta-colores: (
+    1: white,
+    2: black,
+    3: rgb(70, 70, 70),
+    4: rgb(80, 80, 80),
+    5: rgb(172, 172, 172),
+    6: rgb(100, 100, 100),
+    7: rgb(115, 115, 115),
+    8: #D32F2F,
+    9: #FF6659,
+    10: rgb(47, 47, 47),
+    11: #9b0000,
+    12: #2B2B2B,
+    13: #1A1A1A,
+);
+
+
 @import "footer";
 @import "menu";
 @import "autos";
@@ -33,10 +51,10 @@ body{
 #bodymain{
     background: repeating-linear-gradient(
         45deg,
-        rgb(70, 70, 70),
-        rgb(70, 70, 70) 20%,
-        rgb(80, 80, 80) 20%,
-        rgb(80, 80, 80) 40%
+        map-get($paleta-colores, 3),
+        map-get($paleta-colores, 3) 20%,
+        map-get($paleta-colores, 4) 20%,
+        map-get($paleta-colores, 4) 40%
     );
 }
 
@@ -73,7 +91,7 @@ body{
     font-size: 50px;
     letter-spacing: 1px;
     font-family:serif;
-    color: white;
+    color: map-get($paleta-colores, 1);
     transition: all 0.5s;
     &:hover{
         transform: scale(1.2);
@@ -81,20 +99,16 @@ body{
     }
 }
 
-#main-nav div{
-    height: 50px;
-}
-
 #main-nav__menu{
     ul {
-        height: 0px;
+        height: 50px;
         position: sticky !important;
         top: 20px !important;
         li a{
-            color: white;
+            color: map-get($paleta-colores, 1);
             font-size: 20px;
             &:hover{
-                color: rgb(172, 172, 172);
+                color: map-get($paleta-colores, 5);
                 transition: color 0.5s;
             }
         }
@@ -102,7 +116,7 @@ body{
 }
 
 #menu-current-page{
-    color: white;
+    color: map-get($paleta-colores, 1);
 }
 
 
@@ -115,14 +129,12 @@ body{
     }
 }
 
-
 #login-button-principal{
     text-align: center;
     padding: 8px 20px;
     text-decoration: none;
-    color: rgb(97, 97, 97);
-    background-color: #D32F2F;
-    color: white;
+    background-color: map-get($paleta-colores, 8);
+    color: map-get($paleta-colores, 1);
     border-radius: 20px;
 }
 
@@ -133,8 +145,9 @@ body{
         margin-right: 1%;
         background-color: gray;
     }
-    #main-nav--menu ul li a{
+    #main-nav__menu ul li a{
         color: rgb(75, 75, 75);
+        font-weight: bold;
         font-size: 20px;
         &:hover{
             color: rgb(204, 204, 204);
@@ -159,11 +172,11 @@ body{
     font-size: 70px;
     font-family: monospace;
     text-align: center;
-    color: white;
+    color: map-get($paleta-colores, 1);
     padding-top: 15%;
 }
 #que-somos__p{
-    color: white;
+    color: map-get($paleta-colores, 1);
     text-align: center;
     font-family: monospace;
     font-size: 20px;
@@ -187,10 +200,10 @@ body{
     padding: 5% 2%;
     background: repeating-linear-gradient(
         -45deg,
-        rgb(100, 100, 100),
-        rgb(100, 100, 100) 20%,
-        rgb(115, 115, 115) 20%,
-        rgb(115, 115, 115) 40%
+        map-get($paleta-colores, 6),
+        map-get($paleta-colores, 6) 20%,
+        map-get($paleta-colores, 7) 20%,
+        map-get($paleta-colores, 7) 40%
     );
     img{
         filter: brightness(80%);
@@ -236,7 +249,7 @@ body{
     letter-spacing: 2px;
     padding: 15px 0;
     margin-bottom: 50px;
-    background-color: rgb(179, 179, 179);
+    background-color: #f17b7b;
 }
 
 #comp-related__companies--logo1{
@@ -249,7 +262,7 @@ body{
 
 #comp-related__companies--t1{
     text-align: center;
-    color: white;
+    color: map-get($paleta-colores, 1);
     letter-spacing: 3px;
     margin: 25px 0;
     font-size: 60px;
@@ -259,10 +272,10 @@ body{
 
 #comp-related__companies--p1{
     text-align: center;
-    color: rgb(237, 237, 237);
+    color: map-get($paleta-colores, 1);
     font-size: 20px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgba(128, 128, 128, 0.498);
+    background-color: rgba(128, 128, 128, 0.539);
     
     border-radius: 20px;
     padding: 10px 5px;

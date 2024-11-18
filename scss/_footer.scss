@@ -1,5 +1,5 @@
 footer {
-    background-color: #2B2B2B; /* Gris oscuro tirando a negro */
+    background-color: map-get($paleta-colores, 12);
     margin-top: auto;
     
 }
@@ -17,7 +17,7 @@ footer {
 .socialIcons a {
     text-decoration: none;
     padding: 10px;
-    background-color: #D32F2F; /* Rojo intenso */
+    background-color: map-get($paleta-colores, 8);
     margin: 10px;
     border-radius: 50%;
 }
@@ -30,7 +30,7 @@ footer {
 
 /* Hover effect on social media icon */
 .socialIcons a:hover {
-    background-color: #FF6659; /* Rojo suave */
+    background-color: map-get($paleta-colores, 9);
     transition: 0.5s;
 }
 
@@ -50,7 +50,7 @@ footer {
 }
 
 .footerNav ul li a {
-    color: #D32F2F; /* Rojo intenso */
+    color: map-get($paleta-colores, 8);
     margin: 20px;
     text-decoration: none;
     font-size: 1.3em;
@@ -60,17 +60,17 @@ footer {
 
 .footerNav ul li a:hover {
     opacity: 1;
-    color: #FF6659; /* Rojo suave en hover */
+    color: map-get($paleta-colores, 9);
 }
 
 .footerBottom {
-    background-color: #1A1A1A; /* Gris casi negro */
+    background-color: map-get($paleta-colores, 13);
     padding: 20px;
     text-align: center;
 }
 
 .footerBottom p {
-    color: #ffffff; /* Blanco */
+    color: map-get($paleta-colores, 1)
 }
 
 .designer {
@@ -79,7 +79,7 @@ footer {
     letter-spacing: 1px;
     font-weight: 400;
     margin: 0px 5px;
-    color: #D32F2F; /* Rojo intenso */
+    color: map-get($paleta-colores, 8)
 }
 
 @media (max-width: 700px) {
@@ -97,12 +97,10 @@ footer {
     }
 }
 
-/* Hacer que el contenedor principal ocupe el espacio restante */
 .container-fluid {
     flex: 1;
 }
 
-/* Si el footer tiene margen superior, elimínalo */
 footer {
     margin-top: auto;
 }

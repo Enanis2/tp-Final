@@ -1,7 +1,6 @@
 @charset "UTF-8";
 footer {
   background-color: #2B2B2B;
-  /* Gris oscuro tirando a negro */
   margin-top: auto; }
 
 .footerContainer {
@@ -16,7 +15,6 @@ footer {
   text-decoration: none;
   padding: 10px;
   background-color: #D32F2F;
-  /* Rojo intenso */
   margin: 10px;
   border-radius: 50%; }
 
@@ -29,7 +27,6 @@ footer {
 /* Hover effect on social media icon */
 .socialIcons a:hover {
   background-color: #FF6659;
-  /* Rojo suave */
   transition: 0.5s; }
 
 .socialIcons a:hover i {
@@ -47,7 +44,6 @@ footer {
 
 .footerNav ul li a {
   color: #D32F2F;
-  /* Rojo intenso */
   margin: 20px;
   text-decoration: none;
   font-size: 1.3em;
@@ -56,18 +52,15 @@ footer {
 
 .footerNav ul li a:hover {
   opacity: 1;
-  color: #FF6659;
-  /* Rojo suave en hover */ }
+  color: #FF6659; }
 
 .footerBottom {
   background-color: #1A1A1A;
-  /* Gris casi negro */
   padding: 20px;
   text-align: center; }
 
 .footerBottom p {
-  color: #ffffff;
-  /* Blanco */ }
+  color: white; }
 
 .designer {
   opacity: 0.7;
@@ -75,8 +68,7 @@ footer {
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0px 5px;
-  color: #D32F2F;
-  /* Rojo intenso */ }
+  color: #D32F2F; }
 
 @media (max-width: 700px) {
   .footerNav ul {
@@ -89,11 +81,9 @@ footer {
     padding: 8px;
     margin: 4px; } }
 
-/* Hacer que el contenedor principal ocupe el espacio restante */
 .container-fluid {
   flex: 1; }
 
-/* Si el footer tiene margen superior, elimínalo */
 footer {
   margin-top: auto; }
 
@@ -103,7 +93,6 @@ nav {
 
 .login-button {
   background-color: #D32F2F;
-  /* Rojo intenso */
   color: #fff;
   font-size: 14px;
   padding: 8px 20px;
@@ -112,8 +101,7 @@ nav {
   transition: 0.3s background-color; }
 
 .login-button:hover {
-  background-color: #FF6659;
-  /* Rojo suave */ }
+  background-color: #FF6659 !important; }
 
 .navbar-toggler {
   border: none;
@@ -125,14 +113,13 @@ nav {
   outline: none; }
 
 .nav-link {
-  color: #2f2e2e;
+  color: #2f2f2f;
   font-weight: 500;
   position: relative; }
 
 .nav-link:hover,
 .nav-link:active {
-  color: #9b0000;
-  /* Rojo claro */ }
+  color: #9b0000; }
 
 @media (min-width: 991px) {
   .nav-link::before {
@@ -144,7 +131,6 @@ nav {
     width: 0;
     height: 2px;
     background-color: #9b0000;
-    /* Rojo intenso */
     visibility: hidden;
     transition: 0.3s ease-in-out; }
   .nav-link:hover::before,
@@ -1405,11 +1391,8 @@ body {
     transform: scale(1.2);
     transition: all 0.5s; }
 
-#main-nav div {
-  height: 50px; }
-
 #main-nav__menu ul {
-  height: 0px;
+  height: 50px;
   position: sticky !important;
   top: 20px !important; }
   #main-nav__menu ul li a {
@@ -1433,7 +1416,6 @@ body {
   text-align: center;
   padding: 8px 20px;
   text-decoration: none;
-  color: #616161;
   background-color: #D32F2F;
   color: white;
   border-radius: 20px; }
@@ -1444,10 +1426,11 @@ body {
     position: relative !important;
     margin-right: 1%;
     background-color: gray; }
-  #main-nav--menu ul li a {
+  #main-nav__menu ul li a {
     color: #4b4b4b;
+    font-weight: bold;
     font-size: 20px; }
-    #main-nav--menu ul li a:hover {
+    #main-nav__menu ul li a:hover {
       color: #cccccc;
       transition: color 0.5s; } }
 
@@ -1526,7 +1509,7 @@ body {
   letter-spacing: 2px;
   padding: 15px 0;
   margin-bottom: 50px;
-  background-color: #b3b3b3; }
+  background-color: #f17b7b; }
 
 #comp-related__companies--logo1, #comp-related__companies--logo2, #comp-related__companies--logo3, #comp-related__companies--logo4 {
   display: flex;
@@ -1545,10 +1528,10 @@ body {
 
 #comp-related__companies--p1, #comp-related__companies--p2, #comp-related__companies--p3, #comp-related__companies--p4 {
   text-align: center;
-  color: #ededed;
+  color: white;
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: rgba(128, 128, 128, 0.498);
+  background-color: rgba(128, 128, 128, 0.539);
   border-radius: 20px;
   padding: 10px 5px;
   margin-bottom: 100px; }

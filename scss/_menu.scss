@@ -4,7 +4,7 @@ nav{
 }
 
 .login-button {
-    background-color: #D32F2F; /* Rojo intenso */
+    background-color: map-get($paleta-colores, 8);
     color: #fff;
     font-size: 14px;
     padding: 8px 20px;
@@ -14,7 +14,7 @@ nav{
 }
 
 .login-button:hover {
-    background-color: #FF6659; /* Rojo suave */
+    background-color: map-get($paleta-colores, 9) !important;
 }
 
 .navbar-toggler {
@@ -29,14 +29,14 @@ nav{
 }
 
 .nav-link {
-    color: rgb(47, 46, 46);
+    color: map-get($paleta-colores, 10);
     font-weight: 500;
     position: relative;
 }
 
 .nav-link:hover,
 .nav-link:active {
-    color: #9b0000; /* Rojo claro */
+    color: map-get($paleta-colores, 11);
 }
 
 @media (min-width: 991px) {
@@ -48,7 +48,7 @@ nav{
         transform: translateX(-50%);
         width: 0;
         height: 2px;
-        background-color: #9b0000; /* Rojo intenso */
+        background-color: map-get($paleta-colores, 11);
         visibility: hidden;
         transition: 0.3s ease-in-out;
     }

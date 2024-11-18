@@ -60,7 +60,7 @@ footer {
   text-align: center; }
 
 .footerBottom p {
-  color: white; }
+  color: #f0f0f0; }
 
 .designer {
   opacity: 0.7;
@@ -1385,7 +1385,7 @@ body {
   font-size: 50px;
   letter-spacing: 1px;
   font-family: serif;
-  color: white;
+  color: #f0f0f0;
   transition: all 0.5s; }
   #titulo-empresa:hover {
     transform: scale(1.2);
@@ -1396,14 +1396,14 @@ body {
   position: sticky !important;
   top: 20px !important; }
   #main-nav__menu ul li a {
-    color: white;
+    color: #f0f0f0;
     font-size: 20px; }
     #main-nav__menu ul li a:hover {
       color: #acacac;
       transition: color 0.5s; }
 
 #menu-current-page {
-  color: white; }
+  color: #f0f0f0; }
 
 .cont-login {
   position: absolute !important;
@@ -1417,7 +1417,7 @@ body {
   padding: 8px 20px;
   text-decoration: none;
   background-color: #D32F2F;
-  color: white;
+  color: #f0f0f0;
   border-radius: 20px; }
 
 @media (max-width: 991px) {
@@ -1448,11 +1448,11 @@ body {
   font-size: 70px;
   font-family: monospace;
   text-align: center;
-  color: white;
+  color: #f0f0f0;
   padding-top: 15%; }
 
 #que-somos__p {
-  color: white;
+  color: #f0f0f0;
   text-align: center;
   font-family: monospace;
   font-size: 20px;
@@ -1519,7 +1519,7 @@ body {
 
 #comp-related__companies--t1, #comp-related__companies--t2, #comp-related__companies--t3, #comp-related__companies--t4 {
   text-align: center;
-  color: white;
+  color: #f0f0f0;
   letter-spacing: 3px;
   margin: 25px 0;
   font-size: 60px;
@@ -1528,7 +1528,7 @@ body {
 
 #comp-related__companies--p1, #comp-related__companies--p2, #comp-related__companies--p3, #comp-related__companies--p4 {
   text-align: center;
-  color: white;
+  color: #f0f0f0;
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: rgba(128, 128, 128, 0.539);

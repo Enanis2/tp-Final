@@ -1,7 +1,6 @@
 @charset "UTF-8";
 footer {
   background-color: #2B2B2B;
-  /* Gris oscuro tirando a negro */
   margin-top: auto; }
 
 .footerContainer {
@@ -16,7 +15,6 @@ footer {
   text-decoration: none;
   padding: 10px;
   background-color: #D32F2F;
-  /* Rojo intenso */
   margin: 10px;
   border-radius: 50%; }
 
@@ -29,7 +27,6 @@ footer {
 /* Hover effect on social media icon */
 .socialIcons a:hover {
   background-color: #FF6659;
-  /* Rojo suave */
   transition: 0.5s; }
 
 .socialIcons a:hover i {
@@ -47,7 +44,6 @@ footer {
 
 .footerNav ul li a {
   color: #D32F2F;
-  /* Rojo intenso */
   margin: 20px;
   text-decoration: none;
   font-size: 1.3em;
@@ -56,18 +52,15 @@ footer {
 
 .footerNav ul li a:hover {
   opacity: 1;
-  color: #FF6659;
-  /* Rojo suave en hover */ }
+  color: #FF6659; }
 
 .footerBottom {
   background-color: #1A1A1A;
-  /* Gris casi negro */
   padding: 20px;
   text-align: center; }
 
 .footerBottom p {
-  color: #ffffff;
-  /* Blanco */ }
+  color: white; }
 
 .designer {
   opacity: 0.7;
@@ -75,8 +68,7 @@ footer {
   letter-spacing: 1px;
   font-weight: 400;
   margin: 0px 5px;
-  color: #D32F2F;
-  /* Rojo intenso */ }
+  color: #D32F2F; }
 
 @media (max-width: 700px) {
   .footerNav ul {
@@ -89,11 +81,9 @@ footer {
     padding: 8px;
     margin: 4px; } }
 
-/* Hacer que el contenedor principal ocupe el espacio restante */
 .container-fluid {
   flex: 1; }
 
-/* Si el footer tiene margen superior, elimínalo */
 footer {
   margin-top: auto; }
 
@@ -103,7 +93,6 @@ nav {
 
 .login-button {
   background-color: #D32F2F;
-  /* Rojo intenso */
   color: #fff;
   font-size: 14px;
   padding: 8px 20px;
@@ -112,8 +101,7 @@ nav {
   transition: 0.3s background-color; }
 
 .login-button:hover {
-  background-color: #FF6659;
-  /* Rojo suave */ }
+  background-color: #FF6659 !important; }
 
 .navbar-toggler {
   border: none;
@@ -125,14 +113,13 @@ nav {
   outline: none; }
 
 .nav-link {
-  color: #2f2e2e;
+  color: #2f2f2f;
   font-weight: 500;
   position: relative; }
 
 .nav-link:hover,
 .nav-link:active {
-  color: #9b0000;
-  /* Rojo claro */ }
+  color: #9b0000; }
 
 @media (min-width: 991px) {
   .nav-link::before {
@@ -144,7 +131,6 @@ nav {
     width: 0;
     height: 2px;
     background-color: #9b0000;
-    /* Rojo intenso */
     visibility: hidden;
     transition: 0.3s ease-in-out; }
   .nav-link:hover::before,
@@ -653,9 +639,11 @@ nav {
   grid-template-areas: 'h1 h1 h1' 'img1 img2 img3' 'm1 t1 r1' 'd1 d2 d3' 'h2 h2 h2' 'i1 i2 i3' 'img img ct';
   justify-items: center;
   align-items: center;
-  gap: 20px; }
+  gap: 20px;
+  width: 100%;
+  padding: 20px; }
 
-#contenedorcliente1 {
+#contenedor_titulo_consulta {
   color: white;
   background-color: black;
   width: 100%;
@@ -721,17 +709,17 @@ nav {
   justify-content: center;
   font-size: 40px; }
 
-#if1c {
+#info1consulta {
   grid-area: i1;
   width: 500px;
   height: 300px; }
 
-#if2c {
+#info2consulta {
   width: 500px;
   height: 300px;
   grid-area: i2; }
 
-#if3c {
+#info3consulta {
   width: 500px;
   height: 300px;
   grid-area: i3; }
@@ -743,15 +731,12 @@ nav {
 
 #img_laptop {
   width: 100%;
-  height: 700px;
-  margin: 10px;
-  padding: 10px; }
+  height: 700px; }
 
 #consulta {
   grid-area: ct;
   width: 100%;
   height: auto;
-  padding: 20px;
   border-radius: 10px;
   background-color: white;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -776,10 +761,12 @@ nav {
   background-color: #0056b3; }
 
 @media (max-width: 768px) {
-  #mainC {
+  #mainConsulta {
     grid-template-columns: 1fr;
-    grid-template-areas: 'h1' 'img1' 'm1' 'img2' 't1' 'img3' 'r1' 'h2' 'i1' 'i2' 'i3' 'img' 'ct'; }
-  #img1c, #img2c, #img3c, #if1c, #if2c, #if3c {
+    grid-template-areas: 'h1' 'img1' 'm1' 'img2' 't1' 'img3' 'r1' 'h2' 'i1' 'i2' 'i3' 'img' 'ct';
+    padding: 10px;
+    gap: 15px; }
+  #img1c, #img2c, #img3c, #info1consulta, #info2consulta, #info3consulta {
     width: 80%;
     max-width: 250px;
     height: auto; }
@@ -807,11 +794,10 @@ nav {
   to {
     transform: scale(1); } }
 
-/* Aplicar animaciones */
 #mainConsulta {
   animation: fadeIn 1s ease-in-out; }
 
-#contenedorcliente1, #h2c {
+#contenedor_titulo_consulta, #h2c {
   animation: fadeIn 1s ease-in-out; }
 
 #consulta {
@@ -820,18 +806,15 @@ nav {
 #img1c, #img2c, #img3c, #if1c, #if2c, #if3c, #contenedor_imagen_consulta_laptop {
   animation: fadeIn 1.2s ease-in-out; }
 
-/* Efecto hover adicional */
 #consulta:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); }
 
-/* Responsivo: Entre 1300px y 1400px */
 @media (min-width: 1300px) and (max-width: 1400px) {
   #mainConsulta {
     grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    /* Ajusta la separación */ }
-  #img1c, #img2c, #img3c, #if1c, #if2c, #if3c {
+    gap: 15px; }
+  #img1c, #img2c, #img3c, #info1consulta, #info2consulta, #info3consulta {
     width: 280px;
     height: auto; }
   #p1c, #p2c, #p3c {
@@ -1130,11 +1113,7 @@ nav {
   grid-template-areas: 'h1va h1va h1va' 'formulariova formulariova formulariova' 'h2va h2va h2va' 'infova1 infova2 infova3';
   padding: 20px;
   justify-items: center;
-  align-items: start;
-  /* Alineación de inicio en cada celda */
-  gap: 20px;
-  box-sizing: border-box;
-  /* Incluye padding en el tamaño total */ }
+  gap: 20px; }
 
 #contenedorvaformulario {
   grid-area: formulariova;
@@ -1230,16 +1209,132 @@ nav {
   color: white; }
 
 #infova1 {
+  border-radius: 10px;
+  height: 550px;
+  width: 550px;
+  background-color: gray;
   grid-area: infova1;
-  color: white; }
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center; }
 
 #infova2 {
+  border-radius: 10px;
+  height: 550px;
+  width: 550px;
+  background-color: gray;
   grid-area: infova2;
-  color: white; }
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center; }
 
 #infova3 {
+  border-radius: 10px;
+  height: 550px;
+  width: 550px;
+  background-color: gray;
   grid-area: infova3;
-  color: white; }
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center; }
+
+@media (max-width: 768px) {
+  #mainVA {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 'h1va' 'formulariova' 'h2va' 'infova1' 'infova2' 'infova3'; }
+  .form-container {
+    max-width: 100%;
+    /* Ocupa todo el ancho disponible */
+    padding: 15px;
+    /* Reduce el padding */ }
+  .form-group input, .form-group textarea {
+    font-size: 14px;
+    /* Tamaño más pequeño en campos de texto */ }
+  .form-group button {
+    font-size: 14px;
+    /* Botón más pequeño */
+    padding: 8px 15px; }
+  /* Reducimos el tamaño de las letras de los textos */
+  #h1va h2, #contenedorh2va h2 {
+    font-size: 20; }
+  #h1va h1, #contenedorh2va h1 {
+    font-size: 24; }
+  #infova1, #infova2, #infova3 {
+    font-size: 10px;
+    /* Tamaño reducido para contenido */
+    padding: 10px;
+    /* Ajustamos el padding */
+    line-height: 1.4;
+    /* Ajustamos el espaciado entre líneas */
+    width: 300px;
+    height: 400px; }
+    #infova1 h4, #infova2 h4, #infova3 h4 {
+      font-size: 16px; }
+    #infova1 h3, #infova2 h3, #infova3 h3 {
+      font-size: 18; }
+  /* Ajustamos texto del formulario */
+  .form-container label {
+    font-size: 14px;
+    /* Tamaño más pequeño para etiquetas */ }
+  /* Ajustamos otros textos globalmente */
+  body, #mainVA {
+    font-size: 14px;
+    /* Tamaño más pequeño para todo el contenido general */ } }
+
+@media (min-width: 1366px) and (max-width: 1366px) {
+  #mainVA {
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas para aprovechar el ancho */
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 'h1va h1va h1va' 'formulariova formulariova formulariova' 'h2va h2va h2va' 'infova1 infova2 infova3'; }
+  .form-container {
+    max-width: 100%;
+    /* Mantiene el ancho completo */
+    padding: 20px;
+    /* Padding moderado */ }
+  .form-group input, .form-group textarea {
+    font-size: 16px;
+    /* Tamaño de fuente moderado en campos de texto */ }
+  .form-group button {
+    font-size: 16px;
+    /* Botón más grande */
+    padding: 10px 18px; }
+  /* Ajustamos los tamaños de los títulos y contenido */
+  #h1va h2, #contenedorh2va h2 {
+    font-size: 20; }
+  #h1va h1, #contenedorh2va h1 {
+    font-size: 24; }
+  #infova1, #infova2, #infova3 {
+    font-size: 14px;
+    /* Tamaño de texto más grande para contenido */
+    padding: 12px;
+    /* Un poco más de padding */
+    line-height: 1.5;
+    /* Espaciado adecuado entre líneas */
+    width: 400px;
+    height: 500px; }
+    #infova1 h4, #infova2 h4, #infova3 h4 {
+      font-size: 16px; }
+    #infova1 h3, #infova2 h3, #infova3 h3 {
+      font-size: 18; }
+  /* Ajustamos texto del formulario */
+  .form-container label {
+    font-size: 16px;
+    /* Etiquetas con tamaño de fuente moderado */ }
+  /* Ajustamos otros textos globalmente */
+  body, #mainVA {
+    font-size: 14px;
+    /* Tamaño más pequeño para todo el contenido general */ } }
 
 * {
   margin: 0;
@@ -1296,11 +1391,8 @@ body {
     transform: scale(1.2);
     transition: all 0.5s; }
 
-#main-nav div {
-  height: 50px; }
-
 #main-nav__menu ul {
-  height: 0px;
+  height: 50px;
   position: sticky !important;
   top: 20px !important; }
   #main-nav__menu ul li a {
@@ -1324,7 +1416,6 @@ body {
   text-align: center;
   padding: 8px 20px;
   text-decoration: none;
-  color: #616161;
   background-color: #D32F2F;
   color: white;
   border-radius: 20px; }
@@ -1335,10 +1426,11 @@ body {
     position: relative !important;
     margin-right: 1%;
     background-color: gray; }
-  #main-nav--menu ul li a {
+  #main-nav__menu ul li a {
     color: #4b4b4b;
+    font-weight: bold;
     font-size: 20px; }
-    #main-nav--menu ul li a:hover {
+    #main-nav__menu ul li a:hover {
       color: #cccccc;
       transition: color 0.5s; } }
 
@@ -1417,7 +1509,7 @@ body {
   letter-spacing: 2px;
   padding: 15px 0;
   margin-bottom: 50px;
-  background-color: #b3b3b3; }
+  background-color: #f17b7b; }
 
 #comp-related__companies--logo1, #comp-related__companies--logo2, #comp-related__companies--logo3, #comp-related__companies--logo4 {
   display: flex;
@@ -1436,10 +1528,10 @@ body {
 
 #comp-related__companies--p1, #comp-related__companies--p2, #comp-related__companies--p3, #comp-related__companies--p4 {
   text-align: center;
-  color: #ededed;
+  color: white;
   font-size: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  background-color: rgba(128, 128, 128, 0.498);
+  background-color: rgba(128, 128, 128, 0.539);
   border-radius: 20px;
   padding: 10px 5px;
   margin-bottom: 100px; }

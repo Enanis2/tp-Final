@@ -1127,11 +1127,7 @@ nav {
   grid-template-areas: 'h1va h1va h1va' 'formulariova formulariova formulariova' 'h2va h2va h2va' 'infova1 infova2 infova3';
   padding: 20px;
   justify-items: center;
-  align-items: start;
-  /* Alineación de inicio en cada celda */
-  gap: 20px;
-  box-sizing: border-box;
-  /* Incluye padding en el tamaño total */ }
+  gap: 20px; }
 
 #contenedorvaformulario {
   grid-area: formulariova;
@@ -1227,16 +1223,132 @@ nav {
   color: white; }
 
 #infova1 {
+  border-radius: 10px;
+  height: 550px;
+  width: 550px;
+  background-color: gray;
   grid-area: infova1;
-  color: white; }
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center; }
 
 #infova2 {
+  border-radius: 10px;
+  height: 550px;
+  width: 550px;
+  background-color: gray;
   grid-area: infova2;
-  color: white; }
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center; }
 
 #infova3 {
+  border-radius: 10px;
+  height: 550px;
+  width: 550px;
+  background-color: gray;
   grid-area: infova3;
-  color: white; }
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center; }
+
+@media (max-width: 768px) {
+  #mainVA {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 'h1va' 'formulariova' 'h2va' 'infova1' 'infova2' 'infova3'; }
+  .form-container {
+    max-width: 100%;
+    /* Ocupa todo el ancho disponible */
+    padding: 15px;
+    /* Reduce el padding */ }
+  .form-group input, .form-group textarea {
+    font-size: 14px;
+    /* Tamaño más pequeño en campos de texto */ }
+  .form-group button {
+    font-size: 14px;
+    /* Botón más pequeño */
+    padding: 8px 15px; }
+  /* Reducimos el tamaño de las letras de los textos */
+  #h1va h2, #contenedorh2va h2 {
+    font-size: 20; }
+  #h1va h1, #contenedorh2va h1 {
+    font-size: 24; }
+  #infova1, #infova2, #infova3 {
+    font-size: 10px;
+    /* Tamaño reducido para contenido */
+    padding: 10px;
+    /* Ajustamos el padding */
+    line-height: 1.4;
+    /* Ajustamos el espaciado entre líneas */
+    width: 300px;
+    height: 400px; }
+    #infova1 h4, #infova2 h4, #infova3 h4 {
+      font-size: 16px; }
+    #infova1 h3, #infova2 h3, #infova3 h3 {
+      font-size: 18; }
+  /* Ajustamos texto del formulario */
+  .form-container label {
+    font-size: 14px;
+    /* Tamaño más pequeño para etiquetas */ }
+  /* Ajustamos otros textos globalmente */
+  body, #mainVA {
+    font-size: 14px;
+    /* Tamaño más pequeño para todo el contenido general */ } }
+
+@media (min-width: 1366px) and (max-width: 1366px) {
+  #mainVA {
+    grid-template-columns: repeat(3, 1fr);
+    /* Tres columnas para aprovechar el ancho */
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 'h1va h1va h1va' 'formulariova formulariova formulariova' 'h2va h2va h2va' 'infova1 infova2 infova3'; }
+  .form-container {
+    max-width: 100%;
+    /* Mantiene el ancho completo */
+    padding: 20px;
+    /* Padding moderado */ }
+  .form-group input, .form-group textarea {
+    font-size: 16px;
+    /* Tamaño de fuente moderado en campos de texto */ }
+  .form-group button {
+    font-size: 16px;
+    /* Botón más grande */
+    padding: 10px 18px; }
+  /* Ajustamos los tamaños de los títulos y contenido */
+  #h1va h2, #contenedorh2va h2 {
+    font-size: 20; }
+  #h1va h1, #contenedorh2va h1 {
+    font-size: 24; }
+  #infova1, #infova2, #infova3 {
+    font-size: 14px;
+    /* Tamaño de texto más grande para contenido */
+    padding: 12px;
+    /* Un poco más de padding */
+    line-height: 1.5;
+    /* Espaciado adecuado entre líneas */
+    width: 400px;
+    height: 500px; }
+    #infova1 h4, #infova2 h4, #infova3 h4 {
+      font-size: 16px; }
+    #infova1 h3, #infova2 h3, #infova3 h3 {
+      font-size: 18; }
+  /* Ajustamos texto del formulario */
+  .form-container label {
+    font-size: 16px;
+    /* Etiquetas con tamaño de fuente moderado */ }
+  /* Ajustamos otros textos globalmente */
+  body, #mainVA {
+    font-size: 14px;
+    /* Tamaño más pequeño para todo el contenido general */ } }
 
 * {
   margin: 0;

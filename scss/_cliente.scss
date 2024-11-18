@@ -19,9 +19,11 @@ $areasgridConsulta:(
     justify-items: center;
     align-items: center;
     gap: 20px;
+    width: 100%;
+    padding: 20px;
 }
 
-#contenedorcliente1 {
+#contenedor_titulo_consulta {
     color: white;
     background-color: black;
     width: 100%;
@@ -95,19 +97,19 @@ $areasgridConsulta:(
     font-size: 40px;
 }
 
-#if1c{
+#info1consulta{
     grid-area: i1;
     width: 500px;
     height: 300px;
 }
 
-#if2c{
+#info2consulta{
     width: 500px;
     height: 300px;
     grid-area: i2;
 }
 
-#if3c{
+#info3consulta{
     width: 500px;
     height: 300px;
     grid-area: i3;
@@ -122,8 +124,6 @@ $areasgridConsulta:(
 #img_laptop{
     width: 100%;
     height: 700px;
-    margin: 10px;
-    padding: 10px;
 }
 
 
@@ -131,7 +131,6 @@ $areasgridConsulta:(
     grid-area: ct;
     width: 100%;
     height: auto;
-    padding: 20px;
     border-radius: 10px;
     background-color: white;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -163,7 +162,7 @@ $areasgridConsulta:(
 
 
 @media (max-width: 768px) {
-    #mainC {
+    #mainConsulta {
         grid-template-columns: 1fr;
         grid-template-areas:
             'h1'
@@ -179,12 +178,16 @@ $areasgridConsulta:(
             'i3'
             'img'
             'ct';
+        padding: 10px;
+        gap: 15px;
+
     }
 
-    #img1c, #img2c, #img3c, #if1c, #if2c, #if3c {
+    #img1c, #img2c, #img3c, #info1consulta, #info2consulta, #info3consulta {
         width: 80%;
         max-width: 250px;
         height: auto;
+        
     }
 
     #p1c, #p2c, #p3c {
@@ -203,7 +206,6 @@ $areasgridConsulta:(
         font-size: 16px;
     }
 }
-
 /* Animaciones */
 @keyframes fadeIn {
     from {
@@ -225,12 +227,12 @@ $areasgridConsulta:(
     }
 }
 
-/* Aplicar animaciones */
+
 #mainConsulta {
     animation: fadeIn 1s ease-in-out;
 }
 
-#contenedorcliente1, #h2c {
+#contenedor_titulo_consulta, #h2c {
     animation: fadeIn 1s ease-in-out;
 }
 
@@ -242,20 +244,19 @@ $areasgridConsulta:(
     animation: fadeIn 1.2s ease-in-out;
 }
 
-/* Efecto hover adicional */
+
 #consulta:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsivo: Entre 1300px y 1400px */
 @media (min-width: 1300px) and (max-width: 1400px) {
     #mainConsulta {
         grid-template-columns: repeat(3, 1fr);
-        gap: 15px; /* Ajusta la separación */
+        gap: 15px; 
     }
 
-    #img1c, #img2c, #img3c, #if1c, #if2c, #if3c {
+    #img1c, #img2c, #img3c, #info1consulta, #info2consulta, #info3consulta {
         width: 280px;
         height: auto;
     }

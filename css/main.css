@@ -800,6 +800,8 @@ nav {
     width: 80%;
     max-width: 250px;
     height: auto; }
+  #img_laptop {
+    height: 300px; }
   #p1c, #p2c, #p3c {
     width: 100%; }
   #h1_1c {

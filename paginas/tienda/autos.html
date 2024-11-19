@@ -13,7 +13,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/imagenes/logo/logo.png">
-    <title>Venta de Autos - Drive & Dream</title>
+    <title>Prueba3</title>
 </head>
 <body>
     <header>
@@ -54,6 +54,20 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
+                <!------>
+                <!-- Icono de búsqueda -->
+                <div class="search-icon" onclick="toggleSearch()">
+                    🔍
+                </div>
+
+                <!-- Pantalla de búsqueda -->
+                <div id="search-screen" class="search-screen">
+                    <div class="search-container">
+                        <input type="text" id="search-input" placeholder="Buscar por clase..." oninput="filterDivs()">
+                        <button onclick="toggleSearch()">Cerrar</button>
+                    </div>
+                </div>
             </div>
         </nav>
     </header>
@@ -67,8 +81,8 @@
             <a href="#fiat"><button>Fiat</button></a>
             <a href="#nissan"><button>Nissan</button></a>
         </div>
-        <div id="tieAut__Grid"> 
-            <div class="tieAut__grid--marcas" id="honda">
+        <div id="tieAut__Grid" class="main-content">     
+            <div class="tieAut__grid--marcas honda" id="honda">
                 <h2>Honda</h2>
                 <div id="honda1"><a href="autos-productos/2Honda/prod-1.html">
                     <div id="hondaImg1">
@@ -137,7 +151,7 @@
                     </div>
                 </a></div>
             </div>
-            <div class="tieAut__grid--marcas" id="audi">
+            <div class="tieAut__grid--marcas audi" id="audi">
                 <h2>Audi</h2>
                 <div id="audi1"><a href="autos-productos/3Audi/prod-1.html">
                     <div id="audiImg1">
@@ -206,7 +220,7 @@
                     </div>
                 </a></div>
             </div>
-            <div class="tieAut__grid--marcas" id="chevrolet">
+            <div class="tieAut__grid--marcas chevrolet" id="chevrolet">
                 <h2>Chevrolet</h2>
                 <div id="chevr1"><a href="autos-productos/1Chevrolet/prod-1.html">
                     <div id="chevrImg1">
@@ -275,7 +289,7 @@
                     </div>
                 </a></div>
             </div>
-            <div class="tieAut__grid--marcas" id="renault">
+            <div class="tieAut__grid--marcas renault" id="renault">
                 <h2>Renault</h2>
                 <div id="rena1">
                     <div id="renaImg1">
@@ -344,7 +358,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tieAut__grid--marcas" id="ford">
+            <div class="tieAut__grid--marcas ford" id="ford">
                 <h2>Ford</h2>
                 <div id="ford1">
                     <div id="fordImg1">
@@ -413,7 +427,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tieAut__grid--marcas" id="fiat">
+            <div class="tieAut__grid--marcas fiat" id="fiat">
                 <h2>Fiat</h2>
                 <div id="fiat1">
                     <div id="fiatImg1">
@@ -482,7 +496,7 @@
                     </div>
                 </div>
             </div>
-            <div class="tieAut__grid--marcas" id="nissan">
+            <div class="tieAut__grid--marcas nissan" id="nissan">
                 <h2>Nissan</h2>
                 <div id="niss1">
                     <div id="nissImg1">
@@ -553,5 +567,6 @@
             </div>
         </div>
     </main>
+    <script src="../../scripts.js"></script>
 </body>
 </html>

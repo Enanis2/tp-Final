@@ -74,14 +74,6 @@ $areasNiss:(
     display: grid;
 
     grid-template-rows: repeat(7, 1fr);
-    grid-template-areas: 
-    'honda'
-    'audi'
-    'chevrolet'
-    'renault'
-    'ford'
-    'fiat'
-    'nissan';
 
     grid-row-gap: 0px;
     div[id*="Img"]{
@@ -139,7 +131,6 @@ $areasNiss:(
 /*------HONDA------*/
 
 #honda{
-    grid-area: map-get($areasGrid, 1);
     
     grid-template-areas:
     'titHonda titHonda titHonda'
@@ -179,7 +170,6 @@ $areasNiss:(
 /*------AUDI------*/
 
 #audi{
-    grid-area: map-get($areasGrid, 2);
     
     grid-template-areas:
     'titAudi titAudi titAudi'
@@ -219,7 +209,6 @@ $areasNiss:(
 /*------CHEVROLET------*/
 
 #chevrolet{
-    grid-area: map-get($areasGrid, 3);
     
     grid-template-areas:
     'titChevr titChevr titChevr'
@@ -259,7 +248,6 @@ $areasNiss:(
 /*------RENAULT------*/
 
 #renault{
-    grid-area: map-get($areasGrid, 4);
     
     grid-template-areas:
     'titRena titRena titRena'
@@ -299,7 +287,6 @@ $areasNiss:(
 /*------FORD------*/
 
 #ford{
-    grid-area: map-get($areasGrid, 5);
     
     grid-template-areas:
     'titFord titFord titFord'
@@ -340,7 +327,6 @@ $areasNiss:(
 /*------FIAT------*/
 
 #fiat{
-    grid-area: map-get($areasGrid, 6);
     
     grid-template-areas:
     'titFiat titFiat titFiat'
@@ -380,7 +366,6 @@ $areasNiss:(
 /*------NISSAN------*/
 
 #nissan{
-    grid-area: map-get($areasGrid, 7);
     
     grid-template-areas:
     'titNiss titNiss titNiss'
@@ -638,3 +623,48 @@ $areasNiss:(
         }
     }
 }
+
+
+.search-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-screen {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: right 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .search-screen.open {
+    right: 0;
+  }
+  
+  .search-container {
+    text-align: center;
+  }
+  
+  #search-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+  }
+  

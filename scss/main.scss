@@ -33,7 +33,7 @@ $paleta-colores: (
 @keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(20px);
+        transform: translateY(0px);
     }
     to {
         opacity: 1;

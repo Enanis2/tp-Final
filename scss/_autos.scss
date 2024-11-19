@@ -403,33 +403,6 @@ $areasNiss:(
     }
 }
 
-#marcas{
-    filter: blur(0px);
-    position: sticky;
-    top: 20px;
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: rgba(255, 255, 255, 0.582);
-    @include padding(10px, 0, 10px, 0);
-    border-radius: 10px;
-    a{
-        display: flex;
-        align-items: center;
-        width: 13%;
-        button{
-            width: 100%;
-            font-size: 20px;
-            background: #e2e2e2;
-            border-radius: 5px;
-            cursor: pointer;
-            &:hover{
-                opacity: 0.8;
-            }
-        }
-    }
-}
-
 /*COLORES*/
 
 #tieAut__Main{
@@ -624,10 +597,11 @@ $areasNiss:(
     }
 }
 
+/*Pantalla de busqueda*/
 
 .search-icon {
     position: fixed;
-    top: 20px;
+    top: 115px;
     right: 20px;
     background-color: #007bff;
     color: white;
@@ -635,9 +609,9 @@ $areasNiss:(
     border-radius: 50%;
     cursor: pointer;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
+}
   
-  .search-screen {
+.search-screen {
     position: fixed;
     top: 0;
     right: -100%;
@@ -650,21 +624,21 @@ $areasNiss:(
     align-items: center;
     transition: right 0.3s ease;
     z-index: 1000;
-  }
+}
   
-  .search-screen.open {
+.search-screen.open {
     right: 0;
-  }
+}
   
-  .search-container {
+.search-container {
     text-align: center;
-  }
+}
   
-  #search-input {
+#search-input {
     width: 80%;
     padding: 10px;
     font-size: 16px;
     border: none;
     border-radius: 5px;
-  }
+}
   

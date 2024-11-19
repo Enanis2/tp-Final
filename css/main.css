@@ -497,29 +497,6 @@ nav {
   #nissan h2 {
     grid-area: titNiss; }
 
-#marcas {
-  filter: blur(0px);
-  position: sticky;
-  top: 20px;
-  width: 100%;
-  display: flex;
-  justify-content: space-evenly;
-  background-color: rgba(255, 255, 255, 0.582);
-  padding: 10px 0 10px 0;
-  border-radius: 10px; }
-  #marcas a {
-    display: flex;
-    align-items: center;
-    width: 13%; }
-    #marcas a button {
-      width: 100%;
-      font-size: 20px;
-      background: #e2e2e2;
-      border-radius: 5px;
-      cursor: pointer; }
-      #marcas a button:hover {
-        opacity: 0.8; }
-
 /*COLORES*/
 #tieAut__Main {
   background: repeating-linear-gradient(45deg, #646464, #646464 25%, #737373 25%, #737373 50%); }
@@ -624,9 +601,10 @@ nav {
       #tieAut__Main #tieAut__Grid #nissan h2 {
         grid-area: titNiss; } }
 
+/*Pantalla de busqueda*/
 .search-icon {
   position: fixed;
-  top: 20px;
+  top: 115px;
   right: 20px;
   background-color: #007bff;
   color: white;
@@ -1149,15 +1127,14 @@ nav {
 
 #contenedorvaformulario {
   grid-area: formulariova;
-  animation: slideIn 1s ease-out forwards;
-  /* Aquí aplicamos la animación */ }
+  animation: slideIn 1s ease-out forwards; }
 
 #contenedorh1VA {
   grid-area: h1va; }
 
 .form-container {
-  color: white;
-  background-color: rgba(0, 0, 0, 0.164);
+  color: #f0f0f0;
+  background: repeating-linear-gradient(45deg, #464646, #464646, #505050, #505050);
   padding: 20px;
   border-radius: 8px;
   border: solid 3px #9b0000;
@@ -1165,16 +1142,12 @@ nav {
   max-width: 600px;
   margin: 0 auto;
   opacity: 0;
-  /* Comienza oculto */
   transform: translateY(-50px);
-  /* Comienza desplazado hacia arriba */
   grid-area: formulariova; }
 
 .form-container.show {
   opacity: 1;
-  /* Se vuelve visible */
   transform: translateY(0);
-  /* Vuelve a la posición original */
   transition: opacity 1s ease, transform 1s ease; }
 
 .form-group {
@@ -1188,33 +1161,27 @@ nav {
 .form-group input, .form-group textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ccc;
-  /* Borde visible */
+  border: 1px solid #acacac;
   border-radius: 4px;
   background-color: transparent;
-  /* Fondo transparente */
-  color: #ffffff;
-  /* Color de texto para que sea legible */
-  box-sizing: border-box;
-  /* Para asegurarse de que el padding no se agregue al tamaño del campo */ }
+  color: #f0f0f0;
+  box-sizing: border-box; }
 
 .form-group input:focus,
 .form-group textarea:focus {
   outline: none;
-  border-color: #ffffff;
-  /* Cambio de borde cuando el campo está en foco */ }
+  border-color: #f0f0f0; }
 
 .form-group textarea {
   resize: vertical; }
 
 .form-group input[type="file"] {
   padding: 5px;
-  background-color: transparent;
-  /* También lo ponemos transparente */ }
+  background-color: transparent; }
 
 .form-group button {
-  background-color: #9b0000;
-  color: white;
+  background-color: #D32F2F;
+  color: #f0f0f0;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -1222,7 +1189,7 @@ nav {
   border-radius: 4px; }
 
 .form-group button:hover {
-  background-color: #9b0000; }
+  background-color: #FF6659; }
 
 /* Animación de deslizamiento */
 @keyframes slideIn {
@@ -1234,45 +1201,19 @@ nav {
     transform: translateY(0); } }
 
 #h1va {
-  color: white; }
+  color: #f0f0f0; }
 
 #contenedorh2va {
   grid-area: h2va;
-  color: white; }
+  color: #f0f0f0; }
 
-#infova1 {
+#infova1, #infova2, #infova3 {
   border-radius: 10px;
   height: 550px;
   width: 550px;
-  background-color: gray;
+  background: repeating-linear-gradient(135deg, #646464, #646464, #737373, #737373);
+  color: #f0f0f0;
   grid-area: infova1;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center; }
-
-#infova2 {
-  border-radius: 10px;
-  height: 550px;
-  width: 550px;
-  background-color: gray;
-  grid-area: infova2;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center; }
-
-#infova3 {
-  border-radius: 10px;
-  height: 550px;
-  width: 550px;
-  background-color: gray;
-  grid-area: infova3;
-  color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1504,7 +1445,7 @@ nav {
 @keyframes fadeIn {
   from {
     opacity: 0;
-    transform: translateY(20px); }
+    transform: translateY(0px); }
   to {
     opacity: 1;
     transform: translateY(0); } }

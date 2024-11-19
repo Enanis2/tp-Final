@@ -4,6 +4,16 @@ function toggleSearch() {
     searchScreen.classList.toggle("open");
 }
 
+// Detectar tecla Escape para cerrar la pantalla de búsqueda
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+        const searchScreen = document.getElementById("search-screen");
+        if (searchScreen && searchScreen.classList.contains("open")) {
+            toggleSearch(); // Cerrar pantalla usando la función existente
+        }
+    }
+});
+
 // Función para filtrar elementos en la página principal
 function filterDivs() {
     const query = document.getElementById("search-input").value.toLowerCase();
@@ -46,7 +56,7 @@ function filterDivs() {
     // Ajustar la altura de .main-content dependiendo de si hay coincidencias
     const mainContent = document.querySelector(".main-content");
     if (anyMatch) {
-        mainContent.style.height = ""; // Ajustar la altura a auto si hay coincidencias
+        mainContent.style.height = "auto"; // Ajustar la altura a auto si hay coincidencias
     } else {
         mainContent.style.height = ""; // Devolver la altura predeterminada si no hay coincidencias
     }

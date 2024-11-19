@@ -16,12 +16,11 @@
     padding: 20px;
     justify-items: center;
     gap: 20px;
-
 }
 
 #contenedorvaformulario {
     grid-area: formulariova;
-    animation: slideIn 1s ease-out forwards; /* Aquí aplicamos la animación */
+    animation: slideIn 1s ease-out forwards;
 }
 
 #contenedorh1VA {
@@ -29,22 +28,28 @@
 }
 
 .form-container {
-    color: white;
-    background-color: rgba(0, 0, 0, 0.164);
+    color: map-get($paleta-colores, 1);
+    background: repeating-linear-gradient(
+        45deg,
+        map-get($paleta-colores, 3),
+        map-get($paleta-colores, 3),
+        map-get($paleta-colores, 4),
+        map-get($paleta-colores, 4)
+    );
     padding: 20px;
     border-radius: 8px;
-    border: solid 3px #9b0000;
+    border: solid 3px map-get($paleta-colores, 11);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: 0 auto;
-    opacity: 0; /* Comienza oculto */
-    transform: translateY(-50px); /* Comienza desplazado hacia arriba */
+    opacity: 0;
+    transform: translateY(-50px);
     grid-area: formulariova;
 }
 
 .form-container.show {
-    opacity: 1; /* Se vuelve visible */
-    transform: translateY(0); /* Vuelve a la posición original */
+    opacity: 1;
+    transform: translateY(0);
     transition: opacity 1s ease, transform 1s ease;
 }
 
@@ -61,16 +66,16 @@
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc; /* Borde visible */
+    border: 1px solid map-get($paleta-colores, 5);
     border-radius: 4px;
-    background-color: transparent; /* Fondo transparente */
-    color: #ffffff; /* Color de texto para que sea legible */
-    box-sizing: border-box; /* Para asegurarse de que el padding no se agregue al tamaño del campo */
+    background-color: transparent;
+    color: map-get($paleta-colores, 1);
+    box-sizing: border-box;
 }
 
 .form-group input:focus, .form-group textarea:focus {
     outline: none;
-    border-color: #ffffff; /* Cambio de borde cuando el campo está en foco */
+    border-color: map-get($paleta-colores, 1);
 }
 
 .form-group textarea {
@@ -79,12 +84,12 @@
 
 .form-group input[type="file"] {
     padding: 5px;
-    background-color: transparent; /* También lo ponemos transparente */
+    background-color: transparent;
 }
 
 .form-group button {
-    background-color: #9b0000;
-    color: white;
+    background-color: map-get($paleta-colores, 8);
+    color: map-get($paleta-colores, 1);
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -93,7 +98,7 @@
 }
 
 .form-group button:hover {
-    background-color: #9b0000;
+    background-color: map-get($paleta-colores, 9);
 }
 
 /* Animación de deslizamiento */
@@ -108,23 +113,28 @@
     }
 }
 
-#h1va{
-    color: white;
+#h1va {
+    color: map-get($paleta-colores, 1);
 }
 
-#contenedorh2va{
+#contenedorh2va {
     grid-area: h2va;
-    color: white;
+    color: map-get($paleta-colores, 1);
 }
 
-
-#infova1{
+#infova1, #infova2, #infova3 {
     border-radius: 10px;
     height: 550px;
     width: 550px;
-    background-color: gray;
+    background: repeating-linear-gradient(
+        135deg,
+        map-get($paleta-colores, 6),
+        map-get($paleta-colores, 6),
+        map-get($paleta-colores, 7),
+        map-get($paleta-colores, 7) 
+    );
+    color: map-get($paleta-colores, 1);
     grid-area: infova1;
-    color: white;
     display: flex; 
     flex-direction: column; 
     justify-content: flex-start; 
@@ -132,33 +142,6 @@
     text-align: center;
 }
 
-#infova2{
-    border-radius: 10px;
-    height: 550px;
-    width: 550px;
-    background-color: gray;
-    grid-area: infova2;
-    color: white;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
-    text-align: center;
-}
-
-#infova3{
-    border-radius: 10px;
-    height: 550px;
-    width: 550px;
-    background-color: gray;
-    grid-area: infova3;
-    color: white;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
-    text-align: center; 
-}
 
 @media (max-width: 768px) {
     #mainVA {

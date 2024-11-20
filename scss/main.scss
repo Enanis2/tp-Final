@@ -250,7 +250,7 @@ body{
     letter-spacing: 2px;
     padding: 15px 0;
     margin-bottom: 50px;
-    background-color: #f17b7b;
+    background-color: map-get($paleta-colores, 8)
 }
 
 #comp-related__companies--logo1{
@@ -283,7 +283,7 @@ body{
     margin-bottom: 100px
 }
 
-$numeros-companias: 1, 2, 3, 4;
+$numeros-companias: 1, 2, 3, 4, 5, 6, 7;
 
 @each $numero in $numeros-companias{
 
@@ -298,12 +298,18 @@ $numeros-companias: 1, 2, 3, 4;
     }
 }
 
-#comp-related__companies--logo2{
-    @extend #comp-related__companies--logo1 ;
-    img{
-        width: 35%;
+@mixin cambio-tamaño-img($num-empresa, $porcentaje) {
+    #comp-related__companies--logo#{$num-empresa}{
+        img{
+            width: #{$porcentaje};
+        }
     }
 }
+
+@include cambio-tamaño-img(2, 35%);
+@include cambio-tamaño-img(4, 30%);
+@include cambio-tamaño-img(5, 30%);
+@include cambio-tamaño-img(7, 35%);
 
 
 

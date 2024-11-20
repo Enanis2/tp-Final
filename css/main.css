@@ -1611,15 +1611,15 @@ body {
   letter-spacing: 2px;
   padding: 15px 0;
   margin-bottom: 50px;
-  background-color: #f17b7b; }
+  background-color: #D32F2F; }
 
-#comp-related__companies--logo1, #comp-related__companies--logo2, #comp-related__companies--logo3, #comp-related__companies--logo4 {
+#comp-related__companies--logo1, #comp-related__companies--logo2, #comp-related__companies--logo3, #comp-related__companies--logo4, #comp-related__companies--logo5, #comp-related__companies--logo6, #comp-related__companies--logo7 {
   display: flex;
   justify-content: center; }
-  #comp-related__companies--logo1 img, #comp-related__companies--logo2 img, #comp-related__companies--logo3 img, #comp-related__companies--logo4 img {
+  #comp-related__companies--logo1 img, #comp-related__companies--logo2 img, #comp-related__companies--logo3 img, #comp-related__companies--logo4 img, #comp-related__companies--logo5 img, #comp-related__companies--logo6 img, #comp-related__companies--logo7 img {
     width: 50%; }
 
-#comp-related__companies--t1, #comp-related__companies--t2, #comp-related__companies--t3, #comp-related__companies--t4 {
+#comp-related__companies--t1, #comp-related__companies--t2, #comp-related__companies--t3, #comp-related__companies--t4, #comp-related__companies--t5, #comp-related__companies--t6, #comp-related__companies--t7 {
   text-align: center;
   color: #f0f0f0;
   letter-spacing: 3px;
@@ -1628,7 +1628,7 @@ body {
   font-family: serif;
   font-weight: bold; }
 
-#comp-related__companies--p1, #comp-related__companies--p2, #comp-related__companies--p3, #comp-related__companies--p4 {
+#comp-related__companies--p1, #comp-related__companies--p2, #comp-related__companies--p3, #comp-related__companies--p4, #comp-related__companies--p5, #comp-related__companies--p6, #comp-related__companies--p7 {
   text-align: center;
   color: #f0f0f0;
   font-size: 20px;
@@ -1639,6 +1639,15 @@ body {
   margin-bottom: 100px; }
 
 #comp-related__companies--logo2 img {
+  width: 35%; }
+
+#comp-related__companies--logo4 img {
+  width: 30%; }
+
+#comp-related__companies--logo5 img {
+  width: 30%; }
+
+#comp-related__companies--logo7 img {
   width: 35%; }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -1655,12 +1664,12 @@ body {
     height: 60%;
     margin: 0;
     padding: 0; }
-  #comp-related__companies--logo1 img, #comp-related__companies--logo2 img, #comp-related__companies--logo3 img, #comp-related__companies--logo4 img {
+  #comp-related__companies--logo1 img, #comp-related__companies--logo2 img, #comp-related__companies--logo3 img, #comp-related__companies--logo4 img, #comp-related__companies--logo5 img, #comp-related__companies--logo6 img, #comp-related__companies--logo7 img {
     width: 60%; }
-  #comp-related__companies--t1, #comp-related__companies--t2, #comp-related__companies--t3, #comp-related__companies--t4 {
+  #comp-related__companies--t1, #comp-related__companies--t2, #comp-related__companies--t3, #comp-related__companies--t4, #comp-related__companies--t5, #comp-related__companies--t6, #comp-related__companies--t7 {
     margin: 25px 0;
     font-size: 50px; }
-  #comp-related__companies--p1, #comp-related__companies--p2, #comp-related__companies--p3, #comp-related__companies--p4 {
+  #comp-related__companies--p1, #comp-related__companies--p2, #comp-related__companies--p3, #comp-related__companies--p4, #comp-related__companies--p5, #comp-related__companies--p6, #comp-related__companies--p7 {
     font-size: 17px;
     margin-bottom: 70px; }
   #logomain {

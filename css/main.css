@@ -149,7 +149,7 @@ nav {
   display: none; }
 
 #tieAut__Main {
-  padding: 10px 5% 40px 5%; }
+  padding: 10px 5% 140px 5%; }
   #tieAut__Main img {
     outline: 5px solid black;
     border-radius: 20px; }
@@ -462,7 +462,6 @@ nav {
       scale: 1.2; }
       #nissan #niss1:hover #nissDatos1 {
         display: grid;
-        height: 100%;
         grid-template-rows: repeat(4, 1fr) 2fr;
         grid-template-areas: "nissModelo1" "nissPrecio1" "nissToTerr1" "nissEnergia1" "nissDesc1"; }
       #nissan #niss1:hover img {
@@ -475,7 +474,6 @@ nav {
       scale: 1.2; }
       #nissan #niss2:hover #nissDatos2 {
         display: grid;
-        height: 100%;
         grid-template-rows: repeat(4, 1fr) 2fr;
         grid-template-areas: "nissModelo2" "nissPrecio2" "nissToTerr2" "nissEnergia2" "nissDesc2"; }
       #nissan #niss2:hover img {
@@ -488,7 +486,6 @@ nav {
       scale: 1.2; }
       #nissan #niss3:hover #nissDatos3 {
         display: grid;
-        height: 100%;
         grid-template-rows: repeat(4, 1fr) 2fr;
         grid-template-areas: "nissModelo3" "nissPrecio3" "nissToTerr3" "nissEnergia3" "nissDesc3"; }
       #nissan #niss3:hover img {

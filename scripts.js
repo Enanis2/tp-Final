@@ -1,33 +1,17 @@
-// Función para mostrar/ocultar la pantalla de búsqueda
-function toggleSearch() {
-    const searchScreen = document.getElementById("search-screen");
-    searchScreen.classList.toggle("open");
-}
-
-// Detectar tecla Escape para cerrar la pantalla de búsqueda
-document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-        const searchScreen = document.getElementById("search-screen");
-        if (searchScreen && searchScreen.classList.contains("open")) {
-            toggleSearch(); // Cerrar pantalla usando la función existente
-        }
-    }
-});
-
 // Función para filtrar elementos en la página principal
 function filterDivs() {
     const query = document.getElementById("search-input").value.toLowerCase();
-    const allDivs = document.querySelectorAll(".main-content > div"); // Solo divs de nivel superior
+    const allDivs = document.querySelectorAll(".main-content > div"); // Divs de marcas principales
     let anyMatch = false; // Variable para detectar si hay alguna coincidencia
-  
+
     allDivs.forEach(div => {
         // Verificar si el id del div contiene la palabra "Img"
-        const isImageDiv = div.id && div.id.includes("Img");
+        const isImageDiv = div.id && div.id.toLowerCase().includes("img");
 
         // Obtener todas las clases, excepto las que deseas ignorar
         const classList = Array.from(div.classList).filter(className => className !== "tieAut__grid--marcas");
         const match = classList.some(className => className.toLowerCase().startsWith(query));
-  
+
         if (match || query === "") {
             div.style.display = ""; // Mostrar el div
             div.style.height = ""; // Restablecer la altura del div cuando haya coincidencia
@@ -53,8 +37,8 @@ function filterDivs() {
         }
     });
 
-    // Ajustar la altura de .main-content dependiendo de si hay coincidencias
-    const mainContent = document.querySelector(".main-content");
+    // Ajustar la altura de #tieAut__Grid dependiendo de si hay coincidencias
+    const mainContent = document.querySelector("#tieAut__Grid");
     if (anyMatch) {
         mainContent.style.height = "auto"; // Ajustar la altura a auto si hay coincidencias
     } else {

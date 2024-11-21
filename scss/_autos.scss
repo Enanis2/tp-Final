@@ -125,6 +125,16 @@ $areasNiss:(
     img{
         width: 100%;
     }
+    > div{
+        transition: all 0.5s;
+        &:hover{
+            scale: 1.2;
+            img{
+                filter: blur(5px) brightness(.6);
+                transition: all 0.5s;
+            }
+        }
+    }
 }
 
 
@@ -139,9 +149,7 @@ $areasNiss:(
     @each $num, $area in $areasHonda{
         #honda#{$num}{
             grid-area: $area;
-            transition: all 0.5s;
             &:hover{
-                scale: 1.2;
                 #hondaDatos#{$num}{
                     display: grid;
 
@@ -152,10 +160,6 @@ $areasNiss:(
                     'hondaToTerr#{$num}'
                     'hondaEnergia#{$num}'
                     'hondaDesc#{$num}';
-                }
-                img{
-                    filter: blur(5px) brightness(.6);
-                    transition: all 0.5s;
                 }
             }
         }
@@ -178,10 +182,7 @@ $areasNiss:(
     @each $num, $area in $areasAudi{
         #audi#{$num}{
             grid-area: $area;
-            transition: all 0.5s;
-
             &:hover{
-                scale: 1.2;
                 #audiDatos#{$num}{
                     display: grid;
                     
@@ -192,10 +193,6 @@ $areasNiss:(
                     'audiToTerr#{$num}'
                     'audiEnergia#{$num}'
                     'audiDesc#{$num}';
-                }
-                img{
-                    filter: blur(5px) brightness(.6);
-                    transition: all 0.5s;
                 }
             }
         }
@@ -217,10 +214,7 @@ $areasNiss:(
     @each $num, $area in $areasChevr{
         #chevr#{$num}{
             grid-area: $area;
-            transition: all 0.5s;
-
             &:hover{
-                scale: 1.2;
                 #chevrDatos#{$num}{
                     display: grid;
                     
@@ -231,10 +225,6 @@ $areasNiss:(
                     'chevrToTerr#{$num}'
                     'chevrEnergia#{$num}'
                     'chevrDesc#{$num}';
-                }
-                img{
-                    filter: blur(5px) brightness(.6);
-                    transition: all 0.5s;
                 }
             }
         }
@@ -256,10 +246,7 @@ $areasNiss:(
     @each $num, $area in $areasRena{
         #rena#{$num}{
             grid-area: $area;
-            transition: all 0.5s;
-
             &:hover{
-                scale: 1.2;
                 #renaDatos#{$num}{
                     display: grid;
                     
@@ -270,10 +257,6 @@ $areasNiss:(
                     'renaToTerr#{$num}'
                     'renaEnergia#{$num}'
                     'renaDesc#{$num}';
-                }
-                img{
-                    filter: blur(5px) brightness(.6);
-                    transition: all 0.5s;
                 }
             }
         }
@@ -295,10 +278,7 @@ $areasNiss:(
     @each $num, $area in $areasFord{
         #ford#{$num}{
             grid-area: $area;
-            transition: all 0.5s;
-
             &:hover{
-                scale: 1.2;
                 #fordDatos#{$num}{
                     text-decoration: none;
                     display: grid;
@@ -310,10 +290,6 @@ $areasNiss:(
                     'fordToTerr#{$num}'
                     'fordEnergia#{$num}'
                     'fordDesc#{$num}';
-                }
-                img{
-                    filter: blur(5px) brightness(.6);
-                    transition: all 0.5s;
                 }
             }
         }
@@ -335,10 +311,7 @@ $areasNiss:(
     @each $num, $area in $areasFiat{
         #fiat#{$num}{
             grid-area: $area;
-            transition: all 0.5s;
-
             &:hover{
-                scale: 1.2;
                 #fiatDatos#{$num}{
                     display: grid;
                     
@@ -349,10 +322,6 @@ $areasNiss:(
                     'fiatToTerr#{$num}'
                     'fiatEnergia#{$num}'
                     'fiatDesc#{$num}';
-                }
-                img{
-                    filter: blur(5px) brightness(.6);
-                    transition: all 0.5s;
                 }
             }
         }
@@ -374,10 +343,7 @@ $areasNiss:(
     @each $num, $area in $areasNiss{
         #niss#{$num}{
             grid-area: $area;
-            transition: all 0.5s;
-
             &:hover{
-                scale: 1.2;
                 #nissDatos#{$num}{
                     display: grid;
                     
@@ -388,10 +354,6 @@ $areasNiss:(
                     'nissToTerr#{$num}'
                     'nissEnergia#{$num}'
                     'nissDesc#{$num}';
-                }
-                img{
-                    filter: blur(5px) brightness(.6);
-                    transition: all 0.5s;
                 }
             }
         }

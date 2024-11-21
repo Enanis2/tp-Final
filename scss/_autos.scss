@@ -614,6 +614,18 @@ $areasNiss:(
     padding: 10px;
     display: flex;
     align-items: center;
+    ::placeholder {
+        color: gray;
+        font-size: 20px;
+    }
+    &:hover{ 
+        #search-input {
+            width: 350px;
+        }
+        span {
+            transform: rotate(360deg);
+        }
+    }
 }
 
 #search-input {
@@ -630,13 +642,6 @@ $areasNiss:(
     transition: all 0.7s ease;
 }
 
-.contenedorBusqueda {
-    ::placeholder {
-        color: gray;
-        font-size: 20px;
-    }
-}
-
 .botonBusqueda {
     position: absolute;
     right: 0px;
@@ -650,33 +655,11 @@ $areasNiss:(
     justify-content: center;
     align-items: center;
     transition: 0.5s ease;
-}
-
-.botonBusqueda{ 
     span {
         font-size: 25px;
         color: white;
         transition: all 0.7s ease;
     }
-}
-
-.contenedorBusqueda{
-    &:hover{ 
-        #search-input {
-            width: 350px;
-        }
-    }
-}
-
-.contenedorBusqueda{
-    &:hover{ 
-        span {
-            transform: rotate(360deg);
-        }
-    }
-}
-
-.botonBusqueda{
     &:hover {
         background: #cc0000;
     }

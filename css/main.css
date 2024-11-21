@@ -614,6 +614,13 @@ nav {
   padding: 10px;
   display: flex;
   align-items: center; }
+  .contenedorBusqueda ::placeholder {
+    color: gray;
+    font-size: 20px; }
+  .contenedorBusqueda:hover #search-input {
+    width: 350px; }
+  .contenedorBusqueda:hover span {
+    transform: rotate(360deg); }
 
 #search-input {
   outline: none;
@@ -628,10 +635,6 @@ nav {
   background-color: #fff;
   transition: all 0.7s ease; }
 
-.contenedorBusqueda ::placeholder {
-  color: gray;
-  font-size: 20px; }
-
 .botonBusqueda {
   position: absolute;
   right: 0px;
@@ -645,20 +648,12 @@ nav {
   justify-content: center;
   align-items: center;
   transition: 0.5s ease; }
-
-.botonBusqueda span {
-  font-size: 25px;
-  color: white;
-  transition: all 0.7s ease; }
-
-.contenedorBusqueda:hover #search-input {
-  width: 350px; }
-
-.contenedorBusqueda:hover span {
-  transform: rotate(360deg); }
-
-.botonBusqueda:hover {
-  background: #cc0000; }
+  .botonBusqueda span {
+    font-size: 25px;
+    color: white;
+    transition: all 0.7s ease; }
+  .botonBusqueda:hover {
+    background: #cc0000; }
 
 /*------------------------------------------------------------------------------------*/
 #mainConsulta {

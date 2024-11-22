@@ -85,11 +85,11 @@ footer {
 @media (max-width: 700px) {
     .footerNav ul {
         flex-direction: column;
-    }
-    .footerNav ul li {
-        width: 100%;
-        text-align: center;
-        margin: 10px;
+        li {
+            width: 100%;
+            text-align: center;
+            margin: 10px;
+        }
     }
     .socialIcons a {
         padding: 8px;

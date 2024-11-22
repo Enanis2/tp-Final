@@ -399,19 +399,10 @@ $areasNiss:(
         img{
             outline: 3px solid map-get($colores, bordeImg);
         }
-        #marcas{
-            top: 5px;
-            a{
-                button{
-                    font-size: 18px;
-                }
-            }
-        }
         #tieAut__Grid{
             grid-row-gap: 5px;
             div[id*="Datos"]{
-                display: grid;
-                grid-row-gap: 5px;
+                display: block;
                 position: relative;
                 height: auto;
                 transform: translate(0px, 5px);
@@ -422,15 +413,19 @@ $areasNiss:(
                 p{
                     font-size: 10px;
                 }
-                &:hover{
-                    scale: 1;
-                    img{
-                        filter:none;
-                    }
-                }
             }
             div[id*="Img"]{
                 height: 140px;
+            }
+            .tieAut__grid--marcas{
+                > div{
+                    &:hover{
+                        scale: 1;
+                        img{
+                            filter: none;
+                        }
+                    }
+                }
             }
         }
     }
@@ -441,15 +436,6 @@ $areasNiss:(
     #tieAut__Main{
         img{
             outline: 3px solid map-get($colores, bordeImg);
-        }
-        #marcas{
-            @include padding(5px, 0, 5px, 0);
-            top: 5px;
-            a{
-                button{
-                    font-size: 8px;
-                }
-            }
         }
         #tieAut__Grid{
             grid-row-gap: 5px;

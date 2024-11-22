@@ -392,15 +392,10 @@ nav {
 @media screen and (min-width: 421px) and (max-width: 1023px) {
   #tieAut__Main img {
     outline: 3px solid black; }
-  #tieAut__Main #marcas {
-    top: 5px; }
-    #tieAut__Main #marcas a button {
-      font-size: 18px; }
   #tieAut__Main #tieAut__Grid {
     grid-row-gap: 5px; }
     #tieAut__Main #tieAut__Grid div[id*="Datos"] {
-      display: grid;
-      grid-row-gap: 5px;
+      display: block;
       position: relative;
       height: auto;
       transform: translate(0px, 5px);
@@ -409,22 +404,17 @@ nav {
         font-size: 15px; }
       #tieAut__Main #tieAut__Grid div[id*="Datos"] p {
         font-size: 10px; }
-      #tieAut__Main #tieAut__Grid div[id*="Datos"]:hover {
-        scale: 1; }
-        #tieAut__Main #tieAut__Grid div[id*="Datos"]:hover img {
-          filter: none; }
     #tieAut__Main #tieAut__Grid div[id*="Img"] {
-      height: 140px; } }
+      height: 140px; }
+    #tieAut__Main #tieAut__Grid .tieAut__grid--marcas > div:hover {
+      scale: 1; }
+      #tieAut__Main #tieAut__Grid .tieAut__grid--marcas > div:hover img {
+        filter: none; } }
 
 /*CELULAR*/
 @media screen and (min-width: 320px) and (max-width: 480px) {
   #tieAut__Main img {
     outline: 3px solid black; }
-  #tieAut__Main #marcas {
-    padding: 5px 0 5px 0;
-    top: 5px; }
-    #tieAut__Main #marcas a button {
-      font-size: 8px; }
   #tieAut__Main #tieAut__Grid {
     grid-row-gap: 5px;
     /*-------------*/ }

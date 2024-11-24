@@ -24,19 +24,19 @@ $paleta-colores: (
 @import "nosotros";
 
 
-@import "footer";
-@import "menu";
-@import "autos";
-@import "cliente";
-@import "productos";
-@import "registro-inicioSesion";
-@import "ventaAutos";
-@import "nosotros";
-
-
 *{
     margin: 0;
     padding: 0;
+}
+
+main{
+    background: repeating-linear-gradient(
+        45deg,
+        map-get($paleta-colores, 3),
+        map-get($paleta-colores, 3) 20%,
+        map-get($paleta-colores, 4) 20%,
+        map-get($paleta-colores, 4) 40%
+    );
 }
 
 @keyframes fadeIn {
@@ -50,25 +50,26 @@ $paleta-colores: (
     }
 }
 
-#in_header{
-    animation: fadeIn 0.5s ease-in-out;
+@keyframes rotar-aparecer{
+    0%{
+        rotate: 0deg;
+        scale: 0.1;
+    }
+    100%{
+        scale: 1;
+        rotate: 360deg;
+    }
 }
 
-#que-somos{
-    animation: fadeIn 1s ease-in-out;
-    overflow-x: hidden;
-}
-
-main{
+#bodymain{
     background: repeating-linear-gradient(
         45deg,
         map-get($paleta-colores, 3),
-        map-get($paleta-colores, 3) 20%,
-        map-get($paleta-colores, 4) 20%,
-        map-get($paleta-colores, 4) 40%
+        map-get($paleta-colores, 3) 35%,
+        map-get($paleta-colores, 4) 35%,
+        map-get($paleta-colores, 4) 70%,
     );
 }
-
 .cont-logo{
     display: flex;
     justify-content: center;
@@ -83,6 +84,7 @@ main{
 }
 
 #logomain{
+    animation: rotar-aparecer 0.8s ease-in-out;
     margin: 0;
     padding: 0;
     width: 450px;
@@ -112,6 +114,7 @@ main{
 
 #main-nav__menu{
     ul {
+        animation: fadeIn 1s ease-in-out;
         height: 50px;
         position: sticky !important;
         top: 20px !important;
@@ -172,14 +175,16 @@ main{
     padding: 0;
 }
 
-
 #que-somos{
+    animation: fadeIn 2s ease-in-out;
+    overflow-x: hidden;
     margin: 0;
     padding: 0;
     height: 825px;
     justify-content: center;
 }
 #que-somos__h2{
+    z-index: 2;
     font-size: 70px;
     font-family: monospace;
     text-align: center;
@@ -187,6 +192,7 @@ main{
     padding-top: 15%;
 }
 #que-somos__p{
+    z-index: 2;
     color: map-get($paleta-colores, 1);
     text-align: center;
     font-family: monospace;
@@ -197,7 +203,7 @@ main{
 #que-somos__foto-fondo{
     position: absolute;
     z-index: -1;
-    filter: brightness(50%);
+    filter: blur(7px);
     height: 825px;
     margin: 0;
     padding: 0;

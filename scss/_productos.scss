@@ -4,6 +4,16 @@
     text-decoration: $deco !important;
 }
 
+.prods__body{
+    background: repeating-linear-gradient(
+        45deg,
+        map-get($paleta-colores, 3),
+        map-get($paleta-colores, 3) 20%,
+        map-get($paleta-colores, 4) 20%,
+        map-get($paleta-colores, 4) 40%
+    );
+}
+
 .prods__main{
     margin-top: 100px;
     border: solid 6px map-get($map: $paleta-colores, $key: 2);

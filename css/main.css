@@ -199,7 +199,8 @@ nav {
   .tieAut__grid--marcas > div {
     transition: all 0.5s; }
     .tieAut__grid--marcas > div:hover {
-      scale: 1.2; }
+      scale: 1.2;
+      z-index: 500; }
       .tieAut__grid--marcas > div:hover img {
         filter: blur(5px) brightness(0.6);
         transition: all 0.5s; }
@@ -460,12 +461,16 @@ nav {
       #tieAut__Main #tieAut__Grid #nissan h2 {
         grid-area: titNiss; } }
 
+/*JS*/
+#cosasJS {
+  position: sticky;
+  top: 20px;
+  z-index: 999; }
+
 /*BUSQUEDA-----------------------------------------------------------------*/
 .body- {
   margin: 0;
   padding: 0;
-  position: sticky;
-  top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -519,8 +524,6 @@ nav {
 
 /*FILTROS------------------------------------------------------------------------------------*/
 .open-btn {
-  position: sticky;
-  top: 20px;
   left: 10px;
   /* Cambiado al lado izquierdo */
   background-color: #333;
@@ -546,9 +549,8 @@ nav {
   padding: 20px;
   transition: left 0.3s ease;
   z-index: 999; }
-
-.sidebar h2 {
-  margin-top: 0; }
+  .sidebar h2 {
+    margin-top: 0; }
 
 .sidebar-active {
   left: 0;
@@ -568,22 +570,17 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 15px; }
-
-.content {
-  margin: 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px; }
-
-.item {
-  padding: 20px;
-  background-color: #ddd;
-  border: 1px solid #bbb;
-  text-align: center; }
+  margin: 15px 0 15px 30px; }
 
 .hidden {
-  display: none; }
+  filter: blur(10px);
+  /* Aplica el desenfoque */
+  pointer-events: none;
+  /* Evita la interacción con elementos desenfocados */
+  opacity: 0.5;
+  /* Reduce ligeramente la opacidad */
+  transition: filter 0.3s, opacity 0.3s;
+  /* Suaviza las transiciones */ }
 
 /* Toggle personalizado */
 .toggle {
@@ -591,11 +588,10 @@ nav {
   display: inline-block;
   width: 40px;
   height: 20px; }
-
-.toggle input {
-  opacity: 0;
-  width: 0;
-  height: 0; }
+  .toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0; }
 
 .slider {
   position: absolute;
@@ -607,17 +603,16 @@ nav {
   background-color: #ccc;
   transition: 0.4s;
   border-radius: 20px; }
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 14px;
-  width: 14px;
-  left: 3px;
-  bottom: 3px;
-  background-color: white;
-  transition: 0.4s;
-  border-radius: 50%; }
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%; }
 
 input:checked + .slider {
   background-color: #2196F3; }
@@ -1298,40 +1293,6 @@ input:checked + .slider:before {
     font-size: 14px;
     /* Tamaño más pequeño para todo el contenido general */ } }
 
-/* Estilos básicos */
-#cuerpo {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  background-color: #f8f9fa;
-  color: #333;
-  line-height: 1.6; }
-
-/* Estilo del contenedor general */
-#sobre-nosotros {
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center; }
-
-#sobre-nosotros .contenedor {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px; }
-
-/* Títulos y eslogan */
-.titulo {
-  font-size: 2.5rem;
-  color: #ffcc00;
-  margin-bottom: 20px;
-  animation: aparecer 2s ease-in-out; }
-
-.eslogan {
-  font-size: 1.5rem;
-  font-style: italic;
-  margin-bottom: 40px;
-  color: #ddd;
-  animation: aparecer 2s ease-in-out 0.5s; }
-
-/* Animaciones */
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -1348,37 +1309,85 @@ input:checked + .slider:before {
     opacity: 1;
     transform: translateY(0); } }
 
-/* Historia */
-.historia {
-  margin-bottom: 50px;
-  animation: subir 1s ease-in-out; }
+#cuerpo {
+  margin: 0;
+  padding: 0; }
 
-/* Misión y Visión */
-.mision-vision {
+#header-nosotros {
+  background-color: #f0f0f0; }
+
+#sobre-nosotros {
+  color: #f0f0f0;
+  padding: 60px 20px;
+  text-align: center; }
+
+#sobre-nosotros__titulo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px; }
+  #sobre-nosotros__titulo h2 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    color: #D32F2F;
+    margin-bottom: 20px;
+    animation: aparecer 0.5s ease-in-out; }
+  #sobre-nosotros__titulo p {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 40px;
+    animation: aparecer 1.5s ease-in-out; }
+
+#sobre-nosotros__historia {
+  margin-bottom: 50px; }
+  #sobre-nosotros__historia h3 {
+    height: 70px;
+    padding-top: 1%;
+    letter-spacing: 2px;
+    background-color: #D32F2F;
+    border-radius: 20px;
+    animation: subir 1.5s ease-in-out; }
+  #sobre-nosotros__historia p {
+    font-size: 18px;
+    animation: subir 2s ease-in-out; }
+
+#sobre-nosotros__mision-vision {
   display: flex;
   justify-content: space-around;
   gap: 40px;
   margin-bottom: 50px;
-  animation: aparecer 1.5s ease-in-out 0.5s; }
+  animation: aparecer 1.5s ease-in-out; }
+  #sobre-nosotros__mision-vision div {
+    background: rgba(26, 26, 26, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    width: 45%;
+    color: #fff;
+    border: 3px solid #FF6659;
+    transition: transform 0.3s, box-shadow 0.3s; }
+    #sobre-nosotros__mision-vision div:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #D32F2F; }
 
-.mision, .vision {
-  background: #1a1a1a;
-  padding: 30px;
-  border-radius: 10px;
-  width: 45%;
-  color: #fff;
-  border: 2px solid #ffcc00;
-  transition: transform 0.3s, box-shadow 0.3s; }
+#sobre-nosotros__vehiculos {
+  margin-bottom: 50px; }
+  #sobre-nosotros__vehiculos ul {
+    padding: 0;
+    margin: 20px 0; }
+    #sobre-nosotros__vehiculos ul li {
+      list-style: none;
+      font-size: 25px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      animation: subir 1.2s ease-in-out;
+      transition: color, 0.3s; }
+      #sobre-nosotros__vehiculos ul li:hover {
+        color: #9b0000; }
 
-.mision:hover, .vision:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(255, 204, 0, 0.5); }
-
-/* Logros y cifras */
-.logros {
+#sobre-nosotros__logros {
   margin-bottom: 50px; }
 
-.cifras {
+.sobre-nosotros__logros--cifras {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -1390,39 +1399,17 @@ input:checked + .slider:before {
   margin-top: 30px;
   padding: 30px;
   border-radius: 10px;
-  border: 2px solid #ffcc00;
+  border: 2px solid #FF6659;
   animation: subir 1.5s ease-in-out;
   transition: transform 0.3s, box-shadow 0.3s; }
+  .cifra h4 {
+    font-size: 2.5rem;
+    color: #ee0000;
+    margin-bottom: 10px; }
+  .cifra:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px #9b0000; }
 
-.cifra:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 15px rgba(255, 204, 0, 0.4); }
-
-.cifra h4 {
-  font-size: 2.5rem;
-  color: #ffcc00;
-  margin-bottom: 10px; }
-
-/* Vehículos */
-.vehiculos {
-  margin-bottom: 50px; }
-
-.vehiculos ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0; }
-
-.vehiculos ul li {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #ddd;
-  animation: subir 1.2s ease-in-out;
-  transition: color 0.3s; }
-
-.vehiculos ul li:hover {
-  color: #ffcc00; }
-
-/* Espaciado adicional entre las secciones */
 .mision-vision, .vehiculos, .logros, .historia, .equipo {
   margin-bottom: 50px; }
 
@@ -1445,7 +1432,7 @@ input:checked + .slider:before {
   animation: fadeIn 1s ease-in-out;
   overflow-x: hidden; }
 
-body {
+#bodymain {
   background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%); }
 
 .cont-logo {

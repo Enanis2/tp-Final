@@ -225,8 +225,7 @@ nav {
 
 /*------AUDI------*/
 #audi {
-  grid-template-areas: 'titAudi titAudi titAudi'
- 'audi1 audi2 audi3'; }
+  grid-template-areas: 'titAudi titAudi titAudi' 'audi1 audi2 audi3'; }
   #audi #audi1 {
     grid-area: audi1; }
     #audi #audi1:hover #audiDatos1 {
@@ -250,8 +249,7 @@ nav {
 
 /*------CHEVROLET------*/
 #chevrolet {
-  grid-template-areas: 'titChevr titChevr titChevr'
- 'chevr1 chevr2 chevr3'; }
+  grid-template-areas: 'titChevr titChevr titChevr' 'chevr1 chevr2 chevr3'; }
   #chevrolet #chevr1 {
     grid-area: chevr1; }
     #chevrolet #chevr1:hover #chevrDatos1 {
@@ -275,8 +273,7 @@ nav {
 
 /*------RENAULT------*/
 #renault {
-  grid-template-areas: 'titRena titRena titRena'
- 'rena1 rena2 rena3'; }
+  grid-template-areas: 'titRena titRena titRena' 'rena1 rena2 rena3'; }
   #renault #rena1 {
     grid-area: rena1; }
     #renault #rena1:hover #renaDatos1 {
@@ -300,8 +297,7 @@ nav {
 
 /*------FORD------*/
 #ford {
-  grid-template-areas: 'titFord titFord titFord'
- 'ford1 ford2 ford3'; }
+  grid-template-areas: 'titFord titFord titFord' 'ford1 ford2 ford3'; }
   #ford #ford1 {
     grid-area: ford1; }
     #ford #ford1:hover #fordDatos1 {
@@ -328,8 +324,7 @@ nav {
 
 /*------FIAT------*/
 #fiat {
-  grid-template-areas: 'titFiat titFiat titFiat'
- 'fiat1 fiat2 fiat3'; }
+  grid-template-areas: 'titFiat titFiat titFiat' 'fiat1 fiat2 fiat3'; }
   #fiat #fiat1 {
     grid-area: fiat1; }
     #fiat #fiat1:hover #fiatDatos1 {
@@ -353,8 +348,7 @@ nav {
 
 /*------NISSAN------*/
 #nissan {
-  grid-template-areas: 'titNiss titNiss titNiss'
- 'niss1 niss2 niss3'; }
+  grid-template-areas: 'titNiss titNiss titNiss' 'niss1 niss2 niss3'; }
   #nissan #niss1 {
     grid-area: niss1; }
     #nissan #niss1:hover #nissDatos1 {
@@ -442,52 +436,31 @@ nav {
     #tieAutMain #tieAut__Grid .tieAut__grid--marcas > div {
       padding: 0 0 30px 0; }
     #tieAutMain #tieAut__Grid #honda {
-      grid-template-areas: 'titHonda'
- 'honda1'
- 'honda2'
- 'honda3'; }
+      grid-template-areas: 'titHonda' 'honda1' 'honda2' 'honda3'; }
       #tieAutMain #tieAut__Grid #honda h2 {
         grid-area: titHonda; }
     #tieAutMain #tieAut__Grid #audi {
-      grid-template-areas: 'titAudi'
- 'audi1'
- 'audi2'
- 'audi3'; }
+      grid-template-areas: 'titAudi' 'audi1' 'audi2' 'audi3'; }
       #tieAutMain #tieAut__Grid #audi h2 {
         grid-area: titAudi; }
     #tieAutMain #tieAut__Grid #chevrolet {
-      grid-template-areas: 'titChevr'
- 'chevr1'
- 'chevr2'
- 'chevr3'; }
+      grid-template-areas: 'titChevr' 'chevr1' 'chevr2' 'chevr3'; }
       #tieAutMain #tieAut__Grid #chevrolet h2 {
         grid-area: titChevr; }
     #tieAutMain #tieAut__Grid #renault {
-      grid-template-areas: 'titRena'
- 'rena1'
- 'rena2'
- 'rena3'; }
+      grid-template-areas: 'titRena' 'rena1' 'rena2' 'rena3'; }
       #tieAutMain #tieAut__Grid #renault h2 {
         grid-area: titRena; }
     #tieAutMain #tieAut__Grid #ford {
-      grid-template-areas: 'titFord'
- 'ford1'
- 'ford2'
- 'ford3'; }
+      grid-template-areas: 'titFord' 'ford1' 'ford2' 'ford3'; }
       #tieAutMain #tieAut__Grid #ford h2 {
         grid-area: titFord; }
     #tieAutMain #tieAut__Grid #fiat {
-      grid-template-areas: 'titFiat'
- 'fiat1'
- 'fiat2'
- 'fiat3'; }
+      grid-template-areas: 'titFiat' 'fiat1' 'fiat2' 'fiat3'; }
       #tieAutMain #tieAut__Grid #fiat h2 {
         grid-area: titFiat; }
     #tieAutMain #tieAut__Grid #nissan {
-      grid-template-areas: 'titNiss'
- 'niss1'
- 'niss2'
- 'niss3'; }
+      grid-template-areas: 'titNiss' 'niss1' 'niss2' 'niss3'; }
       #tieAutMain #tieAut__Grid #nissan h2 {
         grid-area: titNiss; } }
 
@@ -651,13 +624,7 @@ input:checked + .slider:before {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto;
-  grid-template-areas: 'h1 h1 h1'
- 'img1 img2 img3'
- 'm1 t1 r1'
- 'd1 d2 d3'
- 'h2 h2 h2'
- 'i1 i2 i3'
- 'img img ct';
+  grid-template-areas: 'h1 h1 h1' 'img1 img2 img3' 'm1 t1 r1' 'd1 d2 d3' 'h2 h2 h2' 'i1 i2 i3' 'img img ct';
   justify-items: center;
   align-items: center;
   gap: 20px;
@@ -784,19 +751,7 @@ input:checked + .slider:before {
 @media (max-width: 768px) {
   #mainConsulta {
     grid-template-columns: 1fr;
-    grid-template-areas: 'h1'
- 'img1'
- 'm1'
- 'img2'
- 't1'
- 'img3'
- 'r1'
- 'h2'
- 'i1'
- 'i2'
- 'i3'
- 'img'
- 'ct';
+    grid-template-areas: 'h1' 'img1' 'm1' 'img2' 't1' 'img3' 'r1' 'h2' 'i1' 'i2' 'i3' 'img' 'ct';
     padding: 10px;
     gap: 15px; }
   #img1c, #img2c, #img3c, #info1consulta, #info2consulta, #info3consulta {
@@ -860,6 +815,9 @@ input:checked + .slider:before {
     font-size: 35px; }
   .pc {
     font-size: 17px; } }
+
+.prods__body {
+  background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%); }
 
 .prods__main {
   margin-top: 100px;
@@ -1148,10 +1106,7 @@ input:checked + .slider:before {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: 'h1va h1va h1va'
- 'formulariova formulariova formulariova'
- 'h2va h2va h2va'
- 'infova1 infova2 infova3';
+  grid-template-areas: 'h1va h1va h1va' 'formulariova formulariova formulariova' 'h2va h2va h2va' 'infova1 infova2 infova3';
   padding: 20px;
   justify-items: center;
   gap: 20px; }
@@ -1255,12 +1210,7 @@ input:checked + .slider:before {
   #mainVA {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: 'h1va'
- 'formulariova'
- 'h2va'
- 'infova1'
- 'infova2'
- 'infova3'; }
+    grid-template-areas: 'h1va' 'formulariova' 'h2va' 'infova1' 'infova2' 'infova3'; }
   .form-container {
     max-width: 100%;
     /* Ocupa todo el ancho disponible */
@@ -1305,1479 +1255,7 @@ input:checked + .slider:before {
     grid-template-columns: repeat(3, 1fr);
     /* Tres columnas para aprovechar el ancho */
     grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: 'h1va h1va h1va'
- 'formulariova formulariova formulariova'
- 'h2va h2va h2va'
- 'infova1 infova2 infova3'; }
-<<<<<<< HEAD
-  .form-container {
-    max-width: 100%;
-    /* Mantiene el ancho completo */
-    padding: 20px;
-    /* Padding moderado */ }
-  .form-group input, .form-group textarea {
-    font-size: 16px;
-    /* Tamaño de fuente moderado en campos de texto */ }
-  .form-group button {
-    font-size: 16px;
-    /* Botón más grande */
-    padding: 10px 18px; }
-  /* Ajustamos los tamaños de los títulos y contenido */
-  #h1va h2, #contenedorh2va h2 {
-    font-size: 20; }
-  #h1va h1, #contenedorh2va h1 {
-    font-size: 24; }
-  #infova1, #infova2, #infova3 {
-    font-size: 14px;
-    /* Tamaño de texto más grande para contenido */
-    padding: 12px;
-    /* Un poco más de padding */
-    line-height: 1.5;
-    /* Espaciado adecuado entre líneas */
-    width: 400px;
-    height: 500px; }
-    #infova1 h4, #infova2 h4, #infova3 h4 {
-      font-size: 16px; }
-    #infova1 h3, #infova2 h3, #infova3 h3 {
-      font-size: 18; }
-  /* Ajustamos texto del formulario */
-  .form-container label {
-    font-size: 16px;
-    /* Etiquetas con tamaño de fuente moderado */ }
-  /* Ajustamos otros textos globalmente */
-  body, #mainVA {
-    font-size: 14px;
-    /* Tamaño más pequeño para todo el contenido general */ } }
-
-@keyframes aparecer {
-  0% {
-    opacity: 0;
-    transform: translateY(20px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
-@keyframes subir {
-  0% {
-    opacity: 0;
-    transform: translateY(50px); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
-
-#cuerpo {
-  margin: 0;
-  padding: 0; }
-
-#sobre-nosotros {
-  color: #f0f0f0;
-  padding: 60px 20px;
-  text-align: center; }
-
-#sobre-nosotros__titulo {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px; }
-  #sobre-nosotros__titulo h2 {
-    font-size: 50px;
-    font-weight: bold;
-    font-family: monospace;
-    color: #D32F2F;
-    margin-bottom: 20px;
-    animation: aparecer 0.5s ease-in-out; }
-  #sobre-nosotros__titulo p {
-    font-size: 20px;
-    font-style: italic;
-    margin-bottom: 40px;
-    animation: aparecer 1.5s ease-in-out; }
-
-#sobre-nosotros__historia {
-  margin-bottom: 50px; }
-  #sobre-nosotros__historia h3 {
-    height: 70px;
-    padding-top: 1%;
-    letter-spacing: 2px;
-    background-color: #D32F2F;
-    border-radius: 20px;
-    animation: subir 1.5s ease-in-out; }
-  #sobre-nosotros__historia p {
-    font-size: 18px;
-    animation: subir 2s ease-in-out; }
-
-#sobre-nosotros__mision-vision {
-  display: flex;
-  justify-content: space-around;
-  gap: 40px;
-  margin-bottom: 50px;
-  animation: aparecer 1.5s ease-in-out; }
-  #sobre-nosotros__mision-vision div {
-    background: rgba(26, 26, 26, 0.9);
-    padding: 30px;
-    border-radius: 10px;
-    width: 45%;
-    color: #fff;
-    border: 3px solid #FF6659;
-    transition: transform 0.3s, box-shadow 0.3s; }
-    #sobre-nosotros__mision-vision div:hover {
-      transform: scale(1.05);
-      box-shadow: 0 0 20px #D32F2F; }
-
-#sobre-nosotros__vehiculos {
-  margin-bottom: 50px; }
-  #sobre-nosotros__vehiculos ul {
-    padding: 0;
-    margin: 20px 0; }
-    #sobre-nosotros__vehiculos ul li {
-      list-style: none;
-      font-size: 25px;
-      letter-spacing: 2px;
-      margin-bottom: 20px;
-      animation: subir 1.2s ease-in-out;
-      transition: color, 0.3s; }
-      #sobre-nosotros__vehiculos ul li:hover {
-        color: #9b0000; }
-
-#sobre-nosotros__logros {
-  margin-bottom: 50px; }
-
-.sobre-nosotros__logros--cifras {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  gap: 30px; }
-
-.cifra {
-  width: 200px;
-  background: #1a1a1a;
-  margin-top: 30px;
-  padding: 30px;
-  border-radius: 10px;
-  border: 2px solid #FF6659;
-  animation: subir 1.5s ease-in-out;
-  transition: transform 0.3s, box-shadow 0.3s; }
-  .cifra h4 {
-    font-size: 2.5rem;
-    color: #ee0000;
-    margin-bottom: 10px; }
-  .cifra:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 15px #9b0000; }
-
-.mision-vision, .vehiculos, .logros, .historia, .equipo {
-  margin-bottom: 50px; }
-
-footer {
-  background-color: #2B2B2B;
-  margin-top: auto; }
-
-.footerContainer {
-  width: 100%;
-  padding: 70px 30px 20px; }
-
-.socialIcons {
-  display: flex;
-  justify-content: center; }
-
-.socialIcons a {
-  text-decoration: none;
-  padding: 10px;
-  background-color: #D32F2F;
-  margin: 10px;
-  border-radius: 50%; }
-
-.socialIcons a i {
-  font-size: 2em;
-  color: #ffffff;
-  /* Blanco */
-  opacity: 0.9; }
-
-/* Hover effect on social media icon */
-.socialIcons a:hover {
-  background-color: #FF6659;
-  transition: 0.5s; }
-
-.socialIcons a:hover i {
-  color: #2B2B2B;
-  /* Gris oscuro */
-  transition: 0.5s; }
-
-.footerNav {
-  margin: 30px 0; }
-
-.footerNav ul {
-  display: flex;
-  justify-content: center;
-  list-style-type: none; }
-
-.footerNav ul li a {
-  color: #D32F2F;
-  margin: 20px;
-  text-decoration: none;
-  font-size: 1.3em;
-  opacity: 0.7;
-  transition: 0.5s; }
-
-.footerNav ul li a:hover {
-  opacity: 1;
-  color: #FF6659; }
-
-.footerBottom {
-  background-color: #1A1A1A;
-  padding: 20px;
-  text-align: center; }
-
-.footerBottom p {
-  color: #f0f0f0; }
-
-.designer {
-  opacity: 0.7;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-weight: 400;
-  margin: 0px 5px;
-  color: #D32F2F; }
-
-@media (max-width: 700px) {
-  .footerNav ul {
-    flex-direction: column; }
-    .footerNav ul li {
-      width: 100%;
-      text-align: center;
-      margin: 10px; }
-  .socialIcons a {
-    padding: 8px;
-    margin: 4px; } }
-
-.container-fluid {
-  flex: 1; }
-
-footer {
-  margin-top: auto; }
-
-header {
-  background-color: #2B2B2B; }
-
-nav {
-  position: sticky;
-  top: 5px; }
-
-.login-button {
-  background-color: #D32F2F;
-  color: #fff;
-  font-size: 14px;
-  padding: 8px 20px;
-  border-radius: 50px;
-  text-decoration: none;
-  transition: 0.3s background-color; }
-
-.login-button:hover {
-  background-color: #FF6659 !important; }
-
-.navbar-toggler {
-  border: none;
-  font-size: 1.25rem; }
-
-.navbar-toggler:focus,
-.btn-close:focus {
-  box-shadow: none;
-  outline: none; }
-
-.nav-link {
-  color: #f0f0f0;
-  font-weight: 500;
-  position: relative; }
-
-.nav-link:hover,
-.nav-link:active {
-  color: #9b0000; }
-
-@media (min-width: 991px) {
-  .nav-link::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 0;
-    height: 2px;
-    background-color: #9b0000;
-    visibility: hidden;
-    transition: 0.3s ease-in-out; }
-  .nav-link:hover::before,
-  .nav-link.active::before {
-    width: 100%;
-    visibility: visible; } }
-
-#logo {
-  width: 80px;
-  height: 80px; }
-
-/*---------AUTOS---------*/
-/*<Mapas Areas>*/
-/*</Mapas Areas>*/
-.noSeVe {
-  display: none; }
-
-#tieAutMain {
-  padding: 10px 5% 140px 5%; }
-  #tieAutMain img {
-    outline: 5px solid black;
-    border-radius: 20px; }
-  #tieAutMain a {
-    text-decoration: none !important; }
-
-#tieAut__Grid {
-  display: grid;
-  grid-template-rows: auto;
-  grid-row-gap: 0px; }
-  #tieAut__Grid div[id*="Img"] {
-    height: 292px; }
-    #tieAut__Grid div[id*="Img"] img {
-      height: 100%; }
-  #tieAut__Grid div[id*="Datos"] {
-    display: none;
-    position: absolute;
-    text-align: center;
-    height: 292px;
-    color: white;
-    transform: translate(0px, -292px);
-    outline: 5px solid black;
-    border-radius: 20px;
-    filter: blur(0px); }
-    #tieAut__Grid div[id*="Datos"] h4 {
-      font-size: 40px;
-      padding: 0%;
-      margin: 0%; }
-    #tieAut__Grid div[id*="Datos"] p {
-      margin: 0%;
-      padding: 0%;
-      font-size: 20px; }
-
-.tieAut__grid--marcas {
-  display: grid;
-  grid-template-rows: 1fr 6.5fr;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 20px; }
-  .tieAut__grid--marcas h2 {
-    margin: 0%;
-    padding: 0%;
-    text-align: center;
-    text-decoration: underline;
-    padding: 0 0 10px 0; }
-  .tieAut__grid--marcas img {
-    width: 100%; }
-  .tieAut__grid--marcas > div {
-    transition: all 0.5s; }
-    .tieAut__grid--marcas > div:hover {
-      scale: 1.2;
-      z-index: 500; }
-      .tieAut__grid--marcas > div:hover img {
-        filter: blur(5px) brightness(0.6);
-        transition: all 0.5s; }
-
-/*------HONDA------*/
-#honda {
-  grid-template-areas: 'titHonda titHonda titHonda'; }
-  #honda #honda1:hover #hondaDatos1 {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr) 2fr; }
-  #honda #honda2:hover #hondaDatos2 {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr) 2fr; }
-  #honda #honda3:hover #hondaDatos3 {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr) 2fr; }
-  #honda h2 {
-    grid-area: titHonda; }
-
-/*------AUDI------*/
-#audi {
-  grid-template-areas: 'titAudi titAudi titAudi'
- 'audi1 audi2 audi3'; }
-  #audi #audi1 {
-    grid-area: audi1; }
-    #audi #audi1:hover #audiDatos1 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "audiModelo1" "audiPrecio1" "audiToTerr1" "audiEnergia1" "audiDesc1"; }
-  #audi #audi2 {
-    grid-area: audi2; }
-    #audi #audi2:hover #audiDatos2 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "audiModelo2" "audiPrecio2" "audiToTerr2" "audiEnergia2" "audiDesc2"; }
-  #audi #audi3 {
-    grid-area: audi3; }
-    #audi #audi3:hover #audiDatos3 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "audiModelo3" "audiPrecio3" "audiToTerr3" "audiEnergia3" "audiDesc3"; }
-  #audi h2 {
-    grid-area: titAudi; }
-
-/*------CHEVROLET------*/
-#chevrolet {
-  grid-template-areas: 'titChevr titChevr titChevr'
- 'chevr1 chevr2 chevr3'; }
-  #chevrolet #chevr1 {
-    grid-area: chevr1; }
-    #chevrolet #chevr1:hover #chevrDatos1 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "chevrModelo1" "chevrPrecio1" "chevrToTerr1" "chevrEnergia1" "chevrDesc1"; }
-  #chevrolet #chevr2 {
-    grid-area: chevr2; }
-    #chevrolet #chevr2:hover #chevrDatos2 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "chevrModelo2" "chevrPrecio2" "chevrToTerr2" "chevrEnergia2" "chevrDesc2"; }
-  #chevrolet #chevr3 {
-    grid-area: chevr3; }
-    #chevrolet #chevr3:hover #chevrDatos3 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "chevrModelo3" "chevrPrecio3" "chevrToTerr3" "chevrEnergia3" "chevrDesc3"; }
-  #chevrolet h2 {
-    grid-area: titChevr; }
-
-/*------RENAULT------*/
-#renault {
-  grid-template-areas: 'titRena titRena titRena'
- 'rena1 rena2 rena3'; }
-  #renault #rena1 {
-    grid-area: rena1; }
-    #renault #rena1:hover #renaDatos1 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "renaModelo1" "renaPrecio1" "renaToTerr1" "renaEnergia1" "renaDesc1"; }
-  #renault #rena2 {
-    grid-area: rena2; }
-    #renault #rena2:hover #renaDatos2 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "renaModelo2" "renaPrecio2" "renaToTerr2" "renaEnergia2" "renaDesc2"; }
-  #renault #rena3 {
-    grid-area: rena3; }
-    #renault #rena3:hover #renaDatos3 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "renaModelo3" "renaPrecio3" "renaToTerr3" "renaEnergia3" "renaDesc3"; }
-  #renault h2 {
-    grid-area: titRena; }
-
-/*------FORD------*/
-#ford {
-  grid-template-areas: 'titFord titFord titFord'
- 'ford1 ford2 ford3'; }
-  #ford #ford1 {
-    grid-area: ford1; }
-    #ford #ford1:hover #fordDatos1 {
-      text-decoration: none;
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "fordModelo1" "fordPrecio1" "fordToTerr1" "fordEnergia1" "fordDesc1"; }
-  #ford #ford2 {
-    grid-area: ford2; }
-    #ford #ford2:hover #fordDatos2 {
-      text-decoration: none;
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "fordModelo2" "fordPrecio2" "fordToTerr2" "fordEnergia2" "fordDesc2"; }
-  #ford #ford3 {
-    grid-area: ford3; }
-    #ford #ford3:hover #fordDatos3 {
-      text-decoration: none;
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "fordModelo3" "fordPrecio3" "fordToTerr3" "fordEnergia3" "fordDesc3"; }
-  #ford h2 {
-    grid-area: titFord; }
-
-/*------FIAT------*/
-#fiat {
-  grid-template-areas: 'titFiat titFiat titFiat'
- 'fiat1 fiat2 fiat3'; }
-  #fiat #fiat1 {
-    grid-area: fiat1; }
-    #fiat #fiat1:hover #fiatDatos1 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "fiatModelo1" "fiatPrecio1" "fiatToTerr1" "fiatEnergia1" "fiatDesc1"; }
-  #fiat #fiat2 {
-    grid-area: fiat2; }
-    #fiat #fiat2:hover #fiatDatos2 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "fiatModelo2" "fiatPrecio2" "fiatToTerr2" "fiatEnergia2" "fiatDesc2"; }
-  #fiat #fiat3 {
-    grid-area: fiat3; }
-    #fiat #fiat3:hover #fiatDatos3 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "fiatModelo3" "fiatPrecio3" "fiatToTerr3" "fiatEnergia3" "fiatDesc3"; }
-  #fiat h2 {
-    grid-area: titFiat; }
-
-/*------NISSAN------*/
-#nissan {
-  grid-template-areas: 'titNiss titNiss titNiss'
- 'niss1 niss2 niss3'; }
-  #nissan #niss1 {
-    grid-area: niss1; }
-    #nissan #niss1:hover #nissDatos1 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "nissModelo1" "nissPrecio1" "nissToTerr1" "nissEnergia1" "nissDesc1"; }
-  #nissan #niss2 {
-    grid-area: niss2; }
-    #nissan #niss2:hover #nissDatos2 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "nissModelo2" "nissPrecio2" "nissToTerr2" "nissEnergia2" "nissDesc2"; }
-  #nissan #niss3 {
-    grid-area: niss3; }
-    #nissan #niss3:hover #nissDatos3 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "nissModelo3" "nissPrecio3" "nissToTerr3" "nissEnergia3" "nissDesc3"; }
-  #nissan h2 {
-    grid-area: titNiss; }
-
-/*COLORES*/
-#tieAutMain {
-  background: repeating-linear-gradient(45deg, #646464, #646464 25%, #737373 25%, #737373 50%); }
-
-/*TRANSICIONES Y TRANSFORMACIONES*/
-/*-----RESPONSIVE-----*/
-/*PC De La Escuela*/
-@media screen and (min-width: 1300px) and (max-width: 1400px) {
-  #tieAutMain div[id*="Datos"] h4 {
-    font-size: 30px; }
-  #tieAutMain div[id*="Datos"] p {
-    font-size: 15px; } }
-
-/*TABLET*/
-@media screen and (min-width: 421px) and (max-width: 1023px) {
-  #tieAutMain img {
-    outline: 3px solid black; }
-  #tieAutMain #tieAut__Grid {
-    grid-row-gap: 5px; }
-    #tieAutMain #tieAut__Grid div[id*="Datos"] {
-      display: block;
-      position: relative;
-      height: auto;
-      transform: translate(0px, 5px);
-      outline: none; }
-      #tieAutMain #tieAut__Grid div[id*="Datos"] h4 {
-        font-size: 15px; }
-      #tieAutMain #tieAut__Grid div[id*="Datos"] p {
-        font-size: 10px; }
-    #tieAutMain #tieAut__Grid div[id*="Img"] {
-      height: 140px; }
-    #tieAutMain #tieAut__Grid .tieAut__grid--marcas > div:hover {
-      scale: 1; }
-      #tieAutMain #tieAut__Grid .tieAut__grid--marcas > div:hover img {
-        filter: none; } }
-
-/*CELULAR*/
-@media screen and (min-width: 0px) and (max-width: 480px) {
-  #tieAutMain img {
-    outline: 3px solid black; }
-  #tieAutMain #tieAut__Grid {
-    grid-row-gap: 5px;
-    /*-------------*/ }
-    #tieAutMain #tieAut__Grid div[id*="Datos"] {
-      display: grid;
-      grid-row-gap: 2px;
-      position: relative;
-      height: auto;
-      transform: translate(0px, 5px);
-      outline: none; }
-      #tieAutMain #tieAut__Grid div[id*="Datos"] h4 {
-        font-size: 10px; }
-      #tieAutMain #tieAut__Grid div[id*="Datos"] p {
-        font-size: 7px; }
-      #tieAutMain #tieAut__Grid div[id*="Datos"]:hover {
-        scale: 1; }
-        #tieAutMain #tieAut__Grid div[id*="Datos"]:hover img {
-          filter: none; }
-    #tieAutMain #tieAut__Grid div[id*="Img"] {
-      height: 170px; }
-    #tieAutMain #tieAut__Grid .tieAut__grid--marcas {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr repeat(3, 7.7fr); }
-    #tieAutMain #tieAut__Grid .tieAut__grid--marcas > div {
-      padding: 0 0 30px 0; }
-    #tieAutMain #tieAut__Grid #honda {
-      grid-template-areas: 'titHonda'
- 'honda1'
- 'honda2'
- 'honda3'; }
-      #tieAutMain #tieAut__Grid #honda h2 {
-        grid-area: titHonda; }
-    #tieAutMain #tieAut__Grid #audi {
-      grid-template-areas: 'titAudi'
- 'audi1'
- 'audi2'
- 'audi3'; }
-      #tieAutMain #tieAut__Grid #audi h2 {
-        grid-area: titAudi; }
-    #tieAutMain #tieAut__Grid #chevrolet {
-      grid-template-areas: 'titChevr'
- 'chevr1'
- 'chevr2'
- 'chevr3'; }
-      #tieAutMain #tieAut__Grid #chevrolet h2 {
-        grid-area: titChevr; }
-    #tieAutMain #tieAut__Grid #renault {
-      grid-template-areas: 'titRena'
- 'rena1'
- 'rena2'
- 'rena3'; }
-      #tieAutMain #tieAut__Grid #renault h2 {
-        grid-area: titRena; }
-    #tieAutMain #tieAut__Grid #ford {
-      grid-template-areas: 'titFord'
- 'ford1'
- 'ford2'
- 'ford3'; }
-      #tieAutMain #tieAut__Grid #ford h2 {
-        grid-area: titFord; }
-    #tieAutMain #tieAut__Grid #fiat {
-      grid-template-areas: 'titFiat'
- 'fiat1'
- 'fiat2'
- 'fiat3'; }
-      #tieAutMain #tieAut__Grid #fiat h2 {
-        grid-area: titFiat; }
-    #tieAutMain #tieAut__Grid #nissan {
-      grid-template-areas: 'titNiss'
- 'niss1'
- 'niss2'
- 'niss3'; }
-      #tieAutMain #tieAut__Grid #nissan h2 {
-        grid-area: titNiss; } }
-
-/*JS*/
-#tieAutMain__cosasJS {
-  position: sticky;
-  top: 20px;
-  z-index: 999; }
-
-/*BUSQUEDA-----------------------------------------------------------------*/
-#tieAutMain__cosasJS--contenedorBusqueda {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(8px, 0px); }
-
-#tieAutMain__cosasJS--contenedorBusqueda--busqueda {
-  position: relative;
-  padding: 10px;
-  display: flex;
-  align-items: center; }
-  #tieAutMain__cosasJS--contenedorBusqueda--busqueda ::placeholder {
-    color: gray;
-    font-size: 20px; }
-  #tieAutMain__cosasJS--contenedorBusqueda--busqueda:hover #tieAutMain__cosasJS--contenedorBusqueda--busqueda--busquedaInput {
-    width: 350px; }
-  #tieAutMain__cosasJS--contenedorBusqueda--busqueda:hover span {
-    transform: rotate(360deg); }
-
-#tieAutMain__cosasJS--contenedorBusqueda--busqueda--busquedaInput {
-  outline: none;
-  box-sizing: border-box;
-  height: 60px;
-  width: 0px;
-  padding: 0 20px;
-  color: #000;
-  border-radius: 50px;
-  font-size: 20px;
-  border: 1px solid #D50000;
-  background-color: #fff;
-  transition: all 0.7s ease; }
-
-#tieAutMain__cosasJS--contenedorBusqueda--busqueda--botonBusqueda {
-  position: absolute;
-  right: 0px;
-  width: 80px;
-  height: 80px;
-  background: #D50000;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s ease; }
-  #tieAutMain__cosasJS--contenedorBusqueda--busqueda--botonBusqueda span {
-    font-size: 25px;
-    color: white;
-    transition: all 0.7s ease; }
-  #tieAutMain__cosasJS--contenedorBusqueda--busqueda--botonBusqueda:hover {
-    background: #cc0000; }
-
-/*FILTROS------------------------------------------------------------------------------------*/
-#tieAutMain__cosasJS--filtros--barraDeFiltros {
-  left: 10px;
-  /* Cambiado al lado izquierdo */
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  z-index: 1000; }
-
-/* Sidebar */
-.tieAutMain__cosasJS--filtros--sidebar {
-  position: fixed;
-  top: 0;
-  left: -290px;
-  /* Oculta la barra lateral */
-  width: 250px;
-  height: 100%;
-  background-color: #f4f4f4;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  transition: left 0.3s ease;
-  z-index: 999; }
-  .tieAutMain__cosasJS--filtros--sidebar h2 {
-    margin-top: 0; }
-
-.tieAutMain__cosasJS--filtros--sidebarActive {
-  left: 0;
-  /* Muestra la barra lateral */ }
-
-/* Botón de cierre en la esquina superior derecha */
-.close-btn {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: transparent;
-  border: none;
-  font-size: 18px;
-  cursor: pointer; }
-
-.filter {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 15px 0 15px 30px; }
-
-.hidden {
-  filter: blur(10px);
-  /* Aplica el desenfoque */
-  pointer-events: none;
-  /* Evita la interacción con elementos desenfocados */
-  opacity: 0.5;
-  /* Reduce ligeramente la opacidad */
-  transition: filter 0.3s, opacity 0.3s;
-  /* Suaviza las transiciones */ }
-
-/* Toggle personalizado */
-.toggle {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 20px; }
-  .toggle input {
-    opacity: 0;
-    width: 0;
-    height: 0; }
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 20px; }
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 14px;
-    width: 14px;
-    left: 3px;
-    bottom: 3px;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 50%; }
-
-input:checked + .slider {
-  background-color: #2196F3; }
-
-input:checked + .slider:before {
-  transform: translateX(20px); }
-
-#mainConsulta {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto auto;
-  grid-template-areas: 'h1 h1 h1'
- 'img1 img2 img3'
- 'm1 t1 r1'
- 'd1 d2 d3'
- 'h2 h2 h2'
- 'i1 i2 i3'
- 'img img ct';
-  justify-items: center;
-  align-items: center;
-  gap: 20px;
-  width: 100%;
-  padding: 20px; }
-
-#contenedor_titulo_consulta {
-  color: white;
-  background-color: black;
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  grid-area: h1; }
-
-.h1C, .h6C {
-  display: flex;
-  justify-content: center; }
-
-#h1_1c {
-  font-size: 60px; }
-
-#img1c, #img2c, #img3c {
-  height: 300px;
-  width: 300px; }
-
-.imgc {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; }
-
-#img1c {
-  grid-area: img1; }
-
-#img2c {
-  grid-area: img2; }
-
-#img3c {
-  grid-area: img3; }
-
-#p1c, #p2c, #p3c {
-  width: 500px;
-  height: 200px; }
-
-#p1c {
-  grid-area: m1; }
-
-#p2c {
-  grid-area: t1; }
-
-#p3c {
-  grid-area: r1; }
-
-.pc {
-  font-size: 18px; }
-
-#h2c {
-  color: white;
-  grid-area: h2;
-  background-color: black;
-  width: 100%;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column; }
-
-#h2_1c {
-  display: flex;
-  justify-content: center;
-  font-size: 40px; }
-
-#info1consulta {
-  grid-area: i1;
-  width: 500px;
-  height: 300px; }
-
-#info2consulta {
-  width: 500px;
-  height: 300px;
-  grid-area: i2; }
-
-#info3consulta {
-  width: 500px;
-  height: 300px;
-  grid-area: i3; }
-
-#contenedor_imagen_consulta_laptop {
-  height: 100%;
-  width: 100%;
-  grid-area: img; }
-
-#img_laptop {
-  width: 100%;
-  height: 700px; }
-
-#consulta {
-  grid-area: ct;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  background-color: white;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease; }
-
-#consulta:hover {
-  transform: scale(1.02); }
-
-.form-group label {
-  font-weight: bold;
-  transition: color 0.3s ease; }
-
-.form-group input:focus,
-.form-group textarea:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); }
-
-.btn-primary {
-  transition: background-color 0.3s ease; }
-
-.btn-primary:hover {
-  background-color: #0056b3; }
-
-@media (max-width: 768px) {
-  #mainConsulta {
-    grid-template-columns: 1fr;
-    grid-template-areas: 'h1'
- 'img1'
- 'm1'
- 'img2'
- 't1'
- 'img3'
- 'r1'
- 'h2'
- 'i1'
- 'i2'
- 'i3'
- 'img'
- 'ct';
-    padding: 10px;
-    gap: 15px; }
-  #img1c, #img2c, #img3c, #info1consulta, #info2consulta, #info3consulta {
-    width: 80%;
-    max-width: 250px;
-    height: auto; }
-  #img_laptop {
-    height: 300px; }
-  #p1c, #p2c, #p3c {
-    width: 100%; }
-  #h1_1c {
-    font-size: 40px; }
-  #h2_1c {
-    font-size: 30px; }
-  .pc {
-    font-size: 16px; } }
-
-/* Animaciones */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px); }
-  to {
-    opacity: 1;
-    transform: translateY(0); } }
-
-@keyframes scaleUp {
-  from {
-    transform: scale(0.95); }
-  to {
-    transform: scale(1); } }
-
-#mainConsulta {
-  animation: fadeIn 1s ease-in-out; }
-
-#contenedor_titulo_consulta, #h2c {
-  animation: fadeIn 1s ease-in-out; }
-
-#consulta {
-  animation: scaleUp 0.5s ease-in-out; }
-
-#img1c, #img2c, #img3c, #if1c, #if2c, #if3c, #contenedor_imagen_consulta_laptop {
-  animation: fadeIn 1.2s ease-in-out; }
-
-#consulta:hover {
-  transform: scale(1.05);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); }
-
-@media (min-width: 1300px) and (max-width: 1400px) {
-  #mainConsulta {
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px; }
-  #img1c, #img2c, #img3c, #info1consulta, #info2consulta, #info3consulta {
-    width: 280px;
-    height: auto; }
-  #p1c, #p2c, #p3c {
-    width: 90%; }
-  #h1_1c {
-    font-size: 50px; }
-  #h2_1c {
-    font-size: 35px; }
-  .pc {
-    font-size: 17px; } }
-
-.prods__main {
-  margin-top: 100px;
-  border: solid 6px black;
-  margin-inline: 2%;
-  padding: 20px;
-  background-image: linear-gradient(to top, #505050, #737373); }
-
-.prods__encabezado {
-  height: 500px; }
-
-.prods__carrusel {
-  height: 100%; }
-  .prods__carrusel img {
-    border: solid 4px black;
-    height: 500px !important; }
-
-.prods__info {
-  height: 100%; }
-  .prods__info .prods__volver {
-    position: absolute;
-    width: 100%;
-    transform: translate(40%); }
-    .prods__info .prods__volver a {
-      overflow-x: hidden;
-      box-shadow: 0px 0px 10px black;
-      font-size: 25px;
-      color: black;
-      text-decoration: none !important;
-      background-color: #D32F2F;
-      transition: all .2s;
-      padding-inline: 5px;
-      padding-block: 3px;
-      border: solid 2px black;
-      border-radius: 8px; }
-      .prods__info .prods__volver a:hover {
-        box-shadow: 0px 0px 10px #9b0000;
-        filter: brightness(130%); }
-  .prods__info h2 {
-    height: 10%;
-    font-size: 50px;
-    color: black;
-    text-decoration: underline !important; }
-  .prods__info table {
-    height: 80%;
-    margin-left: 10%; }
-    .prods__info table tr td {
-      font-size: 25px;
-      color: black; }
-  .prods__info .prods__dato {
-    padding-left: 12px; }
-  .prods__info .prods__carac {
-    margin-block: 5px; }
-    .prods__info .prods__carac h5 {
-      font-size: 35px;
-      color: black;
-      text-decoration: none !important; }
-  .prods__info .prods__contacto {
-    display: flex;
-    width: 100%;
-    height: 10%;
-    justify-content: center;
-    align-items: center; }
-    .prods__info .prods__contacto button {
-      box-shadow: 0px 0px 10px black;
-      border-radius: 8px;
-      padding: 5px;
-      height: 100%;
-      background-color: #D32F2F;
-      transition: all .2s; }
-      .prods__info .prods__contacto button a {
-        font-size: 25px;
-        color: black;
-        text-decoration: none !important;
-        transition: all .2s; }
-      .prods__info .prods__contacto button:hover {
-        box-shadow: 0px 0px 20px #9b0000;
-        filter: brightness(130%); }
-
-.prods__descripcion {
-  padding-top: 10px;
-  text-align: center;
-  display: flex;
-  justify-content: center; }
-  .prods__descripcion p {
-    font-size: 22px;
-    width: 80%; }
-
-.prods__btnVerMas[open] .prods__masInfo {
-  opacity: 1; }
-
-.prods__btnVerMas summary {
-  list-style: none;
-  text-align: center;
-  font-size: 20px;
-  background-color: #D32F2F;
-  box-shadow: 0px 0px 10px black;
-  border: solid 4px black;
-  border-radius: 15px;
-  transition: all .2s; }
-  .prods__btnVerMas summary:hover {
-    filter: brightness(130%);
-    box-shadow: 0px 0px 10px darkred; }
-  .prods__btnVerMas summary:active {
-    background-color: white;
-    box-shadow: 0px 0px 10px white; }
-
-.prods__masInfo {
-  opacity: 0;
-  transition: all .5s;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border: solid 4px black;
-  background-image: linear-gradient(to top, #646464, #acacac);
-  border-radius: 15px;
-  padding: 15px;
-  margin-top: 30px;
-  box-shadow: 0px -10px 10px 10px rgba(0, 0, 0, 0.15); }
-  .prods__masInfo table {
-    margin-top: 80px;
-    margin-bottom: 80px;
-    width: 100%; }
-    .prods__masInfo table tr {
-      padding-left: 10px; }
-      .prods__masInfo table tr td {
-        width: 33%;
-        text-align: left;
-        font-size: 35px; }
-  .prods__masInfo h4 {
-    font-size: 30px;
-    text-align: center; }
-  .prods__masInfo video {
-    width: 70%;
-    border: solid 6px black;
-    border-radius: 10px;
-    transition: all .2s;
-    box-shadow: 0px 0px 2px #2B2B2B; }
-    .prods__masInfo video:focus {
-      box-shadow: 0px 0px 90px #f0f0f0; }
-
-@media screen and (min-width: 320px) and (max-width: 767px) {
-  .prods__main {
-    margin-top: 60px; }
-  .prods__encabezado {
-    height: 800px; }
-  .prods__carrusel {
-    height: 300px; }
-    .prods__carrusel img {
-      height: 300px !important; }
-  .prods__info {
-    height: 500px; }
-    .prods__info .prods__volver {
-      margin-inline: 0%;
-      transform: translateY(-380px); }
-    .prods__info .prods__contacto {
-      height: 50px; }
-      .prods__info .prods__contacto button a {
-        font-size: 16px;
-        color: black;
-        text-decoration: none !important; } }
-
-@media screen and (min-width: 768px) and (max-width: 1023px) {
-  .prods__main {
-    margin-top: 60px; }
-  .prods__encabezado {
-    height: 1000px; }
-  .prods__carrusel {
-    height: 500px; }
-    .prods__carrusel img {
-      height: 500px !important; }
-  .prods__info {
-    height: 500px; }
-    .prods__info h2 {
-      margin-left: 20%; }
-    .prods__info table {
-      margin-left: 20%; }
-    .prods__info .prods__volver {
-      margin-inline: 0%;
-      transform: translateY(-580px); }
-    .prods__info .prods__contacto {
-      height: 50px; }
-      .prods__info .prods__contacto button a {
-        font-size: 16px;
-        color: black;
-        text-decoration: none !important; } }
-
-#body__Registro {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  font-family: Arial, Helvetica, sans-serif;
-  background: linear-gradient(27deg, #737373 50%, #505050, #9b0000 50%, #1A1A1A); }
-
-.form-body {
-  width: 400px;
-  min-width: 300px;
-  border-radius: 10px;
-  border-top-left-radius: 50px;
-  border-bottom-right-radius: 50px;
-  border: solid 2px #9b0000;
-  background-color: #00000023;
-  margin: 10px; }
-
-.form-body img {
-  width: 150px;
-  display: block;
-  margin: 20px auto; }
-
-.text {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  color: #fff;
-  margin-bottom: 25px; }
-
-.form-body input {
-  display: block;
-  margin: auto;
-  height: 40px;
-  width: 75%;
-  font-size: 15px;
-  padding-left: 10px;
-  color: #fff;
-  border: 1px solid #fff;
-  border-radius: 2px;
-  background-color: transparent;
-  border-top-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  outline: none; }
-
-.form-body input[type="password"] {
-  margin-top: 20px; }
-
-::placeholder {
-  font-size: 1rem;
-  color: azure; }
-
-.form-body input:hover {
-  transition: .5s;
-  border: 1px solid #9b0000;
-  color: #aa1b1b; }
-
-.form-body button {
-  display: block;
-  margin: auto;
-  margin-top: 25px;
-  margin-bottom: 30px;
-  height: 40px;
-  width: 78%;
-  background: transparent;
-  border-radius: 2px;
-  cursor: pointer;
-  outline: none;
-  border: 1px solid #9b0000;
-  transition: all .5s ease; }
-  .form-body button a {
-    text-decoration: none;
-    color: black;
-    transition: all .3s; }
-
-.form-body button:hover {
-  transform: scale(1.1);
-  border: 3px solid #9b0000;
-  background: linear-gradient(#aa1b1b, #c72c2c); }
-  .form-body button:hover a {
-    color: #d5dbdd; }
-
-#link {
-  display: flex;
-  justify-content: center;
-  text-decoration: none;
-  color: white;
-  margin-top: 20px; }
-
-.form-body input[type="text"] {
-  margin-top: 20px; }
-
-#bodyVA {
-  background: linear-gradient(27deg, #d49090 50%, #b17272, #b61111a1 50%, #aa1b1b);
-  height: 100vh;
-  margin: 0; }
-
-#mainVA {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto;
-  grid-template-areas: 'h1va h1va h1va'
- 'formulariova formulariova formulariova'
- 'h2va h2va h2va'
- 'infova1 infova2 infova3';
-  padding: 20px;
-  justify-items: center;
-  gap: 20px; }
-
-#contenedorvaformulario {
-  grid-area: formulariova;
-  animation: slideIn 1s ease-out forwards; }
-
-#contenedorh1VA {
-  grid-area: h1va; }
-
-.form-container {
-  color: #f0f0f0;
-  background: repeating-linear-gradient(45deg, #464646, #464646, #505050, #505050);
-  padding: 20px;
-  border-radius: 8px;
-  border: solid 3px #9b0000;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  max-width: 600px;
-  margin: 0 auto;
-  opacity: 0;
-  transform: translateY(-50px);
-  grid-area: formulariova; }
-
-.form-container.show {
-  opacity: 1;
-  transform: translateY(0);
-  transition: opacity 1s ease, transform 1s ease; }
-
-.form-group {
-  margin-bottom: 15px;
-  background: transparent; }
-
-.form-group label {
-  display: block;
-  font-weight: bold; }
-
-.form-group input, .form-group textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #acacac;
-  border-radius: 4px;
-  background-color: transparent;
-  color: #f0f0f0;
-  box-sizing: border-box; }
-
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #f0f0f0; }
-
-.form-group textarea {
-  resize: vertical; }
-
-.form-group input[type="file"] {
-  padding: 5px;
-  background-color: transparent; }
-
-.form-group button {
-  background-color: #D32F2F;
-  color: #f0f0f0;
-  border: none;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  border-radius: 4px; }
-
-.form-group button:hover {
-  background-color: #FF6659; }
-
-/* Animación de deslizamiento */
-@keyframes slideIn {
-  from {
-    opacity: 0;
-    transform: translateY(-50px); }
-  to {
-    opacity: 1;
-    transform: translateY(0); } }
-
-#h1va {
-  color: #f0f0f0; }
-
-#contenedorh2va {
-  grid-area: h2va;
-  color: #f0f0f0; }
-
-#infova1, #infova2, #infova3 {
-  border-radius: 10px;
-  height: 550px;
-  width: 550px;
-  background: repeating-linear-gradient(135deg, #646464, #646464, #737373, #737373);
-  color: #f0f0f0;
-  grid-area: infova1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  text-align: center; }
-
-@media (max-width: 768px) {
-  #mainVA {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: 'h1va'
- 'formulariova'
- 'h2va'
- 'infova1'
- 'infova2'
- 'infova3'; }
-  .form-container {
-    max-width: 100%;
-    /* Ocupa todo el ancho disponible */
-    padding: 15px;
-    /* Reduce el padding */ }
-  .form-group input, .form-group textarea {
-    font-size: 14px;
-    /* Tamaño más pequeño en campos de texto */ }
-  .form-group button {
-    font-size: 14px;
-    /* Botón más pequeño */
-    padding: 8px 15px; }
-  /* Reducimos el tamaño de las letras de los textos */
-  #h1va h2, #contenedorh2va h2 {
-    font-size: 20; }
-  #h1va h1, #contenedorh2va h1 {
-    font-size: 24; }
-  #infova1, #infova2, #infova3 {
-    font-size: 10px;
-    /* Tamaño reducido para contenido */
-    padding: 10px;
-    /* Ajustamos el padding */
-    line-height: 1.4;
-    /* Ajustamos el espaciado entre líneas */
-    width: 300px;
-    height: 400px; }
-    #infova1 h4, #infova2 h4, #infova3 h4 {
-      font-size: 16px; }
-    #infova1 h3, #infova2 h3, #infova3 h3 {
-      font-size: 18; }
-  /* Ajustamos texto del formulario */
-  .form-container label {
-    font-size: 14px;
-    /* Tamaño más pequeño para etiquetas */ }
-  /* Ajustamos otros textos globalmente */
-  body, #mainVA {
-    font-size: 14px;
-    /* Tamaño más pequeño para todo el contenido general */ } }
-
-@media (min-width: 1366px) and (max-width: 1366px) {
-  #mainVA {
-    grid-template-columns: repeat(3, 1fr);
-    /* Tres columnas para aprovechar el ancho */
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: 'h1va h1va h1va'
- 'formulariova formulariova formulariova'
- 'h2va h2va h2va'
- 'infova1 infova2 infova3'; }
-=======
->>>>>>> 19fe015c6cabadb340edc12902f1c05a49cf91b2
+    grid-template-areas: 'h1va h1va h1va' 'formulariova formulariova formulariova' 'h2va h2va h2va' 'infova1 infova2 infova3'; }
   .form-container {
     max-width: 100%;
     /* Mantiene el ancho completo */

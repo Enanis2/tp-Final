@@ -87,6 +87,9 @@ footer {
 footer {
   margin-top: auto; }
 
+header {
+  background-color: #2B2B2B; }
+
 nav {
   position: sticky;
   top: 5px; }
@@ -816,19 +819,12 @@ input:checked + .slider:before {
   .pc {
     font-size: 17px; } }
 
-@keyframes deslizadoYaparicion {
-  form {
-    opacity: 0;
-    transform: translateX(-20px); }
-  to {
-    opacity: 1;
-    transform: translateX(0); } }
-
 .prods__main {
+  margin-top: 100px;
   border: solid 6px black;
   margin-inline: 2%;
   padding: 20px;
-  background-color: goldenrod; }
+  background-image: linear-gradient(to top, #505050, #737373); }
 
 .prods__encabezado {
   height: 500px; }
@@ -851,14 +847,14 @@ input:checked + .slider:before {
       font-size: 25px;
       color: black;
       text-decoration: none !important;
-      background-color: #bb0c0c;
+      background-color: #D32F2F;
       transition: all .2s;
       padding-inline: 5px;
       padding-block: 3px;
-      border: solid 2px #181818;
+      border: solid 2px black;
       border-radius: 8px; }
       .prods__info .prods__volver a:hover {
-        box-shadow: 0px 0px 10px darkred;
+        box-shadow: 0px 0px 10px #9b0000;
         filter: brightness(130%); }
   .prods__info h2 {
     height: 10%;
@@ -890,7 +886,7 @@ input:checked + .slider:before {
       border-radius: 8px;
       padding: 5px;
       height: 100%;
-      background-color: #bb0c0c;
+      background-color: #D32F2F;
       transition: all .2s; }
       .prods__info .prods__contacto button a {
         font-size: 25px;
@@ -898,7 +894,7 @@ input:checked + .slider:before {
         text-decoration: none !important;
         transition: all .2s; }
       .prods__info .prods__contacto button:hover {
-        box-shadow: 0px 0px 20px darkred;
+        box-shadow: 0px 0px 20px #9b0000;
         filter: brightness(130%); }
 
 .prods__descripcion {
@@ -917,7 +913,7 @@ input:checked + .slider:before {
   list-style: none;
   text-align: center;
   font-size: 20px;
-  background-color: #bb0c0c;
+  background-color: #D32F2F;
   box-shadow: 0px 0px 10px black;
   border: solid 4px black;
   border-radius: 15px;
@@ -936,9 +932,11 @@ input:checked + .slider:before {
   align-items: center;
   flex-direction: column;
   border: solid 4px black;
+  background-image: linear-gradient(to top, #646464, #acacac);
   border-radius: 15px;
   padding: 15px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  box-shadow: 0px -10px 10px 10px rgba(0, 0, 0, 0.15); }
   .prods__masInfo table {
     margin-top: 80px;
     margin-bottom: 80px;
@@ -955,7 +953,11 @@ input:checked + .slider:before {
   .prods__masInfo video {
     width: 70%;
     border: solid 6px black;
-    border-radius: 10px; }
+    border-radius: 10px;
+    transition: all .2s;
+    box-shadow: 0px 0px 2px #2B2B2B; }
+    .prods__masInfo video:focus {
+      box-shadow: 0px 0px 90px #f0f0f0; }
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .prods__main {

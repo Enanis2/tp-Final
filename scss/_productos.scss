@@ -4,22 +4,12 @@
     text-decoration: $deco !important;
 }
 
-@keyframes deslizadoYaparicion{
-    form{
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to{
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 .prods__main{
-    border: solid 6px black;
+    margin-top: 100px;
+    border: solid 6px map-get($map: $paleta-colores, $key: 2);
     margin-inline: 2%;
     padding: 20px;
-    background-color: goldenrod;
+    background-image: linear-gradient(to top, map-get($map: $paleta-colores, $key: 4), map-get($map: $paleta-colores, $key: 7));
 }
 
 .prods__encabezado{
@@ -29,7 +19,7 @@
 .prods__carrusel{
     height: 100%;
     img{
-        border: solid 4px black;
+        border: solid 4px map-get($map: $paleta-colores, $key: 2);
         height: 500px !important;
     }
 }
@@ -42,16 +32,16 @@
         transform: translate(40%);
         a{
             overflow-x: hidden;
-            box-shadow: 0px 0px 10px black;
-            @include valoresFuente(25px, black, none);
-            background-color: rgb(187, 12, 12);
+            box-shadow: 0px 0px 10px map-get($map: $paleta-colores, $key: 2);
+            @include valoresFuente(25px, map-get($map: $paleta-colores, $key: 2), none);
+            background-color: map-get($map: $paleta-colores, $key: 8);
             transition: all .2s;
             padding-inline: 5px;
             padding-block: 3px;
-            border: solid 2px rgb(24, 24, 24);
+            border: solid 2px map-get($map: $paleta-colores, $key: 2);
             border-radius: 8px;
             &:hover{
-                box-shadow: 0px 0px 10px darkred;
+                box-shadow: 0px 0px 10px map-get($map: $paleta-colores, $key: 11);
                 filter: brightness(130%);
             }
         }
@@ -59,7 +49,7 @@
 
     h2{
         height: 10%;
-        @include valoresFuente(50px, black, underline)
+        @include valoresFuente(50px, map-get($map: $paleta-colores, $key: 2), underline)
     }
     
     table{
@@ -68,7 +58,7 @@
         tr{
             td{
                 font-size: 25px;
-                color: black;
+                color: map-get($map: $paleta-colores, $key: 2);
             }
         }
     }
@@ -80,7 +70,7 @@
     .prods__carac{
         margin-block: 5px;
         h5{
-            @include valoresFuente(35px, black, none)
+            @include valoresFuente(35px, map-get($map: $paleta-colores, $key: 2), none)
         }
     }
 
@@ -92,18 +82,18 @@
         align-items: center;
         
         button{
-            box-shadow: 0px 0px 10px black;
+            box-shadow: 0px 0px 10px map-get($map: $paleta-colores, $key: 2);
             border-radius: 8px;
             padding: 5px;
             height: 100%;
-            background-color: rgb(187, 12, 12);;
+            background-color: map-get($map: $paleta-colores, $key: 8);
             transition: all .2s;
             a{
-                @include valoresFuente(25px, black, none);
+                @include valoresFuente(25px, map-get($map: $paleta-colores, $key: 2), none);
                 transition: all .2s;
             }
             &:hover{
-                box-shadow: 0px 0px 20px darkred;
+                box-shadow: 0px 0px 20px map-get($map: $paleta-colores, $key: 11);
                 filter: brightness(130%);
             }
         }
@@ -129,7 +119,7 @@
         list-style: none;
         text-align: center;
         font-size: 20px;
-        background-color: rgb(187, 12, 12);
+        background-color: map-get($map: $paleta-colores, $key: 8);
         box-shadow: 0px 0px 10px black;
         border: solid 4px black;
         border-radius: 15px;
@@ -145,16 +135,20 @@
     }    
 }
 
+
+
 .prods__masInfo{
     opacity: 0;
     transition: all .5s;
     display: flex;
     align-items: center;
     flex-direction: column;
-    border: solid 4px black;
+    border: solid 4px map-get($map: $paleta-colores, $key: 2);
+    background-image: linear-gradient(to top, map-get($map: $paleta-colores, $key: 6), map-get($map: $paleta-colores, $key: 5));
     border-radius: 15px;
     padding: 15px;
     margin-top: 30px;
+    box-shadow: 0px -10px 10px 10px rgba(0,0,0,0.15);
     table{
         margin-top: 80px;
         margin-bottom: 80px;
@@ -176,6 +170,11 @@
         width: 70%;
         border: solid 6px black;
         border-radius: 10px;
+        transition: all .2s;
+        box-shadow: 0px 0px 2px map-get($map: $paleta-colores, $key: 12);
+        &:focus{
+            box-shadow: 0px 0px 90px map-get($map: $paleta-colores, $key: 1);
+        }
     }
 }
 

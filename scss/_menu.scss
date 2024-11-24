@@ -1,3 +1,7 @@
+header{
+    background-color: map-get($paleta-colores, 12);
+}
+
 nav{
     position: sticky;
     top: 5px;

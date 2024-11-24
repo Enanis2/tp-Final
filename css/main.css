@@ -1304,7 +1304,6 @@ input:checked + .slider:before {
 
 /* Estilo del contenedor general */
 #sobre-nosotros {
-  background: linear-gradient(135deg, #003366, #1a1a1a);
   color: #fff;
   padding: 60px 20px;
   text-align: center; }
@@ -1435,14 +1434,14 @@ input:checked + .slider:before {
     opacity: 1;
     transform: translateY(0); } }
 
-body {
-  animation: fadeIn 1s ease-in-out;
-  overflow-x: hidden; }
-
 #in_header {
   animation: fadeIn 0.5s ease-in-out; }
 
-#bodymain {
+#que-somos {
+  animation: fadeIn 1s ease-in-out;
+  overflow-x: hidden; }
+
+body {
   background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%); }
 
 .cont-logo {
@@ -1597,13 +1596,16 @@ body {
   letter-spacing: 2px;
   padding: 15px 0;
   margin-bottom: 50px;
-  background-color: #D32F2F; }
+  background-color: #FF6659; }
 
-#comp-related__companies--logo1, #comp-related__companies--logo2, #comp-related__companies--logo3, #comp-related__companies--logo4, #comp-related__companies--logo5, #comp-related__companies--logo6, #comp-related__companies--logo7 {
+#comp-related__companies--logo1 a, #comp-related__companies--logo2 a, #comp-related__companies--logo3 a, #comp-related__companies--logo4 a, #comp-related__companies--logo5 a, #comp-related__companies--logo6 a, #comp-related__companies--logo7 a {
   display: flex;
   justify-content: center; }
-  #comp-related__companies--logo1 img, #comp-related__companies--logo2 img, #comp-related__companies--logo3 img, #comp-related__companies--logo4 img, #comp-related__companies--logo5 img, #comp-related__companies--logo6 img, #comp-related__companies--logo7 img {
-    width: 50%; }
+  #comp-related__companies--logo1 a img, #comp-related__companies--logo2 a img, #comp-related__companies--logo3 a img, #comp-related__companies--logo4 a img, #comp-related__companies--logo5 a img, #comp-related__companies--logo6 a img, #comp-related__companies--logo7 a img {
+    width: 50%;
+    background-color: rgba(172, 172, 172, 0.1);
+    border-radius: 30px;
+    padding: 2%; }
 
 #comp-related__companies--t1, #comp-related__companies--t2, #comp-related__companies--t3, #comp-related__companies--t4, #comp-related__companies--t5, #comp-related__companies--t6, #comp-related__companies--t7 {
   text-align: center;
@@ -1624,21 +1626,36 @@ body {
   padding: 10px 5px;
   margin-bottom: 100px; }
 
-#comp-related__companies--logo2 img {
+#comp-related__companies--logo2 a img {
   width: 35%; }
 
-#comp-related__companies--logo4 img {
+#comp-related__companies--logo4 a img {
   width: 30%; }
 
-#comp-related__companies--logo5 img {
+#comp-related__companies--logo5 a img {
   width: 30%; }
 
-#comp-related__companies--logo7 img {
+#comp-related__companies--logo7 a img {
   width: 35%; }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+/*TABLET*/
+@media screen and (min-width: 421px) and (max-width: 1023px) {
+  #logomain {
+    width: 350px;
+    height: 350px; }
   #que-somos {
-    height: 450px; }
+    height: 550px; }
+  #que-somos__h2 {
+    font-size: 65px;
+    padding-top: 15%; }
+  #que-somos__p {
+    font-size: 20px;
+    width: 100%;
+    padding-bottom: 5%; } }
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  #que-somos {
+    height: 305px; }
   #que-somos__h2 {
     font-size: 40px;
     padding-top: 20%; }

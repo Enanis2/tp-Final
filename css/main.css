@@ -1438,6 +1438,9 @@ main {
 #bodymain {
   background: repeating-linear-gradient(45deg, #464646, #464646 35%, #505050 35%, #505050 70%); }
 
+#in_header {
+  background: none; }
+
 .cont-logo {
   display: flex;
   justify-content: center;

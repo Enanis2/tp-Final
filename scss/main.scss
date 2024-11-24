@@ -70,6 +70,11 @@ main{
         map-get($paleta-colores, 4) 70%,
     );
 }
+
+#in_header{
+    background: none;
+}
+
 .cont-logo{
     display: flex;
     justify-content: center;

@@ -1,12 +1,3 @@
-@import "footer";
-@import "menu";
-@import "autos";
-@import "cliente";
-@import "productos";
-@import "registro-inicioSesion";
-@import "ventaAutos";
-@import "nosotros";
-
 $paleta-colores: (
     1: rgb(240, 240, 240),
     2: black,
@@ -23,6 +14,15 @@ $paleta-colores: (
     13: #1A1A1A,
     14: rgb(238, 0, 0)
 );
+@import "footer";
+@import "menu";
+@import "autos";
+@import "cliente";
+@import "productos";
+@import "registro-inicioSesion";
+@import "ventaAutos";
+@import "nosotros";
+
 
 
 
@@ -51,7 +51,7 @@ $paleta-colores: (
     overflow-x: hidden;
 }
 
-#bodymain{
+main{
     background: repeating-linear-gradient(
         45deg,
         map-get($paleta-colores, 3),

@@ -1289,41 +1289,6 @@ input:checked + .slider:before {
     font-size: 14px;
     /* Tamaño más pequeño para todo el contenido general */ } }
 
-/* Estilos básicos */
-#cuerpo {
-  font-family: 'Arial', sans-serif;
-  margin: 0;
-  background-color: #f8f9fa;
-  color: #333;
-  line-height: 1.6; }
-
-/* Estilo del contenedor general */
-#sobre-nosotros {
-  background: linear-gradient(135deg, #003366, #1a1a1a);
-  color: #fff;
-  padding: 60px 20px;
-  text-align: center; }
-
-#sobre-nosotros .contenedor {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px; }
-
-/* Títulos y eslogan */
-.titulo {
-  font-size: 2.5rem;
-  color: #ffcc00;
-  margin-bottom: 20px;
-  animation: aparecer 2s ease-in-out; }
-
-.eslogan {
-  font-size: 1.5rem;
-  font-style: italic;
-  margin-bottom: 40px;
-  color: #ddd;
-  animation: aparecer 2s ease-in-out 0.5s; }
-
-/* Animaciones */
 @keyframes aparecer {
   0% {
     opacity: 0;
@@ -1340,37 +1305,85 @@ input:checked + .slider:before {
     opacity: 1;
     transform: translateY(0); } }
 
-/* Historia */
-.historia {
-  margin-bottom: 50px;
-  animation: subir 1s ease-in-out; }
+#cuerpo {
+  margin: 0;
+  padding: 0; }
 
-/* Misión y Visión */
-.mision-vision {
+#header-nosotros {
+  background-color: #f0f0f0; }
+
+#sobre-nosotros {
+  color: #f0f0f0;
+  padding: 60px 20px;
+  text-align: center; }
+
+#sobre-nosotros__titulo {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px; }
+  #sobre-nosotros__titulo h2 {
+    font-size: 50px;
+    font-weight: bold;
+    font-family: monospace;
+    color: #D32F2F;
+    margin-bottom: 20px;
+    animation: aparecer 0.5s ease-in-out; }
+  #sobre-nosotros__titulo p {
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 40px;
+    animation: aparecer 1.5s ease-in-out; }
+
+#sobre-nosotros__historia {
+  margin-bottom: 50px; }
+  #sobre-nosotros__historia h3 {
+    height: 70px;
+    padding-top: 1%;
+    letter-spacing: 2px;
+    background-color: #D32F2F;
+    border-radius: 20px;
+    animation: subir 1.5s ease-in-out; }
+  #sobre-nosotros__historia p {
+    font-size: 18px;
+    animation: subir 2s ease-in-out; }
+
+#sobre-nosotros__mision-vision {
   display: flex;
   justify-content: space-around;
   gap: 40px;
   margin-bottom: 50px;
-  animation: aparecer 1.5s ease-in-out 0.5s; }
+  animation: aparecer 1.5s ease-in-out; }
+  #sobre-nosotros__mision-vision div {
+    background: rgba(26, 26, 26, 0.9);
+    padding: 30px;
+    border-radius: 10px;
+    width: 45%;
+    color: #fff;
+    border: 3px solid #FF6659;
+    transition: transform 0.3s, box-shadow 0.3s; }
+    #sobre-nosotros__mision-vision div:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px #D32F2F; }
 
-.mision, .vision {
-  background: #1a1a1a;
-  padding: 30px;
-  border-radius: 10px;
-  width: 45%;
-  color: #fff;
-  border: 2px solid #ffcc00;
-  transition: transform 0.3s, box-shadow 0.3s; }
+#sobre-nosotros__vehiculos {
+  margin-bottom: 50px; }
+  #sobre-nosotros__vehiculos ul {
+    padding: 0;
+    margin: 20px 0; }
+    #sobre-nosotros__vehiculos ul li {
+      list-style: none;
+      font-size: 25px;
+      letter-spacing: 2px;
+      margin-bottom: 20px;
+      animation: subir 1.2s ease-in-out;
+      transition: color, 0.3s; }
+      #sobre-nosotros__vehiculos ul li:hover {
+        color: #9b0000; }
 
-.mision:hover, .vision:hover {
-  transform: scale(1.05);
-  box-shadow: 0 10px 20px rgba(255, 204, 0, 0.5); }
-
-/* Logros y cifras */
-.logros {
+#sobre-nosotros__logros {
   margin-bottom: 50px; }
 
-.cifras {
+.sobre-nosotros__logros--cifras {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -1382,39 +1395,17 @@ input:checked + .slider:before {
   margin-top: 30px;
   padding: 30px;
   border-radius: 10px;
-  border: 2px solid #ffcc00;
+  border: 2px solid #FF6659;
   animation: subir 1.5s ease-in-out;
   transition: transform 0.3s, box-shadow 0.3s; }
+  .cifra h4 {
+    font-size: 2.5rem;
+    color: #ee0000;
+    margin-bottom: 10px; }
+  .cifra:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 15px #9b0000; }
 
-.cifra:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 10px 15px rgba(255, 204, 0, 0.4); }
-
-.cifra h4 {
-  font-size: 2.5rem;
-  color: #ffcc00;
-  margin-bottom: 10px; }
-
-/* Vehículos */
-.vehiculos {
-  margin-bottom: 50px; }
-
-.vehiculos ul {
-  list-style: none;
-  padding: 0;
-  margin: 20px 0; }
-
-.vehiculos ul li {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-  color: #ddd;
-  animation: subir 1.2s ease-in-out;
-  transition: color 0.3s; }
-
-.vehiculos ul li:hover {
-  color: #ffcc00; }
-
-/* Espaciado adicional entre las secciones */
 .mision-vision, .vehiculos, .logros, .historia, .equipo {
   margin-bottom: 50px; }
 
@@ -1430,14 +1421,14 @@ input:checked + .slider:before {
     opacity: 1;
     transform: translateY(0); } }
 
-body {
-  animation: fadeIn 1s ease-in-out;
-  overflow-x: hidden; }
-
 #in_header {
   animation: fadeIn 0.5s ease-in-out; }
 
-#bodymain {
+#que-somos {
+  animation: fadeIn 1s ease-in-out;
+  overflow-x: hidden; }
+
+body {
   background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%); }
 
 .cont-logo {
@@ -1592,13 +1583,16 @@ body {
   letter-spacing: 2px;
   padding: 15px 0;
   margin-bottom: 50px;
-  background-color: #D32F2F; }
+  background-color: #FF6659; }
 
-#comp-related__companies--logo1, #comp-related__companies--logo2, #comp-related__companies--logo3, #comp-related__companies--logo4, #comp-related__companies--logo5, #comp-related__companies--logo6, #comp-related__companies--logo7 {
+#comp-related__companies--logo1 a, #comp-related__companies--logo2 a, #comp-related__companies--logo3 a, #comp-related__companies--logo4 a, #comp-related__companies--logo5 a, #comp-related__companies--logo6 a, #comp-related__companies--logo7 a {
   display: flex;
   justify-content: center; }
-  #comp-related__companies--logo1 img, #comp-related__companies--logo2 img, #comp-related__companies--logo3 img, #comp-related__companies--logo4 img, #comp-related__companies--logo5 img, #comp-related__companies--logo6 img, #comp-related__companies--logo7 img {
-    width: 50%; }
+  #comp-related__companies--logo1 a img, #comp-related__companies--logo2 a img, #comp-related__companies--logo3 a img, #comp-related__companies--logo4 a img, #comp-related__companies--logo5 a img, #comp-related__companies--logo6 a img, #comp-related__companies--logo7 a img {
+    width: 50%;
+    background-color: rgba(172, 172, 172, 0.1);
+    border-radius: 30px;
+    padding: 2%; }
 
 #comp-related__companies--t1, #comp-related__companies--t2, #comp-related__companies--t3, #comp-related__companies--t4, #comp-related__companies--t5, #comp-related__companies--t6, #comp-related__companies--t7 {
   text-align: center;
@@ -1619,21 +1613,36 @@ body {
   padding: 10px 5px;
   margin-bottom: 100px; }
 
-#comp-related__companies--logo2 img {
+#comp-related__companies--logo2 a img {
   width: 35%; }
 
-#comp-related__companies--logo4 img {
+#comp-related__companies--logo4 a img {
   width: 30%; }
 
-#comp-related__companies--logo5 img {
+#comp-related__companies--logo5 a img {
   width: 30%; }
 
-#comp-related__companies--logo7 img {
+#comp-related__companies--logo7 a img {
   width: 35%; }
 
-@media screen and (min-width: 320px) and (max-width: 767px) {
+/*TABLET*/
+@media screen and (min-width: 421px) and (max-width: 1023px) {
+  #logomain {
+    width: 350px;
+    height: 350px; }
   #que-somos {
-    height: 450px; }
+    height: 550px; }
+  #que-somos__h2 {
+    font-size: 65px;
+    padding-top: 15%; }
+  #que-somos__p {
+    font-size: 20px;
+    width: 100%;
+    padding-bottom: 5%; } }
+
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  #que-somos {
+    height: 305px; }
   #que-somos__h2 {
     font-size: 40px;
     padding-top: 20%; }

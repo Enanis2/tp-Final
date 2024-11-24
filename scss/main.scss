@@ -53,10 +53,8 @@ main{
 @keyframes rotar-aparecer{
     0%{
         rotate: 0deg;
-        scale: 0.1;
     }
     100%{
-        scale: 1;
         rotate: 360deg;
     }
 }

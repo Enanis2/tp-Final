@@ -1429,10 +1429,8 @@ main {
 
 @keyframes rotar-aparecer {
   0% {
-    rotate: 0deg;
-    scale: 0.1; }
+    rotate: 0deg; }
   100% {
-    scale: 1;
     rotate: 360deg; } }
 
 #bodymain {

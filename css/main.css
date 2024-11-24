@@ -225,8 +225,7 @@ nav {
 
 /*------AUDI------*/
 #audi {
-  grid-template-areas: 'titAudi titAudi titAudi'
- 'audi1 audi2 audi3'; }
+  grid-template-areas: 'titAudi titAudi titAudi' 'audi1 audi2 audi3'; }
   #audi #audi1 {
     grid-area: audi1; }
     #audi #audi1:hover #audiDatos1 {
@@ -250,8 +249,7 @@ nav {
 
 /*------CHEVROLET------*/
 #chevrolet {
-  grid-template-areas: 'titChevr titChevr titChevr'
- 'chevr1 chevr2 chevr3'; }
+  grid-template-areas: 'titChevr titChevr titChevr' 'chevr1 chevr2 chevr3'; }
   #chevrolet #chevr1 {
     grid-area: chevr1; }
     #chevrolet #chevr1:hover #chevrDatos1 {
@@ -275,8 +273,7 @@ nav {
 
 /*------RENAULT------*/
 #renault {
-  grid-template-areas: 'titRena titRena titRena'
- 'rena1 rena2 rena3'; }
+  grid-template-areas: 'titRena titRena titRena' 'rena1 rena2 rena3'; }
   #renault #rena1 {
     grid-area: rena1; }
     #renault #rena1:hover #renaDatos1 {
@@ -300,8 +297,7 @@ nav {
 
 /*------FORD------*/
 #ford {
-  grid-template-areas: 'titFord titFord titFord'
- 'ford1 ford2 ford3'; }
+  grid-template-areas: 'titFord titFord titFord' 'ford1 ford2 ford3'; }
   #ford #ford1 {
     grid-area: ford1; }
     #ford #ford1:hover #fordDatos1 {
@@ -328,8 +324,7 @@ nav {
 
 /*------FIAT------*/
 #fiat {
-  grid-template-areas: 'titFiat titFiat titFiat'
- 'fiat1 fiat2 fiat3'; }
+  grid-template-areas: 'titFiat titFiat titFiat' 'fiat1 fiat2 fiat3'; }
   #fiat #fiat1 {
     grid-area: fiat1; }
     #fiat #fiat1:hover #fiatDatos1 {
@@ -353,8 +348,7 @@ nav {
 
 /*------NISSAN------*/
 #nissan {
-  grid-template-areas: 'titNiss titNiss titNiss'
- 'niss1 niss2 niss3'; }
+  grid-template-areas: 'titNiss titNiss titNiss' 'niss1 niss2 niss3'; }
   #nissan #niss1 {
     grid-area: niss1; }
     #nissan #niss1:hover #nissDatos1 {
@@ -442,52 +436,31 @@ nav {
     #tieAutMain #tieAut__Grid .tieAut__grid--marcas > div {
       padding: 0 0 30px 0; }
     #tieAutMain #tieAut__Grid #honda {
-      grid-template-areas: 'titHonda'
- 'honda1'
- 'honda2'
- 'honda3'; }
+      grid-template-areas: 'titHonda' 'honda1' 'honda2' 'honda3'; }
       #tieAutMain #tieAut__Grid #honda h2 {
         grid-area: titHonda; }
     #tieAutMain #tieAut__Grid #audi {
-      grid-template-areas: 'titAudi'
- 'audi1'
- 'audi2'
- 'audi3'; }
+      grid-template-areas: 'titAudi' 'audi1' 'audi2' 'audi3'; }
       #tieAutMain #tieAut__Grid #audi h2 {
         grid-area: titAudi; }
     #tieAutMain #tieAut__Grid #chevrolet {
-      grid-template-areas: 'titChevr'
- 'chevr1'
- 'chevr2'
- 'chevr3'; }
+      grid-template-areas: 'titChevr' 'chevr1' 'chevr2' 'chevr3'; }
       #tieAutMain #tieAut__Grid #chevrolet h2 {
         grid-area: titChevr; }
     #tieAutMain #tieAut__Grid #renault {
-      grid-template-areas: 'titRena'
- 'rena1'
- 'rena2'
- 'rena3'; }
+      grid-template-areas: 'titRena' 'rena1' 'rena2' 'rena3'; }
       #tieAutMain #tieAut__Grid #renault h2 {
         grid-area: titRena; }
     #tieAutMain #tieAut__Grid #ford {
-      grid-template-areas: 'titFord'
- 'ford1'
- 'ford2'
- 'ford3'; }
+      grid-template-areas: 'titFord' 'ford1' 'ford2' 'ford3'; }
       #tieAutMain #tieAut__Grid #ford h2 {
         grid-area: titFord; }
     #tieAutMain #tieAut__Grid #fiat {
-      grid-template-areas: 'titFiat'
- 'fiat1'
- 'fiat2'
- 'fiat3'; }
+      grid-template-areas: 'titFiat' 'fiat1' 'fiat2' 'fiat3'; }
       #tieAutMain #tieAut__Grid #fiat h2 {
         grid-area: titFiat; }
     #tieAutMain #tieAut__Grid #nissan {
-      grid-template-areas: 'titNiss'
- 'niss1'
- 'niss2'
- 'niss3'; }
+      grid-template-areas: 'titNiss' 'niss1' 'niss2' 'niss3'; }
       #tieAutMain #tieAut__Grid #nissan h2 {
         grid-area: titNiss; } }
 
@@ -584,7 +557,7 @@ nav {
   /* Muestra la barra lateral */ }
 
 /* Botón de cierre en la esquina superior derecha */
-.close-btn {
+#tieAutMain__cosasJS--filtros--sidebar--cerrarSidebar {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -593,7 +566,7 @@ nav {
   font-size: 18px;
   cursor: pointer; }
 
-.filter {
+.tieAutMain__cosasJS--filtros--sidebar--opciones {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -610,12 +583,12 @@ nav {
   /* Suaviza las transiciones */ }
 
 /* Toggle personalizado */
-.toggle {
+.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor {
   position: relative;
   display: inline-block;
   width: 40px;
   height: 20px; }
-  .toggle input {
+  .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor input {
     opacity: 0;
     width: 0;
     height: 0; }
@@ -651,13 +624,7 @@ input:checked + .slider:before {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto;
-  grid-template-areas: 'h1 h1 h1'
- 'img1 img2 img3'
- 'm1 t1 r1'
- 'd1 d2 d3'
- 'h2 h2 h2'
- 'i1 i2 i3'
- 'img img ct';
+  grid-template-areas: 'h1 h1 h1' 'img1 img2 img3' 'm1 t1 r1' 'd1 d2 d3' 'h2 h2 h2' 'i1 i2 i3' 'img img ct';
   justify-items: center;
   align-items: center;
   gap: 20px;
@@ -784,19 +751,7 @@ input:checked + .slider:before {
 @media (max-width: 768px) {
   #mainConsulta {
     grid-template-columns: 1fr;
-    grid-template-areas: 'h1'
- 'img1'
- 'm1'
- 'img2'
- 't1'
- 'img3'
- 'r1'
- 'h2'
- 'i1'
- 'i2'
- 'i3'
- 'img'
- 'ct';
+    grid-template-areas: 'h1' 'img1' 'm1' 'img2' 't1' 'img3' 'r1' 'h2' 'i1' 'i2' 'i3' 'img' 'ct';
     padding: 10px;
     gap: 15px; }
   #img1c, #img2c, #img3c, #info1consulta, #info2consulta, #info3consulta {
@@ -1148,10 +1103,7 @@ input:checked + .slider:before {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: 'h1va h1va h1va'
- 'formulariova formulariova formulariova'
- 'h2va h2va h2va'
- 'infova1 infova2 infova3';
+  grid-template-areas: 'h1va h1va h1va' 'formulariova formulariova formulariova' 'h2va h2va h2va' 'infova1 infova2 infova3';
   padding: 20px;
   justify-items: center;
   gap: 20px; }
@@ -1255,12 +1207,7 @@ input:checked + .slider:before {
   #mainVA {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: 'h1va'
- 'formulariova'
- 'h2va'
- 'infova1'
- 'infova2'
- 'infova3'; }
+    grid-template-areas: 'h1va' 'formulariova' 'h2va' 'infova1' 'infova2' 'infova3'; }
   .form-container {
     max-width: 100%;
     /* Ocupa todo el ancho disponible */
@@ -1305,10 +1252,7 @@ input:checked + .slider:before {
     grid-template-columns: repeat(3, 1fr);
     /* Tres columnas para aprovechar el ancho */
     grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: 'h1va h1va h1va'
- 'formulariova formulariova formulariova'
- 'h2va h2va h2va'
- 'infova1 infova2 infova3'; }
+    grid-template-areas: 'h1va h1va h1va' 'formulariova formulariova formulariova' 'h2va h2va h2va' 'infova1 infova2 infova3'; }
   .form-container {
     max-width: 100%;
     /* Mantiene el ancho completo */
@@ -1694,8 +1638,7 @@ nav {
 
 /*------AUDI------*/
 #audi {
-  grid-template-areas: 'titAudi titAudi titAudi'
- 'audi1 audi2 audi3'; }
+  grid-template-areas: 'titAudi titAudi titAudi' 'audi1 audi2 audi3'; }
   #audi #audi1 {
     grid-area: audi1; }
     #audi #audi1:hover #audiDatos1 {
@@ -1719,8 +1662,7 @@ nav {
 
 /*------CHEVROLET------*/
 #chevrolet {
-  grid-template-areas: 'titChevr titChevr titChevr'
- 'chevr1 chevr2 chevr3'; }
+  grid-template-areas: 'titChevr titChevr titChevr' 'chevr1 chevr2 chevr3'; }
   #chevrolet #chevr1 {
     grid-area: chevr1; }
     #chevrolet #chevr1:hover #chevrDatos1 {
@@ -1744,8 +1686,7 @@ nav {
 
 /*------RENAULT------*/
 #renault {
-  grid-template-areas: 'titRena titRena titRena'
- 'rena1 rena2 rena3'; }
+  grid-template-areas: 'titRena titRena titRena' 'rena1 rena2 rena3'; }
   #renault #rena1 {
     grid-area: rena1; }
     #renault #rena1:hover #renaDatos1 {
@@ -1769,8 +1710,7 @@ nav {
 
 /*------FORD------*/
 #ford {
-  grid-template-areas: 'titFord titFord titFord'
- 'ford1 ford2 ford3'; }
+  grid-template-areas: 'titFord titFord titFord' 'ford1 ford2 ford3'; }
   #ford #ford1 {
     grid-area: ford1; }
     #ford #ford1:hover #fordDatos1 {
@@ -1797,8 +1737,7 @@ nav {
 
 /*------FIAT------*/
 #fiat {
-  grid-template-areas: 'titFiat titFiat titFiat'
- 'fiat1 fiat2 fiat3'; }
+  grid-template-areas: 'titFiat titFiat titFiat' 'fiat1 fiat2 fiat3'; }
   #fiat #fiat1 {
     grid-area: fiat1; }
     #fiat #fiat1:hover #fiatDatos1 {
@@ -1822,8 +1761,7 @@ nav {
 
 /*------NISSAN------*/
 #nissan {
-  grid-template-areas: 'titNiss titNiss titNiss'
- 'niss1 niss2 niss3'; }
+  grid-template-areas: 'titNiss titNiss titNiss' 'niss1 niss2 niss3'; }
   #nissan #niss1 {
     grid-area: niss1; }
     #nissan #niss1:hover #nissDatos1 {
@@ -1911,52 +1849,31 @@ nav {
     #tieAutMain #tieAut__Grid .tieAut__grid--marcas > div {
       padding: 0 0 30px 0; }
     #tieAutMain #tieAut__Grid #honda {
-      grid-template-areas: 'titHonda'
- 'honda1'
- 'honda2'
- 'honda3'; }
+      grid-template-areas: 'titHonda' 'honda1' 'honda2' 'honda3'; }
       #tieAutMain #tieAut__Grid #honda h2 {
         grid-area: titHonda; }
     #tieAutMain #tieAut__Grid #audi {
-      grid-template-areas: 'titAudi'
- 'audi1'
- 'audi2'
- 'audi3'; }
+      grid-template-areas: 'titAudi' 'audi1' 'audi2' 'audi3'; }
       #tieAutMain #tieAut__Grid #audi h2 {
         grid-area: titAudi; }
     #tieAutMain #tieAut__Grid #chevrolet {
-      grid-template-areas: 'titChevr'
- 'chevr1'
- 'chevr2'
- 'chevr3'; }
+      grid-template-areas: 'titChevr' 'chevr1' 'chevr2' 'chevr3'; }
       #tieAutMain #tieAut__Grid #chevrolet h2 {
         grid-area: titChevr; }
     #tieAutMain #tieAut__Grid #renault {
-      grid-template-areas: 'titRena'
- 'rena1'
- 'rena2'
- 'rena3'; }
+      grid-template-areas: 'titRena' 'rena1' 'rena2' 'rena3'; }
       #tieAutMain #tieAut__Grid #renault h2 {
         grid-area: titRena; }
     #tieAutMain #tieAut__Grid #ford {
-      grid-template-areas: 'titFord'
- 'ford1'
- 'ford2'
- 'ford3'; }
+      grid-template-areas: 'titFord' 'ford1' 'ford2' 'ford3'; }
       #tieAutMain #tieAut__Grid #ford h2 {
         grid-area: titFord; }
     #tieAutMain #tieAut__Grid #fiat {
-      grid-template-areas: 'titFiat'
- 'fiat1'
- 'fiat2'
- 'fiat3'; }
+      grid-template-areas: 'titFiat' 'fiat1' 'fiat2' 'fiat3'; }
       #tieAutMain #tieAut__Grid #fiat h2 {
         grid-area: titFiat; }
     #tieAutMain #tieAut__Grid #nissan {
-      grid-template-areas: 'titNiss'
- 'niss1'
- 'niss2'
- 'niss3'; }
+      grid-template-areas: 'titNiss' 'niss1' 'niss2' 'niss3'; }
       #tieAutMain #tieAut__Grid #nissan h2 {
         grid-area: titNiss; } }
 
@@ -2022,7 +1939,7 @@ nav {
     background: #cc0000; }
 
 /*FILTROS------------------------------------------------------------------------------------*/
-.open-btn {
+#tieAutMain__cosasJS--filtros--barraDeFiltros {
   left: 10px;
   /* Cambiado al lado izquierdo */
   background-color: #333;
@@ -2032,11 +1949,8 @@ nav {
   cursor: pointer;
   z-index: 1000; }
 
-#toggleSidebar {
-  z-index: 1; }
-
 /* Sidebar */
-.sidebar {
+.tieAutMain__cosasJS--filtros--sidebar {
   position: fixed;
   top: 0;
   left: -290px;
@@ -2048,15 +1962,15 @@ nav {
   padding: 20px;
   transition: left 0.3s ease;
   z-index: 999; }
-  .sidebar h2 {
+  .tieAutMain__cosasJS--filtros--sidebar h2 {
     margin-top: 0; }
 
-.sidebar-active {
+.tieAutMain__cosasJS--filtros--sidebarActive {
   left: 0;
   /* Muestra la barra lateral */ }
 
 /* Botón de cierre en la esquina superior derecha */
-.close-btn {
+#tieAutMain__cosasJS--filtros--sidebar--cerrarSidebar {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -2065,7 +1979,7 @@ nav {
   font-size: 18px;
   cursor: pointer; }
 
-.filter {
+.tieAutMain__cosasJS--filtros--sidebar--opciones {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -2082,12 +1996,12 @@ nav {
   /* Suaviza las transiciones */ }
 
 /* Toggle personalizado */
-.toggle {
+.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor {
   position: relative;
   display: inline-block;
   width: 40px;
   height: 20px; }
-  .toggle input {
+  .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor input {
     opacity: 0;
     width: 0;
     height: 0; }
@@ -2123,13 +2037,7 @@ input:checked + .slider:before {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto auto auto;
-  grid-template-areas: 'h1 h1 h1'
- 'img1 img2 img3'
- 'm1 t1 r1'
- 'd1 d2 d3'
- 'h2 h2 h2'
- 'i1 i2 i3'
- 'img img ct';
+  grid-template-areas: 'h1 h1 h1' 'img1 img2 img3' 'm1 t1 r1' 'd1 d2 d3' 'h2 h2 h2' 'i1 i2 i3' 'img img ct';
   justify-items: center;
   align-items: center;
   gap: 20px;
@@ -2256,19 +2164,7 @@ input:checked + .slider:before {
 @media (max-width: 768px) {
   #mainConsulta {
     grid-template-columns: 1fr;
-    grid-template-areas: 'h1'
- 'img1'
- 'm1'
- 'img2'
- 't1'
- 'img3'
- 'r1'
- 'h2'
- 'i1'
- 'i2'
- 'i3'
- 'img'
- 'ct';
+    grid-template-areas: 'h1' 'img1' 'm1' 'img2' 't1' 'img3' 'r1' 'h2' 'i1' 'i2' 'i3' 'img' 'ct';
     padding: 10px;
     gap: 15px; }
   #img1c, #img2c, #img3c, #info1consulta, #info2consulta, #info3consulta {
@@ -2620,10 +2516,7 @@ input:checked + .slider:before {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto auto auto auto;
-  grid-template-areas: 'h1va h1va h1va'
- 'formulariova formulariova formulariova'
- 'h2va h2va h2va'
- 'infova1 infova2 infova3';
+  grid-template-areas: 'h1va h1va h1va' 'formulariova formulariova formulariova' 'h2va h2va h2va' 'infova1 infova2 infova3';
   padding: 20px;
   justify-items: center;
   gap: 20px; }
@@ -2727,12 +2620,7 @@ input:checked + .slider:before {
   #mainVA {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: 'h1va'
- 'formulariova'
- 'h2va'
- 'infova1'
- 'infova2'
- 'infova3'; }
+    grid-template-areas: 'h1va' 'formulariova' 'h2va' 'infova1' 'infova2' 'infova3'; }
   .form-container {
     max-width: 100%;
     /* Ocupa todo el ancho disponible */
@@ -2777,10 +2665,7 @@ input:checked + .slider:before {
     grid-template-columns: repeat(3, 1fr);
     /* Tres columnas para aprovechar el ancho */
     grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: 'h1va h1va h1va'
- 'formulariova formulariova formulariova'
- 'h2va h2va h2va'
- 'infova1 infova2 infova3'; }
+    grid-template-areas: 'h1va h1va h1va' 'formulariova formulariova formulariova' 'h2va h2va h2va' 'infova1 infova2 infova3'; }
   .form-container {
     max-width: 100%;
     /* Mantiene el ancho completo */

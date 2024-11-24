@@ -64,7 +64,6 @@
                 <div class="contenedorBusqueda">
                     <input type="text" placeholder="Buscar..." id="search-input" oninput="filterDivs()">
                     <div class="botonBusqueda">
-                        <!-- Ícono de búsqueda como un carácter Unicode -->
                         <span><i class="fa fa-search"></i></span>
                     </div>
                 </div>
@@ -75,26 +74,91 @@
                 <div id="sidebar" class="sidebar">
                     <button id="closeSidebar" class="close-btn">✖</button>
                     <h2>Filtros</h2>
-                    <div class="filter">
-                        <span>Categoría A</span>
-                        <label class="toggle">
-                            <input type="checkbox" class="filter-toggle" data-filter="category-a" checked>
-                            <span class="slider"></span>
-                        </label>
+                    <div id="todoterreno?">
+                        <span>Todoterreno</span>
+                        <div class="filter">
+                            <span>Si</span>
+                            <label class="toggle">
+                                <input type="checkbox" class="filter-toggle" data-filter="todoterrenoSI" >
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="filter">
+                            <span>No</span>
+                            <label class="toggle">
+                                <input type="checkbox" class="filter-toggle" data-filter="todoterrenoNO" >
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="filter">
+                            <span>Ambas</span>
+                            <label class="toggle">
+                                <input type="checkbox" class="filter-toggle" data-filter="todoterrenoAmbas" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
                     </div>
-                    <div class="filter">
-                        <span>Categoría B</span>
-                        <label class="toggle">
-                            <input type="checkbox" class="filter-toggle" data-filter="category-b" checked>
-                            <span class="slider"></span>
-                        </label>
+                    <div id="energia">
+                        <span>Energía</span>
+                        <div class="filter">
+                            <span>Fósil</span>
+                            <label class="toggle">
+                                <input type="checkbox" class="filter-toggle" data-filter="energíaFosil">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="filter">
+                            <span>Eléctrica</span>
+                            <label class="toggle">
+                                <input type="checkbox" class="filter-toggle" data-filter="energíaEléctrica">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="filter">
+                            <span>Híbrida</span>
+                            <label class="toggle">
+                                <input type="checkbox" class="filter-toggle" data-filter="energíaHíbrida">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="filter">
+                            <span>Todas</span>
+                            <label class="toggle">
+                                <input type="checkbox" class="filter-toggle" data-filter="energíaAmbas" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
                     </div>
-                    <div class="filter">
-                        <span>Categoría C</span>
-                        <label class="toggle">
-                            <input type="checkbox" class="filter-toggle" data-filter="category-c" checked>
-                            <span class="slider"></span>
-                        </label>
+                    <div id="precio">
+                        <span>Precio (Millones)</span>
+                        <div class="filter">
+                            <span>Menos de 40</span>
+                            <label class="toggle">
+                                <input type="checkbox" class="filter-toggle" data-filter="men40m">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="filter">
+                            <span>Entre 40 y 80</span>
+                            <label class="toggle">
+                                <input type="checkbox" class="filter-toggle" data-filter="40-80m">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="filter">
+                            <span>Mas de 80</span>
+                            <label class="toggle">
+                                <input type="checkbox" class="filter-toggle" data-filter="mas80m">
+                                <span class="slider"></span>
+                            </label>
+                        </div>
+                        <div class="filter">
+                            <span>Todos</span>
+                            <label class="toggle">
+                                <input type="checkbox" class="filter-toggle" data-filter="precioTodos" checked>
+                                <span class="slider"></span>
+                            </label>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -102,7 +166,7 @@
         <div id="tieAut__Grid" class="main-content">     
             <div class="tieAut__grid--marcas honda" id="honda">
                 <h2>Honda</h2>
-                <div id="honda1" class="autos"><a href="autos-productos/2Honda/prod-1.html">
+                <div id="honda1" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoNO energíaFosil 40-80m"><a href="autos-productos/2Honda/prod-1.html">
                     <div id="hondaImg1">
                         <img src="../../assets/imagenes/tienda/autos/hondaZR-V.jpg" alt="">
                     </div>
@@ -124,7 +188,7 @@
                         </div>
                     </div>
                 </a></div>
-                <div id="honda2"><a href="autos-productos/2Honda/prod-2.html">
+                <div id="honda2" class="autos energíaFosil energíaAmbas todoterrenoAmbas precioTodos todoterrenoSI energíaFosil 40-80m"><a href="autos-productos/2Honda/prod-2.html">
                     <div id="hondaImg2">
                         <img src="../../assets/imagenes/tienda/autos/hondaNEW HR-V.jpg" alt="">
                     </div>
@@ -146,7 +210,7 @@
                         </div>
                     </div>
                 </a></div>
-                <div id="honda3"><a href="autos-productos/2Honda/prod-3.html">
+                <div id="honda3" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoNO energíaFosil men40m"><a href="autos-productos/2Honda/prod-3.html">
                     <div id="hondaImg3">
                         <img src="../../assets/imagenes/tienda/autos/hondaNEW CR-V2.jpg" alt="">
                     </div>
@@ -171,7 +235,7 @@
             </div>
             <div class="tieAut__grid--marcas audi" id="audi">
                 <h2>Audi</h2>
-                <div id="audi1"><a href="autos-productos/3Audi/prod-1.html">
+                <div id="audi1" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoSI energíaFosil 40-80m"><a href="autos-productos/3Audi/prod-1.html">
                     <div id="audiImg1">
                         <img src="../../assets/imagenes/tienda/autos/audiA4 ALLROAD.jpg" alt="">
                     </div>
@@ -193,7 +257,7 @@
                         </div>
                     </div>
                 </a></div>
-                <div id="audi2"><a href="autos-productos/3Audi/prod-2.html">
+                <div id="audi2" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoNO energíaFosil men40m"><a href="autos-productos/3Audi/prod-2.html">
                     <div id="audiImg2">
                         <img src="../../assets/imagenes/tienda/autos/audiA4 sedán.jpg" alt="">
                     </div>
@@ -215,7 +279,7 @@
                         </div>
                     </div>
                 </a></div>
-                <div id="audi3"><a href="autos-productos/3Audi/prod-3.html">
+                <div id="audi3" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoSI energíaFosil 40-80m"><a href="autos-productos/3Audi/prod-3.html">
                     <div id="audiImg3">
                         <img src="../../assets/imagenes/tienda/autos/audiQ2.jpg" alt="">
                     </div>
@@ -240,7 +304,7 @@
             </div>
             <div class="tieAut__grid--marcas chevrolet" id="chevrolet">
                 <h2>Chevrolet</h2>
-                <div id="chevr1"><a href="autos-productos/1Chevrolet/prod-1.html">
+                <div id="chevr1" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoNO energíaFosil men40m"><a href="autos-productos/1Chevrolet/prod-1.html">
                     <div id="chevrImg1">
                         <img src="../../assets/imagenes/tienda/autos/chevrCRUZE RS.png" alt="">
                     </div>
@@ -262,7 +326,7 @@
                         </div>
                     </div>
                 </a></div>
-                <div id="chevr2"><a href="autos-productos/1Chevrolet/prod-2.html">
+                <div id="chevr2" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoNO energíaFosil men40m"><a href="autos-productos/1Chevrolet/prod-2.html">
                     <div id="chevrImg2">
                         <img src="../../assets/imagenes/tienda/autos/chevrCRUZE-5.png" alt="">
                     </div>
@@ -284,7 +348,7 @@
                         </div>
                     </div>
                 </a></div>
-                <div id="chevr3"><a href="autos-productos/1Chevrolet/prod-3.html">
+                <div id="chevr3" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoSI energíaFosil men40m"><a href="autos-productos/1Chevrolet/prod-3.html">
                     <div id="chevrImg3">
                         <img src="../../assets/imagenes/tienda/autos/chevrJOY-PLUS.png" alt="">
                     </div>
@@ -309,7 +373,7 @@
             </div>
             <div class="tieAut__grid--marcas renault" id="renault">
                 <h2>Renault</h2>
-                <div id="rena1">
+                <div id="rena1" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoNO energíaFosil men40m">
                     <div id="renaImg1">
                         <img src="../../assets/imagenes/tienda/autos/renSTEPWAY.png" alt="">
                     </div>
@@ -331,7 +395,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="rena2">
+                <div id="rena2" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoSI energíaFosil men40m">
                     <div id="renaImg2">
                         <img src="../../assets/imagenes/tienda/autos/renDUSTER.png" alt="">
                     </div>
@@ -353,7 +417,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="rena3">
+                <div id="rena3" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoSI energíaFosil men40m">
                     <div id="renaImg3">
                         <img src="../../assets/imagenes/tienda/autos/renKANGOO.png" alt="">
                     </div>
@@ -378,7 +442,7 @@
             </div>
             <div class="tieAut__grid--marcas ford" id="ford">
                 <h2>Ford</h2>
-                <div id="ford1">
+                <div id="ford1" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoNO energíaFosil men40m">
                     <div id="fordImg1">
                         <img src="../../assets/imagenes/tienda/autos/fordSUV'STERRITORY.png" alt="">
                     </div>
@@ -400,7 +464,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="ford2">
+                <div id="ford2" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoNO energíaEléctrica mas80m">
                     <div id="fordImg2">
                         <img src="../../assets/imagenes/tienda/autos/fordMUSTANG MACH-E.jpg" alt="">
                     </div>
@@ -422,7 +486,7 @@
                         </div>
                     </div></a>
                 </div>
-                <div id="ford3">
+                <div id="ford3" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoSI energíaHíbrida mas80m">
                     <div id="fordImg3">
                         <img src="../../assets/imagenes/tienda/autos/fordNUEVA F-150 LARIAT.jpg" alt="">
                     </div>
@@ -447,7 +511,7 @@
             </div>
             <div class="tieAut__grid--marcas fiat" id="fiat">
                 <h2>Fiat</h2>
-                <div id="fiat1">
+                <div id="fiat1" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoSI energíaFosil men40m">
                     <div id="fiatImg1">
                         <img src="../../assets/imagenes/tienda/autos/fiatPULSE.jpg" alt="">
                     </div>
@@ -469,7 +533,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="fiat2">
+                <div id="fiat2" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoNO energíaFosil men40m">
                     <div id="fiatImg2">
                         <img src="../../assets/imagenes/tienda/autos/fiatFASTBACK.jpg" alt="">
                     </div>
@@ -491,7 +555,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="fiat3">
+                <div id="fiat3" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoSI energíaFosil men40m">
                     <div id="fiatImg3">
                         <img src="../../assets/imagenes/tienda/autos/fiatTORO.jpg" alt="">
                     </div>
@@ -516,7 +580,7 @@
             </div>
             <div class="tieAut__grid--marcas nissan" id="nissan">
                 <h2>Nissan</h2>
-                <div id="niss1">
+                <div id="niss1" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoNO energíaFosil men40m">
                     <div id="nissImg1">
                         <img src="../../assets/imagenes/tienda/autos/nissanVERSA.jpg" alt="">
                     </div>
@@ -538,7 +602,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="niss2">
+                <div id="niss2" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoSI energíaFosil 40-80m">
                     <div id="nissImg2">
                         <img src="../../assets/imagenes/tienda/autos/nissanFRONTIER.jpg" alt="">
                     </div>
@@ -560,7 +624,7 @@
                         </div>
                     </div>
                 </div>
-                <div id="niss3">
+                <div id="niss3" class="autos energíaAmbas todoterrenoAmbas precioTodos todoterrenoSI energíaFosil 40-80m">
                     <div id="nissImg3">
                         <img src="../../assets/imagenes/tienda/autos/nissanX-TRAIL.jpg" alt="">
                     </div>

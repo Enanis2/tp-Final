@@ -129,6 +129,7 @@ $areasNiss:(
         transition: all 0.5s;
         &:hover{
             scale: 1.2;
+            z-index: 500;
             img{
                 filter: blur(5px) brightness(.6);
                 transition: all 0.5s;
@@ -535,13 +536,19 @@ $areasNiss:(
     }
 }
 
+/*JS*/
+
+#cosasJS{
+    position: sticky;
+    top: 20px;
+    z-index: 999;
+}
+
 /*BUSQUEDA-----------------------------------------------------------------*/
 
 .body-{
     margin: 0;
     padding: 0;
-    position: sticky;
-    top: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -603,12 +610,10 @@ $areasNiss:(
         background: #cc0000;
     }
 }
+
 /*FILTROS------------------------------------------------------------------------------------*/
 
-
 .open-btn {
-    position: sticky;
-    top: 20px;
     left: 10px; /* Cambiado al lado izquierdo */
     background-color: #333;
     color: #fff;
@@ -634,17 +639,17 @@ $areasNiss:(
     padding: 20px;
     transition: left 0.3s ease;
     z-index: 999;
+    h2{
+        margin-top: 0;
+    }
 }
   
-.sidebar h2 {
-    margin-top: 0;
-}
   
 .sidebar-active {
     left: 0; /* Muestra la barra lateral */
 }
   
-  /* Botón de cierre en la esquina superior derecha */
+/* Botón de cierre en la esquina superior derecha */
 .close-btn {
     position: absolute;
     top: 10px;
@@ -659,42 +664,32 @@ $areasNiss:(
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin: 15px 0 15px 30px;
 }
-  
-.content {
-    margin: 20px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
-}
-  
-.item {
-    padding: 20px;
-    background-color: #ddd;
-    border: 1px solid #bbb;
-    text-align: center;
-}
-  
+
 .hidden {
-    display: none;
+    filter: blur(10px); /* Aplica el desenfoque */
+    pointer-events: none; /* Evita la interacción con elementos desenfocados */
+    opacity: 0.5; /* Reduce ligeramente la opacidad */
+    transition: filter 0.3s, opacity 0.3s; /* Suaviza las transiciones */
 }
   
-  /* Toggle personalizado */
+  
+/* Toggle personalizado */
 .toggle {
     position: relative;
     display: inline-block;
     width: 40px;
     height: 20px;
+    input{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
 }
+
   
-.toggle input {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-  
-.slider {
+.slider{
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -704,19 +699,19 @@ $areasNiss:(
     background-color: #ccc;
     transition: 0.4s;
     border-radius: 20px;
+    &:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
 }
   
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 14px;
-    width: 14px;
-    left: 3px;
-    bottom: 3px;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 50%;
-}
   
 input:checked + .slider {
     background-color: #2196F3;
@@ -725,4 +720,3 @@ input:checked + .slider {
 input:checked + .slider:before {
     transform: translateX(20px);
 }
-  

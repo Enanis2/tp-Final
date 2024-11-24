@@ -1253,6 +1253,7 @@ input:checked + .slider:before {
     /* Tres columnas para aprovechar el ancho */
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas: 'h1va h1va h1va' 'formulariova formulariova formulariova' 'h2va h2va h2va' 'infova1 infova2 infova3'; }
+<<<<<<< HEAD
   .form-container {
     max-width: 100%;
     /* Mantiene el ancho completo */
@@ -2663,6 +2664,8 @@ input:checked + .slider:before {
     /* Tres columnas para aprovechar el ancho */
     grid-template-rows: auto auto auto auto auto auto;
     grid-template-areas: 'h1va h1va h1va' 'formulariova formulariova formulariova' 'h2va h2va h2va' 'infova1 infova2 infova3'; }
+=======
+>>>>>>> 19fe015c6cabadb340edc12902f1c05a49cf91b2
   .form-container {
     max-width: 100%;
     /* Mantiene el ancho completo */
@@ -2823,6 +2826,9 @@ input:checked + .slider:before {
   margin: 0;
   padding: 0; }
 
+main {
+  background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%); }
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -2831,15 +2837,16 @@ input:checked + .slider:before {
     opacity: 1;
     transform: translateY(0); } }
 
-#in_header {
-  animation: fadeIn 0.5s ease-in-out; }
+@keyframes rotar-aparecer {
+  0% {
+    rotate: 0deg;
+    scale: 0.1; }
+  100% {
+    scale: 1;
+    rotate: 360deg; } }
 
-#que-somos {
-  animation: fadeIn 1s ease-in-out;
-  overflow-x: hidden; }
-
-main {
-  background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%); }
+#bodymain {
+  background: repeating-linear-gradient(45deg, #464646, #464646 35%, #505050 35%, #505050 70%); }
 
 .cont-logo {
   display: flex;
@@ -2853,6 +2860,7 @@ main {
   position: absolute; }
 
 #logomain {
+  animation: rotar-aparecer 0.8s ease-in-out;
   margin: 0;
   padding: 0;
   width: 450px;
@@ -2876,6 +2884,7 @@ main {
     transition: all 0.5s; }
 
 #main-nav__menu ul {
+  animation: fadeIn 1s ease-in-out;
   height: 50px;
   position: sticky !important;
   top: 20px !important; }
@@ -2923,12 +2932,15 @@ main {
   padding: 0; }
 
 #que-somos {
+  animation: fadeIn 2s ease-in-out;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   height: 825px;
   justify-content: center; }
 
 #que-somos__h2 {
+  z-index: 2;
   font-size: 70px;
   font-family: monospace;
   text-align: center;
@@ -2936,6 +2948,7 @@ main {
   padding-top: 15%; }
 
 #que-somos__p {
+  z-index: 2;
   color: #f0f0f0;
   text-align: center;
   font-family: monospace;
@@ -2945,8 +2958,13 @@ main {
 
 #que-somos__foto-fondo {
   position: absolute;
+<<<<<<< HEAD
   z-index: -1;
   filter: blur(7px);
+=======
+  z-index: 0;
+  filter: brightness(50%);
+>>>>>>> 19fe015c6cabadb340edc12902f1c05a49cf91b2
   height: 825px;
   margin: 0;
   padding: 0; }

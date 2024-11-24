@@ -1,6 +1,6 @@
 //Buscar----------------------------------
 function filterDivs() {
-    const query = document.getElementById("search-input").value.toLowerCase();
+    const query = document.getElementById("tieAutMain__cosasJS--contenedorBusqueda--busqueda--busquedaInput").value.toLowerCase();
     const allDivs = document.querySelectorAll(".main-content > div"); // Divs de marcas principales
     let anyMatch = false; // Variable para detectar si hay alguna coincidencia
 

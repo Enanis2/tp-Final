@@ -151,12 +151,12 @@ nav {
 .noSeVe {
   display: none; }
 
-#tieAut__Main {
+#tieAutMain {
   padding: 10px 5% 140px 5%; }
-  #tieAut__Main img {
+  #tieAutMain img {
     outline: 5px solid black;
     border-radius: 20px; }
-  #tieAut__Main a {
+  #tieAutMain a {
     text-decoration: none !important; }
 
 #tieAut__Grid {
@@ -371,107 +371,107 @@ nav {
     grid-area: titNiss; }
 
 /*COLORES*/
-#tieAut__Main {
+#tieAutMain {
   background: repeating-linear-gradient(45deg, #646464, #646464 25%, #737373 25%, #737373 50%); }
 
 /*TRANSICIONES Y TRANSFORMACIONES*/
 /*-----RESPONSIVE-----*/
 /*PC De La Escuela*/
 @media screen and (min-width: 1300px) and (max-width: 1400px) {
-  #tieAut__Main div[id*="Datos"] h4 {
+  #tieAutMain div[id*="Datos"] h4 {
     font-size: 30px; }
-  #tieAut__Main div[id*="Datos"] p {
+  #tieAutMain div[id*="Datos"] p {
     font-size: 15px; } }
 
 /*TABLET*/
 @media screen and (min-width: 421px) and (max-width: 1023px) {
-  #tieAut__Main img {
+  #tieAutMain img {
     outline: 3px solid black; }
-  #tieAut__Main #tieAut__Grid {
+  #tieAutMain #tieAut__Grid {
     grid-row-gap: 5px; }
-    #tieAut__Main #tieAut__Grid div[id*="Datos"] {
+    #tieAutMain #tieAut__Grid div[id*="Datos"] {
       display: block;
       position: relative;
       height: auto;
       transform: translate(0px, 5px);
       outline: none; }
-      #tieAut__Main #tieAut__Grid div[id*="Datos"] h4 {
+      #tieAutMain #tieAut__Grid div[id*="Datos"] h4 {
         font-size: 15px; }
-      #tieAut__Main #tieAut__Grid div[id*="Datos"] p {
+      #tieAutMain #tieAut__Grid div[id*="Datos"] p {
         font-size: 10px; }
-    #tieAut__Main #tieAut__Grid div[id*="Img"] {
+    #tieAutMain #tieAut__Grid div[id*="Img"] {
       height: 140px; }
-    #tieAut__Main #tieAut__Grid .tieAut__grid--marcas > div:hover {
+    #tieAutMain #tieAut__Grid .tieAut__grid--marcas > div:hover {
       scale: 1; }
-      #tieAut__Main #tieAut__Grid .tieAut__grid--marcas > div:hover img {
+      #tieAutMain #tieAut__Grid .tieAut__grid--marcas > div:hover img {
         filter: none; } }
 
 /*CELULAR*/
 @media screen and (min-width: 0px) and (max-width: 480px) {
-  #tieAut__Main img {
+  #tieAutMain img {
     outline: 3px solid black; }
-  #tieAut__Main #tieAut__Grid {
+  #tieAutMain #tieAut__Grid {
     grid-row-gap: 5px;
     /*-------------*/ }
-    #tieAut__Main #tieAut__Grid div[id*="Datos"] {
+    #tieAutMain #tieAut__Grid div[id*="Datos"] {
       display: grid;
       grid-row-gap: 2px;
       position: relative;
       height: auto;
       transform: translate(0px, 5px);
       outline: none; }
-      #tieAut__Main #tieAut__Grid div[id*="Datos"] h4 {
+      #tieAutMain #tieAut__Grid div[id*="Datos"] h4 {
         font-size: 10px; }
-      #tieAut__Main #tieAut__Grid div[id*="Datos"] p {
+      #tieAutMain #tieAut__Grid div[id*="Datos"] p {
         font-size: 7px; }
-      #tieAut__Main #tieAut__Grid div[id*="Datos"]:hover {
+      #tieAutMain #tieAut__Grid div[id*="Datos"]:hover {
         scale: 1; }
-        #tieAut__Main #tieAut__Grid div[id*="Datos"]:hover img {
+        #tieAutMain #tieAut__Grid div[id*="Datos"]:hover img {
           filter: none; }
-    #tieAut__Main #tieAut__Grid div[id*="Img"] {
+    #tieAutMain #tieAut__Grid div[id*="Img"] {
       height: 170px; }
-    #tieAut__Main #tieAut__Grid .tieAut__grid--marcas {
+    #tieAutMain #tieAut__Grid .tieAut__grid--marcas {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr repeat(3, 7.7fr); }
-    #tieAut__Main #tieAut__Grid .tieAut__grid--marcas > div {
+    #tieAutMain #tieAut__Grid .tieAut__grid--marcas > div {
       padding: 0 0 30px 0; }
-    #tieAut__Main #tieAut__Grid #honda {
+    #tieAutMain #tieAut__Grid #honda {
       grid-template-areas: 'titHonda' 'honda1' 'honda2' 'honda3'; }
-      #tieAut__Main #tieAut__Grid #honda h2 {
+      #tieAutMain #tieAut__Grid #honda h2 {
         grid-area: titHonda; }
-    #tieAut__Main #tieAut__Grid #audi {
+    #tieAutMain #tieAut__Grid #audi {
       grid-template-areas: 'titAudi' 'audi1' 'audi2' 'audi3'; }
-      #tieAut__Main #tieAut__Grid #audi h2 {
+      #tieAutMain #tieAut__Grid #audi h2 {
         grid-area: titAudi; }
-    #tieAut__Main #tieAut__Grid #chevrolet {
+    #tieAutMain #tieAut__Grid #chevrolet {
       grid-template-areas: 'titChevr' 'chevr1' 'chevr2' 'chevr3'; }
-      #tieAut__Main #tieAut__Grid #chevrolet h2 {
+      #tieAutMain #tieAut__Grid #chevrolet h2 {
         grid-area: titChevr; }
-    #tieAut__Main #tieAut__Grid #renault {
+    #tieAutMain #tieAut__Grid #renault {
       grid-template-areas: 'titRena' 'rena1' 'rena2' 'rena3'; }
-      #tieAut__Main #tieAut__Grid #renault h2 {
+      #tieAutMain #tieAut__Grid #renault h2 {
         grid-area: titRena; }
-    #tieAut__Main #tieAut__Grid #ford {
+    #tieAutMain #tieAut__Grid #ford {
       grid-template-areas: 'titFord' 'ford1' 'ford2' 'ford3'; }
-      #tieAut__Main #tieAut__Grid #ford h2 {
+      #tieAutMain #tieAut__Grid #ford h2 {
         grid-area: titFord; }
-    #tieAut__Main #tieAut__Grid #fiat {
+    #tieAutMain #tieAut__Grid #fiat {
       grid-template-areas: 'titFiat' 'fiat1' 'fiat2' 'fiat3'; }
-      #tieAut__Main #tieAut__Grid #fiat h2 {
+      #tieAutMain #tieAut__Grid #fiat h2 {
         grid-area: titFiat; }
-    #tieAut__Main #tieAut__Grid #nissan {
+    #tieAutMain #tieAut__Grid #nissan {
       grid-template-areas: 'titNiss' 'niss1' 'niss2' 'niss3'; }
-      #tieAut__Main #tieAut__Grid #nissan h2 {
+      #tieAutMain #tieAut__Grid #nissan h2 {
         grid-area: titNiss; } }
 
 /*JS*/
-#cosasJS {
+#tieAutMain__cosasJS {
   position: sticky;
   top: 20px;
   z-index: 999; }
 
 /*BUSQUEDA-----------------------------------------------------------------*/
-.body- {
+#tieAutMain__cosasJS--contenedorBusqueda {
   margin: 0;
   padding: 0;
   display: flex;
@@ -479,20 +479,20 @@ nav {
   align-items: center;
   transform: translate(8px, 0px); }
 
-.contenedorBusqueda {
+#tieAutMain__cosasJS--contenedorBusqueda--busqueda {
   position: relative;
   padding: 10px;
   display: flex;
   align-items: center; }
-  .contenedorBusqueda ::placeholder {
+  #tieAutMain__cosasJS--contenedorBusqueda--busqueda ::placeholder {
     color: gray;
     font-size: 20px; }
-  .contenedorBusqueda:hover #search-input {
+  #tieAutMain__cosasJS--contenedorBusqueda--busqueda:hover #tieAutMain__cosasJS--contenedorBusqueda--busqueda--busquedaInput {
     width: 350px; }
-  .contenedorBusqueda:hover span {
+  #tieAutMain__cosasJS--contenedorBusqueda--busqueda:hover span {
     transform: rotate(360deg); }
 
-#search-input {
+#tieAutMain__cosasJS--contenedorBusqueda--busqueda--busquedaInput {
   outline: none;
   box-sizing: border-box;
   height: 60px;
@@ -505,7 +505,7 @@ nav {
   background-color: #fff;
   transition: all 0.7s ease; }
 
-.botonBusqueda {
+#tieAutMain__cosasJS--contenedorBusqueda--busqueda--botonBusqueda {
   position: absolute;
   right: 0px;
   width: 80px;
@@ -518,11 +518,11 @@ nav {
   justify-content: center;
   align-items: center;
   transition: 0.5s ease; }
-  .botonBusqueda span {
+  #tieAutMain__cosasJS--contenedorBusqueda--busqueda--botonBusqueda span {
     font-size: 25px;
     color: white;
     transition: all 0.7s ease; }
-  .botonBusqueda:hover {
+  #tieAutMain__cosasJS--contenedorBusqueda--busqueda--botonBusqueda:hover {
     background: #cc0000; }
 
 /*FILTROS------------------------------------------------------------------------------------*/
@@ -1434,7 +1434,7 @@ input:checked + .slider:before {
   animation: fadeIn 1s ease-in-out;
   overflow-x: hidden; }
 
-#bodymain {
+main {
   background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%); }
 
 .cont-logo {

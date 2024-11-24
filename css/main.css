@@ -1428,7 +1428,7 @@ input:checked + .slider:before {
   animation: fadeIn 1s ease-in-out;
   overflow-x: hidden; }
 
-body {
+#bodymain {
   background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%); }
 
 .cont-logo {

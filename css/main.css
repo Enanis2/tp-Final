@@ -523,7 +523,7 @@ nav {
     background: #cc0000; }
 
 /*FILTROS------------------------------------------------------------------------------------*/
-.open-btn {
+#tieAutMain__cosasJS--filtros--barraDeFiltros {
   left: 10px;
   /* Cambiado al lado izquierdo */
   background-color: #333;
@@ -533,11 +533,8 @@ nav {
   cursor: pointer;
   z-index: 1000; }
 
-#toggleSidebar {
-  z-index: 1; }
-
 /* Sidebar */
-.sidebar {
+.tieAutMain__cosasJS--filtros--sidebar {
   position: fixed;
   top: 0;
   left: -290px;
@@ -549,10 +546,10 @@ nav {
   padding: 20px;
   transition: left 0.3s ease;
   z-index: 999; }
-  .sidebar h2 {
+  .tieAutMain__cosasJS--filtros--sidebar h2 {
     margin-top: 0; }
 
-.sidebar-active {
+.tieAutMain__cosasJS--filtros--sidebarActive {
   left: 0;
   /* Muestra la barra lateral */ }
 

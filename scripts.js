@@ -52,8 +52,8 @@ function filterDivs() {
 //Filtrar------------------------------------
 
 // Selección de elementos principales
-const sidebar = document.getElementById('sidebar');
-const toggleSidebarBtn = document.getElementById('toggleSidebar');
+const sidebar = document.getElementById('tieAutMain__cosasJS--filtros--sidebar');
+const toggleSidebarBtn = document.getElementById('tieAutMain__cosasJS--filtros--barraDeFiltros');
 const closeSidebarBtn = document.getElementById('closeSidebar');
 const filters = document.querySelectorAll('.filter-toggle'); // Selecciona todos los filtros
 const autos = document.querySelectorAll('#tieAut__Grid .autos'); // Selecciona todos los autos
@@ -61,18 +61,18 @@ const marcas = document.querySelectorAll('.tieAut__grid--marcas'); // Selecciona
 
 // Mostrar la barra lateral al hacer clic en el botón de apertura
 toggleSidebarBtn.addEventListener('click', () => {
-  sidebar.classList.add('sidebar-active'); // Muestra la barra lateral
+  sidebar.classList.add('tieAutMain__cosasJS--filtros--sidebarActive'); // Muestra la barra lateral
 });
 
 // Cerrar la barra lateral al hacer clic en el botón de cierre
 closeSidebarBtn.addEventListener('click', () => {
-  sidebar.classList.remove('sidebar-active'); // Oculta la barra lateral
+  sidebar.classList.remove('tieAutMain__cosasJS--filtros--sidebarActive'); // Oculta la barra lateral
 });
 
 // Evento para cerrar la barra lateral al presionar la tecla Esc
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape') {
-    sidebar.classList.remove('sidebar-active'); // Oculta la barra lateral
+    sidebar.classList.remove('tieAutMain__cosasJS--filtros--sidebarActive'); // Oculta la barra lateral
   }
 });
 

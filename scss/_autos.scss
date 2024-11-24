@@ -609,7 +609,7 @@ $areasNiss:(
 
 /*FILTROS------------------------------------------------------------------------------------*/
 
-.open-btn {
+#tieAutMain__cosasJS--filtros--barraDeFiltros{
     left: 10px; /* Cambiado al lado izquierdo */
     background-color: #333;
     color: #fff;
@@ -619,12 +619,8 @@ $areasNiss:(
     z-index: 1000;
 }
   
-#toggleSidebar{
-    z-index: 1;
-}
-  
 /* Sidebar */
-.sidebar {
+.tieAutMain__cosasJS--filtros--sidebar{
     position: fixed;
     top: 0;
     left: -290px; /* Oculta la barra lateral */
@@ -641,7 +637,7 @@ $areasNiss:(
 }
   
   
-.sidebar-active {
+.tieAutMain__cosasJS--filtros--sidebarActive {
     left: 0; /* Muestra la barra lateral */
 }
   

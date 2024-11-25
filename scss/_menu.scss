@@ -43,6 +43,10 @@ nav{
     color: map-get($paleta-colores, 11);
 }
 
+#menu-current-page{
+    color: map-get($paleta-colores, 8);
+}
+
 @media (min-width: 991px) {
     .nav-link::before {
         content: "";

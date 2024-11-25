@@ -124,6 +124,9 @@ nav {
 .nav-link:active {
   color: #9b0000; }
 
+#menu-current-page {
+  color: #D32F2F; }
+
 @media (min-width: 991px) {
   .nav-link::before {
     content: "";
@@ -1528,14 +1531,9 @@ main {
   position: sticky !important;
   top: 20px !important; }
   #main-nav__menu ul li a {
-    color: #f0f0f0;
     font-size: 20px; }
     #main-nav__menu ul li a:hover {
-      color: #acacac;
       transition: color 0.5s; }
-
-#menu-current-page {
-  color: #f0f0f0; }
 
 .cont-login {
   position: absolute !important;

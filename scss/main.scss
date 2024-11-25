@@ -61,6 +61,12 @@ main{
     }
 }
 
+@keyframes bordeNeon {
+    0% {background-position: 0 0;}
+    50% {background-position: 400% 0;}
+    100% {background-position: 0 0;}
+} 
+
 #bodymain{
     background: repeating-linear-gradient(
         45deg,

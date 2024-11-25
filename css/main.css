@@ -385,11 +385,15 @@ nav .nav-link {
 /*---------AUTOS---------*/
 /*<Mapas Areas>*/
 /*</Mapas Areas>*/
+.margin0padding0, #tieAutMain__catalogo div[class*="Datos"] h4, #tieAutMain__catalogo div[class*="Datos"] p, .tieAutMain__catalogo--marcas h2, #tieAutMain__cosasJS--contenedorBusqueda {
+  margin: 0%;
+  padding: 0%; }
+
 .noSeVe {
   display: none; }
 
 #tieAutMain {
-  padding: 10px 5% 140px 5%; }
+  padding: 10px 5% 30px 5%; }
   #tieAutMain img {
     outline: 5px solid black;
     border-radius: 20px; }
@@ -416,12 +420,8 @@ nav .nav-link {
     grid-template-rows: repeat(4, 1fr) 2fr;
     filter: blur(0px); }
     #tieAutMain__catalogo div[class*="Datos"] h4 {
-      font-size: 40px;
-      padding: 0%;
-      margin: 0%; }
+      font-size: 40px; }
     #tieAutMain__catalogo div[class*="Datos"] p {
-      margin: 0%;
-      padding: 0%;
       font-size: 20px; }
 
 .tieAutMain__catalogo--marcas {
@@ -430,8 +430,6 @@ nav .nav-link {
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 20px; }
   .tieAutMain__catalogo--marcas h2 {
-    margin: 0%;
-    padding: 0%;
     text-align: center;
     text-decoration: underline;
     padding: 0 0 10px 0; }
@@ -535,20 +533,65 @@ nav .nav-link {
   background: repeating-linear-gradient(45deg, #646464, #646464 25%, #737373 25%, #737373 50%); }
 
 /*TRANSICIONES Y TRANSFORMACIONES*/
+/*Venda su auto*/
+#tieAutMain__vendaSuAuto {
+  display: flex;
+  justify-content: center; }
+  #tieAutMain__vendaSuAuto button {
+    margin: 15px 0 0 0;
+    padding: 3px 100px 3px 100px;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border: 0;
+    outline: 0;
+    border-radius: 50px 10px 50px 10px; }
+    #tieAutMain__vendaSuAuto button:hover::before {
+      opacity: 1; }
+    #tieAutMain__vendaSuAuto button::after {
+      content: "";
+      z-index: -1;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background-color: black;
+      left: 0;
+      top: 0;
+      border-radius: 50px 10px 50px 10px; }
+    #tieAutMain__vendaSuAuto button::before {
+      content: "";
+      background: linear-gradient(45deg, #FF0000, #FF7300, #FFFB00, #48FF00, #00FFD5, #002BFF, #FF00C8, #FF0000);
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      background-size: 600%;
+      z-index: -1;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      filter: blur(8px);
+      animation: bordeNeon 20s linear infinite;
+      transition: opacity .3s ease-in-out;
+      border-radius: 50px 10px 50px 10px;
+      opacity: 0; }
+    #tieAutMain__vendaSuAuto button:active::after {
+      background: transparent; }
+    #tieAutMain__vendaSuAuto button h3 {
+      margin: 2px;
+      color: white; }
+
 /*JS*/
 #tieAutMain__cosasJS {
+  padding: 15px 0 0 0;
   position: sticky;
   top: 20px;
   z-index: 999; }
 
 /*BUSQUEDA-----------------------------------------------------------------*/
 #tieAutMain__cosasJS--contenedorBusqueda {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(8px, 0px); }
+  transform: translate(8px, -60px); }
 
 #tieAutMain__cosasJS--contenedorBusqueda--busqueda {
   position: relative;
@@ -568,7 +611,7 @@ nav .nav-link {
   box-sizing: border-box;
   height: 60px;
   width: 0px;
-  padding: 0 20px;
+  padding: 0 20px 0 20px;
   color: #000;
   border-radius: 50px;
   font-size: 20px;
@@ -602,7 +645,7 @@ nav .nav-link {
   background-color: black;
   color: #fff;
   border: none;
-  padding: 10px 15px;
+  padding: 10px 15px 10px 15px;
   cursor: pointer;
   z-index: 1000; }
 
@@ -618,7 +661,7 @@ nav .nav-link {
   transition: left 0.3s ease;
   z-index: 999; }
   .tieAutMain__cosasJS--filtros--sidebar h2 {
-    margin-top: 0; }
+    margin: 0; }
 
 .tieAutMain__cosasJS--filtros--sidebarActive {
   left: 0; }
@@ -1428,6 +1471,14 @@ main {
   100% {
     scale: 1;
     rotate: 360deg; } }
+
+@keyframes bordeNeon {
+  0% {
+    background-position: 0 0; }
+  50% {
+    background-position: 400% 0; }
+  100% {
+    background-position: 0 0; } }
 
 #bodymain {
   background: repeating-linear-gradient(45deg, #464646, #464646 35%, #505050 35%, #505050 70%); }

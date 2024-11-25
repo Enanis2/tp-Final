@@ -3,6 +3,15 @@
 @mixin padding($top, $right, $bottom, $left){
     padding: $top $right $bottom $left;
 }
+@mixin padding1variable($valor){
+    padding: $valor;
+}
+@mixin margin($top, $right, $bottom, $left){
+    margin: $top $right $bottom $left;
+}
+@mixin margin1variable($valor){
+    margin: $valor;
+}
 
 /*<Mapas Areas>*/
 $areasHonda:(
@@ -42,12 +51,17 @@ $areasNiss:(
 );
 /*</Mapas Areas>*/
 
+
+.margin0padding0{
+    margin: 0%;
+    padding: 0%;
+}
 .noSeVe{
     display: none;
 }
 
 #tieAutMain{
-    @include padding(10px, 5%, 140px, 5%);
+    @include padding(10px, 5%, 30px, 5%);
     img{
         outline: 5px solid map-get($paleta-colores, 2);
         border-radius: 20px
@@ -83,12 +97,10 @@ $areasNiss:(
         filter: blur(0px);
         h4{
             font-size: 40px;
-            padding: 0%;
-            margin: 0%;
+            @extend .margin0padding0;
         }
         p{
-            margin: 0%;
-            padding: 0%;
+            @extend .margin0padding0;
             font-size: 20px;
         }
     }
@@ -103,8 +115,7 @@ $areasNiss:(
     grid-column-gap: 20px;
     
     h2{
-        margin: 0%;
-        padding: 0%;
+        @extend .margin0padding0;
         text-align: center;
         text-decoration: underline;
         @include padding(0, 0, 10px, 0)
@@ -289,9 +300,72 @@ $areasNiss:(
 /*TRANSICIONES Y TRANSFORMACIONES*/
 
 
+/*Venda su auto*/
+
+#tieAutMain__vendaSuAuto{
+    display: flex;
+    justify-content: center;
+    button {
+        @include margin(15px, 0, 0, 0);
+        @include padding(3px, 100px, 3px, 100px);
+        cursor: pointer;
+        position: relative;
+        z-index: 0;
+        border: 0;
+        outline: 0;
+        border-radius: 50px 10px 50px 10px;
+        &:hover{
+            &::before {
+                opacity: 1;
+            }
+        }
+        &::after {
+            content: "";
+            z-index: -1;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            left: 0;
+            top: 0;
+            border-radius: 50px 10px 50px 10px;
+        }
+        &::before {
+          content: "";
+          background: linear-gradient(
+            45deg,
+            #FF0000, #FF7300, #FFFB00, #48FF00,
+            #00FFD5, #002BFF, #FF00C8, #FF0000
+          );
+          position: absolute;
+          top: -2px;
+          left: -2px;
+          background-size: 600%;
+          z-index: -1;
+          width: calc(100% + 4px);
+          height:  calc(100% + 4px);
+          filter: blur(8px);
+          animation: bordeNeon 20s linear infinite;
+          transition: opacity .3s ease-in-out;
+          border-radius: 50px 10px 50px 10px;
+          opacity: 0;
+        }
+        &:active{
+            &::after {
+                background: transparent;
+            }
+        }
+        h3{
+            @include margin1variable(2px);
+            color: white;
+        }
+    }
+}
+
 /*JS*/
 
 #tieAutMain__cosasJS{
+    @include padding(15px, 0, 0, 0);
     position: sticky;
     top: 20px;
     z-index: 999;
@@ -300,17 +374,16 @@ $areasNiss:(
 /*BUSQUEDA-----------------------------------------------------------------*/
 
 #tieAutMain__cosasJS--contenedorBusqueda{
-    margin: 0;
-    padding: 0;
+    @extend .margin0padding0;
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(8px, 0px);
+    transform: translate(8px, -60px);
 }
 
 #tieAutMain__cosasJS--contenedorBusqueda--busqueda{
     position: relative;
-    padding: 10px;
+    @include padding1variable(10px);
     display: flex;
     align-items: center;
     ::placeholder {
@@ -332,7 +405,7 @@ $areasNiss:(
     box-sizing: border-box;
     height: 60px;
     width: 0px;
-    padding: 0 20px;
+    @include padding(0, 20px, 0, 20px);
     color: #000;
     border-radius: 50px;
     font-size: 20px;
@@ -366,12 +439,13 @@ $areasNiss:(
 
 /*FILTROS------------------------------------------------------------------------------------*/
 
+
 #tieAutMain__cosasJS--filtros--barraDeFiltros{
     left: 10px;
     background-color: black;
     color: #fff;
     border: none;
-    padding: 10px 15px;
+    @include padding(10px, 15px, 10px, 15px);
     cursor: pointer;
     z-index: 1000;
 }
@@ -384,11 +458,11 @@ $areasNiss:(
     height: 100%;
     background-color: #f4f4f4;
     box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    padding: 20px;
+    @include padding1variable(20px);
     transition: left 0.3s ease;
     z-index: 999;
     h2{
-        margin-top: 0;
+        @include margin1variable(0)
     }
 }
   
@@ -410,7 +484,7 @@ $areasNiss:(
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 15px 0 15px 30px;
+    @include margin(15px, 0, 15px, 30px)
 }
 
 .hidden {
@@ -489,7 +563,7 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
             width: 180px;
         }
         .tieAutMain__cosasJS--filtros--sidebar--opciones{
-            margin: 15px 0 15px 15px;
+            @include margin(15px, 0, 15px, 15px);
         }
         #tieAutMain__cosasJS--contenedorBusqueda{
             scale: 0.8;
@@ -539,7 +613,7 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
             width: 180px;
         }
         .tieAutMain__cosasJS--filtros--sidebar--opciones{
-            margin: 15px 0 15px 15px;
+            @include margin(15px, 0, 15px, 15px);
         }
         #tieAutMain__cosasJS--contenedorBusqueda{
             scale: 0.6;

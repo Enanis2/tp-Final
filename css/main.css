@@ -535,95 +535,6 @@ nav .nav-link {
   background: repeating-linear-gradient(45deg, #646464, #646464 25%, #737373 25%, #737373 50%); }
 
 /*TRANSICIONES Y TRANSFORMACIONES*/
-/*-----RESPONSIVE-----*/
-/*PC De La Escuela*/
-@media screen and (min-width: 1300px) and (max-width: 1400px) {
-  #tieAutMain div[id*="Datos"] h4 {
-    font-size: 30px; }
-  #tieAutMain div[id*="Datos"] p {
-    font-size: 15px; } }
-
-/*TABLET*/
-@media screen and (min-width: 421px) and (max-width: 1023px) {
-  #tieAutMain img {
-    outline: 3px solid black; }
-  #tieAutMain #tieAutMain__catalogo {
-    grid-row-gap: 5px; }
-    #tieAutMain #tieAutMain__catalogo div[id*="Datos"] {
-      display: block;
-      position: relative;
-      height: auto;
-      transform: translate(0px, 5px);
-      outline: none; }
-      #tieAutMain #tieAutMain__catalogo div[id*="Datos"] h4 {
-        font-size: 15px; }
-      #tieAutMain #tieAutMain__catalogo div[id*="Datos"] p {
-        font-size: 10px; }
-    #tieAutMain #tieAutMain__catalogo div[id*="Img"] {
-      height: 140px; }
-    #tieAutMain #tieAutMain__catalogo .tieAut__grid--marcas > div:hover {
-      scale: 1; }
-      #tieAutMain #tieAutMain__catalogo .tieAut__grid--marcas > div:hover img {
-        filter: none; } }
-
-/*CELULAR*/
-@media screen and (min-width: 0px) and (max-width: 480px) {
-  #tieAutMain img {
-    outline: 3px solid black; }
-  #tieAutMain #tieAutMain__catalogo {
-    grid-row-gap: 5px;
-    /*-------------*/ }
-    #tieAutMain #tieAutMain__catalogo div[id*="Datos"] {
-      display: grid;
-      grid-row-gap: 2px;
-      position: relative;
-      height: auto;
-      transform: translate(0px, 5px);
-      outline: none; }
-      #tieAutMain #tieAutMain__catalogo div[id*="Datos"] h4 {
-        font-size: 10px; }
-      #tieAutMain #tieAutMain__catalogo div[id*="Datos"] p {
-        font-size: 7px; }
-      #tieAutMain #tieAutMain__catalogo div[id*="Datos"]:hover {
-        scale: 1; }
-        #tieAutMain #tieAutMain__catalogo div[id*="Datos"]:hover img {
-          filter: none; }
-    #tieAutMain #tieAutMain__catalogo div[id*="Img"] {
-      height: 170px; }
-    #tieAutMain #tieAutMain__catalogo .tieAut__grid--marcas {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr repeat(3, 7.7fr); }
-    #tieAutMain #tieAutMain__catalogo .tieAut__grid--marcas > div {
-      padding: 0 0 30px 0; }
-    #tieAutMain #tieAutMain__catalogo #tieAutMain__catalogo--marcas--honda {
-      grid-template-areas: 'titHonda' 'honda1' 'honda2' 'honda3'; }
-      #tieAutMain #tieAutMain__catalogo #tieAutMain__catalogo--marcas--honda h2 {
-        grid-area: titHonda; }
-    #tieAutMain #tieAutMain__catalogo #audi {
-      grid-template-areas: 'titAudi' 'audi1' 'audi2' 'audi3'; }
-      #tieAutMain #tieAutMain__catalogo #audi h2 {
-        grid-area: titAudi; }
-    #tieAutMain #tieAutMain__catalogo #chevrolet {
-      grid-template-areas: 'titChevr' 'chevr1' 'chevr2' 'chevr3'; }
-      #tieAutMain #tieAutMain__catalogo #chevrolet h2 {
-        grid-area: titChevr; }
-    #tieAutMain #tieAutMain__catalogo #renault {
-      grid-template-areas: 'titRena' 'rena1' 'rena2' 'rena3'; }
-      #tieAutMain #tieAutMain__catalogo #renault h2 {
-        grid-area: titRena; }
-    #tieAutMain #tieAutMain__catalogo #ford {
-      grid-template-areas: 'titFord' 'ford1' 'ford2' 'ford3'; }
-      #tieAutMain #tieAutMain__catalogo #ford h2 {
-        grid-area: titFord; }
-    #tieAutMain #tieAutMain__catalogo #fiat {
-      grid-template-areas: 'titFiat' 'fiat1' 'fiat2' 'fiat3'; }
-      #tieAutMain #tieAutMain__catalogo #fiat h2 {
-        grid-area: titFiat; }
-    #tieAutMain #tieAutMain__catalogo #nissan {
-      grid-template-areas: 'titNiss' 'niss1' 'niss2' 'niss3'; }
-      #tieAutMain #tieAutMain__catalogo #nissan h2 {
-        grid-area: titNiss; } }
-
 /*JS*/
 #tieAutMain__cosasJS {
   position: sticky;
@@ -689,7 +600,7 @@ nav .nav-link {
 #tieAutMain__cosasJS--filtros--barraDeFiltros {
   left: 10px;
   /* Cambiado al lado izquierdo */
-  background-color: #333;
+  background-color: black;
   color: #fff;
   border: none;
   padding: 10px 15px;
@@ -779,6 +690,95 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
 
 input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--slider:before {
   transform: translateX(20px); }
+
+/*-----RESPONSIVE-----*/
+/*PC De La Escuela*/
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  #tieAutMain div[id*="Datos"] h4 {
+    font-size: 30px; }
+  #tieAutMain div[id*="Datos"] p {
+    font-size: 15px; } }
+
+/*TABLET*/
+@media screen and (min-width: 421px) and (max-width: 1023px) {
+  #tieAutMain img {
+    outline: 3px solid black; }
+  #tieAutMain #tieAutMain__catalogo {
+    grid-row-gap: 5px; }
+    #tieAutMain #tieAutMain__catalogo div[id*="Datos"] {
+      display: block;
+      position: relative;
+      height: auto;
+      transform: translate(0px, 5px);
+      outline: none; }
+      #tieAutMain #tieAutMain__catalogo div[id*="Datos"] h4 {
+        font-size: 15px; }
+      #tieAutMain #tieAutMain__catalogo div[id*="Datos"] p {
+        font-size: 10px; }
+    #tieAutMain #tieAutMain__catalogo div[id*="Img"] {
+      height: 140px; }
+    #tieAutMain #tieAutMain__catalogo .tieAut__grid--marcas > div:hover {
+      scale: 1; }
+      #tieAutMain #tieAutMain__catalogo .tieAut__grid--marcas > div:hover img {
+        filter: none; } }
+
+/*CELULAR*/
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  #tieAutMain img {
+    outline: 3px solid black; }
+  #tieAutMain #tieAutMain__catalogo {
+    grid-row-gap: 5px;
+    /*-------------*/ }
+    #tieAutMain #tieAutMain__catalogo div[id*="Datos"] {
+      display: grid;
+      grid-row-gap: 2px;
+      position: relative;
+      height: auto;
+      transform: translate(0px, 5px);
+      outline: none; }
+      #tieAutMain #tieAutMain__catalogo div[id*="Datos"] h4 {
+        font-size: 10px; }
+      #tieAutMain #tieAutMain__catalogo div[id*="Datos"] p {
+        font-size: 7px; }
+      #tieAutMain #tieAutMain__catalogo div[id*="Datos"]:hover {
+        scale: 1; }
+        #tieAutMain #tieAutMain__catalogo div[id*="Datos"]:hover img {
+          filter: none; }
+    #tieAutMain #tieAutMain__catalogo div[id*="Img"] {
+      height: 170px; }
+    #tieAutMain #tieAutMain__catalogo .tieAut__grid--marcas {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr repeat(3, 7.7fr); }
+    #tieAutMain #tieAutMain__catalogo .tieAut__grid--marcas > div {
+      padding: 0 0 30px 0; }
+    #tieAutMain #tieAutMain__catalogo #tieAutMain__catalogo--marcas--honda {
+      grid-template-areas: 'titHonda' 'honda1' 'honda2' 'honda3'; }
+      #tieAutMain #tieAutMain__catalogo #tieAutMain__catalogo--marcas--honda h2 {
+        grid-area: titHonda; }
+    #tieAutMain #tieAutMain__catalogo #audi {
+      grid-template-areas: 'titAudi' 'audi1' 'audi2' 'audi3'; }
+      #tieAutMain #tieAutMain__catalogo #audi h2 {
+        grid-area: titAudi; }
+    #tieAutMain #tieAutMain__catalogo #chevrolet {
+      grid-template-areas: 'titChevr' 'chevr1' 'chevr2' 'chevr3'; }
+      #tieAutMain #tieAutMain__catalogo #chevrolet h2 {
+        grid-area: titChevr; }
+    #tieAutMain #tieAutMain__catalogo #renault {
+      grid-template-areas: 'titRena' 'rena1' 'rena2' 'rena3'; }
+      #tieAutMain #tieAutMain__catalogo #renault h2 {
+        grid-area: titRena; }
+    #tieAutMain #tieAutMain__catalogo #ford {
+      grid-template-areas: 'titFord' 'ford1' 'ford2' 'ford3'; }
+      #tieAutMain #tieAutMain__catalogo #ford h2 {
+        grid-area: titFord; }
+    #tieAutMain #tieAutMain__catalogo #fiat {
+      grid-template-areas: 'titFiat' 'fiat1' 'fiat2' 'fiat3'; }
+      #tieAutMain #tieAutMain__catalogo #fiat h2 {
+        grid-area: titFiat; }
+    #tieAutMain #tieAutMain__catalogo #nissan {
+      grid-template-areas: 'titNiss' 'niss1' 'niss2' 'niss3'; }
+      #tieAutMain #tieAutMain__catalogo #nissan h2 {
+        grid-area: titNiss; } }
 
 .prods__body {
   background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%); }

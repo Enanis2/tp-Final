@@ -297,6 +297,188 @@ $areasNiss:(
 }
 /*TRANSICIONES Y TRANSFORMACIONES*/
 
+
+/*JS*/
+
+#tieAutMain__cosasJS{
+    position: sticky;
+    top: 20px;
+    z-index: 999;
+}
+
+/*BUSQUEDA-----------------------------------------------------------------*/
+
+#tieAutMain__cosasJS--contenedorBusqueda{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(8px, 0px);
+}
+
+#tieAutMain__cosasJS--contenedorBusqueda--busqueda{
+    position: relative;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    ::placeholder {
+        color: gray;
+        font-size: 20px;
+    }
+    &:hover{ 
+        #tieAutMain__cosasJS--contenedorBusqueda--busqueda--busquedaInput {
+            width: 350px;
+        }
+        span {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+#tieAutMain__cosasJS--contenedorBusqueda--busqueda--busquedaInput{
+    outline: none;
+    box-sizing: border-box;
+    height: 60px;
+    width: 0px;
+    padding: 0 20px;
+    color: #000;
+    border-radius: 50px;
+    font-size: 20px;
+    border: 1px solid #D50000;
+    background-color: #fff;
+    transition: all 0.7s ease;
+}
+
+#tieAutMain__cosasJS--contenedorBusqueda--busqueda--botonBusqueda{
+    position: absolute;
+    right: 0px;
+    width: 80px;
+    height: 80px;
+    background: #D50000;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s ease;
+    span {
+        font-size: 25px;
+        color: white;
+        transition: all 0.7s ease;
+    }
+    &:hover {
+        background: #cc0000;
+    }
+}
+
+/*FILTROS------------------------------------------------------------------------------------*/
+
+#tieAutMain__cosasJS--filtros--barraDeFiltros{
+    left: 10px; /* Cambiado al lado izquierdo */
+    background-color: black;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+  
+/* Sidebar */
+.tieAutMain__cosasJS--filtros--sidebar{
+    position: fixed;
+    top: 0;
+    left: -290px; /* Oculta la barra lateral */
+    width: 250px;
+    height: 100%;
+    background-color: #f4f4f4;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    transition: left 0.3s ease;
+    z-index: 999;
+    h2{
+        margin-top: 0;
+    }
+}
+  
+
+.tieAutMain__cosasJS--filtros--sidebarActive {
+    left: 0; /* Muestra la barra lateral */
+}
+  
+/* Botón de cierre en la esquina superior derecha */
+#tieAutMain__cosasJS--filtros--sidebar--cerrarSidebar{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+  
+.tieAutMain__cosasJS--filtros--sidebar--opciones{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 15px 0 15px 30px;
+}
+
+.hidden {
+    filter: blur(10px); /* Aplica el desenfoque */
+    pointer-events: none; /* Evita la interacción con elementos desenfocados */
+    opacity: 0.5; /* Reduce ligeramente la opacidad */
+    transition: filter 0.3s, opacity 0.3s; /* Suaviza las transiciones */
+}
+  
+
+/* Toggle personalizado */
+.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    input{
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+}
+
+
+.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--slider{
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 20px;
+    &:before {
+        position: absolute;
+        content: "";
+        height: 14px;
+        width: 14px;
+        left: 3px;
+        bottom: 3px;
+        background-color: white;
+        transition: 0.4s;
+        border-radius: 50%;
+    }
+}
+  
+
+input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--slider {
+    background-color: #2196F3;
+}
+  
+input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--slider:before {
+    transform: translateX(20px);
+}
+
 /*-----RESPONSIVE-----*/
 
 /*PC De La Escuela*/
@@ -462,185 +644,4 @@ $areasNiss:(
             }
         }
     }
-}
-
-/*JS*/
-
-#tieAutMain__cosasJS{
-    position: sticky;
-    top: 20px;
-    z-index: 999;
-}
-
-/*BUSQUEDA-----------------------------------------------------------------*/
-
-#tieAutMain__cosasJS--contenedorBusqueda{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transform: translate(8px, 0px);
-}
-
-#tieAutMain__cosasJS--contenedorBusqueda--busqueda{
-    position: relative;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    ::placeholder {
-        color: gray;
-        font-size: 20px;
-    }
-    &:hover{ 
-        #tieAutMain__cosasJS--contenedorBusqueda--busqueda--busquedaInput {
-            width: 350px;
-        }
-        span {
-            transform: rotate(360deg);
-        }
-    }
-}
-
-#tieAutMain__cosasJS--contenedorBusqueda--busqueda--busquedaInput{
-    outline: none;
-    box-sizing: border-box;
-    height: 60px;
-    width: 0px;
-    padding: 0 20px;
-    color: #000;
-    border-radius: 50px;
-    font-size: 20px;
-    border: 1px solid #D50000;
-    background-color: #fff;
-    transition: all 0.7s ease;
-}
-
-#tieAutMain__cosasJS--contenedorBusqueda--busqueda--botonBusqueda{
-    position: absolute;
-    right: 0px;
-    width: 80px;
-    height: 80px;
-    background: #D50000;
-    border-radius: 50%;
-    text-align: center;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: 0.5s ease;
-    span {
-        font-size: 25px;
-        color: white;
-        transition: all 0.7s ease;
-    }
-    &:hover {
-        background: #cc0000;
-    }
-}
-
-/*FILTROS------------------------------------------------------------------------------------*/
-
-#tieAutMain__cosasJS--filtros--barraDeFiltros{
-    left: 10px; /* Cambiado al lado izquierdo */
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    z-index: 1000;
-}
-  
-/* Sidebar */
-.tieAutMain__cosasJS--filtros--sidebar{
-    position: fixed;
-    top: 0;
-    left: -290px; /* Oculta la barra lateral */
-    width: 250px;
-    height: 100%;
-    background-color: #f4f4f4;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-    transition: left 0.3s ease;
-    z-index: 999;
-    h2{
-        margin-top: 0;
-    }
-}
-  
-  
-.tieAutMain__cosasJS--filtros--sidebarActive {
-    left: 0; /* Muestra la barra lateral */
-}
-  
-/* Botón de cierre en la esquina superior derecha */
-#tieAutMain__cosasJS--filtros--sidebar--cerrarSidebar{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: transparent;
-    border: none;
-    font-size: 18px;
-    cursor: pointer;
-}
-  
-.tieAutMain__cosasJS--filtros--sidebar--opciones{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 15px 0 15px 30px;
-}
-
-.hidden {
-    filter: blur(10px); /* Aplica el desenfoque */
-    pointer-events: none; /* Evita la interacción con elementos desenfocados */
-    opacity: 0.5; /* Reduce ligeramente la opacidad */
-    transition: filter 0.3s, opacity 0.3s; /* Suaviza las transiciones */
-}
-  
-  
-/* Toggle personalizado */
-.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor {
-    position: relative;
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    input{
-        opacity: 0;
-        width: 0;
-        height: 0;
-    }
-}
-
-  
-.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--slider{
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: #ccc;
-    transition: 0.4s;
-    border-radius: 20px;
-    &:before {
-        position: absolute;
-        content: "";
-        height: 14px;
-        width: 14px;
-        left: 3px;
-        bottom: 3px;
-        background-color: white;
-        transition: 0.4s;
-        border-radius: 50%;
-    }
-}
-  
-  
-input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--slider {
-    background-color: #2196F3;
-}
-  
-input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--slider:before {
-    transform: translateX(20px);
 }

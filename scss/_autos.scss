@@ -66,19 +66,19 @@ $areasNiss:(
     }
 }
 
-#tieAut__Grid{
+#tieAutMain__catalogo{
     display: grid;
 
     grid-template-rows: auto;
 
     grid-row-gap: 0px;
-    div[id*="Img"]{
+    div[class*="Img"]{
         height: 292px;
         img{
             height: 100%;
         }
     }
-    div[id*="Datos"]{
+    div[class*="Datos"]{
         display: none;
         position: absolute;
         text-align: center;
@@ -87,6 +87,7 @@ $areasNiss:(
         transform: translate(0px, -292px);
         outline: 5px solid map-get($paleta-colores, 2);
         border-radius: 20px;
+        grid-template-rows: repeat(4, 1fr) 2fr;
 
         filter: blur(0px);
         h4{
@@ -102,7 +103,7 @@ $areasNiss:(
     }
 }
 
-.tieAut__grid--marcas{
+.tieAutMain__catalogo--marcas{
     display: grid;
 
     grid-template-rows: 1fr 6.5fr;
@@ -137,17 +138,15 @@ $areasNiss:(
 
 /*------HONDA------*/
 
-#honda{
-    
+#tieAutMain__catalogo--marcas--honda{
     grid-template-areas:
     'titHonda titHonda titHonda';
+    
     @each $num, $area in $areasHonda{
-        #honda#{$num}{
+        #tieAutMain__catalogo--marcas--honda--#{$num}{
             &:hover{
-                #hondaDatos#{$num}{
+                .tieAutMain__catalogo--marcas--Datos{
                     display: grid;
-
-                    grid-template-rows: repeat(4, 1fr) 2fr;
                 }
             }
         }
@@ -161,26 +160,15 @@ $areasNiss:(
 
 /*------AUDI------*/
 
-#audi{
-    
+#tieAutMain__catalogo--marcas--audi{
     grid-template-areas:
-    'titAudi titAudi titAudi'
-    'audi1 audi2 audi3';
-    
+    'titAudi titAudi titAudi';
+
     @each $num, $area in $areasAudi{
-        #audi#{$num}{
-            grid-area: $area;
+        #tieAutMain__catalogo--marcas--audi--#{$num}{
             &:hover{
-                #audiDatos#{$num}{
+                .tieAutMain__catalogo--marcas--Datos{
                     display: grid;
-                    
-                    grid-template-rows: repeat(4, 1fr) 2fr;
-                    grid-template-areas: 
-                    'audiModelo#{$num}'
-                    'audiPrecio#{$num}'
-                    'audiToTerr#{$num}'
-                    'audiEnergia#{$num}'
-                    'audiDesc#{$num}';
                 }
             }
         }
@@ -193,26 +181,15 @@ $areasNiss:(
 
 /*------CHEVROLET------*/
 
-#chevrolet{
-    
+#tieAutMain__catalogo--marcas--chevrolet{
     grid-template-areas:
-    'titChevr titChevr titChevr'
-    'chevr1 chevr2 chevr3';
-    
+    'titChevr titChevr titChevr';
+
     @each $num, $area in $areasChevr{
-        #chevr#{$num}{
-            grid-area: $area;
+        #tieAutMain__catalogo--marcas--chevrolet--#{$num}{
             &:hover{
-                #chevrDatos#{$num}{
+                .tieAutMain__catalogo--marcas--Datos{
                     display: grid;
-                    
-                    grid-template-rows: repeat(4, 1fr) 2fr;
-                    grid-template-areas: 
-                    'chevrModelo#{$num}'
-                    'chevrPrecio#{$num}'
-                    'chevrToTerr#{$num}'
-                    'chevrEnergia#{$num}'
-                    'chevrDesc#{$num}';
                 }
             }
         }
@@ -225,26 +202,15 @@ $areasNiss:(
 
 /*------RENAULT------*/
 
-#renault{
-    
+#tieAutMain__catalogo--marcas--renault{    
     grid-template-areas:
-    'titRena titRena titRena'
-    'rena1 rena2 rena3';
+    'titRena titRena titRena';
     
     @each $num, $area in $areasRena{
-        #rena#{$num}{
-            grid-area: $area;
+        #tieAutMain__catalogo--marcas--renault--#{$num}{
             &:hover{
-                #renaDatos#{$num}{
+                .tieAutMain__catalogo--marcas--Datos{
                     display: grid;
-                    
-                    grid-template-rows: repeat(4, 1fr) 2fr;
-                    grid-template-areas: 
-                    'renaModelo#{$num}'
-                    'renaPrecio#{$num}'
-                    'renaToTerr#{$num}'
-                    'renaEnergia#{$num}'
-                    'renaDesc#{$num}';
                 }
             }
         }
@@ -257,27 +223,15 @@ $areasNiss:(
 
 /*------FORD------*/
 
-#ford{
-    
+#tieAutMain__catalogo--marcas--ford{    
     grid-template-areas:
-    'titFord titFord titFord'
-    'ford1 ford2 ford3';
+    'titFord titFord titFord';
     
     @each $num, $area in $areasFord{
-        #ford#{$num}{
-            grid-area: $area;
+        #tieAutMain__catalogo--marcas--ford--#{$num}{
             &:hover{
-                #fordDatos#{$num}{
-                    text-decoration: none;
+                .tieAutMain__catalogo--marcas--Datos{
                     display: grid;
-                    
-                    grid-template-rows: repeat(4, 1fr) 2fr;
-                    grid-template-areas: 
-                    'fordModelo#{$num}'
-                    'fordPrecio#{$num}'
-                    'fordToTerr#{$num}'
-                    'fordEnergia#{$num}'
-                    'fordDesc#{$num}';
                 }
             }
         }
@@ -290,26 +244,15 @@ $areasNiss:(
 
 /*------FIAT------*/
 
-#fiat{
-    
+#tieAutMain__catalogo--marcas--fiat{    
     grid-template-areas:
-    'titFiat titFiat titFiat'
-    'fiat1 fiat2 fiat3';
+    'titFiat titFiat titFiat';
     
     @each $num, $area in $areasFiat{
-        #fiat#{$num}{
-            grid-area: $area;
+        #tieAutMain__catalogo--marcas--fiat--#{$num}{
             &:hover{
-                #fiatDatos#{$num}{
+                .tieAutMain__catalogo--marcas--Datos{
                     display: grid;
-                    
-                    grid-template-rows: repeat(4, 1fr) 2fr;
-                    grid-template-areas: 
-                    'fiatModelo#{$num}'
-                    'fiatPrecio#{$num}'
-                    'fiatToTerr#{$num}'
-                    'fiatEnergia#{$num}'
-                    'fiatDesc#{$num}';
                 }
             }
         }
@@ -322,26 +265,15 @@ $areasNiss:(
 
 /*------NISSAN------*/
 
-#nissan{
-    
+#tieAutMain__catalogo--marcas--nissan{
     grid-template-areas:
-    'titNiss titNiss titNiss'
-    'niss1 niss2 niss3';
+    'titNiss titNiss titNiss';
     
     @each $num, $area in $areasNiss{
-        #niss#{$num}{
-            grid-area: $area;
+        #tieAutMain__catalogo--marcas--nissan--#{$num}{
             &:hover{
-                #nissDatos#{$num}{
+                .tieAutMain__catalogo--marcas--Datos{
                     display: grid;
-                    
-                    grid-template-rows: repeat(4, 1fr) 2fr;
-                    grid-template-areas: 
-                    'nissModelo#{$num}'
-                    'nissPrecio#{$num}'
-                    'nissToTerr#{$num}'
-                    'nissEnergia#{$num}'
-                    'nissDesc#{$num}';
                 }
             }
         }
@@ -387,7 +319,7 @@ $areasNiss:(
         img{
             outline: 3px solid map-get($paleta-colores, 2);
         }
-        #tieAut__Grid{
+        #tieAutMain__catalogo{
             grid-row-gap: 5px;
             div[id*="Datos"]{
                 display: block;
@@ -425,7 +357,7 @@ $areasNiss:(
         img{
             outline: 3px solid map-get($paleta-colores, 2);
         }
-        #tieAut__Grid{
+        #tieAutMain__catalogo{
             grid-row-gap: 5px;
             div[id*="Datos"]{
                 display: grid;
@@ -458,7 +390,7 @@ $areasNiss:(
                 @include padding(0, 0, 30px, 0)
             }
             /*-------------*/
-            #honda{
+            #tieAutMain__catalogo--marcas--honda{
                 grid-template-areas:
                 'titHonda'
                 'honda1'
@@ -681,7 +613,7 @@ $areasNiss:(
 }
 
   
-.slider{
+.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--slider{
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -705,10 +637,10 @@ $areasNiss:(
 }
   
   
-input:checked + .slider {
+input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--slider {
     background-color: #2196F3;
 }
   
-input:checked + .slider:before {
+input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--slider:before {
     transform: translateX(20px);
 }

@@ -145,481 +145,6 @@ nav {
   width: 80px;
   height: 80px; }
 
-/*---------AUTOS---------*/
-/*<Mapas Areas>*/
-/*</Mapas Areas>*/
-.noSeVe {
-  display: none; }
-
-#tieAutMain {
-  padding: 10px 5% 140px 5%; }
-  #tieAutMain img {
-    outline: 5px solid black;
-    border-radius: 20px; }
-  #tieAutMain a {
-    text-decoration: none !important; }
-
-#tieAut__Grid {
-  display: grid;
-  grid-template-rows: auto;
-  grid-row-gap: 0px; }
-  #tieAut__Grid div[id*="Img"] {
-    height: 292px; }
-    #tieAut__Grid div[id*="Img"] img {
-      height: 100%; }
-  #tieAut__Grid div[id*="Datos"] {
-    display: none;
-    position: absolute;
-    text-align: center;
-    height: 292px;
-    color: white;
-    transform: translate(0px, -292px);
-    outline: 5px solid black;
-    border-radius: 20px;
-    filter: blur(0px); }
-    #tieAut__Grid div[id*="Datos"] h4 {
-      font-size: 40px;
-      padding: 0%;
-      margin: 0%; }
-    #tieAut__Grid div[id*="Datos"] p {
-      margin: 0%;
-      padding: 0%;
-      font-size: 20px; }
-
-.tieAut__grid--marcas {
-  display: grid;
-  grid-template-rows: 1fr 6.5fr;
-  grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 20px; }
-  .tieAut__grid--marcas h2 {
-    margin: 0%;
-    padding: 0%;
-    text-align: center;
-    text-decoration: underline;
-    padding: 0 0 10px 0; }
-  .tieAut__grid--marcas img {
-    width: 100%; }
-  .tieAut__grid--marcas > div {
-    transition: all 0.5s; }
-    .tieAut__grid--marcas > div:hover {
-      scale: 1.2;
-      z-index: 500; }
-      .tieAut__grid--marcas > div:hover img {
-        filter: blur(5px) brightness(0.6);
-        transition: all 0.5s; }
-
-/*------HONDA------*/
-#honda {
-  grid-template-areas: 'titHonda titHonda titHonda'; }
-  #honda #honda1:hover #hondaDatos1 {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr) 2fr; }
-  #honda #honda2:hover #hondaDatos2 {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr) 2fr; }
-  #honda #honda3:hover #hondaDatos3 {
-    display: grid;
-    grid-template-rows: repeat(4, 1fr) 2fr; }
-  #honda h2 {
-    grid-area: titHonda; }
-
-/*------AUDI------*/
-#audi {
-  grid-template-areas: 'titAudi titAudi titAudi' 'audi1 audi2 audi3'; }
-  #audi #audi1 {
-    grid-area: audi1; }
-    #audi #audi1:hover #audiDatos1 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "audiModelo1" "audiPrecio1" "audiToTerr1" "audiEnergia1" "audiDesc1"; }
-  #audi #audi2 {
-    grid-area: audi2; }
-    #audi #audi2:hover #audiDatos2 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "audiModelo2" "audiPrecio2" "audiToTerr2" "audiEnergia2" "audiDesc2"; }
-  #audi #audi3 {
-    grid-area: audi3; }
-    #audi #audi3:hover #audiDatos3 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "audiModelo3" "audiPrecio3" "audiToTerr3" "audiEnergia3" "audiDesc3"; }
-  #audi h2 {
-    grid-area: titAudi; }
-
-/*------CHEVROLET------*/
-#chevrolet {
-  grid-template-areas: 'titChevr titChevr titChevr' 'chevr1 chevr2 chevr3'; }
-  #chevrolet #chevr1 {
-    grid-area: chevr1; }
-    #chevrolet #chevr1:hover #chevrDatos1 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "chevrModelo1" "chevrPrecio1" "chevrToTerr1" "chevrEnergia1" "chevrDesc1"; }
-  #chevrolet #chevr2 {
-    grid-area: chevr2; }
-    #chevrolet #chevr2:hover #chevrDatos2 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "chevrModelo2" "chevrPrecio2" "chevrToTerr2" "chevrEnergia2" "chevrDesc2"; }
-  #chevrolet #chevr3 {
-    grid-area: chevr3; }
-    #chevrolet #chevr3:hover #chevrDatos3 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "chevrModelo3" "chevrPrecio3" "chevrToTerr3" "chevrEnergia3" "chevrDesc3"; }
-  #chevrolet h2 {
-    grid-area: titChevr; }
-
-/*------RENAULT------*/
-#renault {
-  grid-template-areas: 'titRena titRena titRena' 'rena1 rena2 rena3'; }
-  #renault #rena1 {
-    grid-area: rena1; }
-    #renault #rena1:hover #renaDatos1 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "renaModelo1" "renaPrecio1" "renaToTerr1" "renaEnergia1" "renaDesc1"; }
-  #renault #rena2 {
-    grid-area: rena2; }
-    #renault #rena2:hover #renaDatos2 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "renaModelo2" "renaPrecio2" "renaToTerr2" "renaEnergia2" "renaDesc2"; }
-  #renault #rena3 {
-    grid-area: rena3; }
-    #renault #rena3:hover #renaDatos3 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "renaModelo3" "renaPrecio3" "renaToTerr3" "renaEnergia3" "renaDesc3"; }
-  #renault h2 {
-    grid-area: titRena; }
-
-/*------FORD------*/
-#ford {
-  grid-template-areas: 'titFord titFord titFord' 'ford1 ford2 ford3'; }
-  #ford #ford1 {
-    grid-area: ford1; }
-    #ford #ford1:hover #fordDatos1 {
-      text-decoration: none;
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "fordModelo1" "fordPrecio1" "fordToTerr1" "fordEnergia1" "fordDesc1"; }
-  #ford #ford2 {
-    grid-area: ford2; }
-    #ford #ford2:hover #fordDatos2 {
-      text-decoration: none;
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "fordModelo2" "fordPrecio2" "fordToTerr2" "fordEnergia2" "fordDesc2"; }
-  #ford #ford3 {
-    grid-area: ford3; }
-    #ford #ford3:hover #fordDatos3 {
-      text-decoration: none;
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "fordModelo3" "fordPrecio3" "fordToTerr3" "fordEnergia3" "fordDesc3"; }
-  #ford h2 {
-    grid-area: titFord; }
-
-/*------FIAT------*/
-#fiat {
-  grid-template-areas: 'titFiat titFiat titFiat' 'fiat1 fiat2 fiat3'; }
-  #fiat #fiat1 {
-    grid-area: fiat1; }
-    #fiat #fiat1:hover #fiatDatos1 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "fiatModelo1" "fiatPrecio1" "fiatToTerr1" "fiatEnergia1" "fiatDesc1"; }
-  #fiat #fiat2 {
-    grid-area: fiat2; }
-    #fiat #fiat2:hover #fiatDatos2 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "fiatModelo2" "fiatPrecio2" "fiatToTerr2" "fiatEnergia2" "fiatDesc2"; }
-  #fiat #fiat3 {
-    grid-area: fiat3; }
-    #fiat #fiat3:hover #fiatDatos3 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "fiatModelo3" "fiatPrecio3" "fiatToTerr3" "fiatEnergia3" "fiatDesc3"; }
-  #fiat h2 {
-    grid-area: titFiat; }
-
-/*------NISSAN------*/
-#nissan {
-  grid-template-areas: 'titNiss titNiss titNiss' 'niss1 niss2 niss3'; }
-  #nissan #niss1 {
-    grid-area: niss1; }
-    #nissan #niss1:hover #nissDatos1 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "nissModelo1" "nissPrecio1" "nissToTerr1" "nissEnergia1" "nissDesc1"; }
-  #nissan #niss2 {
-    grid-area: niss2; }
-    #nissan #niss2:hover #nissDatos2 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "nissModelo2" "nissPrecio2" "nissToTerr2" "nissEnergia2" "nissDesc2"; }
-  #nissan #niss3 {
-    grid-area: niss3; }
-    #nissan #niss3:hover #nissDatos3 {
-      display: grid;
-      grid-template-rows: repeat(4, 1fr) 2fr;
-      grid-template-areas: "nissModelo3" "nissPrecio3" "nissToTerr3" "nissEnergia3" "nissDesc3"; }
-  #nissan h2 {
-    grid-area: titNiss; }
-
-/*COLORES*/
-#tieAutMain {
-  background: repeating-linear-gradient(45deg, #646464, #646464 25%, #737373 25%, #737373 50%); }
-
-/*TRANSICIONES Y TRANSFORMACIONES*/
-/*-----RESPONSIVE-----*/
-/*PC De La Escuela*/
-@media screen and (min-width: 1300px) and (max-width: 1400px) {
-  #tieAutMain div[id*="Datos"] h4 {
-    font-size: 30px; }
-  #tieAutMain div[id*="Datos"] p {
-    font-size: 15px; } }
-
-/*TABLET*/
-@media screen and (min-width: 421px) and (max-width: 1023px) {
-  #tieAutMain img {
-    outline: 3px solid black; }
-  #tieAutMain #tieAut__Grid {
-    grid-row-gap: 5px; }
-    #tieAutMain #tieAut__Grid div[id*="Datos"] {
-      display: block;
-      position: relative;
-      height: auto;
-      transform: translate(0px, 5px);
-      outline: none; }
-      #tieAutMain #tieAut__Grid div[id*="Datos"] h4 {
-        font-size: 15px; }
-      #tieAutMain #tieAut__Grid div[id*="Datos"] p {
-        font-size: 10px; }
-    #tieAutMain #tieAut__Grid div[id*="Img"] {
-      height: 140px; }
-    #tieAutMain #tieAut__Grid .tieAut__grid--marcas > div:hover {
-      scale: 1; }
-      #tieAutMain #tieAut__Grid .tieAut__grid--marcas > div:hover img {
-        filter: none; } }
-
-/*CELULAR*/
-@media screen and (min-width: 0px) and (max-width: 480px) {
-  #tieAutMain img {
-    outline: 3px solid black; }
-  #tieAutMain #tieAut__Grid {
-    grid-row-gap: 5px;
-    /*-------------*/ }
-    #tieAutMain #tieAut__Grid div[id*="Datos"] {
-      display: grid;
-      grid-row-gap: 2px;
-      position: relative;
-      height: auto;
-      transform: translate(0px, 5px);
-      outline: none; }
-      #tieAutMain #tieAut__Grid div[id*="Datos"] h4 {
-        font-size: 10px; }
-      #tieAutMain #tieAut__Grid div[id*="Datos"] p {
-        font-size: 7px; }
-      #tieAutMain #tieAut__Grid div[id*="Datos"]:hover {
-        scale: 1; }
-        #tieAutMain #tieAut__Grid div[id*="Datos"]:hover img {
-          filter: none; }
-    #tieAutMain #tieAut__Grid div[id*="Img"] {
-      height: 170px; }
-    #tieAutMain #tieAut__Grid .tieAut__grid--marcas {
-      grid-template-columns: 1fr;
-      grid-template-rows: 1fr repeat(3, 7.7fr); }
-    #tieAutMain #tieAut__Grid .tieAut__grid--marcas > div {
-      padding: 0 0 30px 0; }
-    #tieAutMain #tieAut__Grid #honda {
-      grid-template-areas: 'titHonda' 'honda1' 'honda2' 'honda3'; }
-      #tieAutMain #tieAut__Grid #honda h2 {
-        grid-area: titHonda; }
-    #tieAutMain #tieAut__Grid #audi {
-      grid-template-areas: 'titAudi' 'audi1' 'audi2' 'audi3'; }
-      #tieAutMain #tieAut__Grid #audi h2 {
-        grid-area: titAudi; }
-    #tieAutMain #tieAut__Grid #chevrolet {
-      grid-template-areas: 'titChevr' 'chevr1' 'chevr2' 'chevr3'; }
-      #tieAutMain #tieAut__Grid #chevrolet h2 {
-        grid-area: titChevr; }
-    #tieAutMain #tieAut__Grid #renault {
-      grid-template-areas: 'titRena' 'rena1' 'rena2' 'rena3'; }
-      #tieAutMain #tieAut__Grid #renault h2 {
-        grid-area: titRena; }
-    #tieAutMain #tieAut__Grid #ford {
-      grid-template-areas: 'titFord' 'ford1' 'ford2' 'ford3'; }
-      #tieAutMain #tieAut__Grid #ford h2 {
-        grid-area: titFord; }
-    #tieAutMain #tieAut__Grid #fiat {
-      grid-template-areas: 'titFiat' 'fiat1' 'fiat2' 'fiat3'; }
-      #tieAutMain #tieAut__Grid #fiat h2 {
-        grid-area: titFiat; }
-    #tieAutMain #tieAut__Grid #nissan {
-      grid-template-areas: 'titNiss' 'niss1' 'niss2' 'niss3'; }
-      #tieAutMain #tieAut__Grid #nissan h2 {
-        grid-area: titNiss; } }
-
-/*JS*/
-#tieAutMain__cosasJS {
-  position: sticky;
-  top: 20px;
-  z-index: 999; }
-
-/*BUSQUEDA-----------------------------------------------------------------*/
-#tieAutMain__cosasJS--contenedorBusqueda {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(8px, 0px); }
-
-#tieAutMain__cosasJS--contenedorBusqueda--busqueda {
-  position: relative;
-  padding: 10px;
-  display: flex;
-  align-items: center; }
-  #tieAutMain__cosasJS--contenedorBusqueda--busqueda ::placeholder {
-    color: gray;
-    font-size: 20px; }
-  #tieAutMain__cosasJS--contenedorBusqueda--busqueda:hover #tieAutMain__cosasJS--contenedorBusqueda--busqueda--busquedaInput {
-    width: 350px; }
-  #tieAutMain__cosasJS--contenedorBusqueda--busqueda:hover span {
-    transform: rotate(360deg); }
-
-#tieAutMain__cosasJS--contenedorBusqueda--busqueda--busquedaInput {
-  outline: none;
-  box-sizing: border-box;
-  height: 60px;
-  width: 0px;
-  padding: 0 20px;
-  color: #000;
-  border-radius: 50px;
-  font-size: 20px;
-  border: 1px solid #D50000;
-  background-color: #fff;
-  transition: all 0.7s ease; }
-
-#tieAutMain__cosasJS--contenedorBusqueda--busqueda--botonBusqueda {
-  position: absolute;
-  right: 0px;
-  width: 80px;
-  height: 80px;
-  background: #D50000;
-  border-radius: 50%;
-  text-align: center;
-  cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.5s ease; }
-  #tieAutMain__cosasJS--contenedorBusqueda--busqueda--botonBusqueda span {
-    font-size: 25px;
-    color: white;
-    transition: all 0.7s ease; }
-  #tieAutMain__cosasJS--contenedorBusqueda--busqueda--botonBusqueda:hover {
-    background: #cc0000; }
-
-/*FILTROS------------------------------------------------------------------------------------*/
-#tieAutMain__cosasJS--filtros--barraDeFiltros {
-  left: 10px;
-  /* Cambiado al lado izquierdo */
-  background-color: #333;
-  color: #fff;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  z-index: 1000; }
-
-/* Sidebar */
-.tieAutMain__cosasJS--filtros--sidebar {
-  position: fixed;
-  top: 0;
-  left: -290px;
-  /* Oculta la barra lateral */
-  width: 250px;
-  height: 100%;
-  background-color: #f4f4f4;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  transition: left 0.3s ease;
-  z-index: 999; }
-  .tieAutMain__cosasJS--filtros--sidebar h2 {
-    margin-top: 0; }
-
-.tieAutMain__cosasJS--filtros--sidebarActive {
-  left: 0;
-  /* Muestra la barra lateral */ }
-
-/* Botón de cierre en la esquina superior derecha */
-#tieAutMain__cosasJS--filtros--sidebar--cerrarSidebar {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: transparent;
-  border: none;
-  font-size: 18px;
-  cursor: pointer; }
-
-.tieAutMain__cosasJS--filtros--sidebar--opciones {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 15px 0 15px 30px; }
-
-.hidden {
-  filter: blur(10px);
-  /* Aplica el desenfoque */
-  pointer-events: none;
-  /* Evita la interacción con elementos desenfocados */
-  opacity: 0.5;
-  /* Reduce ligeramente la opacidad */
-  transition: filter 0.3s, opacity 0.3s;
-  /* Suaviza las transiciones */ }
-
-/* Toggle personalizado */
-.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 20px; }
-  .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor input {
-    opacity: 0;
-    width: 0;
-    height: 0; }
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  transition: 0.4s;
-  border-radius: 20px; }
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 14px;
-    width: 14px;
-    left: 3px;
-    bottom: 3px;
-    background-color: white;
-    transition: 0.4s;
-    border-radius: 50%; }
-
-input:checked + .slider {
-  background-color: #2196F3; }
-
-input:checked + .slider:before {
-  transform: translateX(20px); }
-
 #mainConsulta {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -815,6 +340,404 @@ input:checked + .slider:before {
     font-size: 35px; }
   .pc {
     font-size: 17px; } }
+
+/*---------AUTOS---------*/
+/*<Mapas Areas>*/
+/*</Mapas Areas>*/
+.noSeVe {
+  display: none; }
+
+#tieAutMain {
+  padding: 10px 5% 140px 5%; }
+  #tieAutMain img {
+    outline: 5px solid black;
+    border-radius: 20px; }
+  #tieAutMain a {
+    text-decoration: none !important; }
+
+#tieAutMain__catalogo {
+  display: grid;
+  grid-template-rows: auto;
+  grid-row-gap: 0px; }
+  #tieAutMain__catalogo div[class*="Img"] {
+    height: 292px; }
+    #tieAutMain__catalogo div[class*="Img"] img {
+      height: 100%; }
+  #tieAutMain__catalogo div[class*="Datos"] {
+    display: none;
+    position: absolute;
+    text-align: center;
+    height: 292px;
+    color: white;
+    transform: translate(0px, -292px);
+    outline: 5px solid black;
+    border-radius: 20px;
+    grid-template-rows: repeat(4, 1fr) 2fr;
+    filter: blur(0px); }
+    #tieAutMain__catalogo div[class*="Datos"] h4 {
+      font-size: 40px;
+      padding: 0%;
+      margin: 0%; }
+    #tieAutMain__catalogo div[class*="Datos"] p {
+      margin: 0%;
+      padding: 0%;
+      font-size: 20px; }
+
+.tieAutMain__catalogo--marcas {
+  display: grid;
+  grid-template-rows: 1fr 6.5fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 20px; }
+  .tieAutMain__catalogo--marcas h2 {
+    margin: 0%;
+    padding: 0%;
+    text-align: center;
+    text-decoration: underline;
+    padding: 0 0 10px 0; }
+  .tieAutMain__catalogo--marcas img {
+    width: 100%; }
+  .tieAutMain__catalogo--marcas > div {
+    transition: all 0.5s; }
+    .tieAutMain__catalogo--marcas > div:hover {
+      scale: 1.2;
+      z-index: 500; }
+      .tieAutMain__catalogo--marcas > div:hover img {
+        filter: blur(5px) brightness(0.6);
+        transition: all 0.5s; }
+
+/*------HONDA------*/
+#tieAutMain__catalogo--marcas--honda {
+  grid-template-areas: 'titHonda titHonda titHonda'; }
+  #tieAutMain__catalogo--marcas--honda #tieAutMain__catalogo--marcas--honda--1:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--honda #tieAutMain__catalogo--marcas--honda--2:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--honda #tieAutMain__catalogo--marcas--honda--3:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--honda h2 {
+    grid-area: titHonda; }
+
+/*------AUDI------*/
+#tieAutMain__catalogo--marcas--audi {
+  grid-template-areas: 'titAudi titAudi titAudi'; }
+  #tieAutMain__catalogo--marcas--audi #tieAutMain__catalogo--marcas--audi--1:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--audi #tieAutMain__catalogo--marcas--audi--2:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--audi #tieAutMain__catalogo--marcas--audi--3:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--audi h2 {
+    grid-area: titAudi; }
+
+/*------CHEVROLET------*/
+#tieAutMain__catalogo--marcas--chevrolet {
+  grid-template-areas: 'titChevr titChevr titChevr'; }
+  #tieAutMain__catalogo--marcas--chevrolet #tieAutMain__catalogo--marcas--chevrolet--1:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--chevrolet #tieAutMain__catalogo--marcas--chevrolet--2:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--chevrolet #tieAutMain__catalogo--marcas--chevrolet--3:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--chevrolet h2 {
+    grid-area: titChevr; }
+
+/*------RENAULT------*/
+#tieAutMain__catalogo--marcas--renault {
+  grid-template-areas: 'titRena titRena titRena'; }
+  #tieAutMain__catalogo--marcas--renault #tieAutMain__catalogo--marcas--renault--1:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--renault #tieAutMain__catalogo--marcas--renault--2:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--renault #tieAutMain__catalogo--marcas--renault--3:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--renault h2 {
+    grid-area: titRena; }
+
+/*------FORD------*/
+#tieAutMain__catalogo--marcas--ford {
+  grid-template-areas: 'titFord titFord titFord'; }
+  #tieAutMain__catalogo--marcas--ford #tieAutMain__catalogo--marcas--ford--1:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--ford #tieAutMain__catalogo--marcas--ford--2:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--ford #tieAutMain__catalogo--marcas--ford--3:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--ford h2 {
+    grid-area: titFord; }
+
+/*------FIAT------*/
+#tieAutMain__catalogo--marcas--fiat {
+  grid-template-areas: 'titFiat titFiat titFiat'; }
+  #tieAutMain__catalogo--marcas--fiat #tieAutMain__catalogo--marcas--fiat--1:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--fiat #tieAutMain__catalogo--marcas--fiat--2:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--fiat #tieAutMain__catalogo--marcas--fiat--3:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--fiat h2 {
+    grid-area: titFiat; }
+
+/*------NISSAN------*/
+#tieAutMain__catalogo--marcas--nissan {
+  grid-template-areas: 'titNiss titNiss titNiss'; }
+  #tieAutMain__catalogo--marcas--nissan #tieAutMain__catalogo--marcas--nissan--1:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--nissan #tieAutMain__catalogo--marcas--nissan--2:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--nissan #tieAutMain__catalogo--marcas--nissan--3:hover .tieAutMain__catalogo--marcas--Datos {
+    display: grid; }
+  #tieAutMain__catalogo--marcas--nissan h2 {
+    grid-area: titNiss; }
+
+/*COLORES*/
+#tieAutMain {
+  background: repeating-linear-gradient(45deg, #646464, #646464 25%, #737373 25%, #737373 50%); }
+
+/*TRANSICIONES Y TRANSFORMACIONES*/
+/*-----RESPONSIVE-----*/
+/*PC De La Escuela*/
+@media screen and (min-width: 1300px) and (max-width: 1400px) {
+  #tieAutMain div[id*="Datos"] h4 {
+    font-size: 30px; }
+  #tieAutMain div[id*="Datos"] p {
+    font-size: 15px; } }
+
+/*TABLET*/
+@media screen and (min-width: 421px) and (max-width: 1023px) {
+  #tieAutMain img {
+    outline: 3px solid black; }
+  #tieAutMain #tieAutMain__catalogo {
+    grid-row-gap: 5px; }
+    #tieAutMain #tieAutMain__catalogo div[id*="Datos"] {
+      display: block;
+      position: relative;
+      height: auto;
+      transform: translate(0px, 5px);
+      outline: none; }
+      #tieAutMain #tieAutMain__catalogo div[id*="Datos"] h4 {
+        font-size: 15px; }
+      #tieAutMain #tieAutMain__catalogo div[id*="Datos"] p {
+        font-size: 10px; }
+    #tieAutMain #tieAutMain__catalogo div[id*="Img"] {
+      height: 140px; }
+    #tieAutMain #tieAutMain__catalogo .tieAut__grid--marcas > div:hover {
+      scale: 1; }
+      #tieAutMain #tieAutMain__catalogo .tieAut__grid--marcas > div:hover img {
+        filter: none; } }
+
+/*CELULAR*/
+@media screen and (min-width: 0px) and (max-width: 480px) {
+  #tieAutMain img {
+    outline: 3px solid black; }
+  #tieAutMain #tieAutMain__catalogo {
+    grid-row-gap: 5px;
+    /*-------------*/ }
+    #tieAutMain #tieAutMain__catalogo div[id*="Datos"] {
+      display: grid;
+      grid-row-gap: 2px;
+      position: relative;
+      height: auto;
+      transform: translate(0px, 5px);
+      outline: none; }
+      #tieAutMain #tieAutMain__catalogo div[id*="Datos"] h4 {
+        font-size: 10px; }
+      #tieAutMain #tieAutMain__catalogo div[id*="Datos"] p {
+        font-size: 7px; }
+      #tieAutMain #tieAutMain__catalogo div[id*="Datos"]:hover {
+        scale: 1; }
+        #tieAutMain #tieAutMain__catalogo div[id*="Datos"]:hover img {
+          filter: none; }
+    #tieAutMain #tieAutMain__catalogo div[id*="Img"] {
+      height: 170px; }
+    #tieAutMain #tieAutMain__catalogo .tieAut__grid--marcas {
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr repeat(3, 7.7fr); }
+    #tieAutMain #tieAutMain__catalogo .tieAut__grid--marcas > div {
+      padding: 0 0 30px 0; }
+    #tieAutMain #tieAutMain__catalogo #tieAutMain__catalogo--marcas--honda {
+      grid-template-areas: 'titHonda' 'honda1' 'honda2' 'honda3'; }
+      #tieAutMain #tieAutMain__catalogo #tieAutMain__catalogo--marcas--honda h2 {
+        grid-area: titHonda; }
+    #tieAutMain #tieAutMain__catalogo #audi {
+      grid-template-areas: 'titAudi' 'audi1' 'audi2' 'audi3'; }
+      #tieAutMain #tieAutMain__catalogo #audi h2 {
+        grid-area: titAudi; }
+    #tieAutMain #tieAutMain__catalogo #chevrolet {
+      grid-template-areas: 'titChevr' 'chevr1' 'chevr2' 'chevr3'; }
+      #tieAutMain #tieAutMain__catalogo #chevrolet h2 {
+        grid-area: titChevr; }
+    #tieAutMain #tieAutMain__catalogo #renault {
+      grid-template-areas: 'titRena' 'rena1' 'rena2' 'rena3'; }
+      #tieAutMain #tieAutMain__catalogo #renault h2 {
+        grid-area: titRena; }
+    #tieAutMain #tieAutMain__catalogo #ford {
+      grid-template-areas: 'titFord' 'ford1' 'ford2' 'ford3'; }
+      #tieAutMain #tieAutMain__catalogo #ford h2 {
+        grid-area: titFord; }
+    #tieAutMain #tieAutMain__catalogo #fiat {
+      grid-template-areas: 'titFiat' 'fiat1' 'fiat2' 'fiat3'; }
+      #tieAutMain #tieAutMain__catalogo #fiat h2 {
+        grid-area: titFiat; }
+    #tieAutMain #tieAutMain__catalogo #nissan {
+      grid-template-areas: 'titNiss' 'niss1' 'niss2' 'niss3'; }
+      #tieAutMain #tieAutMain__catalogo #nissan h2 {
+        grid-area: titNiss; } }
+
+/*JS*/
+#tieAutMain__cosasJS {
+  position: sticky;
+  top: 20px;
+  z-index: 999; }
+
+/*BUSQUEDA-----------------------------------------------------------------*/
+#tieAutMain__cosasJS--contenedorBusqueda {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translate(8px, 0px); }
+
+#tieAutMain__cosasJS--contenedorBusqueda--busqueda {
+  position: relative;
+  padding: 10px;
+  display: flex;
+  align-items: center; }
+  #tieAutMain__cosasJS--contenedorBusqueda--busqueda ::placeholder {
+    color: gray;
+    font-size: 20px; }
+  #tieAutMain__cosasJS--contenedorBusqueda--busqueda:hover #tieAutMain__cosasJS--contenedorBusqueda--busqueda--busquedaInput {
+    width: 350px; }
+  #tieAutMain__cosasJS--contenedorBusqueda--busqueda:hover span {
+    transform: rotate(360deg); }
+
+#tieAutMain__cosasJS--contenedorBusqueda--busqueda--busquedaInput {
+  outline: none;
+  box-sizing: border-box;
+  height: 60px;
+  width: 0px;
+  padding: 0 20px;
+  color: #000;
+  border-radius: 50px;
+  font-size: 20px;
+  border: 1px solid #D50000;
+  background-color: #fff;
+  transition: all 0.7s ease; }
+
+#tieAutMain__cosasJS--contenedorBusqueda--busqueda--botonBusqueda {
+  position: absolute;
+  right: 0px;
+  width: 80px;
+  height: 80px;
+  background: #D50000;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease; }
+  #tieAutMain__cosasJS--contenedorBusqueda--busqueda--botonBusqueda span {
+    font-size: 25px;
+    color: white;
+    transition: all 0.7s ease; }
+  #tieAutMain__cosasJS--contenedorBusqueda--busqueda--botonBusqueda:hover {
+    background: #cc0000; }
+
+/*FILTROS------------------------------------------------------------------------------------*/
+#tieAutMain__cosasJS--filtros--barraDeFiltros {
+  left: 10px;
+  /* Cambiado al lado izquierdo */
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 1000; }
+
+/* Sidebar */
+.tieAutMain__cosasJS--filtros--sidebar {
+  position: fixed;
+  top: 0;
+  left: -290px;
+  /* Oculta la barra lateral */
+  width: 250px;
+  height: 100%;
+  background-color: #f4f4f4;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: left 0.3s ease;
+  z-index: 999; }
+  .tieAutMain__cosasJS--filtros--sidebar h2 {
+    margin-top: 0; }
+
+.tieAutMain__cosasJS--filtros--sidebarActive {
+  left: 0;
+  /* Muestra la barra lateral */ }
+
+/* Botón de cierre en la esquina superior derecha */
+#tieAutMain__cosasJS--filtros--sidebar--cerrarSidebar {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  cursor: pointer; }
+
+.tieAutMain__cosasJS--filtros--sidebar--opciones {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 15px 0 15px 30px; }
+
+.hidden {
+  filter: blur(10px);
+  /* Aplica el desenfoque */
+  pointer-events: none;
+  /* Evita la interacción con elementos desenfocados */
+  opacity: 0.5;
+  /* Reduce ligeramente la opacidad */
+  transition: filter 0.3s, opacity 0.3s;
+  /* Suaviza las transiciones */ }
+
+/* Toggle personalizado */
+.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px; }
+  .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor input {
+    opacity: 0;
+    width: 0;
+    height: 0; }
+
+.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 20px; }
+  .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%; }
+
+input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--slider {
+  background-color: #2196F3; }
+
+input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--slider:before {
+  transform: translateX(20px); }
 
 .prods__body {
   background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%); }

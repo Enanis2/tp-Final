@@ -1,7 +1,7 @@
 //Buscar----------------------------------
 function filterDivs() {
   const query = document.getElementById("tieAutMain__cosasJS--contenedorBusqueda--busqueda--busquedaInput").value.toLowerCase();
-  const allDivs = document.querySelectorAll(".main-content > div"); // Divs de marcas principales
+  const allDivs = document.querySelectorAll("#tieAutMain__catalogo > div"); // Divs de marcas principales
   let anyMatch = false; // Variable para detectar si hay alguna coincidencia
 
   allDivs.forEach(div => {
@@ -9,7 +9,7 @@ function filterDivs() {
       const isImageDiv = div.id && div.id.toLowerCase().includes("img");
 
       // Obtener todas las clases, excepto las que deseas ignorar
-      const classList = Array.from(div.classList).filter(className => className !== "tieAut__grid--marcas");
+      const classList = Array.from(div.classList).filter(className => className !== "tieAutMain__catalogo--marcas");
       const match = classList.some(className => className.toLowerCase().startsWith(query));
 
       if (match || query === "") {
@@ -38,8 +38,8 @@ function filterDivs() {
       }
   });
 
-  // Ajustar la altura de #tieAut__Grid dependiendo de si hay coincidencias
-  const mainContent = document.querySelector("#tieAut__Grid");
+  // Ajustar la altura de #tieAutMain__catalogo dependiendo de si hay coincidencias
+  const mainContent = document.querySelector("#tieAutMain__catalogo");
   if (anyMatch) {
       mainContent.style.height = "auto"; // Ajustar la altura a auto si hay coincidencias
   } else {
@@ -55,9 +55,9 @@ function filterDivs() {
 const sidebar = document.getElementById('tieAutMain__cosasJS--filtros--sidebar');
 const toggleSidebarBtn = document.getElementById('tieAutMain__cosasJS--filtros--barraDeFiltros');
 const closeSidebarBtn = document.getElementById('tieAutMain__cosasJS--filtros--sidebar--cerrarSidebar');
-const filters = document.querySelectorAll('.filter-toggle'); // Selecciona todos los filtros
-const autos = document.querySelectorAll('#tieAut__Grid .autos'); // Selecciona todos los autos
-const marcas = document.querySelectorAll('.tieAut__grid--marcas'); // Selecciona los contenedores grandes (marcas)
+const filters = document.querySelectorAll('.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--input'); // Selecciona todos los filtros
+const autos = document.querySelectorAll('#tieAutMain__catalogo .tieAutMain__catalogo--marcas--autos'); // Selecciona todos los autos
+const marcas = document.querySelectorAll('.tieAutMain__catalogo--marcas'); // Selecciona los contenedores grandes (marcas)
 
 // Mostrar la barra lateral al hacer clic en el botón de apertura
 toggleSidebarBtn.addEventListener('click', () => {
@@ -86,7 +86,7 @@ const filtrosActivos = Array.from(filters)
 // Si no hay filtros activos o si alguna categoría no tiene selección, ocultar todo
 const categorias = ["tieAutMain__cosasJS--filtros--sidebar--todoterreno?", "tieAutMain__cosasJS--filtros--sidebar--energia", "tieAutMain__cosasJS--filtros--sidebar--precio"];
 const todasCategoriasTienenSeleccion = categorias.every(categoria => {
-  const filtrosCategoria = document.getElementById(categoria).querySelectorAll('.filter-toggle');
+  const filtrosCategoria = document.getElementById(categoria).querySelectorAll('.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--input');
   return Array.from(filtrosCategoria).some(filtro => filtro.checked);
 });
 
@@ -109,7 +109,7 @@ autos.forEach(auto => {
 
 // Itera sobre los contenedores grandes (marcas) y verifica si deben mostrarse
 marcas.forEach(marca => {
-  const autosDeMarca = marca.querySelectorAll('.autos'); // Autos dentro del contenedor
+  const autosDeMarca = marca.querySelectorAll('.tieAutMain__catalogo--marcas--autos'); // Autos dentro del contenedor
   const autosVisibles = Array.from(autosDeMarca).filter(auto => !auto.classList.contains('hidden'));
 
   if (autosVisibles.length > 0) {
@@ -136,7 +136,7 @@ aplicarFiltros();
 function manejarSeleccionExclusiva(containerId) {
 const container = document.getElementById(containerId);
 if (!container) return;
-const categoryFilters = container.querySelectorAll('.filter-toggle');
+const categoryFilters = container.querySelectorAll('.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--input');
 categoryFilters.forEach(filter => {
   filter.addEventListener('change', event => {
     if (event.target.checked) {

@@ -1097,11 +1097,13 @@ input:checked + .slider:before {
 .form-body input[type="text"] {
   margin-top: 20px; }
 
+/* Estilos generales */
 #bodyVA {
   background: linear-gradient(27deg, #d49090 50%, #b17272, #b61111a1 50%, #aa1b1b);
   height: 100vh;
   margin: 0; }
 
+/* Diseño principal */
 #mainVA {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -1109,27 +1111,27 @@ input:checked + .slider:before {
   grid-template-areas: 'h1va h1va h1va' 'formulariova formulariova formulariova' 'h2va h2va h2va' 'infova1 infova2 infova3';
   padding: 20px;
   justify-items: center;
-  gap: 20px; }
+  align-items: start;
+  gap: 20px;
+  box-sizing: border-box; }
 
+/* Contenedores específicos */
 #contenedorvaformulario {
   grid-area: formulariova;
   animation: slideIn 1s ease-out forwards; }
 
 #contenedorh1VA {
+  color: white;
   grid-area: h1va; }
 
-#infova1 {
-  grid-area: infova1; }
+#contenedorh2va {
+  grid-area: h2va;
+  color: white; }
 
-#infova2 {
-  grid-area: infova2; }
-
-#infova3 {
-  grid-area: infova3; }
-
+/* Formulario */
 .form-container {
-  color: #f0f0f0;
-  background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.164);
   padding: 20px;
   border-radius: 8px;
   border: solid 3px #9b0000;
@@ -1137,16 +1139,16 @@ input:checked + .slider:before {
   max-width: 600px;
   margin: 0 auto;
   opacity: 0;
-  transform: translateY(-50px); }
+  transform: translateY(-50px);
+  grid-area: formulariova;
+  transition: opacity 1s ease, transform 1s ease; }
 
 .form-container.show {
   opacity: 1;
-  transform: translateY(0);
-  transition: opacity 1s ease, transform 1s ease; }
+  transform: translateY(0); }
 
 .form-group {
-  margin-bottom: 15px;
-  background: transparent; }
+  margin-bottom: 15px; }
 
 .form-group label {
   display: block;
@@ -1155,27 +1157,15 @@ input:checked + .slider:before {
 .form-group input, .form-group textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #acacac;
+  border: 1px solid #ccc;
   border-radius: 4px;
   background-color: transparent;
-  color: #f0f0f0;
+  color: #ffffff;
   box-sizing: border-box; }
 
-.form-group input:focus,
-.form-group textarea:focus {
-  outline: none;
-  border-color: #f0f0f0; }
-
-.form-group textarea {
-  resize: vertical; }
-
-.form-group input[type="file"] {
-  padding: 5px;
-  background-color: transparent; }
-
 .form-group button {
-  background-color: #D32F2F;
-  color: #f0f0f0;
+  background-color: #9b0000;
+  color: white;
   border: none;
   padding: 10px 20px;
   font-size: 16px;
@@ -1183,9 +1173,9 @@ input:checked + .slider:before {
   border-radius: 4px; }
 
 .form-group button:hover {
-  background-color: #FF6659; }
+  background-color: #700000; }
 
-/* Animación de deslizamiento */
+/* Animaciones */
 @keyframes slideIn {
   from {
     opacity: 0;
@@ -1194,26 +1184,25 @@ input:checked + .slider:before {
     opacity: 1;
     transform: translateY(0); } }
 
-#h1va {
-  color: #f0f0f0; }
-
-#contenedorh2va {
-  grid-area: h2va;
-  color: #f0f0f0; }
-
+/* Información */
 #infova1, #infova2, #infova3 {
   border-radius: 10px;
   height: 550px;
   width: 550px;
-  background: repeating-linear-gradient(135deg, #646464, #646464 20%, #737373 20%, #737373 40%);
-  color: #f0f0f0;
-  grid-area: infova1;
+  background-color: gray;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  text-align: center; }
+  text-align: center;
+  padding-top: 20px;
+  box-sizing: border-box; }
 
+#infova1 h3, #infova2 h3, #infova3 h3 {
+  margin: 10px 0; }
+
+/* Responsive */
 @media (max-width: 768px) {
   #mainVA {
     grid-template-columns: 1fr;
@@ -1221,87 +1210,13 @@ input:checked + .slider:before {
     grid-template-areas: 'h1va' 'formulariova' 'h2va' 'infova1' 'infova2' 'infova3'; }
   .form-container {
     max-width: 100%;
-    /* Ocupa todo el ancho disponible */
-    padding: 15px;
-    /* Reduce el padding */ }
-  .form-group input, .form-group textarea {
-    font-size: 14px;
-    /* Tamaño más pequeño en campos de texto */ }
-  .form-group button {
-    font-size: 14px;
-    /* Botón más pequeño */
-    padding: 8px 15px; }
-  /* Reducimos el tamaño de las letras de los textos */
-  #h1va h2, #contenedorh2va h2 {
-    font-size: 20; }
-  #h1va h1, #contenedorh2va h1 {
-    font-size: 24; }
+    padding: 15px; }
   #infova1, #infova2, #infova3 {
-    font-size: 10px;
-    /* Tamaño reducido para contenido */
-    padding: 10px;
-    /* Ajustamos el padding */
-    line-height: 1.4;
-    /* Ajustamos el espaciado entre líneas */
-    width: 300px;
-    height: 400px; }
-    #infova1 h4, #infova2 h4, #infova3 h4 {
-      font-size: 16px; }
-    #infova1 h3, #infova2 h3, #infova3 h3 {
-      font-size: 18; }
-  /* Ajustamos texto del formulario */
-  .form-container label {
-    font-size: 14px;
-    /* Tamaño más pequeño para etiquetas */ }
-  /* Ajustamos otros textos globalmente */
-  body, #mainVA {
-    font-size: 14px;
-    /* Tamaño más pequeño para todo el contenido general */ } }
-
-@media (min-width: 1366px) and (max-width: 1366px) {
-  #mainVA {
-    grid-template-columns: repeat(3, 1fr);
-    /* Tres columnas para aprovechar el ancho */
-    grid-template-rows: auto auto auto auto auto auto;
-    grid-template-areas: 'h1va h1va h1va' 'formulariova formulariova formulariova' 'h2va h2va h2va' 'infova1 infova2 infova3'; }
-  .form-container {
-    max-width: 100%;
-    /* Mantiene el ancho completo */
-    padding: 20px;
-    /* Padding moderado */ }
-  .form-group input, .form-group textarea {
-    font-size: 16px;
-    /* Tamaño de fuente moderado en campos de texto */ }
-  .form-group button {
-    font-size: 16px;
-    /* Botón más grande */
-    padding: 10px 18px; }
-  /* Ajustamos los tamaños de los títulos y contenido */
-  #h1va h2, #contenedorh2va h2 {
-    font-size: 20; }
-  #h1va h1, #contenedorh2va h1 {
-    font-size: 24; }
-  #infova1, #infova2, #infova3 {
-    font-size: 14px;
-    /* Tamaño de texto más grande para contenido */
-    padding: 12px;
-    /* Un poco más de padding */
-    line-height: 1.5;
-    /* Espaciado adecuado entre líneas */
-    width: 400px;
-    height: 500px; }
-    #infova1 h4, #infova2 h4, #infova3 h4 {
-      font-size: 16px; }
-    #infova1 h3, #infova2 h3, #infova3 h3 {
-      font-size: 18; }
-  /* Ajustamos texto del formulario */
-  .form-container label {
-    font-size: 16px;
-    /* Etiquetas con tamaño de fuente moderado */ }
-  /* Ajustamos otros textos globalmente */
-  body, #mainVA {
-    font-size: 14px;
-    /* Tamaño más pequeño para todo el contenido general */ } }
+    height: auto;
+    /* Ajusta la altura automáticamente */
+    width: 100%; }
+  #h1va, #contenedorh2va, #infova1, #infova2, #infova3 {
+    font-size: 16px; } }
 
 @keyframes aparecer {
   0% {

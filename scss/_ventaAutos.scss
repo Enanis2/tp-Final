@@ -1,9 +1,11 @@
+/* Estilos generales */
 #bodyVA {
     background: linear-gradient(27deg, #d49090 50%, #b17272, #b61111a1 50%, #aa1b1b);
     height: 100vh;
     margin: 0;
 }
 
+/* Diseño principal */
 #mainVA {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -15,61 +17,50 @@
         'infova1 infova2 infova3';
     padding: 20px;
     justify-items: center;
+    align-items: start;
     gap: 20px;
+    box-sizing: border-box;
 }
 
-
+/* Contenedores específicos */
 #contenedorvaformulario {
     grid-area: formulariova;
     animation: slideIn 1s ease-out forwards;
 }
 
 #contenedorh1VA {
+    color: white;
     grid-area: h1va;
 }
 
-#infova1 {
-    grid-area: infova1;
+#contenedorh2va {
+    grid-area: h2va;
+    color: white;
 }
 
-#infova2 {
-    grid-area: infova2;
-}
-
-#infova3 {
-    grid-area: infova3;
-}
-
-
+/* Formulario */
 .form-container {
-    color: map-get($paleta-colores, 1);
-    background: repeating-linear-gradient(
-        45deg,
-        map-get($paleta-colores, 3),
-        map-get($paleta-colores, 3) 20%,
-        map-get($paleta-colores, 4) 20%,
-        map-get($paleta-colores, 4) 40%
-    );
+    color: white;
+    background-color: rgba(0, 0, 0, 0.164);
     padding: 20px;
     border-radius: 8px;
-    border: solid 3px map-get($paleta-colores, 11);
+    border: solid 3px #9b0000;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     max-width: 600px;
     margin: 0 auto;
     opacity: 0;
     transform: translateY(-50px);
-
+    grid-area: formulariova;
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 .form-container.show {
     opacity: 1;
     transform: translateY(0);
-    transition: opacity 1s ease, transform 1s ease;
 }
 
 .form-group {
     margin-bottom: 15px;
-    background: transparent;
 }
 
 .form-group label {
@@ -80,30 +71,16 @@
 .form-group input, .form-group textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid map-get($paleta-colores, 5);
+    border: 1px solid #ccc;
     border-radius: 4px;
     background-color: transparent;
-    color: map-get($paleta-colores, 1);
+    color: #ffffff;
     box-sizing: border-box;
 }
 
-.form-group input:focus, .form-group textarea:focus {
-    outline: none;
-    border-color: map-get($paleta-colores, 1);
-}
-
-.form-group textarea {
-    resize: vertical;
-}
-
-.form-group input[type="file"] {
-    padding: 5px;
-    background-color: transparent;
-}
-
 .form-group button {
-    background-color: map-get($paleta-colores, 8);
-    color: map-get($paleta-colores, 1);
+    background-color: #9b0000;
+    color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -112,10 +89,10 @@
 }
 
 .form-group button:hover {
-    background-color: map-get($paleta-colores, 9);
+    background-color: #700000;
 }
 
-/* Animación de deslizamiento */
+/* Animaciones */
 @keyframes slideIn {
     from {
         opacity: 0;
@@ -127,38 +104,27 @@
     }
 }
 
-#h1va {
-    color: map-get($paleta-colores, 1);
-}
-
-#contenedorh2va {
-    grid-area: h2va;
-    color: map-get($paleta-colores, 1);
-}
-
+/* Información */
 #infova1, #infova2, #infova3 {
     border-radius: 10px;
     height: 550px;
     width: 550px;
-    background: repeating-linear-gradient(
-        135deg,
-        map-get($paleta-colores, 6),
-        map-get($paleta-colores, 6) 20%,
-        map-get($paleta-colores, 7) 20%,
-        map-get($paleta-colores, 7) 40%
-    );
-    color: map-get($paleta-colores, 1);
-    grid-area: infova1;
-    display: flex; 
-    flex-direction: column; 
-    justify-content: flex-start; 
-    align-items: center; 
+    background-color: gray;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
     text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
 }
 
+#infova1 h3, #infova2 h3, #infova3 h3 {
+    margin: 10px 0;
+}
 
-
-
+/* Responsive */
 @media (max-width: 768px) {
     #mainVA {
         grid-template-columns: 1fr;
@@ -173,112 +139,16 @@
     }
 
     .form-container {
-        max-width: 100%; /* Ocupa todo el ancho disponible */
-        padding: 15px; /* Reduce el padding */
-    }
-
-    .form-group input, .form-group textarea {
-        font-size: 14px; /* Tamaño más pequeño en campos de texto */
-    }
-
-    .form-group button {
-        font-size: 14px; /* Botón más pequeño */
-        padding: 8px 15px;
-    }
-
-    /* Reducimos el tamaño de las letras de los textos */
-    #h1va, #contenedorh2va {
-        h2{
-            font-size: 20;
-        }
-        h1{
-            font-size: 24;
-        }
+        max-width: 100%;
+        padding: 15px;
     }
 
     #infova1, #infova2, #infova3 {
-        font-size: 10px; /* Tamaño reducido para contenido */
-        padding: 10px; /* Ajustamos el padding */
-        line-height: 1.4; /* Ajustamos el espaciado entre líneas */
-        width: 300px;
-        height: 400px;
-        h4{
-            font-size: 16px;
-        }
-        h3{
-            font-size: 18;
-        }
+        height: auto; /* Ajusta la altura automáticamente */
+        width: 100%;
     }
 
-    /* Ajustamos texto del formulario */
-    .form-container label {
-        font-size: 14px; /* Tamaño más pequeño para etiquetas */
-    }
-
-    /* Ajustamos otros textos globalmente */
-    body, #mainVA {
-        font-size: 14px; /* Tamaño más pequeño para todo el contenido general */
+    #h1va, #contenedorh2va, #infova1, #infova2, #infova3 {
+        font-size: 16px;
     }
 }
-
-@media (min-width: 1366px) and (max-width: 1366px) {
-    #mainVA {
-        grid-template-columns: repeat(3, 1fr); /* Tres columnas para aprovechar el ancho */
-        grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas: 
-            'h1va h1va h1va'
-            'formulariova formulariova formulariova'
-            'h2va h2va h2va'
-            'infova1 infova2 infova3';
-    }
-
-    .form-container {
-        max-width: 100%; /* Mantiene el ancho completo */
-        padding: 20px; /* Padding moderado */
-    }
-
-    .form-group input, .form-group textarea {
-        font-size: 16px; /* Tamaño de fuente moderado en campos de texto */
-    }
-
-    .form-group button {
-        font-size: 16px; /* Botón más grande */
-        padding: 10px 18px;
-    }
-
-    /* Ajustamos los tamaños de los títulos y contenido */
-    #h1va, #contenedorh2va {
-        h2{
-            font-size: 20;
-        }
-        h1{
-            font-size: 24;
-        }
-    }
-
-    #infova1, #infova2, #infova3 {
-        font-size: 14px; /* Tamaño de texto más grande para contenido */
-        padding: 12px; /* Un poco más de padding */
-        line-height: 1.5; /* Espaciado adecuado entre líneas */
-        width: 400px;
-        height: 500px;
-        h4{
-            font-size: 16px;
-        }
-        h3{
-            font-size: 18;
-        }
-
-    }
-
-    /* Ajustamos texto del formulario */
-    .form-container label {
-        font-size: 16px; /* Etiquetas con tamaño de fuente moderado */
-    }
-
-    /* Ajustamos otros textos globalmente */
-    body, #mainVA {
-        font-size: 14px; /* Tamaño más pequeño para todo el contenido general */
-    }
-}
-

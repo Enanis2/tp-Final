@@ -1118,9 +1118,18 @@ input:checked + .slider:before {
 #contenedorh1VA {
   grid-area: h1va; }
 
+#infova1 {
+  grid-area: infova1; }
+
+#infova2 {
+  grid-area: infova2; }
+
+#infova3 {
+  grid-area: infova3; }
+
 .form-container {
   color: #f0f0f0;
-  background: repeating-linear-gradient(45deg, #464646, #464646, #505050, #505050);
+  background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%);
   padding: 20px;
   border-radius: 8px;
   border: solid 3px #9b0000;
@@ -1128,8 +1137,7 @@ input:checked + .slider:before {
   max-width: 600px;
   margin: 0 auto;
   opacity: 0;
-  transform: translateY(-50px);
-  grid-area: formulariova; }
+  transform: translateY(-50px); }
 
 .form-container.show {
   opacity: 1;
@@ -1197,7 +1205,7 @@ input:checked + .slider:before {
   border-radius: 10px;
   height: 550px;
   width: 550px;
-  background: repeating-linear-gradient(135deg, #646464, #646464, #737373, #737373);
+  background: repeating-linear-gradient(135deg, #646464, #646464 20%, #737373 20%, #737373 40%);
   color: #f0f0f0;
   grid-area: infova1;
   display: flex;

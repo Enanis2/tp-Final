@@ -4,15 +4,6 @@
     padding: $top $right $bottom $left;
 }
 
-$areasGrid:(
-    1: honda,
-    2: audi,
-    3: chevrolet,
-    4: renault,
-    5: ford,
-    6: fiat,
-    7: nissan,
-);
 /*<Mapas Areas>*/
 $areasHonda:(
     1: honda1,
@@ -376,7 +367,7 @@ $areasNiss:(
 /*FILTROS------------------------------------------------------------------------------------*/
 
 #tieAutMain__cosasJS--filtros--barraDeFiltros{
-    left: 10px; /* Cambiado al lado izquierdo */
+    left: 10px;
     background-color: black;
     color: #fff;
     border: none;
@@ -385,11 +376,10 @@ $areasNiss:(
     z-index: 1000;
 }
   
-/* Sidebar */
 .tieAutMain__cosasJS--filtros--sidebar{
     position: fixed;
     top: 0;
-    left: -290px; /* Oculta la barra lateral */
+    left: -290px;
     width: 250px;
     height: 100%;
     background-color: #f4f4f4;
@@ -402,12 +392,10 @@ $areasNiss:(
     }
 }
   
-
 .tieAutMain__cosasJS--filtros--sidebarActive {
-    left: 0; /* Muestra la barra lateral */
+    left: 0;
 }
   
-/* Botón de cierre en la esquina superior derecha */
 #tieAutMain__cosasJS--filtros--sidebar--cerrarSidebar{
     position: absolute;
     top: 10px;
@@ -426,14 +414,13 @@ $areasNiss:(
 }
 
 .hidden {
-    filter: blur(10px); /* Aplica el desenfoque */
-    pointer-events: none; /* Evita la interacción con elementos desenfocados */
-    opacity: 0.5; /* Reduce ligeramente la opacidad */
-    transition: filter 0.3s, opacity 0.3s; /* Suaviza las transiciones */
+    filter: blur(10px);
+    pointer-events: none;
+    opacity: 0.5;
+    transition: filter 0.3s, opacity 0.3s;
 }
   
 
-/* Toggle personalizado */
 .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor {
     position: relative;
     display: inline-block;
@@ -484,7 +471,7 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
 /*PC De La Escuela*/
 @media screen and (min-width: 1300px) and (max-width: 1400px){
     #tieAutMain{
-        div[id*="Datos"]{
+        div[class*="Datos"]{
             h4{
                 font-size: 30px;
             }
@@ -496,14 +483,23 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
 }
 
 /*TABLET*/
-@media screen and (min-width: 421px) and (max-width: 1023px){
+@media screen and (min-width: 481px) and (max-width: 1023px){
     #tieAutMain{
+        .tieAutMain__cosasJS--filtros--sidebar{
+            width: 180px;
+        }
+        .tieAutMain__cosasJS--filtros--sidebar--opciones{
+            margin: 15px 0 15px 15px;
+        }
+        #tieAutMain__cosasJS--contenedorBusqueda{
+            scale: 0.8;
+        }
         img{
             outline: 3px solid map-get($paleta-colores, 2);
         }
         #tieAutMain__catalogo{
             grid-row-gap: 5px;
-            div[id*="Datos"]{
+            div[class*="Datos"]{
                 display: block;
                 position: relative;
                 height: auto;
@@ -516,7 +512,7 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
                     font-size: 10px;
                 }
             }
-            div[id*="Img"]{
+            div[class*="Img"]{
                 height: 140px;
             }
             .tieAut__grid--marcas{
@@ -539,9 +535,22 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
         img{
             outline: 3px solid map-get($paleta-colores, 2);
         }
+        .tieAutMain__cosasJS--filtros--sidebar{
+            width: 180px;
+        }
+        .tieAutMain__cosasJS--filtros--sidebar--opciones{
+            margin: 15px 0 15px 15px;
+        }
+        #tieAutMain__cosasJS--contenedorBusqueda{
+            scale: 0.6;
+            transform: translate(0, -40px);
+        }
+        #tieAutMain__cosasJS--filtros--barraDeFiltros{
+            scale: 0.7;
+        }
         #tieAutMain__catalogo{
             grid-row-gap: 5px;
-            div[id*="Datos"]{
+            div[class*="Datos"]{
                 display: grid;
                 grid-row-gap: 2px;
                 position: relative;
@@ -561,10 +570,10 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
                     }
                 }
             }
-            div[id*="Img"]{
+            div[class*="Img"]{
                 height: 170px;
             }
-            .tieAut__grid--marcas{
+            .tieAutMain__catalogo--marcas{
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr repeat(3, 7.7fr);
             }
@@ -574,70 +583,49 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
             /*-------------*/
             #tieAutMain__catalogo--marcas--honda{
                 grid-template-areas:
-                'titHonda'
-                'honda1'
-                'honda2'
-                'honda3';
+                'titHonda';
                 h2{
                     grid-area: titHonda;
                 }
             }
-            #audi{
+            #tieAutMain__catalogo--marcas--audi{
                 grid-template-areas:
-                'titAudi'
-                'audi1'
-                'audi2'
-                'audi3';
+                'titAudi';
                 h2{
                     grid-area: titAudi;
                 }
             }
-            #chevrolet{
+            #tieAutMain__catalogo--marcas--chevrolet{
                 grid-template-areas:
-                'titChevr'
-                'chevr1'
-                'chevr2'
-                'chevr3';
+                'titChevr';
                 h2{
                     grid-area: titChevr;
                 }
             }
-            #renault{
+            #tieAutMain__catalogo--marcas--renault{
                 grid-template-areas:
-                'titRena'
-                'rena1'
-                'rena2'
-                'rena3';
+                'titRena';
                 h2{
                     grid-area: titRena;
                 }
             }
-            #ford{
+            #tieAutMain__catalogo--marcas--ford{
                 grid-template-areas:
-                'titFord'
-                'ford1'
-                'ford2'
-                'ford3';
+                'titFord';
                 h2{
                     grid-area: titFord;
                 }
             }
-            #fiat{
+            #tieAutMain__catalogo--marcas--fiat{
                 grid-template-areas:
-                'titFiat'
-                'fiat1'
-                'fiat2'
-                'fiat3';
+                'titFiat';
                 h2{
                     grid-area: titFiat;
                 }
             }
-            #nissan{
+            #tieAutMain__catalogo--marcas--nissan{
                 grid-template-areas:
-                'titNiss'
-                'niss1'
-                'niss2'
-                'niss3';
+                'titNiss';
                 h2{
                     grid-area: titNiss;
                 }

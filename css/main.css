@@ -88,7 +88,7 @@ footer {
   margin-top: auto; }
 
 header {
-  background-color: #2B2B2B; }
+  background-image: linear-gradient(to top, black, #737373, #737373, #646464); }
 
 nav {
   position: sticky;

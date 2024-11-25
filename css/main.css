@@ -88,7 +88,7 @@ footer {
   margin-top: auto; }
 
 header {
-  background-image: linear-gradient(to top, black, #737373, #737373, #646464); }
+  background-image: linear-gradient(to top, #464646, #737373, #737373, #646464); }
 
 nav {
   position: sticky;
@@ -1571,7 +1571,6 @@ main {
   padding: 0; }
 
 #que-somos {
-  animation: fadeIn 2s ease-in-out;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -1597,8 +1596,7 @@ main {
 
 #que-somos__foto-fondo {
   position: absolute;
-  z-index: -1;
-  filter: blur(7px);
+  filter: brightness(50%);
   height: 825px;
   margin: 0;
   padding: 0; }

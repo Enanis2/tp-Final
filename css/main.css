@@ -1496,10 +1496,8 @@ main {
 
 @keyframes rotar-aparecer {
   0% {
-    rotate: 0deg;
-    scale: 0.1; }
+    rotate: 0deg; }
   100% {
-    scale: 1;
     rotate: 360deg; } }
 
 @keyframes bordeNeon {
@@ -1599,6 +1597,7 @@ main {
   justify-content: center; }
 
 #que-somos__h2 {
+  animation: fadeIn, aparecer 1.5s;
   z-index: 2;
   font-size: 70px;
   font-family: monospace;
@@ -1607,6 +1606,7 @@ main {
   padding-top: 15%; }
 
 #que-somos__p {
+  animation: fadeIn 2s;
   z-index: 2;
   color: #f0f0f0;
   text-align: center;
@@ -1629,6 +1629,7 @@ main {
   padding: 5% 2%;
   background: repeating-linear-gradient(-45deg, #646464, #646464 20%, #737373 20%, #737373 40%); }
   #productos-carousel img {
+    animation: fadeIn 1s;
     filter: brightness(80%);
     transition: filter 0.5s; }
     #productos-carousel img:hover {
@@ -1659,6 +1660,7 @@ main {
   justify-content: center; }
 
 #comp-related__h2 {
+  animation: fadeIn 3s;
   text-align: center;
   font-family: fantasy;
   letter-spacing: 2px;

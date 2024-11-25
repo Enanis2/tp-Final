@@ -642,7 +642,7 @@ $areasNiss:(
 }
   
 /* Botón de cierre en la esquina superior derecha */
-.close-btn {
+#tieAutMain__cosasJS--filtros--sidebar--cerrarSidebar{
     position: absolute;
     top: 10px;
     right: 10px;
@@ -652,7 +652,7 @@ $areasNiss:(
     cursor: pointer;
 }
   
-.filter {
+.tieAutMain__cosasJS--filtros--sidebar--opciones{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -668,7 +668,7 @@ $areasNiss:(
   
   
 /* Toggle personalizado */
-.toggle {
+.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor {
     position: relative;
     display: inline-block;
     width: 40px;

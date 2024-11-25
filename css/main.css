@@ -557,7 +557,7 @@ nav {
   /* Muestra la barra lateral */ }
 
 /* Botón de cierre en la esquina superior derecha */
-.close-btn {
+#tieAutMain__cosasJS--filtros--sidebar--cerrarSidebar {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -566,7 +566,7 @@ nav {
   font-size: 18px;
   cursor: pointer; }
 
-.filter {
+.tieAutMain__cosasJS--filtros--sidebar--opciones {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -583,12 +583,12 @@ nav {
   /* Suaviza las transiciones */ }
 
 /* Toggle personalizado */
-.toggle {
+.tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor {
   position: relative;
   display: inline-block;
   width: 40px;
   height: 20px; }
-  .toggle input {
+  .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor input {
     opacity: 0;
     width: 0;
     height: 0; }

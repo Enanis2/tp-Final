@@ -284,3 +284,44 @@ $areasgridConsulta:(
         font-size: 17px;
     }
 }
+
+/* Menú */
+nav .nav-link {
+    color: map-get($paleta-colores, 1); /* Asegúrate de que este color sea el deseado */
+}
+
+nav .nav-link:hover,
+nav .nav-link:active {
+    color: map-get($paleta-colores, 11); /* Color al hacer hover */
+}
+
+nav .nav-link {
+    font-weight: 500;
+    position: relative;
+}
+
+@media (min-width: 991px) {
+    .nav-link::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        height: 2px;
+        background-color: map-get($paleta-colores, 11);
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+    }
+
+    .nav-link:hover::before,
+    .nav-link.active::before {
+        width: 100%;
+        visibility: visible;
+    }
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}

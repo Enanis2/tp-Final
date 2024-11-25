@@ -12,14 +12,17 @@
         map-get($paleta-colores, 4) 20%,
         map-get($paleta-colores, 4) 40%
     );
+    overflow-x: hidden;
 }
 
 .prods__main{
     margin-top: 100px;
+    margin-bottom: 25px;
     border: solid 6px map-get($map: $paleta-colores, $key: 2);
     margin-inline: 2%;
     padding: 20px;
     background-image: linear-gradient(to top, map-get($map: $paleta-colores, $key: 4), map-get($map: $paleta-colores, $key: 7));
+    border-radius: 10px;
 }
 
 .prods__encabezado{
@@ -203,6 +206,9 @@
     }
     .prods__info{
         height: 500px;
+        h2{
+            font-size: 35px;
+        }
         .prods__volver{
             margin-inline: 0%;
             transform: translateY(-380px);
@@ -213,6 +219,25 @@
                 a{
                     @include valoresFuente(16px, black, none)
                 }
+            }
+        }
+    }
+    .prods__masInfo{
+        table{
+            display: flex;
+            tr{
+                td{
+                    font-size: 15px;
+                    text-align: center;
+                    text-decoration: underline;
+                    border-inline: solid 2px map-get($map: $paleta-colores, $key: 2);
+                }
+            }
+        }
+        video{
+            width: 100%;
+            &:focus{
+                box-shadow: 0px 0px 0px;
             }
         }
     }
@@ -251,6 +276,21 @@
                     @include valoresFuente(16px, black, none)
                 }
             }
+        }
+    }
+    .prods__masInfo{
+        table{
+            tr{
+                td{
+                    text-align: center;
+                    font-size: 26px;
+                    margin-block: 10px;
+                    border-inline: solid 2px map-get($map: $paleta-colores, $key: 2);
+                }
+            }
+        }
+        video{
+            width: 100%;
         }
     }
 }

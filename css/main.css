@@ -836,14 +836,17 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
         grid-area: titNiss; } }
 
 .prods__body {
-  background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%); }
+  background: repeating-linear-gradient(45deg, #464646, #464646 20%, #505050 20%, #505050 40%);
+  overflow-x: hidden; }
 
 .prods__main {
   margin-top: 100px;
+  margin-bottom: 25px;
   border: solid 6px black;
   margin-inline: 2%;
   padding: 20px;
-  background-image: linear-gradient(to top, #505050, #737373); }
+  background-image: linear-gradient(to top, #505050, #737373);
+  border-radius: 10px; }
 
 .prods__encabezado {
   height: 500px; }
@@ -989,6 +992,8 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
       height: 300px !important; }
   .prods__info {
     height: 500px; }
+    .prods__info h2 {
+      font-size: 35px; }
     .prods__info .prods__volver {
       margin-inline: 0%;
       transform: translateY(-380px); }
@@ -997,7 +1002,18 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
       .prods__info .prods__contacto button a {
         font-size: 16px;
         color: black;
-        text-decoration: none !important; } }
+        text-decoration: none !important; }
+  .prods__masInfo table {
+    display: flex; }
+    .prods__masInfo table tr td {
+      font-size: 15px;
+      text-align: center;
+      text-decoration: underline;
+      border-inline: solid 2px black; }
+  .prods__masInfo video {
+    width: 100%; }
+    .prods__masInfo video:focus {
+      box-shadow: 0px 0px 0px; } }
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
   .prods__main {
@@ -1022,7 +1038,14 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
       .prods__info .prods__contacto button a {
         font-size: 16px;
         color: black;
-        text-decoration: none !important; } }
+        text-decoration: none !important; }
+  .prods__masInfo table tr td {
+    text-align: center;
+    font-size: 26px;
+    margin-block: 10px;
+    border-inline: solid 2px black; }
+  .prods__masInfo video {
+    width: 100%; } }
 
 #body__Registro {
   display: flex;

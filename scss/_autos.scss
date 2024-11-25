@@ -368,7 +368,7 @@ $areasNiss:(
     @include padding(15px, 0, 0, 0);
     position: sticky;
     top: 20px;
-    z-index: 999;
+    z-index: 999;   
 }
 
 /*BUSQUEDA-----------------------------------------------------------------*/
@@ -378,7 +378,7 @@ $areasNiss:(
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translate(8px, -60px);
+    transform: translate(8px, 0px);
 }
 
 #tieAutMain__cosasJS--contenedorBusqueda--busqueda{
@@ -386,6 +386,7 @@ $areasNiss:(
     @include padding1variable(10px);
     display: flex;
     align-items: center;
+    transform: translate(0px, -60px);
     ::placeholder {
         color: gray;
         font-size: 20px;
@@ -448,6 +449,7 @@ $areasNiss:(
     @include padding(10px, 15px, 10px, 15px);
     cursor: pointer;
     z-index: 1000;
+    transform: translate(10px, 0);
 }
   
 .tieAutMain__cosasJS--filtros--sidebar{
@@ -567,6 +569,9 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
         }
         #tieAutMain__cosasJS--contenedorBusqueda{
             scale: 0.8;
+        }
+        #tieAutMain__cosasJS--contenedorBusqueda--busqueda{
+            transform: translate(0, -80px);
         }
         img{
             outline: 3px solid map-get($paleta-colores, 2);

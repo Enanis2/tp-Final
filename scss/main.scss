@@ -182,7 +182,6 @@ main{
 }
 
 #que-somos{
-    animation: fadeIn 2s ease-in-out;
     overflow-x: hidden;
     margin: 0;
     padding: 0;
@@ -206,10 +205,10 @@ main{
     width: 70%;
     padding-bottom: 20%;
 }
+
 #que-somos__foto-fondo{
     position: absolute;
-    z-index: -1;
-    filter: blur(7px);
+    filter: brightness(50%);
     height: 825px;
     margin: 0;
     padding: 0;

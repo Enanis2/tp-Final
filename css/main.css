@@ -88,7 +88,7 @@ footer {
   margin-top: auto; }
 
 header {
-  background-image: linear-gradient(to top, black, #737373, #737373, #646464); }
+  background-image: linear-gradient(to top, #464646, #737373, #737373, #646464); }
 
 nav {
   position: sticky;
@@ -591,13 +591,14 @@ nav .nav-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translate(8px, -60px); }
+  transform: translate(8px, 0px); }
 
 #tieAutMain__cosasJS--contenedorBusqueda--busqueda {
   position: relative;
   padding: 10px;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  transform: translate(0px, -60px); }
   #tieAutMain__cosasJS--contenedorBusqueda--busqueda ::placeholder {
     color: gray;
     font-size: 20px; }
@@ -647,7 +648,8 @@ nav .nav-link {
   border: none;
   padding: 10px 15px 10px 15px;
   cursor: pointer;
-  z-index: 1000; }
+  z-index: 1000;
+  transform: translate(10px, 0); }
 
 .tieAutMain__cosasJS--filtros--sidebar {
   position: fixed;
@@ -740,6 +742,8 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
     margin: 15px 0 15px 15px; }
   #tieAutMain #tieAutMain__cosasJS--contenedorBusqueda {
     scale: 0.8; }
+  #tieAutMain #tieAutMain__cosasJS--contenedorBusqueda--busqueda {
+    transform: translate(0, -80px); }
   #tieAutMain img {
     outline: 3px solid black; }
   #tieAutMain #tieAutMain__catalogo {
@@ -1305,8 +1309,8 @@ input:checked + .tieAutMain__cosasJS--filtros--sidebar--opciones--interruptor--s
     /* Un poco más de padding */
     line-height: 1.5;
     /* Espaciado adecuado entre líneas */
-    width: 400px;
-    height: 500px; }
+    width: 100%;
+    height: 520px; }
     #infova1 h4, #infova2 h4, #infova3 h4 {
       font-size: 16px; }
     #infova1 h3, #infova2 h3, #infova3 h3 {
@@ -1590,7 +1594,6 @@ main {
   padding: 0; }
 
 #que-somos {
-  animation: fadeIn 2s ease-in-out;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
@@ -1616,8 +1619,7 @@ main {
 
 #que-somos__foto-fondo {
   position: absolute;
-  z-index: -1;
-  filter: blur(7px);
+  filter: brightness(50%);
   height: 825px;
   margin: 0;
   padding: 0; }

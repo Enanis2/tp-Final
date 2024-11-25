@@ -671,13 +671,16 @@ input:checked + .slider:before {
   height: 200px; }
 
 #p1c {
-  grid-area: m1; }
+  grid-area: m1;
+  color: white; }
 
 #p2c {
-  grid-area: t1; }
+  grid-area: t1;
+  color: white; }
 
 #p3c {
-  grid-area: r1; }
+  grid-area: r1;
+  color: white; }
 
 .pc {
   font-size: 18px; }
@@ -700,17 +703,20 @@ input:checked + .slider:before {
 #info1consulta {
   grid-area: i1;
   width: 500px;
-  height: 300px; }
+  height: 300px;
+  color: white; }
 
 #info2consulta {
   width: 500px;
   height: 300px;
-  grid-area: i2; }
+  grid-area: i2;
+  color: white; }
 
 #info3consulta {
   width: 500px;
   height: 300px;
-  grid-area: i3; }
+  grid-area: i3;
+  color: white; }
 
 #contenedor_imagen_consulta_laptop {
   height: 100%;

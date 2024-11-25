@@ -69,14 +69,17 @@ $areasgridConsulta:(
 
 #p1c{
     grid-area: m1;
+    color: white;
 }
 
 #p2c{
     grid-area: t1;
+    color: white;
 }
 
 #p3c{
     grid-area: r1;
+    color: white;
 }
 .pc{
     font-size: 18px;
@@ -103,18 +106,21 @@ $areasgridConsulta:(
     grid-area: i1;
     width: 500px;
     height: 300px;
+    color: white;
 }
 
 #info2consulta{
     width: 500px;
     height: 300px;
     grid-area: i2;
+    color: white;
 }
 
 #info3consulta{
     width: 500px;
     height: 300px;
     grid-area: i3;
+    color: white;
 }
 
 #contenedor_imagen_consulta_laptop{
